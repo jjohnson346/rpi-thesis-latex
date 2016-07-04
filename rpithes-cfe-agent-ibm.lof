@@ -1,0 +1,34 @@
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A section of the table of contents from the CFE Manual\relax }}{12}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The CFE Manual as a Document Collection\relax }}{13}{figure.caption.7}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Lucene Indexes for a Portion of the Question Sections\relax }}{15}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Question Server Component Targeting Definition/NOT Questions\relax }}{16}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Concept Match V1 Example\relax }}{20}{figure.caption.10}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Performance of Concept Match V1 on Definition Questions\relax }}{21}{figure.caption.11}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Concept Match V1: An Example Where No Docs Are Returned for Options\relax }}{21}{figure.caption.12}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Concept Match V2: Fixing the No Docs in Option Queries Return Sets Problem, Part 1\relax }}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Concept Match V2: Fixing the No Docs in Option Queries Return Sets Problem, Part 2\relax }}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Concept Match V1: An Example Where A Document is Returned/Ranked for More than One Option\relax }}{25}{figure.caption.15}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Concept Match V2: Addressing the Problem of Multiple Options for a Document\relax }}{26}{figure.caption.16}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Performance of Concept Match V2 on Definition Questions\relax }}{27}{figure.caption.17}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Concept Match V2 vs. Max Frequency Hypothesis Test on Definition Questions\relax }}{27}{figure.caption.18}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Concept Match V3 Example - Part 1\relax }}{29}{figure.caption.19}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Concept Match V3 Example - Part 2\relax }}{30}{figure.caption.20}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces The Arraignment Document\relax }}{31}{figure.caption.21}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Performance of Concept Match V3 on Training Set\relax }}{32}{figure.caption.22}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Concept Match V3 vs. V2 Hypothesis Test on Definition Questions\relax }}{32}{figure.caption.23}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Concept Match Not Example - Part 1\relax }}{34}{figure.caption.24}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Concept Match Not Example - Part 2\relax }}{35}{figure.caption.25}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Performance of Concept Match Not on Training Set - Definition/NOT Questions\relax }}{35}{figure.caption.26}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Concept Match Not vs. Random Hypothesis Test on Definition/Not Questions\relax }}{36}{figure.caption.27}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Performance of NOTA Algorithm on NOTA Questions\relax }}{36}{figure.caption.28}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Concept Match NOTA Example\relax }}{37}{figure.caption.29}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Performance of Concept Match NOTA on Training Set - Definition/NOTA Questions\relax }}{38}{figure.caption.30}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Concept Match NOTA vs. Max Frequency Hypothesis Test on Definition/NOTA Questions\relax }}{38}{figure.caption.31}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Performance of CFE Agent Version 2 on Training Set\relax }}{39}{figure.caption.32}
+\contentsline {figure}{\numberline {2.28}{\ignorespaces CFE Agent Version 2 vs. CFE Agent Version 1 Hypothesis Test on Multiple Choice Questions\relax }}{40}{figure.caption.33}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Passage Classification Model Summary\relax }}{46}{figure.caption.34}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Application of the Passage Classification Model to the Test Set\relax }}{48}{figure.caption.35}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Test Set - Count of Correct Passages Retrieved By Classification Model\relax }}{49}{figure.caption.36}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces MLPassage1 Algorithm - Test Case 1\relax }}{50}{figure.caption.37}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces MLPassage1 Algorithm - Test Case 2\relax }}{51}{figure.caption.38}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces MLPassage2 Algorithm Performance\relax }}{52}{figure.caption.39}

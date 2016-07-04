@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: rpithes-cfe-agent.aux
+A level-1 auxiliary file: rpititle-phd.aux
+A level-1 auxiliary file: rpiabs.aux
+A level-1 auxiliary file: rpichap1.aux
+A level-1 auxiliary file: rpichap2.aux
+A level-1 auxiliary file: rpichap3.aux
+A level-1 auxiliary file: rpichap4.aux
+A level-1 auxiliary file: rpichap5.aux
+A level-1 auxiliary file: rpichap6.aux
+A level-1 auxiliary file: rpichap7.aux
+A level-1 auxiliary file: rpibib.aux
+The style file: unsrt.bst
+Database file #1: joebib.bib
+Database file #2: main72.bib
+Database file #3: naveen.bib
+Warning--empty journal in clark2014interpreting
+You've used 26 entries,
+            1791 wiz_defined-function locations,
+            611 strings with 8661 characters,
+and the built_in function-call counts, 6092 in all, are:
+= -- 523
+> -- 298
+< -- 10
++ -- 109
+- -- 83
+* -- 357
+:= -- 953
+add.period$ -- 83
+call.type$ -- 26
+change.case$ -- 19
+chr.to.int$ -- 0
+cite$ -- 27
+duplicate$ -- 303
+empty$ -- 596
+format.name$ -- 83
+if$ -- 1413
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 33
+newline$ -- 134
+num.names$ -- 30
+pop$ -- 118
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 145
+stack$ -- 0
+substring$ -- 257
+swap$ -- 84
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 53
+width$ -- 28
+write$ -- 289
+(There was 1 warning)

@@ -1,0 +1,69 @@
+@article{bringsjord_schimanski_2004,
+  author={Bringsjord, S. {\&} Schimanski, S.},
+  title={What is {A}rtificial {I}ntelligence? {P}sychometric {A}{I} as an {A}nswer},
+  journal={Proceedings of the 18th International Joint Conference on Artificial
+    Intelligence (IJCAI 03)},
+  pages={887-893},
+  year={2004}
+}
+
+@article{evans_1968,
+  author={Evans, G.},
+  year={1968},
+  title={A {P}rogram for the {S}olution of a {C}lass of {G}eometric-{A}nalogy {I}ntelligence-{T}est
+    {Q}uestions},
+  journal={Semantic Information Processing},
+  pages={271-353}
+}
+
+@article{harnad_1991,
+  author={Harnad, S.},
+  year={1991},
+  title={Other {B}odies, {O}ther {M}inds: {A} {M}achine {I}ncarnation of an {O}ld
+    {P}hilosphical {P}roblem},
+  journal={Minds and Machines},
+  pages={43-54}
+}
+
+@book{raven_1962,
+  author={Raven, J. C.},
+  title={Advanced Progressive Matrices Set II},
+  year={1962},
+  publisher={H. K. Lewis},
+  address={London, United Kingdom}
+}
+
+@book{russell_norvig_1994,
+  author={Russell, S. {\&} Norvig, P.},
+  title={Artificial Intelligence: A Modern Approach},
+  year={1994},
+  publisher={Prentice Hall},
+  address={Saddle River, New Jersey}
+}
+
+@article{turing_1950,
+  author={Turing, A.},
+  year={1950},
+  title={Computing {M}achinery and {I}ntelligence},
+  journal={Minds},
+  volume={LIX(236)},
+  pages={443-460}
+}
+
+@book{bringsjord_ferrucci_2000,
+  author={Bringsjord, S. {\&} Ferrucci, D.},
+  title={Artificial Intelligence and Literary Creativity: Inside the Mind of Brutus,
+    a Storytelling Machine},
+  year={2000},
+  publisher={Lawrence Erlbaum},
+  address={Mahwah, New Jersey}
+}
+
+@book{torrance_1990,
+  author={Torrance, E. P.},
+  title={The Torrance Tests of Creative Thinking},
+  year={1990},
+  publisher={Scholastic Testing Service},
+  address={Bensenville, Illinois}
+}
+

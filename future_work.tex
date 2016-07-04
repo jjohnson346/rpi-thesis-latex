@@ -1,0 +1,10 @@
+\section{Future Work}
+\label{sect:future_work}
+
+Currently, the algorithms in the CFE Agent are based on a very simple information retrieval algorithm --- a simple mapping between a topic label provided with each question and a relatively broad section in the Fraud Examiners manual.  This algorithm unfortunately does not make full use of the information provided by the manual tree data structure whose nodes break the manual down to a finer level of detail.  A main focus of future research is to develop this algorithm to leverage this aspect more effectively, i.e., to more finely target the text on which the question is based, and therefore, hopefully increase the accuracy of the agent.  In fact, this research is already under way.  Attempts to apply the information retrieval algorithms, jaccard coefficient and tf-idf (term frequency weighting, inverted document frequency weighting), have yielded promising results for reliably zeroing in on narrow, correct target subsections in the manual.  
+
+Machine learning may also be utilized to further fine tune the information retrieval algorithm.  It is true that in some cases the application of the information retrieval algorithms listed above may not yield the desired subsections of the manual.  In these cases, machine learning can be of great help, and will thus be applied in this project as needed.
+
+If necessary, the application of semantic approaches will also be used.  These are approaches that have not been traditionally applied in comparable psychometric testing projects.  However, if the techniques above do not yield the passing score, a semantic model of the Fraud Examiners Manual, though labor-intensive, may provide the needed boost to propel the CFE Agent to the desired performance level.
+
+

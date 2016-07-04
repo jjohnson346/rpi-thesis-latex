@@ -1,0 +1,94 @@
+\contentsline {chapter}{LIST OF FIGURES}{v}{chapter*.3}
+\contentsline {chapter}{ABSTRACT}{viii}{section*.4}
+\contentsline {chapter}{\numberline {1.}Introduction and Overview}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Goals}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}The Intelligent Agent Defined, For This Project}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}An Overview of the Approach}{2}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Generation of KB assertions from Text Corpora and MCQs}{3}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Reasoning with Uncertainty}{3}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Verification of the Agent via Test-Taking}{3}{subsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.3.1}The ACFE and the CFE Exam}{4}{subsubsection.1.4.3.1}
+\contentsline {subsubsection}{\numberline {1.4.3.2}CFE manual}{5}{subsubsection.1.4.3.2}
+\contentsline {chapter}{\numberline {2.}Related Work}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Project Aristo}{6}{section.2.1}
+\contentsline {subsubsection}{\numberline {2.1.0.1}Basic Questions}{6}{subsubsection.2.1.0.1}
+\contentsline {subsubsection}{\numberline {2.1.0.2}Simple Inference Questions}{6}{subsubsection.2.1.0.2}
+\contentsline {subsubsection}{\numberline {2.1.0.3}More Complex World Knowledge}{7}{subsubsection.2.1.0.3}
+\contentsline {subsubsection}{\numberline {2.1.0.4}Diagrams and Mathematics and Geometry}{7}{subsubsection.2.1.0.4}
+\contentsline {subsection}{\numberline {2.1.1}Progress on Project Aristo}{7}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Representating the Meaning of Natural Language Sentences}{7}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Reasoning with the Extracted Formalizations}{8}{subsubsection.2.1.1.2}
+\contentsline {section}{\numberline {2.2}Halo Project}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}Prismatic}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}Watson}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Focus and LAT Detection}{10}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Relation Detection}{10}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Hypothesis Generation}{11}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Soft Filtering}{11}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Evidence Retrieval}{11}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Evidence Scoring}{11}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Ranking of Hypotheses}{12}{subsection.2.4.7}
+\contentsline {section}{\numberline {2.5}LASSO Question Answer System}{12}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Question Processing Component}{12}{subsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1.1}Question type determination}{12}{subsubsection.2.5.1.1}
+\contentsline {subsubsection}{\numberline {2.5.1.2}Question focus determination}{12}{subsubsection.2.5.1.2}
+\contentsline {subsubsection}{\numberline {2.5.1.3}Question keywords selection}{13}{subsubsection.2.5.1.3}
+\contentsline {subsection}{\numberline {2.5.2}Paragraph Indexing Component}{13}{subsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.2.1}Query execution}{14}{subsubsection.2.5.2.1}
+\contentsline {subsubsection}{\numberline {2.5.2.2}Paragraph Indexing}{14}{subsubsection.2.5.2.2}
+\contentsline {subsection}{\numberline {2.5.3}Answer Processing Component}{14}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Answer Type Classifiers}{14}{section.2.6}
+\contentsline {chapter}{\numberline {3.}Version 1 -- A Shallow Agent}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}Resource Procurement and Customization}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}CFE Agent Design}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Question Profile}{19}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Algorithm Set}{20}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Max Joint Probability Algorithm}{20}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Max Frequency Algorithm}{20}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}False Select}{20}{subsubsection.3.2.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Algorithm Profile Data}{21}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}The Selection Algorithm}{21}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}CFE Agent Demo}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}CFE Agent Results - A Good Start}{26}{section.3.4}
+\contentsline {chapter}{\numberline {4.}Version 2 -- A More Intelligent Agent}{32}{chapter.4}
+\contentsline {section}{\numberline {4.1}Information Retrieval}{33}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Boolean Retrieval}{34}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Term-Document Incidence Matrix}{34}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Inverted Index}{34}{subsubsection.4.1.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Ranked Retrieval}{35}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Transforming the CFE Manual into a Document Collection}{37}{section.4.2}
+\contentsline {section}{\numberline {4.3}Lucene -- A Tool for Information Retrieval}{38}{section.4.3}
+\contentsline {section}{\numberline {4.4}Analysis Tools for Algorithm Development}{40}{section.4.4}
+\contentsline {section}{\numberline {4.5}Algorithms for Version 2}{43}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Concept Match Version 1}{43}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Agent Justification for Selected Answer}{45}{subsubsection.4.5.1.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}Concept Match V1 Performance}{45}{subsubsection.4.5.1.2}
+\contentsline {subsection}{\numberline {4.5.2}Concept Match Version 2}{48}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Concept Match V2 Performance}{51}{subsubsection.4.5.2.1}
+\contentsline {subsection}{\numberline {4.5.3}Concept Match Version 3}{53}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Concept Match V3 Performance}{56}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Concept Match NOT}{57}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.6}Performance of the Concept Match Not on the Training Set - Definition/NOT Questions}{59}{subsection.4.5.6}
+\contentsline {subsection}{\numberline {4.5.7}Concept Match Version 3 NOTA}{59}{subsection.4.5.7}
+\contentsline {subsection}{\numberline {4.5.8}Performance of Concept Match NOTA}{62}{subsection.4.5.8}
+\contentsline {section}{\numberline {4.6}CFE Agent Version 2 Results}{63}{section.4.6}
+\contentsline {chapter}{\numberline {5.}Version 3 -- A Passage-Discerning Agent}{67}{chapter.5}
+\contentsline {section}{\numberline {5.1}Development of the Training Set}{68}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Targeted Questions}{68}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Passage Training Set}{68}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Development of the Passage Classification Model}{70}{section.5.2}
+\contentsline {section}{\numberline {5.3}Application to the Test Set}{71}{section.5.3}
+\contentsline {section}{\numberline {5.4}Answer Processing Algorithms for Version 3}{71}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}MLPassage1}{72}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}MLPassage1 Performance}{74}{subsubsection.5.4.1.1}
+\contentsline {subsection}{\numberline {5.4.2}MLPassage2}{77}{subsection.5.4.2}
+\contentsline {chapter}{\numberline {6.}Version 4 -- Toward a Formal Model for Fraud Detection}{78}{chapter.6}
+\contentsline {section}{\numberline {6.1}An Example Subdomain - Doctor Shopping}{79}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Doctor Shopping Axioms}{80}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Doctor Shopping - An Example}{81}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Doctor Shopping Proof}{83}{subsection.6.1.3}
+\contentsline {chapter}{\numberline {7.}Conclusion and Future Work}{88}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of Work}{88}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{89}{section.7.2}
+\contentsline {chapter}{REFERENCES}{92}{section*.62}

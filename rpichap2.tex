@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            CHAPTER TWO - Related Work                  %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+ 
+\chapter{Related Work}
+
+\section{Project Aristo}
+
+Project Aristo is an ambitious research project sponsored by the Allen Institute of
+Artificial Intelligence whose aim is to build an agent that can programmatically 
+acquire knowledge from text such that it can apply reasoning and knowledge 
+to pass 4th grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions - namely in the areas of knowledge, modelling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types in that can be described as follows:
+
+
+\subsubsection{Basic Questions}
+
+These are questions that require taxonomic knowledge (is-a relationships) or terminological (definitional) knowledge.  AI systems can commonly answer these successfully using information-retrieval techniques, or using lookup tables.  
+
+
+Example. The movement of soil by wind and water is called A. Condensation B. Evaporation C. Erosion D. Friction \cite{clark2015elementary}
+
+\subsubsection{Simple Inference Questions}
+These are questions for which the answer is not explicitly expressed in the text corpus but which must be inferred from a number of pieces of information that are.
+
+Example. Which example describes an organism taking in nutrients? A. Dog burying a bone B. Girl eating an apple C. An insect crawling on a leaf D. A boy planting tomatoes in a garden \cite{clark2015elementary}
+
+This example requires knowledge that eating is a process by which an organism takes in nutrients and that an apple contains nutrients.
+
+\subsubsection{More Complex World Knowledge}
+
+These are questions that require a rich understanding of the world and a linguistic knowledge that can be applied to them to answer the questions.
+
+Example.  Fourth graders are planning a roller-skate race.  Which surface would be the best for this race?  A. Gravel B. Sand C. Blacktop D. Grass \cite{clark2015elementary}
+
+This question requires knowledge that roller-skating occurs on a surface, that skating is fastest on a smooth surface, that skating faster is best for a race, and that blacktop is smooth, (and that the other surfaces are not smooth).
+
+\subsubsection{Diagrams and Mathematics and Geometry}
+
+These are question types that are also encountered on the 4th grade science exams, but their nature will not be encountered on the CFE exam.  So, these types will not be discussed here.
+
+\subsection{Progress on Project Aristo}
+
+Clark and Balasubramanian \cite{clark2014interpreting} discuss some of the 
+issues encountered during this project, and in particular, the tasks of programatic 
+translation of natural language sentences into formal logic and computational 
+reasoning using these programmatically generated assertions.
+
+\subsubsection{Representating the Meaning of Natural Language Sentences}
+
+The approach here is to chunk the natural language sentences in a way similar to a parse of the sentence, breaking up the sentence into noun and verb phrases, and so on.  Then, manually apply re-write rules by which the chunks can be rearranged into implications.  These re-write rules encapsulate syntactic manipulation and domain knowledge.
+
+One problem encountered during this task is the issue of generics, rules that might appear, according to a literal interpretation, to all objects of a particular type in a domain, but from a practical perspective, do not, such as ``Dogs chase cats”.  It is fair to say that it is not actually the case that at all points in time if there’s a dog it must necessarily be chasing a cat.  However, taken literally, this sentence would appear to indicate just that.  Therefore, instead of translating this literally into formal logic, first there are probabilities applied to all of the implications that might arise from this single sentence, where probabilities are assigned based on linguistic rules.
+
+\begin{itemize}
+\item Dog $\Rightarrow$ dog chases cat 0.01
+\item Cat $\Rightarrow$ dog chases cat 0.01
+\item Chase $\Rightarrow$ dog chases cat 0.01
+\item Dog chasing $\Rightarrow$ dog chases cat 0.9
+\item Chased cat $\Rightarrow$ dog chases cat 0.8 \cite{clark2015elementary}
+\end{itemize}
+
+\subsubsection{Reasoning with the Extracted Formalizations}
+
+Making inferences of entailed assertions not explicitly stated in the text is the ultimate goal of formalizing the natural language text.  However, like the first task, this task also comes with complications.  In the case of generics, their representation appears to lead to a downstream problem of having to resolve multiple symbols representing the same object.  In logic programming environments, such as Prolog, (mentioned by the author as one of the environments adopted for this project), its Unique Names Assumption means that two symbols cannot be assigned as equivalent.  As one approach to this problem, the relation of equality can be developed explicitly, but that means this relation must be worked into every implication, cluttering the knowledge base.  A more workable alternative, as pointed out by the author, is to build into the system the assumption that if an implication rule infers something that appears to repeat another assertion already in the knowledge base, then assume it actually is already in the knowledge base, thereby applying a minimization principle in order to avoid duplication of assertions.
+
+
+\section{Halo Project}
+%\section{Halo Project (2004)}
+
+The Halo Project \cite{friedland2004project} was a contest sponsored by Vulcan Inc. (founded by
+Paul Allen) conducted in 2004 in which 3 teams set out to create 
+Knowledge Representation and Reasoning systems
+that would answer test questions similar to those for a chemistry AP exam
+based on a text corpus of 50 pages of text and on a sample of 50 multiple
+choice questions.  The 3 teams were SRI, Ontoprise, and Cycorp.  This test
+required not only correctness of answers, but also answer justifications
+that demonstrates the deep reasoning required by the subject matter (of 
+chemistry).  So, the systems of this competition needed to address three principal
+concerns:  Knowledge representation, question answer, and answer justification. 
+
+SRI employed an approach that included knowledge engineers and 
+professional chemists (the only team to include such domain experts).
+They also started with a system that had a relatively large database
+of real-world knowledge, in which the logic used was called KM logic.
+Finally, they began the effort using the 
+sample of multiple-choice questions.  In the end, this team's results
+were the best of three, particularly in the area of answer justification.
+
+Ontoprise created a system from scratch (no base-level knowledge-base system).
+The logic was called F(rame) logic.  It required the least runtime, but 
+the performance was not as good as SRI's system.
+
+Cycorp built a system using an existing platform, called Cycl.  This large
+database yielded little help in question correctness, and the knowledge
+engineers felt that they were unable to more adequately leverage the 
+prior knowledge offered by the pre-existing database.  Unfortunately, it 
+hurt their runtime - so they ended up with a system whose runtimes were
+the longest and whose correctness were generally the lowest.  The logic
+used here was called Cycl.  (which likely means the name of the database
+provided above is incorrect).
+
+In all cases, it is important to note, the knowledge representations were 
+hand-sewn, (in SRI's case, with the help of subject matter experts in the
+problem domain).
+
+\section{Prismatic}
+%\section{Prismatic (2008)}
+
+Prismatic \cite{fan2012automatic} is a lexicalized relation resource that programmatically processes
+a large corpora (30 GB) in order to identify and store the ways entity and relation information
+are represented in unstructured text.  The system works by breaking its processing into
+three phases:  corpus processing, frame extraction, and frame cut extraction.  Corpus
+processing is primarily concerned with parsing the text using IBM's slot grammar parser.
+Frame extraction uses the parse information to break up the text into frames, where a frame
+is a text representation of a group of entities and the relations between them.  Prismatic 
+produced 1 billion frames from the 30 GB text corpus.  Lastly, frame cut extraction is a process
+in which the system extracts small parse sequences from the frames, (e.g., S-V-O (subject-verb-object), or
+(N-P-O (noun-preposition-object)) in order to analyze recurring patterns of text within them.  
+The redundancy
+of terms across these frame cuts allows the system to conclude extensional information 
+(relations between specific instances of entities, such
+as the relation, located-in(Troy, New York)) and intensional information (e.g., located-in(city, state)). 
+This sort of 
+information has applications in entity type identification, relation extraction, 
+and question-answer.
+
+\section{Watson}
+%\section{Watson (2010)}
+
+Watson \cite{ferrucci2010building} is the famed question answer system that beat Jeopardy! champions in a matchup in 2010.
+Watson was built with a pipelined architecture consisting of a number of components, listed and described
+briefly below, along with massive parallelization allowing it to crunch NLP algorithms simultaneously so that it could select the one whose confidence was highest within the necessary 3 seconds required to be
+competitive.  It consisted of the following components:
+
+\subsection{Focus and LAT Detection}
+
+Lexical answer type (LAT) detection is the determination of words that identify the entity type of the answer, typically from among the words provided in the clue.  Focus is the sequence of words in the clue which when replaced by the answer form a valid statement.
+
+\subsection{Relation Detection}
+
+Interestingly, relation detection was of limited help since for the broad domain, it was difficult to determine the most important relations to detect.
+
+\subsection{Hypothesis Generation}
+
+Hypothesis generation involves generating candidate answers by searching through the system’s sources, extracting answer-sized snippets from the search results, and plugging those snippets back into the question, thereby forming a hypothesis.  The performance goal for this stage in the pipeline was the correct answer had to exist (binary recall) in the top 250 candidates at least 85\% of the time.  In other words, the goal here is to have high recall, with later parts of the system driving up the precision.  It is expected that hundreds of answer candidates are generated at this step.
+
+\subsection{Soft Filtering}
+
+Soft filtering is the lightweight filtering of answer candidates.  Lightweight means that this filtering is not computationally intensive, and that more computationally intense forms of filtering will be performed downstream after the answer candidate set has already been whittled down as much as possible.  An example of soft filtering is the calculation of the likelihood that an answer candidate has the correct LAT.
+Filtering thresholds are determined by machine learning (logistic regression, most likely).
+
+\subsection{Evidence Retrieval}
+
+Evidence Retrieval is the gathering of evidence for a candidate answer that passes the soft filtering step, including re-initiating a query against the corpus and against the knowledge base, but with the candidate answer included in the query.  This step looks for other passages that include the candidate answer in the context of the original query.
+
+\subsection{Evidence Scoring}
+
+Scoring is done through intensive computational analysis of the candidate answers and evidence, including numerous scoring modules (approximately 50 modules).
+
+\subsection{Ranking of Hypotheses}
+
+Hypothesis ranking uses machines learning, along with mixture of experts techniques to arrive at a final
+decision on the best answer to the question.
+
+\section{LASSO Question Answer System}
+
+LASSO \cite{moldovan_1999} is the question answer system developed by Moldovan et al. at the Natural Language Processing Lab at Southern Methodist University for the TREC-8 competition in 1999.  This architecture of this system can be decomposed into three principal components, discussec below.  Performance of this system was measured based on accuracy, showing results of accuracy scores were 55.5\% for short answer and 64.5\% for long answer questions
+
+\subsection{Question Processing Component}
+
+The question processing component processes the question posed in natural language, determining the expected answer type, and ultimately, formulating a query to be submitted to the Information-Retrieval engine in the Paragraph Indexing Component (discussed below).  The task of question processing breaks down into the following sub-tasks:
+
+\subsubsection{Question type determination}
+
+Question type determination is based on a coarse-grained taxonomy of question types, including who what where why and how and then by a more fine-grained taxonomy of subtypes.  For example, how questions are classified into how much, how many, how far, et cetera  This subcategorization serves as the expected answer type, to be used later during the answer extraction step.
+
+\subsubsection{Question focus determination}
+
+Question focus determination is the selection of a sequence of words such that the answer could replace them in the question.  For example, the question, ``What is the largest city in Germany?" is a question where the question focus is ``largest city".  Interestingly, it was not always the case that question focus could serve as the sequence of words to use in the query for the IR engine.   Consider the question: ``In 1990, what day of the week did Christmas fall on?”  Here, day of the week is the question focus, but does not serve as an effective query for retrieving the docs to answer this question.  The question focus is an input into the process of determining the keywords, but as this example shows, sometimes it is better left out of the final cut for the query string.
+
+\subsubsection{Question keywords selection}
+
+This is the process by which the query terms are determined, which is based on a number of heuristics, iteratively applied in order to ultimately develop a query that retrieves promising paragraphs from the document collection likely to contain the answer to the question.  These heuristics include the following:
+
+\begin{itemize}
+\item Keyword Heuristic – 1: include non-stop words enclosed in quotations 
+\item Keyword Heuristic – 2: include named entities recognized as proper nouns 
+\item Keyword Heuristic – 3: include all complex nominal and their adjectival modifiers
+\item Keyword Heuristic – 4: include all complex nominal not included in heuristic 3 
+\item Keyword Heuristic – 5: include all nouns and noun modifiers.
+\item Keyword Heuristic – 6: include all other nouns recognized in the question 
+\item Keyword Heuristic – 7: include all verbs from the question
+\item Keyword Heuristic – 8: include the question focus 
+\end{itemize}
+
+\subsection{Paragraph Indexing Component}
+
+In LASSO, the information resources are broken up into paragraph units, which serve as the document unit for indexing in the information-retrieval engine.  Paragraph indexing is the technique used in the LASSO system by which the paragraphs are scored to indicate their relative likelihood of containing the correct answer to the question.  The paragraph indexing component performs the following two subtasks:
+
+\subsubsection{Query execution}
+
+This is the step in which the query formulated during question processing is executed against the inverted index by the infrormation retrieval engine.  The IR engine component is a Boolean retrieval-based engine that retrieves paragraphs from the document collection based on the query created in the query processing component.  Boolean retrieval is used instead of vectorization where cosine similarity is used because boolean retrieval allows for greater recall at the expense of lower precision.  The paragraph indexing process serves as the finer-grained filter that prunes the results to a manageable number of paragraphs.
+
+\subsubsection{Paragraph Indexing}
+
+This is the step in which a score is assigned based on a number of statistics, including a same-word-sequence score, distance-score, missing keywords score.  This is the strategy for filtering the large number of docs returned by the wide net cast by the IR engine component.
+
+\subsection{Answer Processing Component}
+
+The answer processing component extracts candidate answers from the highest-scoring paragraphs of the paragraph indexing component.  Included in this component is a parser which provides the part of speech tagging necessary for identifying candidate answers, given the expected answer type.  Candidate answers are then scored based on a number of statistics, including same-parse-subtree score, same sentence score, and matched keyword score.
+
+
+\section{Answer Type Classifiers}
+
+One important aspect of open-domain question answer is the task of answer type identification.  As explained in the discussions of Watson and LASSO, answer type determination is of great importance in question answer systems since determining the answer type allows for greatly reducing the set of candidate answers to the question – only answers whose features, semantic or syntactic, indicate the same type as that of the question are considered, while other candidates are filtered out.  Assuming the answer type of the question is correct, (not a trivial assumption), the question answer system is in a much better position to narrow down the set toward the final, correct response.
+
+Li and Roth \cite{li2002learning} describe a machine learning based question classifier which is hierarchical in nature, where at the higher level, there are 6 coarse-grained categories (ABBREVIATION, ENTITY, DESCRIPTION, HUMAN, LOCATION, and NUMERIC VALUE), and at the lower level, there are up to 50 fine-grained categories.  For example, for the ENTITY type, subtypes include animal, body, color, creative, currency, and so on, while for LOCATION, subtypes include city, country, mountain, state, and other.  Their approach leverages machine learning because manually developed methods require a large battery of questions because the lexical feature set may be so large.  However, in this approach, feature types are analyzed, as opposed to specific features, allowing the training to extrapolate to a much larger feature set without having to annotate as large a training set.  Primitive features include words, pos tags, chunks (non-overlapping phrases),  named entities, and head chunks (the first noun-chunk in a sentence).   Then, there are higher order feature types that are derived from these, i.e., classes of features, in effect, that are automatically extracted for a given answer type category if they are present in questions with that particular answer type.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+\BOOKMARK [0][-]{chapter*.3}{LIST OF FIGURES}{}% 1
+\BOOKMARK [0][-]{section*.4}{ABSTRACT}{}% 2
+\BOOKMARK [0][-]{chapter.1}{INTRODUCTION AND OVERVIEW}{}% 3
+\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Goals}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{The Intelligent Agent Defined, For This Project}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{An Overview of the Approach}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.4.1}{Generation of KB assertions from Text Corpora and MCQs}{section.1.4}% 8
+\BOOKMARK [2][-]{subsection.1.4.2}{Reasoning with Uncertainty}{section.1.4}% 9
+\BOOKMARK [2][-]{subsection.1.4.3}{Verification of the Agent via Test-Taking}{section.1.4}% 10
+\BOOKMARK [3][-]{subsubsection.1.4.3.1}{The ACFE and the CFE Exam}{subsection.1.4.3}% 11
+\BOOKMARK [3][-]{subsubsection.1.4.3.2}{CFE manual}{subsection.1.4.3}% 12
+\BOOKMARK [0][-]{chapter.2}{Version 2 \205 A More Sophisticated Agent}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Information Retrieval}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.1.1}{Boolean Retrieval}{section.2.1}% 15
+\BOOKMARK [3][-]{subsubsection.2.1.1.1}{Term-Document Incidence Matrix}{subsection.2.1.1}% 16
+\BOOKMARK [3][-]{subsubsection.2.1.1.2}{Inverted Index}{subsection.2.1.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.2}{Ranked Retrieval}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{Transforming the CFE Manual into a Document Collection}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Lucene \205 A Tool for Information Retrieval}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.4}{Analysis Tools for Algorithm Development}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.5}{Algorithms for Version 2}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.5.1}{Concept Match Version 1}{section.2.5}% 23
+\BOOKMARK [3][-]{subsubsection.2.5.1.1}{Agent Justification for Selected Answer}{subsection.2.5.1}% 24
+\BOOKMARK [3][-]{subsubsection.2.5.1.2}{Concept Match V1 Performance}{subsection.2.5.1}% 25
+\BOOKMARK [2][-]{subsection.2.5.2}{Concept Match Version 2}{section.2.5}% 26
+\BOOKMARK [3][-]{subsubsection.2.5.2.1}{Concept Match V2 Performance}{subsection.2.5.2}% 27
+\BOOKMARK [2][-]{subsection.2.5.3}{Concept Match Version 3}{section.2.5}% 28
+\BOOKMARK [2][-]{subsection.2.5.4}{Concept Match V3 Performance}{section.2.5}% 29
+\BOOKMARK [2][-]{subsection.2.5.5}{Concept Match NOT}{section.2.5}% 30
+\BOOKMARK [2][-]{subsection.2.5.6}{Performance of the Concept Match Not on the Training Set - Definition/NOT Questions}{section.2.5}% 31
+\BOOKMARK [2][-]{subsection.2.5.7}{Concept Match Version 3 NOTA}{section.2.5}% 32
+\BOOKMARK [2][-]{subsection.2.5.8}{Performance of Concept Match NOTA}{section.2.5}% 33
+\BOOKMARK [1][-]{section.2.6}{CFE Agent Version 2 Results}{chapter.2}% 34
+\BOOKMARK [0][-]{chapter.3}{ Toward a Passage-Sensitive Agent \205 Version 3}{}% 35
+\BOOKMARK [1][-]{section.3.1}{Development of the Training Set}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.1.1}{Targeted Questions}{section.3.1}% 37
+\BOOKMARK [2][-]{subsection.3.1.2}{Passage Training Set}{section.3.1}% 38
+\BOOKMARK [1][-]{section.3.2}{Development of the Passage Classification Model}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.3}{Application to the Test Set}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.4}{Answer Processing Algorithms for Version 3}{chapter.3}% 41
+\BOOKMARK [2][-]{subsection.3.4.1}{MLPassage1}{section.3.4}% 42
+\BOOKMARK [3][-]{subsubsection.3.4.1.1}{MLPassage1 Performance}{subsection.3.4.1}% 43
+\BOOKMARK [2][-]{subsection.3.4.2}{MLPassage2}{section.3.4}% 44
+\BOOKMARK [0][-]{section*.40}{REFERENCES}{}% 45

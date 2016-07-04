@@ -1,0 +1,32 @@
+\section{CFE Agent Design}
+\label{sect:cfe_agent_design}
+
+The CFE Agent is an object-oriented program written in Java.  It takes as input a collection of question files and produces as output a sequence of answers which are, in turn, compared against the corresponding correct answers in order to calculate a score.  There are four principal elements to the design of the CFE Agent --- the CFE manual, the question profile, the algorithm set, and the selection algorithm.
+
+\subsection{CFE manual}
+
+The Fraud Examiners Manual (known by the CFE Agent as the CFE Manual) is the text corpus on which all of the questions of the CFE Exam are based.  It is also the corpus, therefore, on which the CFE Agent executes algorithms to answer exam questions.  Fortunately, each question includes a section heading that loosely maps to an individual section within the manual.  However, these sections are rough-grained; i.e., relatively large (often 20--100 pages).  So, although these headings provide some advantage to the agent, there is still work to be done to shrink the text that is analyzed for each question.  Efforts to narrow the scope of the text using information retrieval techniques are currently under way, and are discussed the Future Work section.  However, even these rough-grained sections provide significant success in accurately answering questions. 
+
+\subsection{Question Profile}
+
+After having reviewed the entire database of questions in the study package, it was determined that there are certain characteristics certain questions share in common.  This was thought to be a natural way of partitioning the questions according to a crude ontology each class of which could serve as a means for optimizing an algorithm for the questions of that class.  For example, one of the most obvious of these characteristics is whether the question is a true-false question or a multiple choice question.  And if the question is true-false, does it include any of the following terms:  ``always'', ``never'', ``must'', or ``only''?  On the other hand, if a question is multiple choice, is its last option, ``All of the above''?  Some other criteria discovered that are worth noting are whether the question includes options with more than four words in it, whether the question contains the word ``except'', and whether the question's last option is ``None of the above''.
+
+\subsection{Algorithm Set}
+
+Various algorithms were developed an incorporated into the model.  Furthermore, the system is highly extensible so that new ones yet to be developed can easily be incorporated.  The system currently employs nine custom algorithms that utilize natural language processing, information retrieval, and general test-taking techniques.  Descriptions of a few example algorithms are given below:
+
+\subsubsection{Max Joint Probability Algorithm}
+
+This algorithm considers only the possible answers, treating each as a sequence of words whose joint probability is to be calculated.  It calculates this joint probability for each option by finding the probability of each word among the words of the manual section from which the question was drawn (indicated by topic) and by applying the simplifying assumption of independence between words.  The joint probability, then, is simply calculated as the product of the probabilities of the individual words of the option, normalized for the number of words (so that short answers are not over-weighted).  The algorithm selects the option with maximum joint probability.
+
+\subsubsection{Max Frequency Algorithm}
+
+The Max Frequency Algorithm simply counts up the total number of times each answer option is encountered in the manual section from which the question was drawn and selects the option whose tally is the largest.  Unlike the Max Joine Probability Algorithm, the frequencies are based on occurrences of entire phrases, not on the counts of individual words within them.
+
+\subsubsection{False Select}
+
+This algorithm applies only to true-false questions, simply selecting false, always.  Remarkably, this algorithm proved extremely effective for such questions that have ``must'', ``always'', ``only'', or ``never'' in the stem, achieving an astonishing 78.7\% accuracy rate on this class of questions.  The remarkable success of such a simple algorithm is an indication of the effectiveness of gaming strategies on certain questions, but also an indication of weaknesses in the way certain questions on this exam are designed.
+
+\subsection{The Selection Algorithm}
+
+The selection algorithm is the procedure for selecting the proper algorithm to apply to a given question.  It is based on the experience data collected from executing every algorithm on every question in the study package.  For a given question, the CFE Agent chooses the algorithm with the highest accuracy rate for questions with the same profile.

@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            ROOT FILE                            %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%
+%  Run LaTeX or pdfLaTeX on this file to produce your thesis.
+%  To produce the abstract title page followed by the abstract,
+%  see the file abstitle-phd.tex or abstitle-mas.tex.
+%
+%%%%%%%%%%%j %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[chap]{thesis}
+
+% insert watermark on first page to indicate this document is the dissertation proposal.
+\usepackage[firstpage]{draftwatermark}
+\usepackage[colorlinks,citecolor=black,linkcolor=black]{hyperref}
+\usepackage{amsmath}
+\usepackage{rotating}
+
+%\usepackage{harvard}
+%\SetWatermarkText{Proposal}
+%\SetWatermarkScale{6}
+%\SetWatermarkLightness{0.9}
+
+% Use the first command below if you want captions over 1 line indented. A side
+% effect of this is to remove the use of bold for captions (thesis default).
+% To restore bold, also include the second line below.
+\usepackage[hang]{caption}      % to indent subsequent lines of captions
+\renewcommand{\captionfont}{\bfseries} % bold caption (needed with caption 
+                                       % package to restore boldface.)
+%\includeonly{rpichap1}  % use \includeonly to process only
+                         % the file(s) listed inside the braces        
+               
+\begin{document}
+ 
+%\include{rpititle-mas}   % titlepage material for Master's thesis or project
+\include{rpititle-phd}   % titlepage material for PhD thesis 
+%\include{rpiack}  % include for acknowledgements
+\include{rpiabs} % abstract
+\include{rpichap1} % chapter 1 - Introduction and Overview
+%\include{rpichap2} % chapter 2 - Related Work
+%\include{rpichap3} % chapter 3 - Intelligent Agent - Version 1
+\include{rpichap4} % chapter 4 - Intelligent Agent - Version 2
+\include{rpichap5} % chapter 5 - Intelligent Agent - Version 3
+%\include{rpichap6}
+\include{rpibib} % bibliography
+%\bibliographystyle{agsm}
+%\begin{footnotesize}
+%\bibliography{joebib}
+%\end{footnotesize}
+%\include{rpiapp} % appendix
+ 
+\end{document}

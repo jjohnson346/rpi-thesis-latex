@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                       rpithes-short.tex                         %
+%         Template for a short thesis all in one file             %
+%        (titlepage info below assumes masters degree}            %
+%  Just run latex (or pdflatex) on this file to see how it looks  %
+%      Be sure to run twice to get correct TOC and citations      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%
+%  To produce the abstract title page followed by the abstract,
+%  see the template file, "abstitle-mas.tex"
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{thesis}
+\usepackage{graphicx}   % if you want to include graphics files
+
+% Use the first command below if you want captions over 1 line indented.
+% A side effect of this is to remove the use of bold for captions. 
+% To restore bold, also include the second line below.
+%\usepackage[hang]{caption}     % to indent subsequent lines of captions
+%\renewcommand{\captionfont}{\bfseries} % only needed with caption package;
+                                        %   otherwise bold is default)
+                                        
+%%%%%%%%%%%%%%%%%%%%  supply titlepage info  %%%%%%%%%%%%%%%%%%%%%
+\thesistitle{\bf Differential Equations\\On two lines}        
+\author{Sir Isaac Newton}        
+\degree{Master of Science}
+\department{Mathematics} % provide your area of study here; e.g.,
+%  "Mechanical Engineering", "Nuclear Engineering", "Physics", etc.
+\thadviser{Galileo}
+%\cothadviser{First co-adviser} %if needed
+%\cocothadviser{Second co-adviser} % if needed
+%  For a masters project use \projadviser instead of \thadviser, 
+%  and \coprojadviser and \cocoprojadviser if needed. 
+\submitdate{January 1685\\(For Graduation May 1685)}        
+%\copyrightyear{1685}  % if date omitted, current year is used. 
+%%%%%%%%%%%%%%%%%%%%%   end titlepage info  %%%%%%%%%%%%%%%%%%%%%%
+      
+\begin{document} 
+\titlepage             % Print titlepage   
+%\copyrightpage        % optional         
+\tableofcontents       % required 
+\listoftables          % required if there are tables
+\listoffigures         % required if there are figures
+
+\specialhead{ACKNOWLEDGMENT}
+The acknowledgment text goes here. Unlike chapter headings, 
+this heading is not numbered.
+
+\specialhead{ABSTRACT}
+Write your abstract here. Again, the heading does receive a number.
+
+\chapter{INTRODUCTION}
+The text of the first chapter goes here. To cite a reference for the
+bibliography, use a command such as:\cite{thisbook}
+\section{A Section Heading}
+This is a sentence to take up space and look like text.
+\subsection{A Subsection Heading}
+
+\chapter{THE NEXT CHAPTER}
+And so on, for more chapters.
+Another citation for the bibliography:\cite{anotherbook}
+
+% The following produces a numbered bibliography where the numbers
+% correspond to the \cite commands in the text.
+\specialhead{LITERATURE CITED}
+\begin{singlespace}
+\begin{thebibliography}{99}
+\bibitem{thisbook} This is the first item in the Bibliography.
+Let's make it very long so it takes more than one line.
+Let's make it very long so it takes more than one line.
+\bibitem{anotherbook} The second item in the Bibliography.
+\end{thebibliography}
+\end{singlespace}
+
+%%%%%%%%%%%%%%%%%%%%%%%  For Appendices  %%%%%%%%%%%%%%%%%%%
+\appendix    % This command is used only once!
+\addtocontents{toc}{\parindent0pt\vskip12pt APPENDICES} %toc entry, no page #
+\chapter{THIS IS AN APPENDIX}
+Note the numbering of the chapter heading is changed.
+This is a sentence to take up space and look like text.
+\section{A Section Heading}
+This is how equations are numbered in an appendix:
+\begin{equation}
+x^2 + y^2 = z^2
+\end{equation} 
+
+\chapter{THIS IS ANOTHER APPENDIX}
+This is a sentence to take up space and look like text.
+
+\end{document}

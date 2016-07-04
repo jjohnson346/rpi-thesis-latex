@@ -1,0 +1,162 @@
+\begin{thebibliography}{10}
+
+\bibitem{radev2000ranking}
+Dragomir~R Radev, John Prager, and Valerie Samn.
+\newblock Ranking suspected answers to natural language questions using
+  predictive annotation.
+\newblock In {\em Proceedings of the sixth conference on Applied natural
+  language processing}, pages 150--157. Association for Computational
+  Linguistics, 2000.
+
+\bibitem{Russell:2003:AIM:773294}
+Stuart~J. Russell and Peter Norvig.
+\newblock {\em Artificial Intelligence: A Modern Approach}.
+\newblock Pearson Education, 2 edition, 2003.
+
+\bibitem{manning2008introduction}
+Christopher~D Manning, Prabhakar Raghavan, and Hinrich Sch{\"u}tze.
+\newblock {\em Introduction to {I}nformation {R}etrieval}, volume~1.
+\newblock Cambridge university press Cambridge, 2008.
+
+\bibitem{brachman2004knowledge}
+Ronald Brachman and Hector Levesque.
+\newblock {\em Knowledge representation and reasoning}.
+\newblock Elsevier, 2004.
+
+\bibitem{bringsjord_schimanski_2004}
+S.~Bringsjord, S. {\&}~Schimanski.
+\newblock What is {A}rtificial {I}ntelligence? {P}sychometric {A}{I} as an
+  {A}nswer.
+\newblock {\em Proceedings of the 18th International Joint Conference on
+  Artificial Intelligence (IJCAI 03)}, pages 887--893, 2004.
+
+\bibitem{psychoai.ijcai03}
+S.~Bringsjord and B.~Schimanski.
+\newblock {W}hat is {A}rtificial {I}ntelligence? {P}sychometric {AI} as an
+  {A}nswer.
+\newblock In {\em Proceedings of the 18$^{th}$ International Joint Conferenc\ e
+  on Artificial Intelligence ({IJCAI--}03)}, pages 887--893, San Francisco, CA,
+  2003. Morgan Kaufmann.
+
+\bibitem{markopolos2010}
+Harry Markopolos.
+\newblock {\em No {O}ne {W}ould {L}isten}.
+\newblock John Wiley Sons, 2010.
+
+\bibitem{clark2015elementary}
+Peter Clark.
+\newblock Elementary school science and math tests as a driver for ai: Take the
+  aristo challenge.
+\newblock {\em to appear}, 2015.
+
+\bibitem{clark2014interpreting}
+Peter Clark and Niranjan Balasubramanian.
+\newblock Interpreting and reasoning with simple natural language sentences.
+\newblock 2014.
+
+\bibitem{friedland2004project}
+Noah~S Friedland, Paul~G Allen, Gavin Matthews, Michael Witbrock, David Baxter,
+  Jon Curtis, Blake Shepard, Pierluigi Miraglia, Jurgen Angele, Steffen Staab,
+  et~al.
+\newblock Project halo: Towards a digital aristotle.
+\newblock {\em AI magazine}, 25(4):29, 2004.
+
+\bibitem{fan2012automatic}
+James Fan, Aditya Kalyanpur, DC~Gondek, and David~A Ferrucci.
+\newblock Automatic knowledge extraction from documents.
+\newblock {\em IBM Journal of Research and Development}, 56(3.4):5--1, 2012.
+
+\bibitem{ferrucci2010building}
+David Ferrucci, Eric Brown, Jennifer Chu-Carroll, James Fan, David Gondek,
+  Aditya~A Kalyanpur, Adam Lally, J~William Murdock, Eric Nyberg, John Prager,
+  et~al.
+\newblock Building watson: An overview of the deepqa project.
+\newblock {\em AI magazine}, 31(3):59--79, 2010.
+
+\bibitem{moldovan_1999}
+Dan~I. Moldovan, Sanda~M. Harabagiu, Marius Pasca, Rada Mihalcea, Richard~A.
+  Goodrum, and Corina~R. Girju.
+\newblock Lasso: A {T}ool for {S}urfing the {A}answer {N}et.
+\newblock {\em Proceedings of TREC-8}, pages 65--74, 1999.
+
+\bibitem{li2002learning}
+Xin Li and Dan Roth.
+\newblock Learning question classifiers.
+\newblock In {\em Proceedings of the 19th international conference on
+  Computational linguistics-Volume 1}, pages 1--7. Association for
+  Computational Linguistics, 2002.
+
+\bibitem{martin2000speech}
+D~Jurafsky~JH Martin and Daniel Jurafsky.
+\newblock {\em Speech and Language Processing. An introduction to natural
+  language processing, computational linguistics, and speech recognition}.
+\newblock Prentice Hall, 2 edition, 2000.
+
+\bibitem{wiki:boolean_retrieval}
+Wikipedia.
+\newblock Standard boolean model --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 1-February-2016].
+
+\bibitem{McCandless:2010:LAS:1893016}
+Michael McCandless, Erik Hatcher, and Otis Gospodnetic.
+\newblock {\em Lucene in Action, Second Edition: Covers Apache Lucene 3.0}.
+\newblock Manning Publications Co., Greenwich, CT, USA, 2010.
+
+\bibitem{alpaydin2014introduction}
+Ethem Alpaydin.
+\newblock {\em Introduction to machine learning}.
+\newblock MIT press, 2014.
+
+\bibitem{james2013introduction}
+Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani.
+\newblock {\em An introduction to statistical learning}, volume 112.
+\newblock Springer, 2013.
+
+\bibitem{mgmmm_ptai_sb}
+Selmer Bringsjord and Naveen~Sundar Govindarajulu.
+\newblock {Toward a Modern Geography of Minds, Machines, and Math}.
+\newblock In Vincent~C. M{\"{ÃŒ}}ller, editor, {\em Philosophy and Theory of
+  Artificial Intelligence}, volume~5 of {\em Studies in Applied Philosophy,
+  Epistemology and Rational Ethics}, pages 151--165. Springer, New York, NY,
+  2013.
+
+\bibitem{ka_sb_scc_seqcalc}
+K.~Arkoudas and S.~Bringsjord.
+\newblock {Propositional Attitudes and Causation}.
+\newblock {\em International Journal of Software and Informatics}, 3(1):47--65,
+  2009.
+
+\bibitem{snarksri}
+Mark~E. Stickel.
+\newblock {SNARK - SRI's New Automated Reasoning Kit}, 2008.
+\newblock Retrieved on July 26, 2013.
+  \url{http://www.ai.sri.com/~stickel/snark.html}.
+
+\bibitem{Slate_at_CMNA08}
+Selmer Bringsjord, Joshua Taylor, Andrew Shilliday, Micah Clark, and
+  Konstantine Arkoudas.
+\newblock {S}late: {A}n {A}rgument-{C}entered {I}ntelligent {A}ssistant to
+  {H}uman {R}easoners.
+\newblock In Floriana Grasso, Nancy Green, Rodger Kibble, and Chris Reed,
+  editors, {\em {P}roceedings of the 8th {I}nternational {W}orkshop on
+  {C}omputational {M}odels of {N}atural {A}rgument ({CMNA} 8)}, pages 1--10,
+  Patras, Greece, July 21 2008.
+
+\bibitem{kolmogorov1958definition}
+A.N. Kolmogorov and V.A. Uspenskii.
+\newblock {On the Definition of an Algorithm}.
+\newblock {\em Uspekhi Matematicheskikh Nauk}, 13(4):3--28, 1958.
+
+\bibitem{bringsjord_sundar_g_unprov_ct}
+Selmer Bringsjord and Naveen~Sundar Govindarajulu.
+\newblock {In Defense of the Unprovability of the Church-Turing Thesis}.
+\newblock {\em Journal of Unconventional Computing}, 6:353--373, 2011.
+\newblock {Preprint available at the url given here.}
+
+\bibitem{blackburn2005representation}
+Patrick Blackburn and Johan Bos.
+\newblock {\em Representation and Inference for Natural Language: A First
+  Course in Computational Semantics (Studies in Computational Linguistics)}.
+\newblock Center for the Study of Language and Information, 2005.
+
+\end{thebibliography}

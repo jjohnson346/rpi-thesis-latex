@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%                                                                 %
+%                            ROOT FILE                            %
+%                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%
+%  Run LaTeX or pdfLaTeX on this file to produce your thesis.
+%  To produce the abstract title page followed by the abstract,
+%  see the file abstitle-phd.tex or abstitle-mas.tex.
+%
+%%%%%%%%%%%j %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[chap]{thesis}
+
+% insert watermark on first page to indicate this document is the dissertation proposal.
+\usepackage[firstpage]{draftwatermark}
+\usepackage[colorlinks,citecolor=black,linkcolor=black]{hyperref}
+\usepackage{amsmath}
+\usepackage{rotating}
+\usepackage[autostyle]{csquotes}
+
+
+\newcommand{\lmodality}[1]{%
+  \ensuremath{\mathbf{#1}}}
+\newcommand{\defmodality}[2]{%
+  \newcommand{#1}{\lmodality{#2}}}
+\defmodality{\common}{C}
+\defmodality{\knows}{K}
+\defmodality{\believes}{B}
+\defmodality{\perceives}{P}
+\defmodality{\desires}{D}
+\defmodality{\intends}{I}
+\defmodality{\says}{S}
+
+\newcommand{\lsymbol}[1]{%
+  \ensuremath{\mathit{#1}}}
+\newcommand{\defsymbol}[2]{%
+  \newcommand{#1}{\lsymbol{#2}}}
+\defsymbol{\action}{action}
+\defsymbol{\initially}{initially}
+\defsymbol{\holds}{holds}
+\defsymbol{\happens}{happens}
+\defsymbol{\clipped}{clipped}
+\defsymbol{\initiates}{initiates}
+\defsymbol{\terminates}{terminates}
+\defsymbol{\prior}{prior}
+\defsymbol{\interval}{interval}
+
+\defsymbol{\guilty}{guilty}
+\defsymbol{\Doctorshopping}{Doctorshopping}
+\defsymbol{\getrx}{getrx}
+\defsymbol{\tells}{tells}
+\defsymbol{\duration}{duration}
+\defsymbol{\tone}{t1}
+\defsymbol{\ttwo}{t2}
+\defsymbol{\done}{d1}
+\defsymbol{\dtwo}{d2}
+\defsymbol{\Blue}{Blue}
+\defsymbol{\Lexapro}{Lexapro}
+\defsymbol{\DrWhite}{DrWhite}
+\defsymbol{\DrBlack}{DrBlack}
+\defsymbol{\Wednesday}{Wednesday}
+\defsymbol{\Friday}{Friday}
+
+
+
+
+%\usepackage{harvard}
+%\SetWatermarkText{Proposal}
+%\SetWatermarkScale{6}
+%\SetWatermarkLightness{0.9}
+
+% Use the first command below if you want captions over 1 line indented. A side
+% effect of this is to remove the use of bold for captions (thesis default).
+% To restore bold, also include the second line below.
+\usepackage[hang]{caption}      % to indent subsequent lines of captions
+\renewcommand{\captionfont}{\bfseries} % bold caption (needed with caption 
+                                       % package to restore boldface.)
+%\includeonly{rpichap1}  % use \includeonly to process only
+                         % the file(s) listed inside the braces        
+               
+\begin{document}
+ 
+%\include{rpititle-mas}   % titlepage material for Master's thesis or project
+\include{rpititle-phd}   % titlepage material for PhD thesis 
+%\include{rpiack}  % include for acknowledgements
+\include{rpiabs} % abstract
+\include{rpichap1} % chapter 1 - Introduction and Overview
+\include{rpichap2} % chapter 2 - Related Work
+\include{rpichap3} % chapter 3 - Intelligent Agent - Version 1
+\include{rpichap4} % chapter 4 - Intelligent Agent - Version 2
+\include{rpichap5} % chapter 5 - Intelligent Agent - Version 3
+\include{rpichap6} % chapter 6 - Toward a Formal Model for Fraud
+\include{rpichap7} % chapter 7 - Conclusion and Future Work
+\include{rpibib} % bibliography
+%\bibliographystyle{agsm}
+%\begin{footnotesize}
+%\bibliography{joebib}
+%\end{footnotesize}
+%\include{rpiapp} % appendix
+ 
+\end{document}
