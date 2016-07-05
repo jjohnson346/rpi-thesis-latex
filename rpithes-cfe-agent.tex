@@ -12,12 +12,24 @@
 
 \documentclass[chap]{thesis}
 
+% ------------------------
+% You MUST attribute any previously published work (even if it's your own writing)
+% Attribution of previously published work
+% Use the after title and before the first sentence of the chapter
+% Example: \blfootnote{This work perviously appeared as: \bibentry{mypaper2015}
+\makeatletter
+\def\blfootnote{\xdef\@thefnmark{}\@footnotetext}
+\makeatother
+\usepackage{bibentry}
+\nobibliography*
+
 % insert watermark on first page to indicate this document is the dissertation proposal.
 \usepackage[firstpage]{draftwatermark}
 \usepackage[colorlinks,citecolor=black,linkcolor=black]{hyperref}
 \usepackage{amsmath}
 \usepackage{rotating}
 \usepackage[autostyle]{csquotes}
+\usepackage{enumitem}
 
 
 \newcommand{\lmodality}[1]{%

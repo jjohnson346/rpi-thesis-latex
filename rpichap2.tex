@@ -14,29 +14,50 @@ acquire knowledge from text such that it can apply reasoning and knowledge
 to pass 4th grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions - namely in the areas of knowledge, modelling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types in that can be described as follows:
 
 
-\subsubsection{Basic Questions}
+\subsection{Basic Questions}
 
 These are questions that require taxonomic knowledge (is-a relationships) or terminological (definitional) knowledge.  AI systems can commonly answer these successfully using information-retrieval techniques, or using lookup tables.  
 
 
-Example. The movement of soil by wind and water is called A. Condensation B. Evaporation C. Erosion D. Friction \cite{clark2015elementary}
+Example: The movement of soil by wind and water is called \cite{clark2015elementary}
 
-\subsubsection{Simple Inference Questions}
+\begin{enumerate}[label=\Alph*.]
+\item Condensation
+\item Evaporation
+\item Erosion
+\item Friction
+\end{enumerate}
+
+\subsection{Simple Inference Questions}
 These are questions for which the answer is not explicitly expressed in the text corpus but which must be inferred from a number of pieces of information that are.
 
-Example. Which example describes an organism taking in nutrients? A. Dog burying a bone B. Girl eating an apple C. An insect crawling on a leaf D. A boy planting tomatoes in a garden \cite{clark2015elementary}
+Example: Which example describes an organism taking in nutrients? \cite{clark2015elementary}
+
+\begin{enumerate}[label=\Alph*.]
+\item Dog burying a bone
+\item Girl eating an apple
+\item An insect crawling on a leaf
+\item A boy planting tomatoes in a garden
+\end{enumerate}
 
 This example requires knowledge that eating is a process by which an organism takes in nutrients and that an apple contains nutrients.
 
-\subsubsection{More Complex World Knowledge}
+\subsection{More Complex World Knowledge}
 
 These are questions that require a rich understanding of the world and a linguistic knowledge that can be applied to them to answer the questions.
 
-Example.  Fourth graders are planning a roller-skate race.  Which surface would be the best for this race?  A. Gravel B. Sand C. Blacktop D. Grass \cite{clark2015elementary}
+Example: \cite{clark2015elementary}  Fourth graders are planning a roller-skate race.  Which surface would be the best for this race?  
 
-This question requires knowledge that roller-skating occurs on a surface, that skating is fastest on a smooth surface, that skating faster is best for a race, and that blacktop is smooth, (and that the other surfaces are not smooth).
+\begin{enumerate}[label=\Alph*.]
+\item Gravel
+\item Sand
+\item Blacktop
+\item Grass
+\end{enumerate}
 
-\subsubsection{Diagrams and Mathematics and Geometry}
+This question requires knowledge that roller-skating occurs on a surface, that skating is fastest on a smooth surface, that skating faster is best for a race, and that blacktop is smooth, (and that the other surfaces are not smooth) \cite{clark2015elementary}.
+
+\subsection{Diagrams and Mathematics and Geometry}
 
 These are question types that are also encountered on the 4th grade science exams, but their nature will not be encountered on the CFE exam.  So, these types will not be discussed here.
 
@@ -131,7 +152,7 @@ and question-answer.
 
 Watson \cite{ferrucci2010building} is the famed question answer system that beat Jeopardy! champions in a matchup in 2010.
 Watson was built with a pipelined architecture consisting of a number of components, listed and described
-briefly below, along with massive parallelization allowing it to crunch NLP algorithms simultaneously so that it could select the one whose confidence was highest within the necessary 3 seconds required to be
+briefly below, along with massive parallelization allowing it to crunch NLP algorithms simultaneously so that it could select the one whose confidence was highest within the necessary three seconds required to be
 competitive.  It consisted of the following components:
 
 \subsection{Focus and LAT Detection}
