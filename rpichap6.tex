@@ -11,7 +11,7 @@ In this chapter, we attempt to use questions from the CFE exam as the foundation
 %% need to attribute these two paragraphs below - taken from the bounded rationality
 %% paper.
 Included in this chapter is an analysis of the doctor shopping fraud activity in which we present a 
-computational model of doctor shopping in terms of a formal description of the behavior of the perpetrator and the doctors he targets in perpetrating this fraud activity using $\mathcal{DCEC}^\ast$.  $\mathcal{DCEC}^\ast$
+computational model of doctor shopping in terms of a formal description of the behavior of the perpetrator and the doctors he targets in perpetrating this fraud activity using $\mathcal{DCEC}^\ast$ \cite{mgmmm_ptai_sb,ka_sb_scc_seqcalc}.  $\mathcal{DCEC}^\ast$
 provides a framework for modeling multi-agent systems wherein
 agent-to-agent interactions arise from the knowledge, beliefs,
 perceptions, plans, and natural-language capacity of the agents in
@@ -157,7 +157,7 @@ These declarations and the axioms for doctor shopping are sufficient for our age
 
 %% Conclusions
 
-First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a prescription by Dr. White on Wednesday, as shown in Figure~\ref{fig:proof-of-c1}.  Formally, this conclusion is stated as follows:
+First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a prescription by Dr. White on Wednesday, as shown in Figure~\ref{fig:proof_of_c1}.  Formally, this conclusion is stated as follows:
 %% Conclusion1
 %% Blue knows he gets a 90-day prescription for Lexapro from Dr. White on Wednesday
 \begin{footnotesize}
@@ -169,15 +169,15 @@ First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a 
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{figure}[h!] 
 \vspace{6pt}
-\label{fig:proof-of-c1}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c1_proof.png}}
 \caption{Proof of $C1$ -- Blue knows he was given a prescription by Dr. White on 
 Wednesday.}
+\label{fig:proof_of_c1}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-\noindent Next, the agent uses [$A2$] and [$D2$] to prove Blue also knows he was given a prescription by Dr. Balck on Friday, as shown in Figure~\ref{fig:proof-of-c2}, which stated formally, is as follows:
+\noindent Next, the agent uses [$A2$] and [$D2$] to prove Blue also knows he was given a prescription by Dr. Balck on Friday, as shown in Figure~\ref{fig:proof_of_c2}, which stated formally, is as follows:
 %% Conclusion2
 %% Blue knows he gets a 90-day prescription for Lexapro from Dr. Black on Friday
 \begin{footnotesize}
@@ -189,15 +189,15 @@ Wednesday.}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{figure}[h!] 
 \vspace{6pt}
-\label{fig:proof-of-c2}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c2_proof.png}}
 \caption{Proof of $C2$ -- Blue knows he was given a prescription by Dr. Black on 
 Friday.}
+\label{fig:proof_of_c2}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-\noindent Next, the agent uses [$A3$] to prove the conditional statement that if Blue does not tell Dr. Black about the prescription he received from Dr. White, then he \emph{knows} he does not tell him, stated formally in [C3] below.  The proof is shown in Figure~\ref{fig:proof-of-c3}.
+\noindent Next, the agent uses [$A3$] to prove the conditional statement that if Blue does not tell Dr. Black about the prescription he received from Dr. White, then he \emph{knows} he does not tell him, stated formally in [C3] below.  The proof is shown in Figure~\ref{fig:proof_of_c3}.
 
 %% Conclusion3
 %% If Blue doesn't tell Dr. Black on Friday that he received a prescription for 90 days Lexapro
@@ -214,16 +214,16 @@ Friday.}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{figure}[h!] 
 \vspace{6pt}
-\label{fig:proof-of-c3}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c3_proof.png}}
 \caption{Proof of $C3$ -- If Blue does not tell Dr. Black about the prescription he received from Dr. White then Blue knows he does not tell him.}
+\label{fig:proof_of_c3}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
-\noindent Next, the agent uses [$C3$], [$D3$], and [$D4$] to prove the assertion that Blue believes that Dr. Black does not know about the fact he reeived a prescription from Dr. White on Wednesday, as represented formally by [$C4$], shown below.  This proof is shown in Figure~\ref{fig:proof-of-c4}.  Also required by this proof are two supporting declations -- one about the order of occurence of Wednesday and Friday in a given week and another that asserts that $DrBlack$ and $DrWhite$ are constants referencing different objects (doctors, actually) in the problem domain.
+\noindent Next, the agent uses [$C3$], [$D3$], and [$D4$] to prove the assertion that Blue believes that Dr. Black does not know about the fact he reeived a prescription from Dr. White on Wednesday, as represented formally by [$C4$], shown below.  This proof is shown in Figure~\ref{fig:proof_of_c4}.  Also required by this proof are two supporting declations -- one about the order of occurence of Wednesday and Friday in a given week and another that asserts that $DrBlack$ and $DrWhite$ are constants referencing different objects (doctors, actually) in the problem domain.
 
 %% Conclusion4
 %% Blue believes Dr. Black does not know that Blue received a 90-day prescription for 
@@ -237,15 +237,15 @@ Friday.}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{figure}[h!] 
 \vspace{6pt}
-\label{fig:proof-of-c4}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c4_proof.png}}
 \caption{Proof of $C4$ -- Blue believes that Dr. Black does not know he received a prescription from Dr. White on Wednesday.}
+\label{fig:proof_of_c4}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-\noindent Finally, using [$A1$], [$C1$], [$C2$], and [$C4$], the agent proves Blue is guilty of doctor shopping.  As was the case for the proof of [$C4$], the proof also requires supporting declarations related to time and the number of days between Wednesday and Friday relative to 10\% of the prescription duration.  This proof is shown in Figure~\ref{fig:proof-of-c5}.
+\noindent Finally, using [$A1$], [$C1$], [$C2$], and [$C4$], the agent proves Blue is guilty of doctor shopping.  As was the case for the proof of [$C4$], the proof also requires supporting declarations related to time and the number of days between Wednesday and Friday relative to 10\% of the prescription duration.  This proof is shown in Figure~\ref{fig:proof_of_c5}.
 %% Conclusion5
 %% Blue is guilty of doctor shopping.
 \begin{footnotesize}
@@ -258,10 +258,10 @@ Friday.}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{figure}[h!] 
 \vspace{6pt}
-\label{fig:proof-of-c5}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c5_proof.png}}
 \caption{Proof of $C5$ -- Blue is guilty of doctor shopping.}
+\label{fig:proof_of_c5}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

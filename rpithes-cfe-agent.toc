@@ -52,24 +52,24 @@
 \contentsline {section}{\numberline {3.4}CFE Agent Results - A Good Start}{26}{section.3.4}
 \contentsline {chapter}{\numberline {4.}Version 2 -- A More Intelligent Agent}{32}{chapter.4}
 \contentsline {section}{\numberline {4.1}Information Retrieval}{33}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Boolean Retrieval}{34}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Boolean Retrieval}{33}{subsection.4.1.1}
 \contentsline {subsubsection}{\numberline {4.1.1.1}Term-Document Incidence Matrix}{34}{subsubsection.4.1.1.1}
 \contentsline {subsubsection}{\numberline {4.1.1.2}Inverted Index}{34}{subsubsection.4.1.1.2}
 \contentsline {subsection}{\numberline {4.1.2}Ranked Retrieval}{35}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Transforming the CFE Manual into a Document Collection}{37}{section.4.2}
 \contentsline {section}{\numberline {4.3}Lucene -- A Tool for Information Retrieval}{38}{section.4.3}
-\contentsline {section}{\numberline {4.4}Analysis Tools for Algorithm Development}{40}{section.4.4}
-\contentsline {section}{\numberline {4.5}Algorithms for Version 2}{43}{section.4.5}
+\contentsline {section}{\numberline {4.4}Analysis Tools for Algorithm Development}{41}{section.4.4}
+\contentsline {section}{\numberline {4.5}Algorithms for Version 2}{42}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Concept Match Version 1}{43}{subsection.4.5.1}
 \contentsline {subsubsection}{\numberline {4.5.1.1}Agent Justification for Selected Answer}{45}{subsubsection.4.5.1.1}
-\contentsline {subsubsection}{\numberline {4.5.1.2}Concept Match V1 Performance}{45}{subsubsection.4.5.1.2}
-\contentsline {subsection}{\numberline {4.5.2}Concept Match Version 2}{48}{subsection.4.5.2}
-\contentsline {subsubsection}{\numberline {4.5.2.1}Concept Match V2 Performance}{51}{subsubsection.4.5.2.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}Concept Match V1 Performance}{46}{subsubsection.4.5.1.2}
+\contentsline {subsection}{\numberline {4.5.2}Concept Match Version 2}{46}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}Concept Match V2 Performance}{50}{subsubsection.4.5.2.1}
 \contentsline {subsection}{\numberline {4.5.3}Concept Match Version 3}{53}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Concept Match V3 Performance}{56}{subsection.4.5.4}
-\contentsline {subsection}{\numberline {4.5.5}Concept Match NOT}{57}{subsection.4.5.5}
-\contentsline {subsection}{\numberline {4.5.6}Performance of the Concept Match Not on the Training Set - Definition/NOT Questions}{59}{subsection.4.5.6}
-\contentsline {subsection}{\numberline {4.5.7}Concept Match Version 3 NOTA}{59}{subsection.4.5.7}
+\contentsline {subsection}{\numberline {4.5.4}Concept Match V3 Performance}{55}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Concept Match NOT}{56}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.6}Performance of the Concept Match Not on the Training Set - Definition/NOT Questions}{60}{subsection.4.5.6}
+\contentsline {subsection}{\numberline {4.5.7}Concept Match Version 3 NOTA}{61}{subsection.4.5.7}
 \contentsline {subsection}{\numberline {4.5.8}Performance of Concept Match NOTA}{62}{subsection.4.5.8}
 \contentsline {section}{\numberline {4.6}CFE Agent Version 2 Results}{63}{section.4.6}
 \contentsline {chapter}{\numberline {5.}Version 3 -- A Passage-Discerning Agent}{67}{chapter.5}
