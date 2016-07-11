@@ -11,50 +11,62 @@ A level-1 auxiliary file: rpichap5.aux
 A level-1 auxiliary file: rpichap6.aux
 A level-1 auxiliary file: rpichap7.aux
 A level-1 auxiliary file: rpibib.aux
-The style file: unsrt.bst
+The style file: ieeetr.bst
 Database file #1: joebib.bib
+I was expecting a `,' or a `}'---line 449 of file joebib.bib
+ :  
+ :  crossref={russell_norvig_2010},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 477 of file joebib.bib
+ : %@book{russell_norvig_2010_ch1
+ :                               ,
+I'm skipping whatever remains of this entry
 Database file #2: main72.bib
 Database file #3: naveen.bib
+Warning--empty booktitle in russell_norvig_2010_ch1
+Warning--empty publisher in russell_norvig_2010_ch1
+Warning--empty year in russell_norvig_2010_ch1
 Warning--empty journal in clark2014interpreting
-You've used 26 entries,
-            1791 wiz_defined-function locations,
-            611 strings with 8661 characters,
-and the built_in function-call counts, 6092 in all, are:
-= -- 523
-> -- 298
-< -- 10
-+ -- 109
-- -- 83
-* -- 357
-:= -- 953
-add.period$ -- 83
-call.type$ -- 26
-change.case$ -- 19
+You've used 27 entries,
+            1876 wiz_defined-function locations,
+            646 strings with 8682 characters,
+and the built_in function-call counts, 6634 in all, are:
+= -- 608
+> -- 306
+< -- 0
++ -- 112
+- -- 85
+* -- 463
+:= -- 967
+add.period$ -- 39
+call.type$ -- 27
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 303
-empty$ -- 596
-format.name$ -- 83
-if$ -- 1413
+cite$ -- 31
+duplicate$ -- 334
+empty$ -- 673
+format.name$ -- 85
+if$ -- 1628
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 33
-newline$ -- 134
-num.names$ -- 30
-pop$ -- 118
+int.to.str$ -- 27
+missing$ -- 34
+newline$ -- 96
+num.names$ -- 31
+pop$ -- 122
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 145
+skip$ -- 183
 stack$ -- 0
-substring$ -- 257
-swap$ -- 84
-text.length$ -- 10
+substring$ -- 297
+swap$ -- 106
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 53
-width$ -- 28
-write$ -- 289
-(There was 1 warning)
+warning$ -- 4
+while$ -- 62
+width$ -- 29
+write$ -- 264
+(There were 2 error messages)
