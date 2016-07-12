@@ -13,60 +13,56 @@ A level-1 auxiliary file: rpichap7.aux
 A level-1 auxiliary file: rpibib.aux
 The style file: ieeetr.bst
 Database file #1: joebib.bib
-I was expecting a `,' or a `}'---line 449 of file joebib.bib
+Warning--entry type for "wiki:boolean_retrieval" isn't style-file defined
+--line 935 of file joebib.bib
+I was expecting a `,' or a `}'---line 1067 of file joebib.bib
  :  
- :  crossref={russell_norvig_2010},
+ :  address={New York, New York}
 (Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Repeated entry---line 477 of file joebib.bib
- : %@book{russell_norvig_2010_ch1
- :                               ,
 I'm skipping whatever remains of this entry
 Database file #2: main72.bib
 Database file #3: naveen.bib
-Warning--empty booktitle in russell_norvig_2010_ch1
-Warning--empty publisher in russell_norvig_2010_ch1
-Warning--empty year in russell_norvig_2010_ch1
+Warning--I didn't find a database entry for "blackburn2005representation"
 Warning--empty journal in clark2014interpreting
-You've used 27 entries,
+You've used 36 entries,
             1876 wiz_defined-function locations,
-            646 strings with 8682 characters,
-and the built_in function-call counts, 6634 in all, are:
-= -- 608
-> -- 306
-< -- 0
-+ -- 112
-- -- 85
-* -- 463
-:= -- 967
-add.period$ -- 39
-call.type$ -- 27
-change.case$ -- 20
+            705 strings with 9659 characters,
+and the built_in function-call counts, 11612 in all, are:
+= -- 1110
+> -- 415
+< -- 2
++ -- 151
+- -- 115
+* -- 884
+:= -- 1544
+add.period$ -- 38
+call.type$ -- 36
+change.case$ -- 42
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 334
-empty$ -- 673
-format.name$ -- 85
-if$ -- 1628
+cite$ -- 37
+duplicate$ -- 606
+empty$ -- 1218
+format.name$ -- 115
+if$ -- 2878
 int.to.chr$ -- 0
-int.to.str$ -- 27
+int.to.str$ -- 36
 missing$ -- 34
-newline$ -- 96
-num.names$ -- 31
-pop$ -- 122
+newline$ -- 113
+num.names$ -- 40
+pop$ -- 165
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 183
+skip$ -- 424
 stack$ -- 0
-substring$ -- 297
-swap$ -- 106
-text.length$ -- 0
+substring$ -- 832
+swap$ -- 242
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 62
-width$ -- 29
-write$ -- 264
-(There were 2 error messages)
+warning$ -- 1
+while$ -- 130
+width$ -- 38
+write$ -- 363
+(There was 1 error message)

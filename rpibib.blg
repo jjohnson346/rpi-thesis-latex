@@ -1,20 +1,27 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: rpibib.aux
-The style file: unsrt.bst
+The style file: ieeetr.bst
 I found no \citation commands---while reading file rpibib.aux
 Database file #1: joebib.bib
+I was expecting a `,' or a `}'---line 1065 of file joebib.bib
+ :  
+ :  address={New York, New York}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #2: main72.bib
+Database file #3: naveen.bib
 You've used 0 entries,
-            1791 wiz_defined-function locations,
-            445 strings with 3516 characters,
-and the built_in function-call counts, 18 in all, are:
+            1876 wiz_defined-function locations,
+            479 strings with 3480 characters,
+and the built_in function-call counts, 20 in all, are:
 = -- 0
 > -- 0
 < -- 0
 + -- 0
 - -- 0
 * -- 2
-:= -- 7
+:= -- 9
 add.period$ -- 0
 call.type$ -- 0
 change.case$ -- 0
@@ -45,4 +52,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There was 1 error message)
+(There were 2 error messages)

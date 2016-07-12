@@ -14,7 +14,7 @@ One final note before proceeding:  The terms, ``training set" and ``test set" ar
 
 \section{Information Retrieval}
 
-Information Retrieval (IR) is the branch of AI dealing with the creation of software that retrieves documents of an unstructured nature from among a large collection of documents in response to an information need expressed as a natural language query \cite{manning2008introduction}.   Of course, Google and Yahoo search engines are exemplars of implementations of the techniques subsumed by this subfield of AI.  However, not only do search engines employe information retrieval - the field of question-answer does, as well.  
+Information Retrieval (IR) is the branch of AI dealing with the creation of software that retrieves documents of an unstructured nature from among a large collection of documents in response to an information need expressed as a natural language query \cite{manning_2008_introduction_ch1}.   Of course, Google and Yahoo search engines are exemplars of implementations of the techniques subsumed by this subfield of AI.  However, not only do search engines employe information retrieval - the field of question-answer does, as well.  
 
 Of importance in our discussion below are some terms that will be used, including document, document collection, and vocabulary.  A document is a unit of data, typically unstructured or semi-structured, and typically expressed in natural language.  (One of the fundamental questions to consider in IR is how to define a document - a sentence? a paragraph? a chapter?  The answer typically depends on the nature of the problem domain.  A document collection is simply a collection of such documents, as defined above.  Finally, a vocabulary, $V=\{t_1,t_2,t_3,...,t_n\}$ is the set of all terms over which the contents of the documents are defined.
 
@@ -42,28 +42,28 @@ where $W_i = t_i, W_k = t_k, W_j = t_j, W_s = t_s,$ or $W_i = NON\ t_i, W_k = NO
 
 \subsubsection{Term-Document Incidence Matrix}
 
-Boolean retrieval may be  implemented using a data structure called a term-document incidence matrix, $A$, where $A$ is a two-dimensional array in which the $i$th row denotes the $i$th document in the document collection and where $j$th column denotes the $j$th term in the vocabulary, and where $A[i,j] = 1$ if the term, $i$ exists in the document, $j$, and 0 otherwise.  Based on $A$, the processing of a query involves finding those documents for which there is a 1 in each of the rows corresponding to the terms of the query \cite{manning2008introduction}.  
+Boolean retrieval may be  implemented using a data structure called a term-document incidence matrix, $A$, where $A$ is a two-dimensional array in which the $i$th row denotes the $i$th document in the document collection and where $j$th column denotes the $j$th term in the vocabulary, and where $A[i,j] = 1$ if the term, $i$ exists in the document, $j$, and 0 otherwise.  Based on $A$, the processing of a query involves finding those documents for which there is a 1 in each of the rows corresponding to the terms of the query \cite{manning_2008_introduction_ch1}.  
 
-A significant pitfall of this method is that it requires a vast amount of memory.  Consider an example consisting of 1 billion documents and a vocabulary of 50,000 words.  Then, the size of the matrix is 50 trillion (1 billion x 50,000).  This matrix is also highly sparse since any given document has on average a small number of words relative to the size of the vocabulary.  Suppose, for example, each document has 1,000 words.  Then, for each document, among the 50,000 elements in its corresponding row of the matrix, only 1,000 (2\%) are non-zero \cite{manning2008introduction}.	
+A significant pitfall of this method is that it requires a vast amount of memory.  Consider an example consisting of 1 million documents and a vocabulary of 500,000 words.  Then, the size of the matrix is 50 trillion (1 million x 500,000).  This matrix is also highly sparse since any given document has on average a small number of words relative to the size of the vocabulary.  Suppose, for example, each document has 1,000 words.  Then, for each document, among the 50,000 elements in its corresponding row of the matrix, only 1,000 (2\%) are non-zero \cite{manning_2008_introduction_ch1}.	
 
 \subsubsection{Inverted Index}
 
-An alternative implementation for boolean retrieval is based on a different data structure, referred to as an inverted Index.  An inverted index is a hash table in which the keys are the terms in the vocabulary and for each such key, the value is a linked list of all of the document identifiers in which that term appears.  This technique exploits the sparsity of the term-document matrix – requiring memory only for those elements in which $A(i,j) = 1$ \cite{manning2008introduction}.
+An alternative implementation for boolean retrieval is based on a different data structure, referred to as an inverted Index.  An inverted index is a hash table in which the keys are the terms in the vocabulary and for each such key, the value is a linked list of all of the document identifiers in which that term appears.  This technique exploits the sparsity of the term-document matrix – requiring memory only for those elements in which $A(i,j) = 1$ \cite{manning_2008_introduction_ch1}.
 
 
 \subsection{Ranked Retrieval}
 
-Boolean retrieval has the unfortunate drawback of returning a set of documents in response to a query as a set of equally ranked units through which the user must sift in order to find the information sought \cite{manning2008introduction}.  Sometimes, this sifting can be sizable task depending on the number of documents returns from the boolean query.  Ranked retrieval, on the other hand, is IR in which documents are ranked according to a score that measure the degree of similarity between the query and the terms of the document and in which documents are returned in decreasing sorted order of this score \cite{manning2008introduction}.  
+Boolean retrieval has the unfortunate drawback of returning a set of documents in response to a query as a set of equally ranked units through which the user must sift in order to find the information sought \cite{manning_2008_introduction_ch6}.  Sometimes, this sifting can be sizable task depending on the number of documents returns from the boolean query.  Ranked retrieval, on the other hand, is IR in which documents are ranked according to a score that measure the degree of similarity between the query and the terms of the document and in which documents are returned in decreasing sorted order of this score \cite{manning_2008_introduction_ch6}.  
 
-The Vector Space model (VSM) is one approach to ranked retrieval, and is based on representing the documents in the collection and the query as vectors and where documents are scored according to a measure of similarity between their vector representations and that of the query \cite{manning2008introduction}.  There are a number of measures, or weights, that are typically incorporated into a vector representation as discussed below.
+The Vector Space model (VSM) \cite{manning_2008_introduction_ch6} is one approach to ranked retrieval, and is based on representing the documents in the collection and the query as vectors and where documents are scored according to a measure of similarity between their vector representations and that of the query.  There are a number of measures, or weights, that are typically incorporated into a vector representation as discussed below.
 
-The log of the term frequency, $\textrm{log}_{10}(tf)$ is a measure of the number of occurences of a particular term in the document.  (The log is used as opposed to the term frequency, itself, in order to dampen the effect for each additional occurrence of a term.)  The log-frequency weight of term, $t$ in document, $d$ is given by \cite{manning2008introduction}:
+The log of the term frequency, $\textrm{log}_{10}(tf)$ is a measure of the number of occurences of a particular term in the document.  (The log is used as opposed to the term frequency, itself, in order to dampen the effect for each additional occurrence of a term.)  The log-frequency weight of term, $t$ in document, $d$ is given by \cite{manning_2008_introduction_ch6}:
 
 \begin{equation}
 w(t,d) = 1 + \textrm{log}_{10}(tf_d), \textrm{where}\ tf_d > 0, 0\  \textrm{otherwise}
 \end{equation}
 
-Inverse document frequency is a measure of the relative scarcity of a term in a document relative to the other documents in the collection.  A higher weight is assigned to a term that appears in relatively few documents compared with one that appears in many.  The inverse document frequency, $idf(t)$, can be calculated for each term, t, of the query as follows \cite{manning2008introduction}:  
+Inverse document frequency is a measure of the relative scarcity of a term in a document relative to the other documents in the collection.  A higher weight is assigned to a term that appears in relatively few documents compared with one that appears in many.  The inverse document frequency, $idf(t)$, can be calculated for each term, t, of the query as follows \cite{manning_2008_introduction_ch6}:  
 
 \begin{equation}
 idf(t)  = \textrm{log}_{10}(N/df_t),
@@ -72,7 +72,7 @@ idf(t)  = \textrm{log}_{10}(N/df_t),
 \noindent
 where $N$ is the number of documents in the collection and $df_t$ is the number of documents containing term, $t$.  Again, as was the case for the measure of term frequency, the log is used here to moderate the effect of the measure.
 
-We can combine these two measures such that for each term, $t$, in each document, $d$, we have \cite{manning2008introduction}:
+We can combine these two measures such that for each term, $t$, in each document, $d$, we have \cite{manning_2008_introduction_ch6}:
 
 \begin{equation}
 w(t,d) = (1 + \textrm{log}_{10}(tf_d)) \times \textrm{log}_{10}(N/df_t).
@@ -111,7 +111,7 @@ The CFE Manual, the definitive study guide for the CFE exam, is a text corpus st
 
 \section{Lucene -- A Tool for Information Retrieval}
 
-Lucene, \url{https://lucene.apache.org/}, is a highly popular Apache software product that implements IR using a combination of Boolean Retrieval and the VSM \cite{McCandless:2010:LAS:1893016}.  First, it narrows the document set using boolean retrieval, and then it ranks the remaining documents using VSM.  The algorithms described below were implemented using this tool.  
+Lucene, \url{https://lucene.apache.org/}, is a highly popular Apache software product that implements IR using a combination of Boolean Retrieval and the VSM \cite{McCandless:2010:LAS:1893016_ch1,McCandless:2010:LAS:1893016_ch2,McCandless:2010:LAS:1893016_ch3,McCandless:2010:LAS:1893016_ch4}.  First, it narrows the document set using boolean retrieval, and then it ranks the remaining documents using VSM.  The algorithms described below were implemented using this tool.  
 
 \begin{figure}
 \centering

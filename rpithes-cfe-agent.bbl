@@ -7,40 +7,75 @@ D.~R. Radev, J.~Prager, and V.~Samn, ``Ranking suspected answers to natural
   Computational Linguistics, April 2000.
 
 \bibitem{russell_norvig_2010_ch1}
-S.~J. Russell and P.~Norvig, ``Introduction,'' ch.~1, pp.~1--33.
+S.~J. Russell and P.~Norvig, ``Introduction,'' in {\em Artificial Intelligence:
+  A Modern Approach}, ch.~1, pp.~1--33, Saddle River, New Jersey: Prentice
+  Hall, 3~ed., 2010.
 
-\bibitem{manning2008introduction}
-C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, {\em Introduction to
-  {I}nformation {R}etrieval}, vol.~1.
-\newblock Cambridge university press Cambridge, 2008.
+\bibitem{manning_2008_introduction_ch1}
+C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, ``Boolean retrieval,'' in {\em
+  Introduction to Information Retrieval}, pp.~1--17, Cambridge, Massachusetts:
+  Cambridge University Press, 2008.
 
-\bibitem{brachman2004knowledge}
-R.~Brachman and H.~Levesque, {\em Knowledge representation and reasoning}.
-\newblock Elsevier, 2004.
+\bibitem{manning_2008_introduction_ch2}
+C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, ``The term vocabulary and
+  postings list,'' in {\em Introduction to Information Retrieval}, pp.~18--44,
+  Cambridge, Massagechusetts: Cambridge University Press, 2008.
 
-\bibitem{bringsjord_schimanski_2004}
-S.~Bringsjord, S. {\&}~Schimanski, ``What is {A}rtificial {I}ntelligence?
-  {P}sychometric {A}{I} as an {A}nswer,'' {\em Proceedings of the 18th
-  International Joint Conference on Artificial Intelligence (IJCAI 03)},
-  pp.~887--893, 2004.
+\bibitem{manning_2008_introduction_ch4}
+C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, ``Index construction,'' in {\em
+  Introduction to Information Retrieval}, pp.~61--77, Cambridge, Massachusetts:
+  Cambridge University Press, 2008.
+
+\bibitem{manning_2008_introduction_ch6}
+C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, ``Scoring, term weighting, and
+  the vector space model,'' in {\em Introduction to Information Retrieval},
+  pp.~100--123, Cambridge, Massachusetts: Cambridge University Press, 2008.
+
+\bibitem{brachman_2004_knowledge_ch3}
+R.~Brachman and H.~Levesque, ``Expressing knowledge,'' in {\em Knowledge
+  Representation and Reasoning}, ch.~3, pp.~31--48, San Francisco, California:
+  Morgan Kauffman Publishers, 2004.
+
+\bibitem{brachman_2004_knowledge_ch4}
+R.~Brachman and H.~Levesque, ``Resolution,'' in {\em Knowledge Representation
+  and Reasoning}, ch.~4, pp.~49--84, San Francisco, California: Morgan Kauffman
+  Publishers, 2004.
+
+\bibitem{brachman_2004_knowledge_ch5}
+R.~Brachman and H.~Levesque, ``Reasoning with horn clauses,'' in {\em Knowledge
+  Representation and Reasoning}, ch.~5, pp.~85--98, San Francisco, California:
+  Morgan Kauffman Publishers, 2004.
+
+\bibitem{ferrucci2010building}
+D.~Ferrucci, E.~Brown, J.~Chu-Carroll, J.~Fan, D.~Gondek, A.~A. Kalyanpur,
+  A.~Lally, J.~W. Murdock, E.~Nyberg, J.~Prager, {\em et~al.}, ``Building
+  {W}atson: An overview of the {D}eep{Q}{A} project,'' {\em AI magazine},
+  vol.~31, pp.~59--79, Fall 2010.
 
 \bibitem{psychoai.ijcai03}
-S.~Bringsjord and B.~Schimanski, ``{W}hat is {A}rtificial {I}ntelligence?
-  {P}sychometric {AI} as an {A}nswer,'' in {\em Proceedings of the 18$^{th}$
-  International Joint Conferenc\ e on Artificial Intelligence ({IJCAI--}03)},
-  (San Francisco, CA), pp.~887--893, Morgan Kaufmann, 2003.
+S.~Bringsjord and B.~Schimanski, ``What is {A}rtificial {I}ntelligence?
+  {P}sychometric {A}{I} as an answer,'' in {\em Proc. 18$^{th}$ International
+  Joint Conference on Artificial Intelligence ({IJCAI--}03)}, (San Francisco,
+  California), pp.~887--893, Morgan Kaufmann, 2003.
 
-\bibitem{Russell:2003:AIM:773294}
-S.~J. Russell and P.~Norvig, {\em Artificial Intelligence: A Modern Approach}.
-\newblock Pearson Education, 2~ed., 2003.
+\bibitem{bringsjord2015logicist}
+S.~Bringsjord, N.~Govindarajulu, J.~Licato, A.~Sen, J.~Johnson, A.~Bringsjord,
+  and J.~Taylor, ``On logicist agent-based economics,'' in {\em Proc.
+  Artificial Economics}, 2015.
+
+\bibitem{russell_norvig_2010_sect12.6}
+S.~J. Russell and P.~Norvig, ``Truth maintenance systems,'' in {\em Artificial
+  Intelligence: A Modern Approach}, section 12.6, pp.~460--462, Saddle River,
+  New Jersey: Prentice Hall, 3~ed., 2010.
 
 \bibitem{markopolos2010}
-H.~Markopolos, {\em No {O}ne {W}ould {L}isten}.
-\newblock John Wiley Sons, 2010.
+H.~Markopolos, ``Introduction,'' in {\em No One Would Listen}, pp.~1--4,
+  Hoboken, New Jersey: John Wiley \& Sons, 2010.
 
 \bibitem{clark2015elementary}
-P.~Clark, ``Elementary school science and math tests as a driver for ai: Take
-  the aristo challenge,'' {\em to appear}, 2015.
+P.~Clark, ``Elementary school science and math tests as a driver for {A}{I}:
+  Take the {A}risto {C}hallenge!,'' in {\em AAAI}, pp.~4019--4021, January
+  2015.
 
 \bibitem{clark2014interpreting}
 P.~Clark and N.~Balasubramanian, ``Interpreting and reasoning with simple
@@ -48,60 +83,69 @@ P.~Clark and N.~Balasubramanian, ``Interpreting and reasoning with simple
 
 \bibitem{friedland2004project}
 N.~S. Friedland, P.~G. Allen, G.~Matthews, M.~Witbrock, D.~Baxter, J.~Curtis,
-  B.~Shepard, P.~Miraglia, J.~Angele, S.~Staab, {\em et~al.}, ``Project halo:
-  Towards a digital aristotle,'' {\em AI magazine}, vol.~25, no.~4, p.~29,
-  2004.
+  B.~Shepard, P.~Miraglia, J.~Angele, S.~Staab, {\em et~al.}, ``Project {H}alo:
+  Towards a digital {A}ristotle,'' {\em AI magazine}, vol.~25, pp.~29--48,
+  Winter 2004.
 
 \bibitem{fan2012automatic}
 J.~Fan, A.~Kalyanpur, D.~Gondek, and D.~A. Ferrucci, ``Automatic knowledge
   extraction from documents,'' {\em IBM Journal of Research and Development},
-  vol.~56, no.~3.4, pp.~5--1, 2012.
-
-\bibitem{ferrucci2010building}
-D.~Ferrucci, E.~Brown, J.~Chu-Carroll, J.~Fan, D.~Gondek, A.~A. Kalyanpur,
-  A.~Lally, J.~W. Murdock, E.~Nyberg, J.~Prager, {\em et~al.}, ``Building
-  watson: An overview of the deepqa project,'' {\em AI magazine}, vol.~31,
-  no.~3, pp.~59--79, 2010.
+  vol.~56, pp.~5:1--5:10, May-June 2012.
 
 \bibitem{moldovan_1999}
-D.~I. Moldovan, S.~M. Harabagiu, M.~Pasca, R.~Mihalcea, R.~A. Goodrum, and
-  C.~R. Girju, ``Lasso: A {T}ool for {S}urfing the {A}answer {N}et,'' {\em
-  Proceedings of TREC-8}, pp.~65--74, 1999.
+D.~I. Moldovan, S.~M. Harabagiu, M.~Pa{\c{s}}ca, R.~Mihalcea, R.~A. Goodrum,
+  and C.~R. G{\^\i}rju, ``L{ASSO}: A tool for surfing the {A}nswer {N}et,'' in
+  {\em Proc. TREC-8}, pp.~175--184, 1999.
 
 \bibitem{li2002learning}
-X.~Li and D.~Roth, ``Learning question classifiers,'' in {\em Proceedings of
-  the 19th international conference on Computational linguistics-Volume 1},
-  pp.~1--7, Association for Computational Linguistics, 2002.
+X.~Li and D.~Roth, ``Learning question classifiers,'' in {\em Proc. 19$^{th}$
+  Int. Conf. Computational Linguistics-Volume 1}, pp.~1--7, Association for
+  Computational Linguistics, 2002.
 
-\bibitem{martin2000speech}
-D.~J.~J. Martin and D.~Jurafsky, {\em Speech and Language Processing. An
-  introduction to natural language processing, computational linguistics, and
-  speech recognition}.
-\newblock Prentice Hall, 2~ed., 2000.
+\bibitem{martin_2000_speech_ch23}
+J.~Martin and D.~Jurafsky, ``Question answering and summarization,'' in {\em
+  Speech and Language Processing. An introduction to natural language
+  processing, computational linguistics, and speech recognition}, ch.~23,
+  pp.~765--810, Saddle River, New Jersey: Prentice Hall, 2~ed., 2000.
 
 \bibitem{wiki:boolean_retrieval}
 Wikipedia, ``Standard boolean model --- wikipedia{,} the free encyclopedia,''
   2015.
 \newblock [Online; accessed 1-February-2016].
 
-\bibitem{McCandless:2010:LAS:1893016}
-M.~McCandless, E.~Hatcher, and O.~Gospodnetic, {\em Lucene in Action, Second
-  Edition: Covers Apache Lucene 3.0}.
-\newblock Greenwich, CT, USA: Manning Publications Co., 2010.
+\bibitem{McCandless:2010:LAS:1893016_ch1}
+M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Meet {L}ucene,'' in {\em
+  Lucene in Action, Second Edition: Covers Apache Lucene 3.0}, ch.~1,
+  pp.~3--30, Greenwich, Connecticut: Manning Publications, 2010.
 
-\bibitem{alpaydin2014introduction}
-E.~Alpaydin, {\em Introduction to machine learning}.
-\newblock MIT press, 2014.
+\bibitem{McCandless:2010:LAS:1893016_ch2}
+M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Building a search index,'' in
+  {\em Lucene in Action, Second Edition: Covers Apache Lucene 3.0}, ch.~2,
+  pp.~31--73, Greenwich, Connecticut: Manning Publications, 2010.
 
-\bibitem{james2013introduction}
-G.~James, D.~Witten, T.~Hastie, and R.~Tibshirani, {\em An introduction to
-  statistical learning}, vol.~112.
-\newblock Springer, 2013.
+\bibitem{McCandless:2010:LAS:1893016_ch3}
+M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Adding search to your
+  application,'' in {\em Lucene in Action, Second Edition: Covers Apache Lucene
+  3.0}, ch.~3, pp.~74--109, Greenwich, Connecticut: Manning Publications, 2010.
+
+\bibitem{McCandless:2010:LAS:1893016_ch4}
+M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Lucene's analysis process,''
+  in {\em Lucene in Action, Second Edition: Covers Apache Lucene 3.0}, ch.~4,
+  pp.~110--151, Greenwich, Connecticut: Manning Publications, 2010.
+
+\bibitem{alpaydin_2014_introduction_ch1}
+E.~Alpaydin, ``Supervised learning,'' in {\em Introduction to Machine
+  Learning}, ch.~1, pp.~21--48, Cambridge, Massachusetts: MIT press, 2014.
+
+\bibitem{james_2013_introduction_ch4}
+G.~James, D.~Witten, T.~Hastie, and R.~Tibshirani, ``Lab: Logistic regression,
+  {LDA}, {QDA}, and {KNN},'' in {\em An Introduction to Statistical Learning},
+  vol.~112, section 4.6, pp.~154--167, Springer, 2013.
 
 \bibitem{mgmmm_ptai_sb}
 S.~Bringsjord and N.~S. Govindarajulu, ``{Toward a Modern Geography of Minds,
   Machines, and Math},'' in {\em Philosophy and Theory of Artificial
-  Intelligence} (V.~C. M{\"{ÃŒ}}ller, ed.), vol.~5 of {\em Studies in Applied
+  Intelligence} (V.~C. M{\"{u}}ller, ed.), vol.~5 of {\em Studies in Applied
   Philosophy, Epistemology and Rational Ethics}, pp.~151--165, New York, NY:
   Springer, 2013.
 
@@ -118,25 +162,29 @@ M.~E. Stickel, ``{SNARK - SRI's New Automated Reasoning Kit},'' 2008.
 \bibitem{Slate_at_CMNA08}
 S.~Bringsjord, J.~Taylor, A.~Shilliday, M.~Clark, and K.~Arkoudas, ``{S}late:
   {A}n {A}rgument-{C}entered {I}ntelligent {A}ssistant to {H}uman
-  {R}easoners,'' in {\em {P}roceedings of the 8th {I}nternational {W}orkshop on
-  {C}omputational {M}odels of {N}atural {A}rgument ({CMNA} 8)} (F.~Grasso,
-  N.~Green, R.~Kibble, and C.~Reed, eds.), (Patras, Greece), pp.~1--10, July 21
-  2008.
+  {R}easoners,'' in {\em Proc. 8$^{th}$ Int. Workshop on Computational Models
+  of Natural Argument ({CMNA} 8)} (F.~Grasso, N.~Green, R.~Kibble, and C.~Reed,
+  eds.), (Patras, Greece), pp.~1--10, July 2008.
 
 \bibitem{kolmogorov1958definition}
 A.~Kolmogorov and V.~Uspenskii, ``{On the Definition of an Algorithm},'' {\em
   Uspekhi Matematicheskikh Nauk}, vol.~13, no.~4, pp.~3--28, 1958.
 
 \bibitem{bringsjord_sundar_g_unprov_ct}
-S.~Bringsjord and N.~S. Govindarajulu, ``{In Defense of the Unprovability of
-  the Church-Turing Thesis},'' {\em Journal of Unconventional Computing},
-  vol.~6, pp.~353--373, 2011.
-\newblock {Preprint available at the url given here.}
+S.~Bringsjord and N.~S. Govindarajulu, ``In defense of the unprovability of the
+  church-turing thesis,'' {\em Journal of Unconventional Computing}, vol.~6,
+  no.~5, pp.~353--373, 2011.
 
-\bibitem{blackburn2005representation}
-P.~Blackburn and J.~Bos, {\em Representation and Inference for Natural
-  Language: A First Course in Computational Semantics (Studies in Computational
-  Linguistics)}.
-\newblock Center for the Study of Language and Information, 2005.
+\bibitem{blackburn_2005_representation_ch2}
+P.~Blackburn and J.~Bos, ``Lambda calculus,'' in {\em Representation and
+  Inference for Natural Language: A First Course in Computational Semantics
+  (Studies in Computational Linguistics)}, ch.~2, pp.~55--104, Stanford,
+  California: Center for the Study of Language and Information, 2005.
+
+\bibitem{martin_2000_speech_ch14}
+J.~Martin and D.~Jurafsky, ``Statistical parsing,'' in {\em Speech and Language
+  Processing. An introduction to natural language processing, computational
+  linguistics, and speech recognition}, ch.~14, pp.~459--488, Saddle River, New
+  Jersey: Prentice Hall, 2~ed., 2000.
 
 \end{thebibliography}

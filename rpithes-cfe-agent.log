@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 JUL 2016 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 JUL 2016 20:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,13 +461,12 @@ CHAPTER 1.
 
 
 ] [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 110.
-
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 72.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
@@ -539,7 +538,7 @@ CHAPTER 3.
 
 
 
-] <study_package_screen_shot.jpg, id=777, 1588.43437pt x 602.25pt>
+] <study_package_screen_shot.jpg, id=786, 1588.43437pt x 602.25pt>
 File: study_package_screen_shot.jpg Graphic file (type jpg)
 
 <use study_package_screen_shot.jpg>
@@ -550,7 +549,7 @@ Overfull \hbox (142.66257pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
-<study_package_unformatted_text.jpg, id=778, 528.47438pt x 317.68687pt>
+<study_package_unformatted_text.jpg, id=787, 528.47438pt x 317.68687pt>
 File: study_package_unformatted_text.jpg Graphic file (type jpg)
 
 <use study_package_unformatted_text.jpg>
@@ -558,7 +557,7 @@ Package pdftex.def Info: study_package_unformatted_text.jpg used on input line
 33.
 (pdftex.def)             Requested size: 396.35481pt x 238.26456pt.
 
-<study_package_formatted_text.jpg, id=779, 543.53062pt x 186.6975pt>
+<study_package_formatted_text.jpg, id=788, 543.53062pt x 186.6975pt>
 File: study_package_formatted_text.jpg Graphic file (type jpg)
 
 <use study_package_formatted_text.jpg>
@@ -567,7 +566,7 @@ Package pdftex.def Info: study_package_formatted_text.jpg used on input line 41
 (pdftex.def)             Requested size: 407.64696pt x 140.02277pt.
  [17 <./study_package_screen_shot.jpg>]
 [18 <./study_package_unformatted_text.jpg>] [19 <./study_package_formatted_text
-.jpg>] [20] <profile_data_training_set.png, id=800, 1465.475pt x 827.09pt>
+.jpg>] [20] <profile_data_training_set.png, id=809, 1465.475pt x 827.09pt>
 File: profile_data_training_set.png Graphic file (type png)
 
 <use profile_data_training_set.png>
@@ -576,20 +575,20 @@ Package pdftex.def Info: profile_data_training_set.png used on input line 85.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [21] [22 <./profile_data_training_set.png>] <screen_shot_1.jpg, id=813, 501.37
+ [21] [22 <./profile_data_training_set.png>] <screen_shot_1.jpg, id=822, 501.37
 312pt x 394.47375pt>
 File: screen_shot_1.jpg Graphic file (type jpg)
 
 <use screen_shot_1.jpg>
 Package pdftex.def Info: screen_shot_1.jpg used on input line 106.
 (pdftex.def)             Requested size: 376.02892pt x 295.85458pt.
- <screen_shot_2.jpg, id=815, 503.63156pt x 395.22656pt>
+ <screen_shot_2.jpg, id=824, 503.63156pt x 395.22656pt>
 File: screen_shot_2.jpg Graphic file (type jpg)
 
 <use screen_shot_2.jpg>
 Package pdftex.def Info: screen_shot_2.jpg used on input line 116.
 (pdftex.def)             Requested size: 377.72273pt x 296.41919pt.
- <screen_shot_3.jpg, id=817, 503.63156pt x 396.7322pt>
+ <screen_shot_3.jpg, id=826, 503.63156pt x 396.7322pt>
 File: screen_shot_3.jpg Graphic file (type jpg)
 
 <use screen_shot_3.jpg>
@@ -599,20 +598,20 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
  [23 <./screen_shot_1.jpg>]
-<screen_shot_4.jpg, id=823, 502.12593pt x 429.85594pt>
+<screen_shot_4.jpg, id=832, 502.12593pt x 429.85594pt>
 File: screen_shot_4.jpg Graphic file (type jpg)
  <use screen_shot_4.jpg>
 Package pdftex.def Info: screen_shot_4.jpg used on input line 134.
 (pdftex.def)             Requested size: 376.59352pt x 322.39116pt.
 
 [24 <./screen_shot_2.jpg>]
-<screen_shot_5.jpg, id=829, 502.87875pt x 430.60875pt>
+<screen_shot_5.jpg, id=838, 502.87875pt x 430.60875pt>
 File: screen_shot_5.jpg Graphic file (type jpg)
  <use screen_shot_5.jpg>
 Package pdftex.def Info: screen_shot_5.jpg used on input line 143.
 (pdftex.def)             Requested size: 377.15813pt x 322.95575pt.
 
-<screen_shot_6.jpg, id=831, 505.13719pt x 430.60875pt>
+<screen_shot_6.jpg, id=840, 505.13719pt x 430.60875pt>
 File: screen_shot_6.jpg Graphic file (type jpg)
  <use screen_shot_6.jpg>
 Package pdftex.def Info: screen_shot_6.jpg used on input line 152.
@@ -622,21 +621,21 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 
 [25 <./screen_shot_3.jpg>]
-<screen_shot_7.jpg, id=837, 503.63156pt x 429.85594pt>
+<screen_shot_7.jpg, id=846, 503.63156pt x 429.85594pt>
 File: screen_shot_7.jpg Graphic file (type jpg)
  <use screen_shot_7.jpg>
 Package pdftex.def Info: screen_shot_7.jpg used on input line 161.
 (pdftex.def)             Requested size: 377.72273pt x 322.39116pt.
 
 [26 <./screen_shot_4.jpg>]
-<true_false_results_1500.png, id=844, 930.47626pt x 189.70876pt>
+<true_false_results_1500.png, id=853, 930.47626pt x 189.70876pt>
 File: true_false_results_1500.png Graphic file (type png)
 
 <use true_false_results_1500.png>
 Package pdftex.def Info: true_false_results_1500.png used on input line 175.
 (pdftex.def)             Requested size: 369.88582pt x 75.41321pt.
  [27 <./screen_shot_5.jpg>]
-<true_false_hypothesis_test_1500.png, id=849, 371.3875pt x 302.12875pt>
+<true_false_hypothesis_test_1500.png, id=858, 371.3875pt x 302.12875pt>
 File: true_false_hypothesis_test_1500.png Graphic file (type png)
 
 <use true_false_hypothesis_test_1500.png>
@@ -644,7 +643,7 @@ Package pdftex.def Info: true_false_hypothesis_test_1500.png used on input line
  182.
 (pdftex.def)             Requested size: 278.53993pt x 226.596pt.
 
-<multiple_choice_results_1500.png, id=850, 1004.75375pt x 296.10625pt>
+<multiple_choice_results_1500.png, id=859, 1004.75375pt x 296.10625pt>
 File: multiple_choice_results_1500.png Graphic file (type png)
 
 <use multiple_choice_results_1500.png>
@@ -652,7 +651,7 @@ Package pdftex.def Info: multiple_choice_results_1500.png used on input line 18
 9.
 (pdftex.def)             Requested size: 369.88582pt x 109.00636pt.
 
-<multiple_choice_hypothesis_test_1500.png, id=851, 370.38374pt x 307.1475pt>
+<multiple_choice_hypothesis_test_1500.png, id=860, 370.38374pt x 307.1475pt>
 File: multiple_choice_hypothesis_test_1500.png Graphic file (type png)
 
 <use multiple_choice_hypothesis_test_1500.png>
@@ -660,7 +659,7 @@ Package pdftex.def Info: multiple_choice_hypothesis_test_1500.png used on input
  line 196.
 (pdftex.def)             Requested size: 277.78711pt x 230.36005pt.
  [28 <./screen_shot_6.jpg>]
-<version_1_training_set_results.png, id=858, 1258.7025pt x 523.9575pt>
+<version_1_training_set_results.png, id=867, 1258.7025pt x 523.9575pt>
 File: version_1_training_set_results.png Graphic file (type png)
 
 <use version_1_training_set_results.png>
@@ -668,7 +667,7 @@ Package pdftex.def Info: version_1_training_set_results.png used on input line
 206.
 (pdftex.def)             Requested size: 369.88582pt x 153.96649pt.
  [29 <./screen_shot_7.jpg> <./true_false_results_1500.png>]
-<version_1_training_set_results_not.png, id=865, 1625.07124pt x 516.93124pt>
+<version_1_training_set_results_not.png, id=874, 1625.07124pt x 516.93124pt>
 File: version_1_training_set_results_not.png Graphic file (type png)
 
 <use version_1_training_set_results_not.png>
@@ -691,21 +690,21 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
  [34] [35] [36] [37]
-<cfe_manual_toc.png, id=929, 857.2025pt x 241.90375pt>
+<cfe_manual_toc.png, id=941, 857.2025pt x 241.90375pt>
 File: cfe_manual_toc.png Graphic file (type png)
 
 <use cfe_manual_toc.png>
 Package pdftex.def Info: cfe_manual_toc.png used on input line 119.
 (pdftex.def)             Requested size: 426.79134pt x 120.44218pt.
 
-<document_collection.png, id=930, 1195.46625pt x 869.2475pt>
+<document_collection.png, id=942, 1195.46625pt x 869.2475pt>
 File: document_collection.png Graphic file (type png)
 
 <use document_collection.png>
 Package pdftex.def Info: document_collection.png used on input line 127.
 (pdftex.def)             Requested size: 426.79134pt x 310.3292pt.
  [38 <./cfe_manual_toc.png>]
-<lucene_indexes.png, id=937, 746.79pt x 976.64874pt>
+<lucene_indexes.png, id=952, 746.79pt x 976.64874pt>
 File: lucene_indexes.png Graphic file (type png)
  <use lucene_indexes.png>
 Package pdftex.def Info: lucene_indexes.png used on input line 139.
@@ -715,7 +714,7 @@ Package pdftex.def Info: lucene_indexes.png used on input line 139.
 LaTeX Warning: Float too large for page by 29.85835pt on input line 142.
 
 [39 <./document_collection.png>] [40 <./lucene_indexes.png>]
-<question_server.png, id=949, 1109.14375pt x 974.64125pt>
+<question_server.png, id=964, 1109.14375pt x 974.64125pt>
 File: question_server.png Graphic file (type png)
 
 <use question_server.png>
@@ -728,21 +727,21 @@ T
  []
 
 [41] [42 <./question_server.png>] [43] [44]
-<concept_match_v1_example.png, id=969, 1382.16376pt x 953.5625pt>
+<concept_match_v1_example.png, id=984, 1382.16376pt x 953.5625pt>
 File: concept_match_v1_example.png Graphic file (type png)
 
 <use concept_match_v1_example.png>
 Package pdftex.def Info: concept_match_v1_example.png used on input line 184.
 (pdftex.def)             Requested size: 355.64224pt x 355.66444pt.
  [45 <./concept_match_v1_example.png>]
-<concept_match_v1_training_set_results_def.png, id=977, 471.7625pt x 54.2025pt>
+<concept_match_v1_training_set_results_def.png, id=992, 471.7625pt x 54.2025pt>
 File: concept_match_v1_training_set_results_def.png Graphic file (type png)
 <use concept_match_v1_training_set_results_def.png>
 Package pdftex.def Info: concept_match_v1_training_set_results_def.png used on 
 input line 202.
 (pdftex.def)             Requested size: 213.39972pt x 42.68138pt.
 
-<concept_match_v1_financial_statement_fraud_9.png, id=978, 1069.9975pt x 773.89
+<concept_match_v1_financial_statement_fraud_9.png, id=993, 1069.9975pt x 773.89
 125pt>
 File: concept_match_v1_financial_statement_fraud_9.png Graphic file (type png)
  <use concept_match_v1_financial_statement_fraud_9.png>
@@ -751,8 +750,8 @@ on input line 210.
 (pdftex.def)             Requested size: 355.66357pt x 355.66365pt.
  [46] [47 <./concept_match_v1_training_set_results_def.png> <./concept_match_v1
 _financial_statement_fraud_9.png>]
-<concept_match_v2_financial_statement_fraud_9_1.png, id=993, 960.58875pt x 665.
-48625pt>
+<concept_match_v2_financial_statement_fraud_9_1.png, id=1009, 960.58875pt x 665
+.48625pt>
 File: concept_match_v2_financial_statement_fraud_9_1.png Graphic file (type png
 )
  <use concept_match_v2_financial_statement_fraud_9_1.png>
@@ -760,8 +759,8 @@ Package pdftex.def Info: concept_match_v2_financial_statement_fraud_9_1.png use
 d on input line 225.
 (pdftex.def)             Requested size: 355.66144pt x 355.66098pt.
 
-<concept_match_v2_financial_statement_fraud_9_2.png, id=994, 683.55376pt x 757.
-83125pt>
+<concept_match_v2_financial_statement_fraud_9_2.png, id=1010, 683.55376pt x 757
+.83125pt>
 File: concept_match_v2_financial_statement_fraud_9_2.png Graphic file (type png
 )
  <use concept_match_v2_financial_statement_fraud_9_2.png>
@@ -769,7 +768,7 @@ Package pdftex.def Info: concept_match_v2_financial_statement_fraud_9_2.png use
 d on input line 233.
 (pdftex.def)             Requested size: 355.66904pt x 355.66039pt.
 
-<concept_match_v1_wrong_option_doc.png, id=996, 758.835pt x 902.37125pt>
+<concept_match_v1_wrong_option_doc.png, id=1012, 758.835pt x 902.37125pt>
 File: concept_match_v1_wrong_option_doc.png Graphic file (type png)
 
 <use concept_match_v1_wrong_option_doc.png>
@@ -777,7 +776,7 @@ Package pdftex.def Info: concept_match_v1_wrong_option_doc.png used on input li
 ne 243.
 (pdftex.def)             Requested size: 355.6683pt x 355.66855pt.
  [48] [49 <./concept_match_v2_financial_statement_fraud_9_1.png>]
-<concept_match_v2_multiple_concept_docs.png, id=1008, 788.9475pt x 945.5325pt>
+<concept_match_v2_multiple_concept_docs.png, id=1023, 788.9475pt x 945.5325pt>
 File: concept_match_v2_multiple_concept_docs.png Graphic file (type png)
 
 <use concept_match_v2_multiple_concept_docs.png>
@@ -785,7 +784,7 @@ Package pdftex.def Info: concept_match_v2_multiple_concept_docs.png used on inp
 ut line 256.
 (pdftex.def)             Requested size: 355.66112pt x 355.67032pt.
  [50 <./concept_match_v2_financial_statement_fraud_9_2.png>]
-<concept_match_v2_training_set_results_def.png, id=1015, 478.78876pt x 68.255pt
+<concept_match_v2_training_set_results_def.png, id=1030, 478.78876pt x 68.255pt
 >
 File: concept_match_v2_training_set_results_def.png Graphic file (type png)
  <use concept_match_v2_training_set_results_def.png>
@@ -794,7 +793,7 @@ input line 270.
 (pdftex.def)             Requested size: 213.39273pt x 42.67905pt.
  [51 <./concept_match_v1_wrong_option_doc.png>] [52 <./concept_match_v2_multipl
 e_concept_docs.png> <./concept_match_v2_training_set_results_def.png>]
-<concept_match_v2_hypothesis_test.png, id=1029, 431.6125pt x 272.01625pt>
+<concept_match_v2_hypothesis_test.png, id=1044, 431.6125pt x 272.01625pt>
 File: concept_match_v2_hypothesis_test.png Graphic file (type png)
 
 <use concept_match_v2_hypothesis_test.png>
@@ -802,7 +801,7 @@ Package pdftex.def Info: concept_match_v2_hypothesis_test.png used on input lin
 e 280.
 (pdftex.def)             Requested size: 213.39528pt x 170.72363pt.
  [53 <./concept_match_v2_hypothesis_test.png>]
-<concept_match_v3_example_part_1.png, id=1038, 1147.28625pt x 699.61375pt>
+<concept_match_v3_example_part_1.png, id=1053, 1147.28625pt x 699.61375pt>
 File: concept_match_v3_example_part_1.png Graphic file (type png)
 
 <use concept_match_v3_example_part_1.png>
@@ -810,7 +809,7 @@ Package pdftex.def Info: concept_match_v3_example_part_1.png used on input line
  295.
 (pdftex.def)             Requested size: 355.65506pt x 355.66672pt.
 
-<concept_match_v3_example_part_2.png, id=1039, 616.3025pt x 456.70625pt>
+<concept_match_v3_example_part_2.png, id=1054, 616.3025pt x 456.70625pt>
 File: concept_match_v3_example_part_2.png Graphic file (type png)
 
 <use concept_match_v3_example_part_2.png>
@@ -818,7 +817,7 @@ Package pdftex.def Info: concept_match_v3_example_part_2.png used on input line
  303.
 (pdftex.def)             Requested size: 355.66893pt x 355.67194pt.
 
-<concept_match_v3_example_document.png, id=1041, 1149.29375pt x 779.91376pt>
+<concept_match_v3_example_document.png, id=1056, 1149.29375pt x 779.91376pt>
 File: concept_match_v3_example_document.png Graphic file (type png)
 
 <use concept_match_v3_example_document.png>
@@ -826,7 +825,7 @@ Package pdftex.def Info: concept_match_v3_example_document.png used on input li
 ne 313.
 (pdftex.def)             Requested size: 355.64606pt x 355.65866pt.
  [54] [55 <./concept_match_v3_example_part_1.png>]
-<concept_match_v3_training_set_performance.png, id=1053, 477.785pt x 69.25874pt
+<concept_match_v3_training_set_performance.png, id=1068, 477.785pt x 69.25874pt
 >
 File: concept_match_v3_training_set_performance.png Graphic file (type png)
  <use concept_match_v3_training_set_performance.png>
@@ -834,7 +833,7 @@ Package pdftex.def Info: concept_match_v3_training_set_performance.png used on
 input line 326.
 (pdftex.def)             Requested size: 213.39008pt x 42.67892pt.
 
-<concept_match_v3_hypothesis_test.png, id=1054, 421.575pt x 270.00874pt>
+<concept_match_v3_hypothesis_test.png, id=1069, 421.575pt x 270.00874pt>
 File: concept_match_v3_hypothesis_test.png Graphic file (type png)
 
 <use concept_match_v3_hypothesis_test.png>
@@ -844,7 +843,7 @@ e 336.
  [56 <./concept_match_v3_example_part_2.png>] [57 <./concept_match_v3_example_d
 ocument.png> <./concept_match_v3_training_set_performance.png>] [58 <./concept_
 match_v3_hypothesis_test.png>]
-<concept_match_not_example_part_1.png, id=1074, 571.13374pt x 777.90625pt>
+<concept_match_not_example_part_1.png, id=1089, 571.13374pt x 777.90625pt>
 File: concept_match_not_example_part_1.png Graphic file (type png)
 
 <use concept_match_not_example_part_1.png>
@@ -852,7 +851,7 @@ Package pdftex.def Info: concept_match_not_example_part_1.png used on input lin
 e 355.
 (pdftex.def)             Requested size: 355.65921pt x 355.66902pt.
 
-<concept_match_not_example_part_2.png, id=1075, 698.61pt x 408.52625pt>
+<concept_match_not_example_part_2.png, id=1090, 698.61pt x 408.52625pt>
 File: concept_match_not_example_part_2.png Graphic file (type png)
 
 <use concept_match_not_example_part_2.png>
@@ -860,7 +859,7 @@ Package pdftex.def Info: concept_match_not_example_part_2.png used on input lin
 e 363.
 (pdftex.def)             Requested size: 355.65746pt x 256.08878pt.
  [59 <./concept_match_not_example_part_1.png>]
-<concept_match_not_training_set_performance.png, id=1083, 470.75874pt x 70.2625
+<concept_match_not_training_set_performance.png, id=1098, 470.75874pt x 70.2625
 pt>
 File: concept_match_not_training_set_performance.png Graphic file (type png)
  <use concept_match_not_training_set_performance.png>
@@ -868,7 +867,7 @@ Package pdftex.def Info: concept_match_not_training_set_performance.png used on
  input line 378.
 (pdftex.def)             Requested size: 213.39822pt x 36.98805pt.
 
-<concept_match_not_hypothesis_test.png, id=1084, 451.6875pt x 277.035pt>
+<concept_match_not_hypothesis_test.png, id=1099, 451.6875pt x 277.035pt>
 File: concept_match_not_hypothesis_test.png Graphic file (type png)
 
 <use concept_match_not_hypothesis_test.png>
@@ -877,7 +876,7 @@ ne 386.
 (pdftex.def)             Requested size: 213.39589pt x 170.71579pt.
  [60 <./concept_match_not_example_part_2.png>] [61 <./concept_match_not_trainin
 g_set_performance.png> <./concept_match_not_hypothesis_test.png>]
-<nota_training_set_performance.png, id=1097, 492.84125pt x 62.2325pt>
+<nota_training_set_performance.png, id=1112, 492.84125pt x 62.2325pt>
 File: nota_training_set_performance.png Graphic file (type png)
 
 <use nota_training_set_performance.png>
@@ -885,7 +884,7 @@ Package pdftex.def Info: nota_training_set_performance.png used on input line 4
 03.
 (pdftex.def)             Requested size: 213.39906pt x 36.98938pt.
 
-<concept_match_nota_example.png, id=1099, 1211.52625pt x 663.47874pt>
+<concept_match_nota_example.png, id=1114, 1211.52625pt x 663.47874pt>
 File: concept_match_nota_example.png Graphic file (type png)
 
 <use concept_match_nota_example.png>
@@ -893,7 +892,7 @@ Package pdftex.def Info: concept_match_nota_example.png used on input line 415.
 
 (pdftex.def)             Requested size: 355.65942pt x 284.531pt.
 
-<concept_match_nota_training_set_performance.png, id=1102, 488.82625pt x 69.258
+<concept_match_nota_training_set_performance.png, id=1117, 488.82625pt x 69.258
 74pt>
 File: concept_match_nota_training_set_performance.png Graphic file (type png)
  <use concept_match_nota_training_set_performance.png>
@@ -901,7 +900,7 @@ Package pdftex.def Info: concept_match_nota_training_set_performance.png used o
 n input line 427.
 (pdftex.def)             Requested size: 213.3985pt x 36.98805pt.
  [62 <./nota_training_set_performance.png>]
-<concept_match_nota_hypothesis_test.png, id=1108, 487.8225pt x 317.185pt>
+<concept_match_nota_hypothesis_test.png, id=1123, 487.8225pt x 317.185pt>
 File: concept_match_nota_hypothesis_test.png Graphic file (type png)
 
 <use concept_match_nota_hypothesis_test.png>
@@ -909,7 +908,7 @@ Package pdftex.def Info: concept_match_nota_hypothesis_test.png used on input l
 ine 437.
 (pdftex.def)             Requested size: 284.53017pt x 213.40337pt.
 
-<version_2_training_set_performance.png, id=1110, 1924.18875pt x 645.41125pt>
+<version_2_training_set_performance.png, id=1125, 1924.18875pt x 645.41125pt>
 File: version_2_training_set_performance.png Graphic file (type png)
 
 <use version_2_training_set_performance.png>
@@ -917,7 +916,7 @@ Package pdftex.def Info: version_2_training_set_performance.png used on input l
 ine 461.
 (pdftex.def)             Requested size: 635.97621pt x 213.32121pt.
  [63 <./concept_match_nota_example.png>]
-<version_2_multiple_choice_hypothesis_test.png, id=1118, 481.8pt x 307.1475pt>
+<version_2_multiple_choice_hypothesis_test.png, id=1134, 481.8pt x 307.1475pt>
 File: version_2_multiple_choice_hypothesis_test.png Graphic file (type png)
 
 <use version_2_multiple_choice_hypothesis_test.png>
@@ -936,21 +935,21 @@ CHAPTER 5.
 
 
 
-] [68] [69] [70] <logit_model_summary.png, id=1170, 835.12pt x 685.56125pt>
+] [68] [69] [70] <logit_model_summary.png, id=1185, 835.12pt x 685.56125pt>
 File: logit_model_summary.png Graphic file (type png)
 
 <use logit_model_summary.png>
 Package pdftex.def Info: logit_model_summary.png used on input line 75.
 (pdftex.def)             Requested size: 355.66676pt x 355.6675pt.
 
-<logit_model_test_set_top.png, id=1174, 740.7675pt x 867.24pt>
+<logit_model_test_set_top.png, id=1189, 740.7675pt x 867.24pt>
 File: logit_model_test_set_top.png Graphic file (type png)
 
 <use logit_model_test_set_top.png>
 Package pdftex.def Info: logit_model_test_set_top.png used on input line 89.
 (pdftex.def)             Requested size: 355.66609pt x 355.66335pt.
 
-<logit_model_test_set_bottom.png, id=1175, 873.2625pt x 710.655pt>
+<logit_model_test_set_bottom.png, id=1190, 873.2625pt x 710.655pt>
 File: logit_model_test_set_bottom.png Graphic file (type png)
 
 <use logit_model_test_set_bottom.png>
@@ -958,7 +957,7 @@ Package pdftex.def Info: logit_model_test_set_bottom.png used on input line 97.
 
 (pdftex.def)             Requested size: 355.65479pt x 355.66278pt.
  [71] [72 <./logit_model_summary.png>]
-<mlpassage1_test_case_correct.png, id=1186, 1081.03876pt x 815.045pt>
+<mlpassage1_test_case_correct.png, id=1201, 1081.03876pt x 815.045pt>
 File: mlpassage1_test_case_correct.png Graphic file (type png)
 
 <use mlpassage1_test_case_correct.png>
@@ -967,7 +966,7 @@ Package pdftex.def Info: mlpassage1_test_case_correct.png used on input line 13
 (pdftex.def)             Requested size: 355.6552pt x 355.661pt.
  [73 <./logit_model_test_set_top.png>]
 [74 <./logit_model_test_set_bottom.png>] [75 <./mlpassage1_test_case_correct.pn
-g>] <mlpassage1_test_case_incorrect.png, id=1203, 826.08624pt x 834.11626pt>
+g>] <mlpassage1_test_case_incorrect.png, id=1218, 826.08624pt x 834.11626pt>
 File: mlpassage1_test_case_incorrect.png Graphic file (type png)
 
 <use mlpassage1_test_case_incorrect.png>
@@ -975,7 +974,7 @@ Package pdftex.def Info: mlpassage1_test_case_incorrect.png used on input line
 150.
 (pdftex.def)             Requested size: 355.66394pt x 355.65929pt.
  [76 <./mlpassage1_test_case_incorrect.png>] <mlpassage2_performance.png, id=12
-11, 473.77pt x 58.2175pt>
+26, 473.77pt x 58.2175pt>
 File: mlpassage2_performance.png Graphic file (type png)
 
 <use mlpassage2_performance.png>
@@ -1005,7 +1004,7 @@ Overfull \hbox (24.43553pt too wide) in paragraph at lines 100--100
 [] 
  []
 
-[81] [82] <c1_proof.png, id=1259, 1363.0925pt x 728.7225pt>
+[81] [82] <c1_proof.png, id=1274, 1363.0925pt x 728.7225pt>
 File: c1_proof.png Graphic file (type png)
  <use c1_proof.png>
 Package pdftex.def Info: c1_proof.png used on input line 173.
@@ -1018,7 +1017,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 173--175
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<c2_proof.png, id=1261, 1328.965pt x 719.68875pt>
+<c2_proof.png, id=1276, 1328.965pt x 719.68875pt>
 File: c2_proof.png Graphic file (type png)
  <use c2_proof.png>
 Package pdftex.def Info: c2_proof.png used on input line 193.
@@ -1037,7 +1036,7 @@ Overfull \hbox (85.2883pt too wide) in paragraph at lines 211--211
  []
 
 [84 <./c1_proof.png> <./c2_proof.png>]
-<c3_proof.png, id=1273, 1735.48375pt x 770.88pt>
+<c3_proof.png, id=1288, 1735.48375pt x 770.88pt>
 File: c3_proof.png Graphic file (type png)
  <use c3_proof.png>
 Package pdftex.def Info: c3_proof.png used on input line 218.
@@ -1047,7 +1046,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 218--219
  [][] 
  []
 
-<c4_proof.png, id=1275, 1722.435pt x 871.255pt>
+<c4_proof.png, id=1290, 1722.435pt x 871.255pt>
 File: c4_proof.png Graphic file (type png)
  <use c4_proof.png>
 Package pdftex.def Info: c4_proof.png used on input line 241.
@@ -1057,7 +1056,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 241--242
  [][] 
  []
 
-[85 <./c3_proof.png>] <c5_proof.png, id=1282, 873.2625pt x 544.0325pt>
+[85 <./c3_proof.png>] <c5_proof.png, id=1297, 873.2625pt x 544.0325pt>
 File: c5_proof.png Graphic file (type png)
 
 <use c5_proof.png>
@@ -1103,6 +1102,11 @@ Missing character: There is no ™ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
+
+
+LaTeX Warning: Citation `blackburn2005representation' on page 90 undefined on i
+nput line 33.
+
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
@@ -1114,22 +1118,13 @@ Missing character: There is no “ in font cmr12!
 
 
 
-]
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ƒ in font cmr12!
-Missing character: There is no Å in font cmr12!
-Missing character: There is no ’ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no ƒ in font cmr12!
-Missing character: There is no Å in font cmr12!
-Missing character: There is no ’ in font cmr12!
- [93]))
-[94]
+] [93] [94])) [95]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
- (./rpithes-cfe-agent.aux (./rpititle-phd.aux) (./rpiabs.aux)
-(./rpichap1.aux) (./rpichap2.aux) (./rpichap3.aux) (./rpichap4.aux)
-(./rpichap5.aux) (./rpichap6.aux) (./rpichap7.aux) (./rpibib.aux))
+
+(./rpithes-cfe-agent.aux (./rpititle-phd.aux) (./rpiabs.aux) (./rpichap1.aux)
+(./rpichap2.aux) (./rpichap3.aux) (./rpichap4.aux) (./rpichap5.aux)
+(./rpichap6.aux) (./rpichap7.aux) (./rpibib.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
 Package rerunfilecheck Info: File `rpithes-cfe-agent.out' has not changed.
@@ -1139,13 +1134,16 @@ Package rerunfilecheck Info: File `rpithes-cfe-agent.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 117.38377pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
  ) 
 Here is how much of TeX's memory you used:
- 9021 strings out of 493089
- 142292 string characters out of 6134842
- 245363 words of memory out of 5000000
- 11964 multiletter control sequences out of 15000+600000
+ 9050 strings out of 493089
+ 143334 string characters out of 6134842
+ 248418 words of memory out of 5000000
+ 11983 multiletter control sequences out of 15000+600000
  12876 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,18n,39p,2177b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1163,10 +1161,10 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on rpithes-cfe-agent.pdf (103 pages, 3764804 bytes).
+Output written on rpithes-cfe-agent.pdf (104 pages, 3744173 bytes).
 PDF statistics:
- 1446 PDF objects out of 1728 (max. 8388607)
- 1214 compressed objects within 13 object streams
- 311 named destinations out of 1000 (max. 500000)
+ 1467 PDF objects out of 1728 (max. 8388607)
+ 1234 compressed objects within 13 object streams
+ 321 named destinations out of 1000 (max. 500000)
  1025 words of extra memory for PDF output out of 10000 (max. 10000000)
 
