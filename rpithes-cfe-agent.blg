@@ -26,16 +26,16 @@ Warning--I didn't find a database entry for "blackburn2005representation"
 Warning--empty journal in clark2014interpreting
 You've used 37 entries,
             1876 wiz_defined-function locations,
-            710 strings with 9874 characters,
-and the built_in function-call counts, 11921 in all, are:
-= -- 1145
+            709 strings with 9866 characters,
+and the built_in function-call counts, 11932 in all, are:
+= -- 1148
 > -- 426
 < -- 2
 + -- 155
 - -- 118
 * -- 909
-:= -- 1587
-add.period$ -- 39
+:= -- 1589
+add.period$ -- 40
 call.type$ -- 37
 change.case$ -- 43
 chr.to.int$ -- 0
@@ -43,13 +43,13 @@ cite$ -- 38
 duplicate$ -- 620
 empty$ -- 1243
 format.name$ -- 118
-if$ -- 2950
+if$ -- 2953
 int.to.chr$ -- 0
 int.to.str$ -- 37
 missing$ -- 35
-newline$ -- 116
+newline$ -- 117
 num.names$ -- 41
-pop$ -- 166
+pop$ -- 165
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
@@ -64,5 +64,5 @@ type$ -- 0
 warning$ -- 1
 while$ -- 135
 width$ -- 39
-write$ -- 373
+write$ -- 375
 (There was 1 error message)
