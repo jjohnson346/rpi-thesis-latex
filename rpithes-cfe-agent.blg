@@ -24,45 +24,45 @@ Database file #2: main72.bib
 Database file #3: naveen.bib
 Warning--I didn't find a database entry for "blackburn2005representation"
 Warning--empty journal in clark2014interpreting
-You've used 36 entries,
+You've used 37 entries,
             1876 wiz_defined-function locations,
-            705 strings with 9659 characters,
-and the built_in function-call counts, 11612 in all, are:
-= -- 1110
-> -- 415
+            710 strings with 9874 characters,
+and the built_in function-call counts, 11921 in all, are:
+= -- 1145
+> -- 426
 < -- 2
-+ -- 151
-- -- 115
-* -- 884
-:= -- 1544
-add.period$ -- 38
-call.type$ -- 36
-change.case$ -- 42
++ -- 155
+- -- 118
+* -- 909
+:= -- 1587
+add.period$ -- 39
+call.type$ -- 37
+change.case$ -- 43
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 606
-empty$ -- 1218
-format.name$ -- 115
-if$ -- 2878
+cite$ -- 38
+duplicate$ -- 620
+empty$ -- 1243
+format.name$ -- 118
+if$ -- 2950
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 34
-newline$ -- 113
-num.names$ -- 40
-pop$ -- 165
+int.to.str$ -- 37
+missing$ -- 35
+newline$ -- 116
+num.names$ -- 41
+pop$ -- 166
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 424
+skip$ -- 436
 stack$ -- 0
-substring$ -- 832
-swap$ -- 242
+substring$ -- 860
+swap$ -- 249
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 130
-width$ -- 38
-write$ -- 363
+while$ -- 135
+width$ -- 39
+write$ -- 373
 (There was 1 error message)
