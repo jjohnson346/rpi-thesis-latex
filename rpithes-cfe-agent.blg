@@ -20,40 +20,48 @@ I was expecting a `,' or a `}'---line 1067 of file joebib.bib
  :  address={New York, New York}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1123 of file joebib.bib
+ :  
+ :  author={Johnson, Joe},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Database file #2: main72.bib
 Database file #3: naveen.bib
 Warning--I didn't find a database entry for "blackburn2005representation"
 Warning--empty journal in clark2014interpreting
-You've used 37 entries,
+Warning--empty author in johnson2015cfeagent
+Warning--empty booktitle in johnson2015cfeagent
+Warning--empty year in johnson2015cfeagent
+You've used 38 entries,
             1876 wiz_defined-function locations,
-            709 strings with 9866 characters,
-and the built_in function-call counts, 11932 in all, are:
-= -- 1148
-> -- 426
+            711 strings with 9949 characters,
+and the built_in function-call counts, 12061 in all, are:
+= -- 1155
+> -- 427
 < -- 2
-+ -- 155
++ -- 156
 - -- 118
-* -- 909
-:= -- 1589
+* -- 920
+:= -- 1600
 add.period$ -- 40
-call.type$ -- 37
-change.case$ -- 43
+call.type$ -- 38
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 620
-empty$ -- 1243
+cite$ -- 42
+duplicate$ -- 632
+empty$ -- 1265
 format.name$ -- 118
-if$ -- 2953
+if$ -- 2984
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 35
-newline$ -- 117
+int.to.str$ -- 38
+missing$ -- 36
+newline$ -- 120
 num.names$ -- 41
-pop$ -- 165
+pop$ -- 176
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 436
+skip$ -- 438
 stack$ -- 0
 substring$ -- 860
 swap$ -- 249
@@ -61,8 +69,8 @@ text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
+warning$ -- 4
 while$ -- 135
-width$ -- 39
-write$ -- 375
-(There was 1 error message)
+width$ -- 40
+write$ -- 380
+(There were 2 error messages)
