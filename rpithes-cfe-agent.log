@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2016 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2016 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1128,18 +1128,17 @@ Missing character: There is no ™ in font cmr12!
 
 
 
-]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
- [91]
+] [91]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [92]
+
+Overfull \hbox (36.51793pt too wide) in paragraph at lines 33--40
+\OT1/cmr/m/n/12 (https://opennlp.apache.org) or the Stan-ford Parser (http://nl
+p.stanford.edu/software/lex-
+ []
+
+[92]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
@@ -1208,10 +1207,10 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on rpithes-cfe-agent.pdf (109 pages, 3811689 bytes).
+Output written on rpithes-cfe-agent.pdf (109 pages, 3798483 bytes).
 PDF statistics:
- 1570 PDF objects out of 1728 (max. 8388607)
- 1331 compressed objects within 14 object streams
+ 1564 PDF objects out of 1728 (max. 8388607)
+ 1325 compressed objects within 14 object streams
  352 named destinations out of 1000 (max. 500000)
  1065 words of extra memory for PDF output out of 10000 (max. 10000000)
 
