@@ -12,12 +12,12 @@
 
 \blfootnote{Portions of this chapter previously appeared as: \bibentry{johnson2015cfeagent}} 
 
-This chapter describes the approach taken to develop an intelligent agent using strictly shallow natural language processing (NLP)  techniques \cite{martin_2000_speech_ch23}.  It should be emphasized here that these algorithms are simplistic, some of which exploit structural patterns of the exam questions while others rely on bag of words techniques, in order to observe how well the agent performs with relatively little intelligence.  Performance measurements indicate this agent performs surprisingly well.  Some of the algorithms based on question structure, for example, reveal strong correlations with correct answers, as will be discussed in detail below, although the agent does not perform at a passing level.  Also, the agent provides very little justification for its answers, and thus, there is still ample motivation for a more sophisticated approach.
+This chapter describes the development, algorithms, and performance of Version 1 of the CFE Agent which uses strictly shallow natural language processing (NLP) techniques \cite{martin_2000_speech_ch23}.  Some of these algorithms exploit structural patterns of the exam questions while others rely on bag of words techniques, in order to observe how well the agent performs with relatively little intelligence.  Performance measurements indicate this agent performs surprisingly well.  Some of the algorithms based on question structure, for example, reveal strong correlations with correct answers, as will be discussed in detail below, although the agent does not perform at a passing level.  Also, the agent provides very little justification for its answers, and thus, there is still ample motivation for a more sophisticated approach.
 
 %\subsection{Resource Procurement and Customization}
 \section{Resource Procurement and Customization}
 
-The first phase of this project after downloading the study package was to convert its contents to a form that could be processed by an automated system.  The content in the package include the CFE Manual in pdf format, practice questions embedded within study package software, and a practice exam, also consisting of questions embedded within custom software.  It was necessary to convert each of these components into text-formatted documents for the CFE Agent.
+The first phase of development was the conversion of the study package downloaded from the ACFE website to a form that could be processed mechanistically.  The contents of the study package included the CFE Manual in portable display format (pdf), practice questions embedded within study package software, and a practice exam, also consisting of questions embedded within custom software.  It was necessary to convert each of these components into text-formatted documents for the CFE Agent.
 
 The first of these components, the CFE Manual, is a 2,500 page pdf document that serves as the principal resource upon which all of the exam questions are based.  Conversion of this document involved an extensive amount of work for two reasons:  First, the pdf document itself was password protected, rendering most pdf conversion programs useless.  And second, the few software packages that \textit{were} capable of bypassing the password protection produced intermittent errors in the generated text, inserting spaces randomly between the letters of words.  Given the large volume of content, a program employing various parsing techniques was written to sequentially walk through the text, detect errors, make corrections automatically based on certain rules, or prompt for correction if an error was detected but manner of correction was uncertain.  Although a significant amount of effort was expended to develop this technology, in the end, much of the document was edited manually.  
 
@@ -79,7 +79,7 @@ This algorithm applies only to true-false questions, simply selecting false, alw
 
 \subsection{Algorithm Profile Data}
 
-The algorithm profile data is a table showing accuracy each algorithm on each question question profile, tabulated from running every algorithm on every question in a training set of 1,297 question selected from the battery of 1,500 questions.  For each of these questions, a profiler component performed the following steps:  First, determine the question profile.  Second, execute each algorithm on the question, recording whether each algorithm produced the correct answer.  Finally, summarize the results.  A portion of this summary data is shown in Figure~\ref{fig:profile_data_training_set}
+The algorithm profile data is a table showing accuracy each algorithm on each question question profile, tabulated from running every algorithm on every question in a training set of 1,300 question selected from the battery of 1,500 questions.  For each of these questions, a profiler component performed the following steps:  First, determine the question profile.  Second, execute each algorithm on the question, recording whether each algorithm produced the correct answer.  Finally, summarize the results.  A portion of this summary data is shown in Figure~\ref{fig:profile_data_training_set}
 
 \begin{figure}
 \centering
@@ -92,7 +92,7 @@ The algorithm profile data is a table showing accuracy each algorithm on each qu
 %\subsubsection{The Selection Algorithm}
 \subsection{The Selection Algorithm}
 
-The selection algorithm is the procedure for selecting the proper algorithm to apply to a given question.  It is based on the algorithm profile data described above.  For a given question in the 203-question test set, the CFE Agent chooses the algorithm with the highest accuracy rate for questions in the training set with the same profile.
+The selection algorithm is the procedure for selecting the proper algorithm to apply to a given question.  It is based on the algorithm profile data described above.  For a given question in the 200-question test set, the CFE Agent chooses the algorithm with the highest accuracy rate for questions in the training set with the same profile.
 
 %\subsection{CFE Agent Demo}
 \section{CFE Agent Demo}
@@ -210,7 +210,7 @@ The above analysis covers the entire battery of 1,500 questions.  However, in de
 \label{fig:version_1_training_set_results}
 \end{figure}
 
-Finally, it should also be pointed out that during development of later versions of the agent, it was noticed that an important question feature had been overlooked in the original analysis -- the notion of a ``not'' question.  An example of a not question is:  ``Which of the following is NOT one of the major standards of generally accepted accounting principles?''.  It was found to be necessary to break out questions of this variety from other questions that were otherwise of the same type, but did not include the ``NOT'' term.  Thus, the analysis was completed once more on the training set, showing the following results in Figure~\ref{fig:version_1_training_set_results_not}.  It should be noted from this table, for example, that among the 223 questions formerly  categorized as ``definition'' questions, 40 are now categorized as ``definition/not'' questions.  The same phenomenon occurred for other categories, as well.  This last table provides the ultimate baseline against which we can make comparisons of effectiveness of algorithms going forward.
+Finally, it should also be pointed out that during development of later versions of the agent, it was noticed that an important question feature had been overlooked in the original analysis -- the notion of a ``not'' question.  An example of a not question is:  ``Which of the following is NOT one of the major standards of generally accepted accounting principles?''.  It was found to be necessary to break out questions of this variety from other questions that were otherwise of the same type, but did not include the ``NOT'' term.  Thus, the analysis was completed once more on the training set, showing the following results in Figure~\ref{fig:version_1_training_set_results_not}.  It should be noted from this table, for example, that among the 223 questions formerly  categorized as ``definition'' questions, 40 are now categorized as ``definition/not'' questions.  The same phenomenon occurs for other categories, as well.  
 
 \begin{figure}
 \centering
