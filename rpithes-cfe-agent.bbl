@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{johnson2015cfeagent}
-J.~Johnson, ``Toward an intelligent agent for fraud detection -- the {CFE}
-  {A}gent,'' in {\em Deceptive and Counter-Deceptive Machines: Papers from the
-  AAAI Fall Symposium}, no.~FS-15-03, pp.~21--26, AAAI Press, 2015.
-
 \bibitem{radev2000ranking}
 D.~R. Radev, J.~Prager, and V.~Samn, ``Ranking suspected answers to natural
   language questions using predictive annotation,'' in {\em Proc. 6th {C}onf.
@@ -56,12 +51,6 @@ D.~Ferrucci, E.~Brown, J.~Chu-Carroll, J.~Fan, D.~Gondek, A.~A. Kalyanpur,
   A.~Lally, J.~W. Murdock, E.~Nyberg, J.~Prager, {\em et~al.}, ``Building
   {W}atson: An overview of the {D}eep{Q}{A} project,'' {\em AI magazine},
   vol.~31, pp.~59--79, Fall 2010.
-
-\bibitem{psychoai.ijcai03}
-S.~Bringsjord and B.~Schimanski, ``What is {A}rtificial {I}ntelligence?
-  {P}sychometric {A}{I} as an answer,'' in {\em Proc. 18$^{th}$ International
-  Joint Conference on Artificial Intelligence ({IJCAI--}03)}, (San Francisco,
-  California), pp.~887--893, Morgan Kaufmann, 2003.
 
 \bibitem{bringsjord2015logicist}
 S.~Bringsjord, N.~Govindarajulu, J.~Licato, A.~Sen, J.~Johnson, A.~Bringsjord,
@@ -124,6 +113,11 @@ M.~H. Clark, {\em Cognitive Illusions and the Lying Machine: A Blueprint for
 B.~S. Firozabadi, Y.-H. Tan, and R.~M. Lee, ``Formal definitions of fraud,''
   {\em Norms, Logics and Information Systems-New Studies in Deontic Logic and
   Computer Science, IOS Press, Amsterdam, The Netherlands}, pp.~275--288, 1999.
+
+\bibitem{johnson2015cfeagent}
+J.~Johnson, ``Toward an intelligent agent for fraud detection -- the {CFE}
+  {A}gent,'' in {\em Deceptive and Counter-Deceptive Machines: Papers from the
+  AAAI Fall Symposium}, no.~FS-15-03, pp.~21--26, AAAI Press, 2015.
 
 \bibitem{martin_2000_speech_ch23}
 J.~Martin and D.~Jurafsky, ``Question answering and summarization,'' in {\em

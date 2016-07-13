@@ -22,48 +22,48 @@ I was expecting a `,' or a `}'---line 470 of file joebib.bib
 I'm skipping whatever remains of this entry
 Database file #2: main72.bib
 Database file #3: naveen.bib
-Warning--there's a number but no series in johnson2015cfeagent
 Warning--empty journal in clark2014interpreting
 Warning--empty school in Clark:2010:CIL:2019791
-You've used 57 entries,
+Warning--there's a number but no series in johnson2015cfeagent
+You've used 56 entries,
             1876 wiz_defined-function locations,
-            791 strings with 11545 characters,
-and the built_in function-call counts, 18725 in all, are:
-= -- 1822
-> -- 617
+            784 strings with 11309 characters,
+and the built_in function-call counts, 18369 in all, are:
+= -- 1784
+> -- 609
 < -- 2
-+ -- 226
-- -- 169
-* -- 1424
-:= -- 2437
-add.period$ -- 60
-call.type$ -- 57
-change.case$ -- 62
++ -- 223
+- -- 167
+* -- 1400
+:= -- 2394
+add.period$ -- 59
+call.type$ -- 56
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 986
-empty$ -- 1994
-format.name$ -- 169
-if$ -- 4670
+cite$ -- 59
+duplicate$ -- 965
+empty$ -- 1957
+format.name$ -- 167
+if$ -- 4580
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 54
-newline$ -- 178
-num.names$ -- 61
-pop$ -- 256
+int.to.str$ -- 56
+missing$ -- 53
+newline$ -- 175
+num.names$ -- 60
+pop$ -- 251
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 705
+skip$ -- 689
 stack$ -- 0
-substring$ -- 1405
-swap$ -- 403
+substring$ -- 1373
+swap$ -- 394
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 212
-width$ -- 59
-write$ -- 574
+while$ -- 208
+width$ -- 58
+write$ -- 563
 (There was 1 error message)

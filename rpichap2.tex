@@ -8,10 +8,10 @@
 
 \section{Project Aristo}
 
-Project Aristo is an ambitious research project sponsored by the Allen Institute of
+Project Aristo is an ongoing, ambitious research project sponsored by the Allen Institute of
 Artificial Intelligence whose aim is to build an agent that can programmatically 
 acquire knowledge from text such that it can apply reasoning and knowledge 
-to pass 4th grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions - namely in the areas of knowledge, modelling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types in that can be described as follows:
+to pass 4th grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions - namely in the areas of knowledge, modeling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types in that can be described as follows:
 
 
 \subsection{Basic Questions}
@@ -84,76 +84,35 @@ One problem encountered during this task is the issue of generics, rules that mi
 
 \subsubsection{Reasoning with the Extracted Formalizations}
 
-Making inferences of entailed assertions not explicitly stated in the text is the ultimate goal of formalizing the natural language text.  However, like the first task, this task also comes with complications.  In the case of generics, their representation appears to lead to a downstream problem of having to resolve multiple symbols representing the same object.  In logic programming environments, such as Prolog, (mentioned by the author as one of the environments adopted for this project), its Unique Names Assumption means that two symbols cannot be assigned as equivalent.  As one approach to this problem, the relation of equality can be developed explicitly, but that means this relation must be worked into every implication, cluttering the knowledge base.  A more workable alternative, as pointed out by the author, is to build into the system the assumption that if an implication rule infers something that appears to repeat another assertion already in the knowledge base, then assume it actually is already in the knowledge base, thereby applying a minimization principle in order to avoid duplication of assertions.
+Making inferences of entailed assertions not explicitly stated in the text is the ultimate goal of formalizing the natural language text.  However, like the first task, this task also comes with complications.  In the case of generics, their representation appears to lead to a downstream problem of having to resolve multiple symbols representing the same object.  In logic programming environments, such as Prolog, \cite{blackburn_2006_prolog_ch1,blackburn_2006_prolog_ch2,blackburn_2006_prolog_ch3,blackburn_2006_prolog_ch4,blackburn_2006_prolog_ch5,blackburn_2006_prolog_ch6} (mentioned by the author as one of the environments adopted for this project), its Unique Names Assumption means that two symbols cannot be assigned as equivalent.  As one approach to this problem, the relation of equality can be developed explicitly, but that means this relation must be worked into every implication, cluttering the knowledge base.  A more workable alternative, as pointed out by the author, is to build into the system the assumption that if an implication rule infers something that appears to repeat another assertion already in the knowledge base, then assume it actually is already in the knowledge base, thereby applying a minimization principle in order to avoid duplication of assertions.
 
 
 \section{Halo Project}
 %\section{Halo Project (2004)}
 
-The Halo Project \cite{friedland2004project} was a contest sponsored by Vulcan Inc. (founded by
-Paul Allen) conducted in 2004 in which 3 teams set out to create 
-Knowledge Representation and Reasoning systems
-that would answer test questions similar to those for a chemistry AP exam
-based on a text corpus of 50 pages of text and on a sample of 50 multiple
-choice questions.  The 3 teams were SRI, Ontoprise, and Cycorp.  This test
-required not only correctness of answers, but also answer justifications
-that demonstrates the deep reasoning required by the subject matter (of 
-chemistry).  So, the systems of this competition needed to address three principal
-concerns:  Knowledge representation, question answer, and answer justification. 
+The Halo Project \cite{friedland2004project} was a contest sponsored by Vulcan Inc. (founded by Paul Allen) conducted in 2004 in which 3 teams from SRI, Ontoprise, and Cycorp, set out to create knowledge representation and reasoning systems that could answer test questions similar to those for a chemistry AP exam based on a text corpus of 50 pages of text and on a sample of 50 multiple choice questions.  This test required not only correctness of answers, but also answer justifications that demonstrates the deep reasoning required by the subject matter (of chemistry).  So, the systems in this competition needed to address three principal concerns:  knowledge representation, QA, and answer justification. 
 
 SRI employed an approach that included knowledge engineers and 
 professional chemists (the only team to include such domain experts).
 They also started with a system that had a relatively large database
 of real-world knowledge, in which the logic used was called KM logic.
-Finally, they began the effort using the 
-sample of multiple-choice questions.  In the end, this team's results
-were the best of three, particularly in the area of answer justification.
+Finally, they began the effort using the sample of multiple-choice questions.  In the end, this team's results were the best of three, particularly in the area of answer justification.
 
-Ontoprise created a system from scratch (no base-level knowledge-base system).
-The logic was called F(rame) logic.  It required the least runtime, but 
-the performance was not as good as SRI's system.
+Ontoprise created a system from scratch (no base-level knowledge-base system) based on a proprietary logic, called F(rame) logic.  It required the least runtime, but its accuracy lagged behind that of SRI's system.
 
-Cycorp built a system using an existing platform, called Cycl.  This large
-database yielded little help in question correctness, and the knowledge
-engineers felt that they were unable to more adequately leverage the 
-prior knowledge offered by the pre-existing database.  Unfortunately, it 
-hurt their runtime - so they ended up with a system whose runtimes were
-the longest and whose correctness were generally the lowest.  The logic
-used here was called Cycl.  (which likely means the name of the database
-provided above is incorrect).
-
-In all cases, it is important to note, the knowledge representations were 
-hand-sewn, (in SRI's case, with the help of subject matter experts in the
-problem domain).
+Cycorp built a system using an existing platform, based on a logic called Cycl.  This system proved the slowest and least accurate among the three.
 
 \section{Prismatic}
 %\section{Prismatic (2008)}
 
-Prismatic \cite{fan2012automatic} is a lexicalized relation resource that programmatically processes
-a large corpora (30 GB) in order to identify and store the ways entity and relation information
-are represented in unstructured text.  The system works by breaking its processing into
-three phases:  corpus processing, frame extraction, and frame cut extraction.  Corpus
-processing is primarily concerned with parsing the text using IBM's slot grammar parser.
-Frame extraction uses the parse information to break up the text into frames, where a frame
-is a text representation of a group of entities and the relations between them.  Prismatic 
-produced 1 billion frames from the 30 GB text corpus.  Lastly, frame cut extraction is a process
-in which the system extracts small parse sequences from the frames, (e.g., S-V-O (subject-verb-object), or
-(N-P-O (noun-preposition-object)) in order to analyze recurring patterns of text within them.  
-The redundancy
-of terms across these frame cuts allows the system to conclude extensional information 
-(relations between specific instances of entities, such
-as the relation, located-in(Troy, New York)) and intensional information (e.g., located-in(city, state)). 
-This sort of 
-information has applications in entity type identification, relation extraction, 
-and question-answer.
+Prismatic \cite{fan2012automatic} is a lexicalized relation resource that programmatically processes a large corpora (30 GB) in order to identify and store the ways entity and relation information are represented in unstructured text.  The system works by breaking its processing into
+three phases:  corpus processing, frame extraction, and frame cut extraction.  Corpus processing is primarily concerned with parsing the text using IBM's slot grammar parser.  Frame extraction uses the parse information to break up the text into frames, where a frame is a text representation of a group of entities and the relations between them.  Prismatic produced 1 billion frames from the 30 GB text corpus.  Lastly, frame cut extraction is a process in which the system extracts small parse sequences from the frames, (e.g., S-V-O (subject-verb-object), or
+(N-P-O (noun-preposition-object)) in order to analyze recurring patterns of text within them.  The redundancy of terms across these frame cuts allows the system to conclude extensional information (relations between specific instances of entities, such as the relation, located-in(Troy, New York)) and intensional information (e.g., located-in(city, state)).  This sort of information has applications in entity type identification, relation extraction, and question-answer.
 
 \section{Watson}
 %\section{Watson (2010)}
 
-Watson \cite{ferrucci2010building} is the famed question answer system that beat Jeopardy! champions in a matchup in 2010.
-Watson was built with a pipelined architecture consisting of a number of components, listed and described
-briefly below, along with massive parallelization allowing it to crunch NLP algorithms simultaneously so that it could select the one whose confidence was highest within the necessary three seconds required to be
-competitive.  It consisted of the following components:
+Watson \cite{ferrucci2010building} is the famed question answer system that beat Jeopardy! champions in a matchup in 2010.  Watson is built with a pipelined architecture consisting of a number of components, listed briefly below, along with massive parallelization allowing simultaneous computation of multiple algorithms and subsequent selection of the one whose confidence is highest within three seconds.  It consists of the following components:
 
 \subsection{Focus and LAT Detection}
 
@@ -161,16 +120,15 @@ Lexical answer type (LAT) detection is the determination of words that identify 
 
 \subsection{Relation Detection}
 
-Interestingly, relation detection was of limited help since for the broad domain, it was difficult to determine the most important relations to detect.
+Interestingly, relation detection was found to be of limited help since for the broad domain, it is difficult to determine the most important relations to detect.
 
 \subsection{Hypothesis Generation}
 
-Hypothesis generation involves generating candidate answers by searching through the system’s sources, extracting answer-sized snippets from the search results, and plugging those snippets back into the question, thereby forming a hypothesis.  The performance goal for this stage in the pipeline was the correct answer had to exist (binary recall) in the top 250 candidates at least 85\% of the time.  In other words, the goal here is to have high recall, with later parts of the system driving up the precision.  It is expected that hundreds of answer candidates are generated at this step.
+Hypothesis generation involves generating candidate answers by searching through the system’s sources, extracting answer-sized snippets from the search results, and plugging those snippets back into the question, thereby forming a hypothesis.  During development, the performance goal for this stage in the pipeline was that the correct answer must be present (binary recall) in the top 250 candidates at least 85\% of the time.  Hundreds of answer candidates are generated by this step.
 
 \subsection{Soft Filtering}
 
-Soft filtering is the lightweight filtering of answer candidates.  Lightweight means that this filtering is not computationally intensive, and that more computationally intense forms of filtering will be performed downstream after the answer candidate set has already been whittled down as much as possible.  An example of soft filtering is the calculation of the likelihood that an answer candidate has the correct LAT.
-Filtering thresholds are determined by machine learning (logistic regression, most likely).
+Soft filtering is the lightweight filtering of answer candidates.  Lightweight means that this filtering is not computationally intensive, and that more computationally intense forms of filtering will be performed downstream after the answer candidate set has already been whittled down as much as possible.  An example of soft filtering is the calculation of the likelihood that an answer candidate has the correct LAT.  Filtering thresholds are determined by machine learning.
 
 \subsection{Evidence Retrieval}
 
@@ -195,11 +153,11 @@ The question processing component processes the question posed in natural langua
 
 \subsubsection{Question type determination}
 
-Question type determination is based on a coarse-grained taxonomy of question types, including who what where why and how and then by a more fine-grained taxonomy of subtypes.  For example, how questions are classified into how much, how many, how far, et cetera  This subcategorization serves as the expected answer type, to be used later during the answer extraction step.
+Question type determination is based on a coarse-grained taxonomy of question types, including who, what, where, why, and how, and then by a more fine-grained taxonomy of subtypes.  This subcategorization serves as the expected answer type, to be used later during the answer extraction step.
 
 \subsubsection{Question focus determination}
 
-Question focus determination is the selection of a sequence of words such that the answer could replace them in the question.  For example, the question, ``What is the largest city in Germany?" is a question where the question focus is ``largest city".  Interestingly, it was not always the case that question focus could serve as the sequence of words to use in the query for the IR engine.   Consider the question: ``In 1990, what day of the week did Christmas fall on?”  Here, day of the week is the question focus, but does not serve as an effective query for retrieving the docs to answer this question.  The question focus is an input into the process of determining the keywords, but as this example shows, sometimes it is better left out of the final cut for the query string.
+Question focus determination is the selection of a sequence of words such that the answer could replace them in the question.  For example, the question, ``What is the largest city in Germany?" is a question where the question focus is ``largest city".  Interestingly, it is not always the case that question focus could serve as the sequence of words to use in the query for the IR engine.   Consider the question: ``In 1990, what day of the week did Christmas fall on?”  Here, day of the week is the question focus, but does not serve as an effective query for retrieving the docs to answer this question.  
 
 \subsubsection{Question keywords selection}
 
@@ -235,17 +193,17 @@ The answer processing component extracts candidate answers from the highest-scor
 
 \section{Answer Type Classifiers}
 
-One important aspect of open-domain question answer is the task of answer type identification.  As explained in the discussions of Watson and LASSO, answer type determination is of great importance in question answer systems since determining the answer type allows for greatly reducing the set of candidate answers to the question – only answers whose features, semantic or syntactic, indicate the same type as that of the question are considered, while other candidates are filtered out.  Assuming the answer type of the question is correct, (not a trivial assumption), the question answer system is in a much better position to narrow down the set toward the final, correct response.
+One important aspect of open-domain question answer is the task of answer type identification.  As explained in the discussions of Watson and LASSO, answer type determination is of great importance in QA systems since determining the answer type allows for greatly reducing the set of candidate answers to the question – only answers whose features, semantic or syntactic, indicate the same type as that of the question are considered, while other candidates are filtered out.  Assuming the answer type of the question is correct, (not a trivial assumption), the question answer system is in a much better position to narrow down the set toward the final, correct response.
 
-Li and Roth \cite{li2002learning} describe a machine learning based question classifier which is hierarchical in nature, where at the higher level, there are 6 coarse-grained categories (ABBREVIATION, ENTITY, DESCRIPTION, HUMAN, LOCATION, and NUMERIC VALUE), and at the lower level, there are up to 50 fine-grained categories.  For example, for the ENTITY type, subtypes include animal, body, color, creative, currency, and so on, while for LOCATION, subtypes include city, country, mountain, state, and other.  Their approach leverages machine learning because manually developed methods require a large battery of questions because the lexical feature set may be so large.  However, in this approach, feature types are analyzed, as opposed to specific features, allowing the training to extrapolate to a much larger feature set without having to annotate as large a training set.  Primitive features include words, pos tags, chunks (non-overlapping phrases),  named entities, and head chunks (the first noun-chunk in a sentence).   Then, there are higher order feature types that are derived from these, i.e., classes of features, in effect, that are automatically extracted for a given answer type category if they are present in questions with that particular answer type.
+Li and Roth \cite{li2002learning} describe a machine learning based question classifier which is hierarchical in nature, where at the higher level, there are 6 coarse-grained categories (ABBREVIATION, ENTITY, DESCRIPTION, HUMAN, LOCATION, and NUMERIC VALUE), and at the lower level, there are up to 50 fine-grained categories.  For example, for the ENTITY type, subtypes include animal, body, color, creative, currency, and so on, while for LOCATION, subtypes include city, country, mountain, state, and other.  Their approach leverages machine learning in which feature types are analyzed, as opposed to specific features, allowing the training to extrapolate to a much larger feature set without having to annotate as large a training set.  Primitive features include words, part-of-speech (POS) tags, chunks (non-overlapping phrases),  named entities, and head chunks (the first noun-chunk in a sentence).   Higher order feature types are derived from these, i.e., classes of features that are automatically extracted for a given answer type category. 
 
 \section{Semantic Approaches in the Fraud Domain}
 
-This section highlights work using a formal semantic approach to the representation and processing of assertions associated with defining fraudulent behavior.  It the work summarized below that inspired Version 4 of the CFE Agent, covered in Chapter 7.
+This section highlights work using a formal semantic approach to activities related to fraud/fraud detection.  The work summarized below inspired Version 4 of the CFE Agent, covered in Chapter 6.
 
 \subsection{The Lying Machine}
 
-Clark's phd thesis \cite{Clark:2010:CIL:2019791} discussses the foundations and development of a prototype lying machine, a system which leverages a theory of mind in order to identify and exploit cognitive frailties in human reasoning based on mental heuristics and biases in order to assert plausible falsehoods that deceive its human audience.  This work lays the psychological and logico-computational groundwork for machine-generated mendacity.
+Clark's doctoral thesis \cite{Clark:2010:CIL:2019791} discussses the foundations and development of a prototype lying machine, a system which leverages a theory of mind in order to identify and exploit cognitive frailties in human reasoning based on mental heuristics and biases in order to assert plausible falsehoods that deceive its human audience.  This work lays the psychological and logico-computational groundwork for machine-generated mendacity.
 
 \subsection{Formal Definition of Fraud}
 
