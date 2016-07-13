@@ -206,7 +206,8 @@ Friday.}
 %% from Dr. White on Wednesday, then he **knows** he didn't tell him this.
 \begin{footnotesize}
 \begin{align*}
-[C3] \ \neg \happens&(\action(\Blue,\tells(\DrBlack,\happens(\action(\Blue,\getrx(\Lexapro,\DrWhite,90)),\Wednesday))),\Friday) \\
+[C3] \ \neg \happens&(\action(\Blue,\tells(\DrBlack,\\
+& \happens(\action(\Blue,\getrx(\Lexapro,\DrWhite,90)),\Wednesday))),\Friday) \\
 & \wedge \prior(\Wednesday,\Friday) \wedge \DrWhite \neq \DrBlack \Rightarrow \\
 & \knows(\Blue, \neg \happens(\action(\Blue,\tells(\DrBlack,\\ 
 & \happens(\action(\Blue,\getrx(\Lexapro,\DrWhite,90)),\Wednesday))),\Friday))

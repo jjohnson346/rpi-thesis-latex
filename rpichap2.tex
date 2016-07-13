@@ -239,6 +239,18 @@ One important aspect of open-domain question answer is the task of answer type i
 
 Li and Roth \cite{li2002learning} describe a machine learning based question classifier which is hierarchical in nature, where at the higher level, there are 6 coarse-grained categories (ABBREVIATION, ENTITY, DESCRIPTION, HUMAN, LOCATION, and NUMERIC VALUE), and at the lower level, there are up to 50 fine-grained categories.  For example, for the ENTITY type, subtypes include animal, body, color, creative, currency, and so on, while for LOCATION, subtypes include city, country, mountain, state, and other.  Their approach leverages machine learning because manually developed methods require a large battery of questions because the lexical feature set may be so large.  However, in this approach, feature types are analyzed, as opposed to specific features, allowing the training to extrapolate to a much larger feature set without having to annotate as large a training set.  Primitive features include words, pos tags, chunks (non-overlapping phrases),  named entities, and head chunks (the first noun-chunk in a sentence).   Then, there are higher order feature types that are derived from these, i.e., classes of features, in effect, that are automatically extracted for a given answer type category if they are present in questions with that particular answer type.
 
+\section{Semantic Approaches in the Fraud Domain}
+
+This section highlights work using a formal semantic approach to the representation and processing of assertions associated with defining fraudulent behavior.  It the work summarized below that inspired Version 4 of the CFE Agent, covered in Chapter 7.
+
+\subsection{The Lying Machine}
+
+Clark's phd thesis \cite{Clark:2010:CIL:2019791} discussses the foundations and development of a prototype lying machine, a system which leverages a theory of mind in order to identify and exploit cognitive frailties in human reasoning based on mental heuristics and biases in order to assert plausible falsehoods that deceive its human audience.  This work lays the psychological and logico-computational groundwork for machine-generated mendacity.
+
+\subsection{Formal Definition of Fraud}
+
+Firozabadi \cite{firozabadi1999formal} discusses a formal definition of fraud for the purposes of verifying electronic trade procedures, such as those inherent in business-to-business electonic commerce.  This work breaks down trade activities into two subgroups -- primary actions and control actions where control actions are designed to prevent deception in the execution of primary actions -- and expresses these activities using formal logic, using modal operators for action, belief (doxastic logic component), and obligation (deontic logic component).
+
 
 
 

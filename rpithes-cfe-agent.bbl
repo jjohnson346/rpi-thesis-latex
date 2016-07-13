@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{johnson2015cfeagent}
+J.~Johnson, ``Toward an intelligent agent for fraud detection -- the {CFE}
+  {A}gent,'' in {\em Deceptive and Counter-Deceptive Machines: Papers from the
+  AAAI Fall Symposium}, no.~FS-15-03, pp.~21--26, AAAI Press, 2015.
+
 \bibitem{radev2000ranking}
 D.~R. Radev, J.~Prager, and V.~Samn, ``Ranking suspected answers to natural
   language questions using predictive annotation,'' in {\em Proc. 6th {C}onf.
@@ -109,10 +114,16 @@ X.~Li and D.~Roth, ``Learning question classifiers,'' in {\em Proc. 19$^{th}$
   Int. Conf. Computational Linguistics-Volume 1}, pp.~1--7, Association for
   Computational Linguistics, 2002.
 
-\bibitem{johnson2015cfeagent}
-J.~Johnson, ``Toward an intelligent agent for fraud detection -- the {CFE}
-  {A}gent,'' in {\em Deceptive and Counter-Deceptive Machines: Papers from the
-  AAAI Fall Symposium}, no.~FS-15-03, pp.~21--26, AAAI Press, 2015.
+\bibitem{Clark:2010:CIL:2019791}
+M.~H. Clark, {\em Cognitive Illusions and the Lying Machine: A Blueprint for
+  Sophistic Mendacity}.
+\newblock PhD thesis, Troy, NY, USA, 2010.
+\newblock AAI3420907.
+
+\bibitem{firozabadi1999formal}
+B.~S. Firozabadi, Y.-H. Tan, and R.~M. Lee, ``Formal definitions of fraud,''
+  {\em Norms, Logics and Information Systems-New Studies in Deontic Logic and
+  Computer Science, IOS Press, Amsterdam, The Netherlands}, pp.~275--288, 1999.
 
 \bibitem{martin_2000_speech_ch23}
 J.~Martin and D.~Jurafsky, ``Question answering and summarization,'' in {\em
@@ -185,11 +196,98 @@ S.~Bringsjord and N.~S. Govindarajulu, ``In defense of the unprovability of the
   church-turing thesis,'' {\em Journal of Unconventional Computing}, vol.~6,
   no.~5, pp.~353--373, 2011.
 
+\bibitem{blackburn_2005_representation_ch1}
+P.~Blackburn and J.~Bos, ``First-order logic,'' in {\em Representation and
+  Inference for Natural Language: A First Course in Computational Semantics
+  (Studies in Computational Linguistics)}, ch.~1, pp.~1--54, Stanford,
+  California: Center for the Study of Language and Information, 2005.
+
 \bibitem{blackburn_2005_representation_ch2}
 P.~Blackburn and J.~Bos, ``Lambda calculus,'' in {\em Representation and
   Inference for Natural Language: A First Course in Computational Semantics
   (Studies in Computational Linguistics)}, ch.~2, pp.~55--104, Stanford,
   California: Center for the Study of Language and Information, 2005.
+
+\bibitem{blackburn_2005_representation_ch3}
+P.~Blackburn and J.~Bos, ``Underspecified representations,'' in {\em
+  Representation and Inference for Natural Language: A First Course in
+  Computational Semantics (Studies in Computational Linguistics)}, ch.~3,
+  pp.~105--154, Stanford, California: Center for the Study of Language and
+  Information, 2005.
+
+\bibitem{blackburn_2005_representation_ch4}
+P.~Blackburn and J.~Bos, ``Propositional inference,'' in {\em Representation
+  and Inference for Natural Language: A First Course in Computational Semantics
+  (Studies in Computational Linguistics)}, ch.~4, pp.~155--202, Stanford,
+  California: Center for the Study of Language and Information, 2005.
+
+\bibitem{blackburn_2005_representation_ch5}
+P.~Blackburn and J.~Bos, ``First-order inference,'' in {\em Representation and
+  Inference for Natural Language: A First Course in Computational Semantics
+  (Studies in Computational Linguistics)}, ch.~5, pp.~203--258, Stanford,
+  California: Center for the Study of Language and Information, 2005.
+
+\bibitem{blackburn_2005_representation_ch6}
+P.~Blackburn and J.~Bos, ``Putting it all together,'' in {\em Representation
+  and Inference for Natural Language: A First Course in Computational Semantics
+  (Studies in Computational Linguistics)}, ch.~6, pp.~259--308, Stanford,
+  California: Center for the Study of Language and Information, 2005.
+
+\bibitem{blackburn_2006_prolog_ch1}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Facts, rules, and queries,'' in {\em
+  Learn Prolog Now!}, ch.~1, pp.~1--20, London, England: College Publications,
+  2006.
+
+\bibitem{blackburn_2006_prolog_ch2}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Unification and proof search,'' in
+  {\em Learn Prolog Now!}, ch.~2, pp.~21--46, London, England: College
+  Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch3}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Recursion,'' in {\em Learn Prolog
+  Now!}, ch.~3, pp.~47--70, London, England: College Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch4}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Lists,'' in {\em Learn Prolog Now!},
+  ch.~4, pp.~71--88, London, England: College Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch5}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Arithmetic,'' in {\em Learn Prolog
+  Now!}, ch.~5, pp.~89--104, London, England: College Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch6}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``More lists,'' in {\em Learn Prolog
+  Now!}, ch.~6, pp.~105--118, London, England: College Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch7}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Definite clause grammars,'' in {\em
+  Learn Prolog Now!}, ch.~7, pp.~119--138, London, England: College
+  Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch8}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``More definite clause grammars,'' in
+  {\em Learn Prolog Now!}, ch.~8, pp.~139--158, London, England: College
+  Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch9}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``A closer look at terms,'' in {\em
+  Learn Prolog Now!}, ch.~9, pp.~159--184, London, England: College
+  Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch10}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Cuts and negation,'' in {\em Learn
+  Prolog Now!}, ch.~10, pp.~185--202, London, England: College Publications,
+  2006.
+
+\bibitem{blackburn_2006_prolog_ch11}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Database manipulation and collecting
+  solutions,'' in {\em Learn Prolog Now!}, ch.~11, pp.~203--216, London,
+  England: College Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch12}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Working with files,'' in {\em Learn
+  Prolog Now!}, ch.~12, pp.~217--230, London, England: College Publications,
+  2006.
 
 \bibitem{martin_2000_speech_ch14}
 J.~Martin and D.~Jurafsky, ``Statistical parsing,'' in {\em Speech and Language
