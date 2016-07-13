@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2016 08:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUL 2016 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -780,8 +780,8 @@ File: concept_match_v2_financial_statement_fraud_9_1.png Graphic file (type png
 Package pdftex.def Info: concept_match_v2_financial_statement_fraud_9_1.png use
 d on input line 230.
 (pdftex.def)             Requested size: 355.66144pt x 355.66098pt.
- [49 <./concept_match_v1_training_set_results_def.png>]
-<concept_match_v2_financial_statement_fraud_9_2.png, id=1038, 683.55376pt x 757
+
+<concept_match_v2_financial_statement_fraud_9_2.png, id=1033, 683.55376pt x 757
 .83125pt>
 File: concept_match_v2_financial_statement_fraud_9_2.png Graphic file (type png
 )
@@ -789,7 +789,8 @@ File: concept_match_v2_financial_statement_fraud_9_2.png Graphic file (type png
 Package pdftex.def Info: concept_match_v2_financial_statement_fraud_9_2.png use
 d on input line 238.
 (pdftex.def)             Requested size: 355.66904pt x 355.66039pt.
- [50 <./concept_match_v1_financial_statement_fraud_9.png>]
+ [49 <./concept_match_v1_training_set_results_def.png>] [50 <./concept_match_v1
+_financial_statement_fraud_9.png>]
 <concept_match_v1_wrong_option_doc.png, id=1045, 758.835pt x 902.37125pt>
 File: concept_match_v1_wrong_option_doc.png Graphic file (type png)
 
@@ -840,16 +841,16 @@ File: concept_match_v3_example_part_2.png Graphic file (type png)
 Package pdftex.def Info: concept_match_v3_example_part_2.png used on input line
  308.
 (pdftex.def)             Requested size: 355.66893pt x 355.67194pt.
- [57 <./concept_match_v3_example_part_1.png>] [58 <./concept_match_v3_example_p
-art_2.png>]
-<concept_match_v3_example_document.png, id=1100, 1149.29375pt x 779.91376pt>
+ [57 <./concept_match_v3_example_part_1.png>]
+<concept_match_v3_example_document.png, id=1095, 1149.29375pt x 779.91376pt>
 File: concept_match_v3_example_document.png Graphic file (type png)
 
 <use concept_match_v3_example_document.png>
 Package pdftex.def Info: concept_match_v3_example_document.png used on input li
 ne 318.
 (pdftex.def)             Requested size: 355.64606pt x 355.65866pt.
- [59 <./concept_match_v3_example_document.png>]
+ [58 <./concept_match_v3_example_part_2.png>] [59 <./concept_match_v3_example_d
+ocument.png>]
 <concept_match_v3_training_set_performance.png, id=1108, 477.785pt x 69.25874pt
 >
 File: concept_match_v3_training_set_performance.png Graphic file (type png)
@@ -916,8 +917,8 @@ File: concept_match_nota_example.png Graphic file (type png)
 Package pdftex.def Info: concept_match_nota_example.png used on input line 420.
 
 (pdftex.def)             Requested size: 355.65942pt x 284.531pt.
- [65 <./concept_match_nota_example.png>]
-<concept_match_nota_training_set_performance.png, id=1158, 488.82625pt x 69.258
+
+<concept_match_nota_training_set_performance.png, id=1153, 488.82625pt x 69.258
 74pt>
 File: concept_match_nota_training_set_performance.png Graphic file (type png)
  <use concept_match_nota_training_set_performance.png>
@@ -925,15 +926,15 @@ Package pdftex.def Info: concept_match_nota_training_set_performance.png used o
 n input line 432.
 (pdftex.def)             Requested size: 213.3985pt x 36.98805pt.
 
-<concept_match_nota_hypothesis_test.png, id=1159, 487.8225pt x 317.185pt>
+<concept_match_nota_hypothesis_test.png, id=1154, 487.8225pt x 317.185pt>
 File: concept_match_nota_hypothesis_test.png Graphic file (type png)
 
 <use concept_match_nota_hypothesis_test.png>
 Package pdftex.def Info: concept_match_nota_hypothesis_test.png used on input l
 ine 442.
 (pdftex.def)             Requested size: 284.53017pt x 213.40337pt.
- [66 <./concept_match_nota_training_set_performance.png> <./concept_match_nota_
-hypothesis_test.png>]
+ [65 <./concept_match_nota_example.png>] [66 <./concept_match_nota_training_set
+_performance.png> <./concept_match_nota_hypothesis_test.png>]
 <version_2_training_set_performance.png, id=1167, 1924.18875pt x 645.41125pt>
 File: version_2_training_set_performance.png Graphic file (type png)
 
@@ -1179,9 +1180,6 @@ Package rerunfilecheck Info: File `rpithes-cfe-agent.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 117.38377pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
@@ -1206,7 +1204,7 @@ xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on rpithes-cfe-agent.pdf (108 pages, 3767293 bytes).
+Output written on rpithes-cfe-agent.pdf (108 pages, 3789968 bytes).
 PDF statistics:
  1501 PDF objects out of 1728 (max. 8388607)
  1264 compressed objects within 13 object streams
