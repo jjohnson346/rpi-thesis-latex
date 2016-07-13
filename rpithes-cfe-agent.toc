@@ -80,13 +80,13 @@
 \contentsline {chapter}{\numberline {5.}Version 3 -- A Passage-Discerning Agent}{67}{chapter.5}
 \contentsline {section}{\numberline {5.1}Development of the Training Set}{68}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Targeted Questions}{68}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Passage Training Set}{68}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Passage Training Set}{69}{subsection.5.1.2}
 \contentsline {section}{\numberline {5.2}Development of the Passage Classification Model}{70}{section.5.2}
 \contentsline {section}{\numberline {5.3}Application to the Test Set}{71}{section.5.3}
-\contentsline {section}{\numberline {5.4}Answer Processing Algorithms for Version 3}{71}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}MLPassage1}{72}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}MLPassage1 Performance}{74}{subsubsection.5.4.1.1}
-\contentsline {subsection}{\numberline {5.4.2}MLPassage2}{77}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.4}Answer Processing Algorithms for Version 3}{72}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}MLPassage1}{73}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}MLPassage1 Performance}{75}{subsubsection.5.4.1.1}
+\contentsline {subsection}{\numberline {5.4.2}MLPassage2}{76}{subsection.5.4.2}
 \contentsline {chapter}{\numberline {6.}Version 4 -- Toward a Formal Model for Fraud Detection}{78}{chapter.6}
 \contentsline {section}{\numberline {6.1}An Example Subdomain - Doctor Shopping}{79}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Doctor Shopping Axioms}{80}{subsection.6.1.1}
