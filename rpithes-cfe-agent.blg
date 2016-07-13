@@ -11,66 +11,62 @@ A level-1 auxiliary file: rpichap5.aux
 A level-1 auxiliary file: rpichap6.aux
 A level-1 auxiliary file: rpichap7.aux
 A level-1 auxiliary file: rpibib.aux
-The style file: ieeetr.bst
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: joebib.bib
-Warning--entry type for "wiki:boolean_retrieval" isn't style-file defined
---line 935 of file joebib.bib
-I was expecting a `,' or a `}'---line 1067 of file joebib.bib
- :  
- :  address={New York, New York}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1123 of file joebib.bib
- :  
- :  author={Johnson, Joe},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Database file #2: main72.bib
 Database file #3: naveen.bib
-Warning--I didn't find a database entry for "blackburn2005representation"
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in clark2014interpreting
-Warning--empty author in johnson2015cfeagent
-Warning--empty booktitle in johnson2015cfeagent
-Warning--empty year in johnson2015cfeagent
+Warning--empty journal in wiki:boolean_retrieval
+Warning--empty year in wiki:boolean_retrieval
+
+Done.
 You've used 38 entries,
-            1876 wiz_defined-function locations,
-            711 strings with 9949 characters,
-and the built_in function-call counts, 12061 in all, are:
-= -- 1155
-> -- 427
-< -- 2
-+ -- 156
-- -- 118
-* -- 920
-:= -- 1600
-add.period$ -- 40
+            4024 wiz_defined-function locations,
+            1054 strings with 14248 characters,
+and the built_in function-call counts, 32487 in all, are:
+= -- 2566
+> -- 738
+< -- 296
++ -- 392
+- -- 119
+* -- 1630
+:= -- 4726
+add.period$ -- 100
 call.type$ -- 38
-change.case$ -- 44
-chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 632
-empty$ -- 1265
-format.name$ -- 118
-if$ -- 2984
+change.case$ -- 51
+chr.to.int$ -- 693
+cite$ -- 41
+duplicate$ -- 2331
+empty$ -- 2803
+format.name$ -- 152
+if$ -- 7553
 int.to.chr$ -- 0
 int.to.str$ -- 38
-missing$ -- 36
-newline$ -- 120
-num.names$ -- 41
-pop$ -- 176
+missing$ -- 384
+newline$ -- 149
+num.names$ -- 42
+pop$ -- 939
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 0
-skip$ -- 438
+quote$ -- 2
+skip$ -- 2447
 stack$ -- 0
-substring$ -- 860
-swap$ -- 249
-text.length$ -- 2
+substring$ -- 1619
+swap$ -- 1898
+text.length$ -- 65
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 4
-while$ -- 135
+top$ -- 5
+type$ -- 38
+warning$ -- 3
+while$ -- 177
 width$ -- 40
-write$ -- 380
-(There were 2 error messages)
+write$ -- 411
+(There were 3 warnings)
