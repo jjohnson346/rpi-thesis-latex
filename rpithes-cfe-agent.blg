@@ -11,62 +11,57 @@ A level-1 auxiliary file: rpichap5.aux
 A level-1 auxiliary file: rpichap6.aux
 A level-1 auxiliary file: rpichap7.aux
 A level-1 auxiliary file: rpibib.aux
-The style file: IEEEtran.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+The style file: ieeetr.bst
 Database file #1: joebib.bib
+Warning--entry type for "wiki:boolean_retrieval" isn't style-file defined
+--line 468 of file joebib.bib
+I was expecting a `,' or a `}'---line 470 of file joebib.bib
+ :    title = {Standard Boolean model --- Wikipedia{,} The Free Encyclopedia},  url={https://en.wikipedia.org/w/index.php?title=Standard_Boolean_model&oldid=644811431} 
+ :                                                                                                                                                                      note={accessed 1-February-2016]}
+I'm skipping whatever remains of this entry
 Database file #2: main72.bib
 Database file #3: naveen.bib
--- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in clark2014interpreting
-Warning--empty journal in wiki:boolean_retrieval
-Warning--empty year in wiki:boolean_retrieval
-
-Done.
+Warning--there's a number but no series in johnson2015cfeagent
 You've used 38 entries,
-            4024 wiz_defined-function locations,
-            1054 strings with 14248 characters,
-and the built_in function-call counts, 32487 in all, are:
-= -- 2566
-> -- 738
-< -- 296
-+ -- 392
+            1876 wiz_defined-function locations,
+            715 strings with 10027 characters,
+and the built_in function-call counts, 12217 in all, are:
+= -- 1176
+> -- 430
+< -- 2
++ -- 157
 - -- 119
-* -- 1630
-:= -- 4726
-add.period$ -- 100
+* -- 929
+:= -- 1622
+add.period$ -- 39
 call.type$ -- 38
-change.case$ -- 51
-chr.to.int$ -- 693
-cite$ -- 41
-duplicate$ -- 2331
-empty$ -- 2803
-format.name$ -- 152
-if$ -- 7553
+change.case$ -- 44
+chr.to.int$ -- 0
+cite$ -- 40
+duplicate$ -- 638
+empty$ -- 1277
+format.name$ -- 119
+if$ -- 3025
 int.to.chr$ -- 0
 int.to.str$ -- 38
-missing$ -- 384
-newline$ -- 149
+missing$ -- 36
+newline$ -- 119
 num.names$ -- 42
-pop$ -- 939
+pop$ -- 167
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 2
-skip$ -- 2447
+quote$ -- 0
+skip$ -- 453
 stack$ -- 0
-substring$ -- 1619
-swap$ -- 1898
-text.length$ -- 65
+substring$ -- 884
+swap$ -- 256
+text.length$ -- 2
 text.prefix$ -- 0
-top$ -- 5
-type$ -- 38
-warning$ -- 3
-while$ -- 177
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 139
 width$ -- 40
-write$ -- 411
-(There were 3 warnings)
+write$ -- 383
+(There was 1 error message)

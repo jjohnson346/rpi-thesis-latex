@@ -1,56 +1,56 @@
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Embedded Practice Question\relax }}{18}{figure.caption.6}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Converted, Unscrubbed Practice Question\relax }}{19}{figure.caption.7}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Scrubbed Practice Question\relax }}{20}{figure.caption.8}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Training Set Profile Data\relax }}{23}{figure.caption.9}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces CFE Agent Startup\relax }}{24}{figure.caption.10}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces CFE Agent Startup Completed\relax }}{25}{figure.caption.11}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces First Question\relax }}{26}{figure.caption.12}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces First Question Completed\relax }}{27}{figure.caption.13}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Second Question\relax }}{28}{figure.caption.14}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Third Question\relax }}{29}{figure.caption.15}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Final Question and Termination\relax }}{30}{figure.caption.16}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Results for True-False Questions\relax }}{30}{figure.caption.17}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Hypothesis Test for True-False Questions\relax }}{31}{figure.caption.18}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Results for Multiple-Choice Questions\relax }}{31}{figure.caption.19}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Hypothesis Test for Multiple-Choice Questions\relax }}{32}{figure.caption.20}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Results for Multiple-Choice and True-False Questions on 1300-Question Training Set\relax }}{32}{figure.caption.21}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Training Set Results with NOT Feature Breakout\relax }}{33}{figure.caption.22}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A section of the table of contents from the CFE Manual\relax }}{40}{figure.caption.23}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The CFE Manual as a Document Collection\relax }}{41}{figure.caption.24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Lucene Indexes for a Portion of the Question Sections\relax }}{42}{figure.caption.25}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Question Server Component Targeting Definition/NOT Questions\relax }}{44}{figure.caption.26}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Concept Match V1 Example\relax }}{47}{figure.caption.27}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Performance of Concept Match V1 on Definition Questions\relax }}{49}{figure.caption.28}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Concept Match V1: An Example Where No Docs Are Returned for Options\relax }}{49}{figure.caption.29}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Concept Match V2: Fixing the No Docs in Option Queries Return Sets Problem, Part 1\relax }}{51}{figure.caption.30}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Concept Match V2: Fixing the No Docs in Option Queries Return Sets Problem, Part 2\relax }}{52}{figure.caption.31}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Concept Match V1: An Example Where A Document is Returned/Ranked for More than One Option\relax }}{53}{figure.caption.32}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Concept Match V2: Addressing the Problem of Multiple Options for a Document\relax }}{54}{figure.caption.33}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Performance of Concept Match V2 on Definition Questions\relax }}{54}{figure.caption.34}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Concept Match V2 vs. Max Frequency Hypothesis Test on Definition Questions\relax }}{55}{figure.caption.35}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Concept Match V3 Example - Part 1\relax }}{57}{figure.caption.36}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Concept Match V3 Example - Part 2\relax }}{58}{figure.caption.37}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces The Arraignment Document\relax }}{59}{figure.caption.38}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Performance of Concept Match V3 on Training Set\relax }}{59}{figure.caption.39}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Concept Match V3 vs. V2 Hypothesis Test on Definition Questions\relax }}{60}{figure.caption.40}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Concept Match Not Example - Part 1\relax }}{61}{figure.caption.41}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Concept Match Not Example - Part 2\relax }}{62}{figure.caption.42}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Performance of Concept Match Not on Training Set - Definition/NOT Questions\relax }}{63}{figure.caption.43}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Concept Match Not vs. Random Hypothesis Test on Definition/Not Questions\relax }}{63}{figure.caption.44}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Performance of NOTA Algorithm on NOTA Questions\relax }}{64}{figure.caption.45}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Concept Match NOTA Example\relax }}{65}{figure.caption.46}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Performance of Concept Match NOTA on Training Set - Definition/NOTA Questions\relax }}{66}{figure.caption.47}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Concept Match NOTA vs. Max Frequency Hypothesis Test on Definition/NOTA Questions\relax }}{66}{figure.caption.48}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Performance of CFE Agent Version 2 on Training Set\relax }}{67}{figure.caption.49}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces CFE Agent Version 2 vs. CFE Agent Version 1 Hypothesis Test on Multiple Choice Questions\relax }}{68}{figure.caption.50}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Passage Classification Model Summary\relax }}{74}{figure.caption.51}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Application of the Passage Classification Model to the Test Set\relax }}{75}{figure.caption.52}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Test Set - Count of Correct Passages Retrieved By Classification Model\relax }}{76}{figure.caption.53}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces MLPassage1 Algorithm - Test Case 1\relax }}{77}{figure.caption.54}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces MLPassage1 Algorithm - Test Case 2\relax }}{78}{figure.caption.55}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces MLPassage2 Algorithm Performance\relax }}{79}{figure.caption.56}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Proof of $C1$ -- Blue knows he was given a prescription by Dr. White on Wednesday.\relax }}{86}{figure.caption.57}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Proof of $C2$ -- Blue knows he was given a prescription by Dr. Black on Friday.\relax }}{86}{figure.caption.58}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Proof of $C3$ -- If Blue does not tell Dr. Black about the prescription he received from Dr. White then Blue knows he does not tell him.\relax }}{87}{figure.caption.59}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Proof of $C4$ -- Blue believes that Dr. Black does not know he received a prescription from Dr. White on Wednesday.\relax }}{88}{figure.caption.60}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Proof of $C5$ -- Blue is guilty of doctor shopping.\relax }}{89}{figure.caption.61}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Embedded Practice Question\relax }}{18}{figure.caption.8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Converted, Unscrubbed Practice Question\relax }}{19}{figure.caption.9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Scrubbed Practice Question\relax }}{20}{figure.caption.10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Training Set Profile Data\relax }}{23}{figure.caption.11}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces CFE Agent Startup\relax }}{24}{figure.caption.12}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces CFE Agent Startup Completed\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces First Question\relax }}{26}{figure.caption.14}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces First Question Completed\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Second Question\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Third Question\relax }}{29}{figure.caption.17}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Final Question and Termination\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Results for True-False Questions\relax }}{30}{figure.caption.19}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Hypothesis Test for True-False Questions\relax }}{31}{figure.caption.20}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Results for Multiple-Choice Questions\relax }}{31}{figure.caption.21}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Hypothesis Test for Multiple-Choice Questions\relax }}{32}{figure.caption.22}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Results for Multiple-Choice and True-False Questions on 1300-Question Training Set\relax }}{32}{figure.caption.23}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Training Set Results with NOT Feature Breakout\relax }}{33}{figure.caption.24}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A section of the table of contents from the CFE Manual\relax }}{40}{figure.caption.25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The CFE Manual as a Document Collection\relax }}{41}{figure.caption.26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Lucene Indexes for a Portion of the Question Sections\relax }}{42}{figure.caption.27}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Question Server Component Targeting Definition/NOT Questions\relax }}{44}{figure.caption.28}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Concept Match V1 Example\relax }}{47}{figure.caption.29}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Performance of Concept Match V1 on Definition Questions\relax }}{49}{figure.caption.30}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Concept Match V1: An Example Where No Docs Are Returned for Options\relax }}{49}{figure.caption.31}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Concept Match V2: Fixing the No Docs in Option Queries Return Sets Problem, Part 1\relax }}{51}{figure.caption.32}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Concept Match V2: Fixing the No Docs in Option Queries Return Sets Problem, Part 2\relax }}{52}{figure.caption.33}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Concept Match V1: An Example Where A Document is Returned/Ranked for More than One Option\relax }}{53}{figure.caption.34}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Concept Match V2: Addressing the Problem of Multiple Options for a Document\relax }}{54}{figure.caption.35}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Performance of Concept Match V2 on Definition Questions\relax }}{54}{figure.caption.36}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Concept Match V2 vs. Max Frequency Hypothesis Test on Definition Questions\relax }}{55}{figure.caption.37}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Concept Match V3 Example - Part 1\relax }}{57}{figure.caption.38}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Concept Match V3 Example - Part 2\relax }}{58}{figure.caption.39}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces The Arraignment Document\relax }}{59}{figure.caption.40}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Performance of Concept Match V3 on Training Set\relax }}{59}{figure.caption.41}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Concept Match V3 vs. V2 Hypothesis Test on Definition Questions\relax }}{60}{figure.caption.42}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Concept Match Not Example - Part 1\relax }}{61}{figure.caption.43}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Concept Match Not Example - Part 2\relax }}{62}{figure.caption.44}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Performance of Concept Match Not on Training Set - Definition/NOT Questions\relax }}{63}{figure.caption.45}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Concept Match Not vs. Random Hypothesis Test on Definition/Not Questions\relax }}{63}{figure.caption.46}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Performance of NOTA Algorithm on NOTA Questions\relax }}{64}{figure.caption.47}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Concept Match NOTA Example\relax }}{65}{figure.caption.48}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Performance of Concept Match NOTA on Training Set - Definition/NOTA Questions\relax }}{66}{figure.caption.49}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Concept Match NOTA vs. Max Frequency Hypothesis Test on Definition/NOTA Questions\relax }}{66}{figure.caption.50}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Performance of CFE Agent Version 2 on Training Set\relax }}{67}{figure.caption.51}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces CFE Agent Version 2 vs. CFE Agent Version 1 Hypothesis Test on Multiple Choice Questions\relax }}{68}{figure.caption.52}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Passage Classification Model Summary\relax }}{74}{figure.caption.53}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Application of the Passage Classification Model to the Test Set\relax }}{75}{figure.caption.54}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Test Set - Count of Correct Passages Retrieved By Classification Model\relax }}{76}{figure.caption.55}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces MLPassage1 Algorithm - Test Case 1\relax }}{77}{figure.caption.56}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces MLPassage1 Algorithm - Test Case 2\relax }}{78}{figure.caption.57}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces MLPassage2 Algorithm Performance\relax }}{79}{figure.caption.58}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Proof of $C1$ -- Blue knows he was given a prescription by Dr. White on Wednesday.\relax }}{86}{figure.caption.59}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Proof of $C2$ -- Blue knows he was given a prescription by Dr. Black on Friday.\relax }}{86}{figure.caption.60}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Proof of $C3$ -- If Blue does not tell Dr. Black about the prescription he received from Dr. White then Blue knows he does not tell him.\relax }}{87}{figure.caption.61}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Proof of $C4$ -- Blue believes that Dr. Black does not know he received a prescription from Dr. White on Wednesday.\relax }}{88}{figure.caption.62}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Proof of $C5$ -- Blue is guilty of doctor shopping.\relax }}{89}{figure.caption.63}

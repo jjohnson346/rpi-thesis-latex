@@ -1,5 +1,6 @@
-\contentsline {chapter}{LIST OF FIGURES}{iii}{chapter*.3}
-\contentsline {chapter}{ABSTRACT}{iv}{section*.4}
+\contentsline {chapter}{LIST OF FIGURES}{v}{chapter*.3}
+\contentsline {chapter}{ACKNOWLEDGMENT}{viii}{section*.4}
+\contentsline {chapter}{ABSTRACT}{ix}{section*.6}
 \contentsline {chapter}{\numberline {1.}Introduction and Overview}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Goals}{1}{section.1.2}
@@ -7,8 +8,9 @@
 \contentsline {section}{\numberline {1.4}An Overview of the Approach}{3}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Reasoning with Uncertainty}{3}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Verification of the Agent via Test-Taking}{3}{subsection.1.4.2}
-\contentsline {subsubsection}{\numberline {1.4.2.1}The ACFE and the CFE Exam}{3}{subsubsection.1.4.2.1}
-\contentsline {subsubsection}{\numberline {1.4.2.2}CFE manual}{4}{subsubsection.1.4.2.2}
+\contentsline {subsubsection}{\numberline {1.4.2.1}The ACFE and the CFE Exam}{4}{subsubsection.1.4.2.1}
+\contentsline {subsubsection}{\numberline {1.4.2.2}CFE manual}{5}{subsubsection.1.4.2.2}
+\contentsline {section}{\numberline {1.5}Code Resources}{5}{section.1.5}
 \contentsline {chapter}{\numberline {2.}Related Work}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Project Aristo}{6}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Basic Questions}{6}{subsection.2.1.1}
@@ -90,4 +92,4 @@
 \contentsline {chapter}{\numberline {7.}Conclusion and Future Work}{90}{chapter.7}
 \contentsline {section}{\numberline {7.1}Summary of Work}{90}{section.7.1}
 \contentsline {section}{\numberline {7.2}Future Work}{91}{section.7.2}
-\contentsline {chapter}{REFERENCES}{94}{section*.62}
+\contentsline {chapter}{REFERENCES}{94}{section*.64}
