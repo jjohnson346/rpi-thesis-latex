@@ -82,6 +82,32 @@ P.~Clark and N.~Balasubramanian, ``Interpreting and reasoning with simple
   natural language sentences,'' 2014.
 \newblock unpublished.
 
+\bibitem{blackburn_2006_prolog_ch1}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Facts, rules, and queries,'' in {\em
+  Learn Prolog Now!}, ch.~1, pp.~1--20, London, England: College Publications,
+  2006.
+
+\bibitem{blackburn_2006_prolog_ch2}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Unification and proof search,'' in
+  {\em Learn Prolog Now!}, ch.~2, pp.~21--46, London, England: College
+  Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch3}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Recursion,'' in {\em Learn Prolog
+  Now!}, ch.~3, pp.~47--70, London, England: College Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch4}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Lists,'' in {\em Learn Prolog Now!},
+  ch.~4, pp.~71--88, London, England: College Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch5}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Arithmetic,'' in {\em Learn Prolog
+  Now!}, ch.~5, pp.~89--104, London, England: College Publications, 2006.
+
+\bibitem{blackburn_2006_prolog_ch6}
+P.~Blackburn, J.~Bos, and K.~Striegnitz, ``More lists,'' in {\em Learn Prolog
+  Now!}, ch.~6, pp.~105--118, London, England: College Publications, 2006.
+
 \bibitem{friedland2004project}
 N.~S. Friedland, P.~G. Allen, G.~Matthews, M.~Witbrock, D.~Baxter, J.~Curtis,
   B.~Shepard, P.~Miraglia, J.~Angele, S.~Staab, {\em et~al.}, ``Project {H}alo:
@@ -169,17 +195,17 @@ K.~Arkoudas and S.~Bringsjord, ``{Propositional Attitudes and Causation},''
   {\em International Journal of Software and Informatics}, vol.~3, no.~1,
   pp.~47--65, 2009.
 
-\bibitem{snarksri}
-M.~E. Stickel, ``{SNARK - SRI's New Automated Reasoning Kit},'' 2008.
-\newblock Retrieved on July 26, 2013.
-  \url{http://www.ai.sri.com/~stickel/snark.html}.
-
 \bibitem{Slate_at_CMNA08}
 S.~Bringsjord, J.~Taylor, A.~Shilliday, M.~Clark, and K.~Arkoudas, ``{S}late:
   {A}n {A}rgument-{C}entered {I}ntelligent {A}ssistant to {H}uman
   {R}easoners,'' in {\em Proc. 8$^{th}$ Int. Workshop on Computational Models
   of Natural Argument ({CMNA} 8)} (F.~Grasso, N.~Green, R.~Kibble, and C.~Reed,
   eds.), (Patras, Greece), pp.~1--10, July 2008.
+
+\bibitem{snarksri}
+M.~E. Stickel, ``{SNARK - SRI's New Automated Reasoning Kit},'' 2008.
+\newblock Retrieved on July 26, 2013.
+  \url{http://www.ai.sri.com/~stickel/snark.html}.
 
 \bibitem{kolmogorov1958definition}
 A.~Kolmogorov and V.~Uspenskii, ``{On the Definition of an Algorithm},'' {\em
@@ -189,6 +215,15 @@ A.~Kolmogorov and V.~Uspenskii, ``{On the Definition of an Algorithm},'' {\em
 S.~Bringsjord and N.~S. Govindarajulu, ``In defense of the unprovability of the
   church-turing thesis,'' {\em Journal of Unconventional Computing}, vol.~6,
   no.~5, pp.~353--373, 2011.
+
+\bibitem{acfe_manual_2011_doctorshopping}
+A.~of~Certified Fraud~Examiners, ``Doctor/{ER} shopping,'' in {\em 2011 Fraud
+  Examiners Manual}, section~1, p.~1.1227, Austin, Texas: Association of
+  Certified Fraud Examiners, 2011.
+
+\bibitem{acfe_study_package_2011}
+A.~of~Certified Fraud~Examiners, {\em 2011 ACFE Study Package}.
+\newblock Austin, Texas: Association of Certified Fraud Examiners, 2011.
 
 \bibitem{blackburn_2005_representation_ch1}
 P.~Blackburn and J.~Bos, ``First-order logic,'' in {\em Representation and
@@ -226,32 +261,6 @@ P.~Blackburn and J.~Bos, ``Putting it all together,'' in {\em Representation
   and Inference for Natural Language: A First Course in Computational Semantics
   (Studies in Computational Linguistics)}, ch.~6, pp.~259--308, Stanford,
   California: Center for the Study of Language and Information, 2005.
-
-\bibitem{blackburn_2006_prolog_ch1}
-P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Facts, rules, and queries,'' in {\em
-  Learn Prolog Now!}, ch.~1, pp.~1--20, London, England: College Publications,
-  2006.
-
-\bibitem{blackburn_2006_prolog_ch2}
-P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Unification and proof search,'' in
-  {\em Learn Prolog Now!}, ch.~2, pp.~21--46, London, England: College
-  Publications, 2006.
-
-\bibitem{blackburn_2006_prolog_ch3}
-P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Recursion,'' in {\em Learn Prolog
-  Now!}, ch.~3, pp.~47--70, London, England: College Publications, 2006.
-
-\bibitem{blackburn_2006_prolog_ch4}
-P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Lists,'' in {\em Learn Prolog Now!},
-  ch.~4, pp.~71--88, London, England: College Publications, 2006.
-
-\bibitem{blackburn_2006_prolog_ch5}
-P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Arithmetic,'' in {\em Learn Prolog
-  Now!}, ch.~5, pp.~89--104, London, England: College Publications, 2006.
-
-\bibitem{blackburn_2006_prolog_ch6}
-P.~Blackburn, J.~Bos, and K.~Striegnitz, ``More lists,'' in {\em Learn Prolog
-  Now!}, ch.~6, pp.~105--118, London, England: College Publications, 2006.
 
 \bibitem{blackburn_2006_prolog_ch7}
 P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Definite clause grammars,'' in {\em

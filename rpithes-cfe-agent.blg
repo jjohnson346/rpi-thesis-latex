@@ -25,45 +25,45 @@ Database file #3: naveen.bib
 Warning--empty journal in clark2014interpreting
 Warning--empty school in Clark:2010:CIL:2019791
 Warning--there's a number but no series in johnson2015cfeagent
-You've used 56 entries,
+You've used 58 entries,
             1876 wiz_defined-function locations,
-            784 strings with 11309 characters,
-and the built_in function-call counts, 18369 in all, are:
-= -- 1784
-> -- 609
-< -- 2
-+ -- 223
-- -- 167
-* -- 1400
-:= -- 2394
-add.period$ -- 59
-call.type$ -- 56
-change.case$ -- 61
+            793 strings with 11499 characters,
+and the built_in function-call counts, 18828 in all, are:
+= -- 1829
+> -- 617
+< -- 3
++ -- 227
+- -- 169
+* -- 1423
+:= -- 2448
+add.period$ -- 62
+call.type$ -- 58
+change.case$ -- 63
 chr.to.int$ -- 0
-cite$ -- 59
-duplicate$ -- 965
-empty$ -- 1957
-format.name$ -- 167
-if$ -- 4580
+cite$ -- 61
+duplicate$ -- 999
+empty$ -- 2012
+format.name$ -- 169
+if$ -- 4703
 int.to.chr$ -- 0
-int.to.str$ -- 56
-missing$ -- 53
-newline$ -- 175
-num.names$ -- 60
-pop$ -- 251
+int.to.str$ -- 58
+missing$ -- 56
+newline$ -- 182
+num.names$ -- 62
+pop$ -- 263
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 689
+skip$ -- 710
 stack$ -- 0
-substring$ -- 1373
-swap$ -- 394
-text.length$ -- 2
+substring$ -- 1385
+swap$ -- 409
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 208
-width$ -- 58
-write$ -- 563
+while$ -- 211
+width$ -- 60
+write$ -- 582
 (There was 1 error message)
