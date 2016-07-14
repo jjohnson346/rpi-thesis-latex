@@ -13,57 +13,53 @@ A level-1 auxiliary file: rpichap6.aux
 A level-1 auxiliary file: rpichap7.aux
 A level-1 auxiliary file: rpibib.aux
 The style file: ieeetr.bst
+A level-1 auxiliary file: rpiapp.aux
 Database file #1: joebib.bib
-Warning--entry type for "wiki:boolean_retrieval" isn't style-file defined
---line 468 of file joebib.bib
-I was expecting a `,' or a `}'---line 470 of file joebib.bib
- :    title = {Standard Boolean model --- Wikipedia{,} The Free Encyclopedia},  url={https://en.wikipedia.org/w/index.php?title=Standard_Boolean_model&oldid=644811431} 
- :                                                                                                                                                                      note={accessed 1-February-2016]}
-I'm skipping whatever remains of this entry
 Database file #2: main72.bib
 Database file #3: naveen.bib
+Warning--I didn't find a database entry for "lucene_misc"
 Warning--empty journal in clark2014interpreting
 Warning--empty school in Clark:2010:CIL:2019791
 Warning--there's a number but no series in johnson2015cfeagent
-You've used 58 entries,
+You've used 64 entries,
             1876 wiz_defined-function locations,
-            793 strings with 11499 characters,
-and the built_in function-call counts, 18828 in all, are:
-= -- 1829
-> -- 617
-< -- 3
-+ -- 227
-- -- 169
-* -- 1423
-:= -- 2448
-add.period$ -- 62
-call.type$ -- 58
-change.case$ -- 63
+            801 strings with 12836 characters,
+and the built_in function-call counts, 18966 in all, are:
+= -- 1830
+> -- 614
+< -- 2
++ -- 230
+- -- 166
+* -- 1397
+:= -- 2424
+add.period$ -- 68
+call.type$ -- 64
+change.case$ -- 60
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 999
-empty$ -- 2012
-format.name$ -- 169
-if$ -- 4703
+cite$ -- 67
+duplicate$ -- 997
+empty$ -- 2074
+format.name$ -- 166
+if$ -- 4749
 int.to.chr$ -- 0
-int.to.str$ -- 58
-missing$ -- 56
-newline$ -- 182
-num.names$ -- 62
-pop$ -- 263
+int.to.str$ -- 64
+missing$ -- 53
+newline$ -- 199
+num.names$ -- 59
+pop$ -- 318
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 710
+skip$ -- 717
 stack$ -- 0
-substring$ -- 1385
-swap$ -- 409
-text.length$ -- 3
+substring$ -- 1373
+swap$ -- 394
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 211
-width$ -- 60
-write$ -- 582
-(There was 1 error message)
+while$ -- 207
+width$ -- 66
+write$ -- 602
+(There were 4 warnings)

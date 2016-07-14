@@ -6,106 +6,15 @@
  
 \chapter{Version 2 -- A More Intelligent Agent}
 
-In this chapter, we describe Version 2 of the CFE Agent, enhanced with improved algorithms for locating the relevant section(s) of the CFE Manual for each question.  Version 1 of the CFE Agent is limited to coarse-grained sections as defined by the question sections of the CFE Exam and Manual.  Unfortunately, these sections of the manual are effectively so large, it's difficult for the agent to drill down to the text \emph{directly} related to a given question.  For intellectual-property-theft questions, for example, the ``Theft of Intellectual Property" section of the manual is 89 pages long.  For any question on this topic, pulling the entire section of the CFE manual will assure that the answer sought lies somewhere within our target document.  But with 89 pages of text in the section, we might still get the answer wrong.  Version 2 refines the filtering algorithm to help avoid this problem.
+In this chapter, we describe Version 2 of the CFE Agent, enhanced with improved algorithms using information retrieval for locating the relevant section(s) of the CFE Manual for each question.\footnote{For an overview of the topic of Information Retrieval, see Appendix \ref{app:information_retrieval}.}  Version 1 of the CFE Agent is limited to coarse-grained sections as defined by the question sections of the CFE Exam and Manual.  Unfortunately, these sections of the manual are effectively so large, it's difficult for the agent to drill down to the text \emph{directly} related to a given question.  For intellectual-property-theft questions, for example, the ``Theft of Intellectual Property" section of the manual is 89 pages long.  For any question on this topic, pulling the entire section of the CFE manual will assure that the answer sought lies somewhere within our target document.  But with 89 pages of text in the section, we might still get the answer wrong.  Version 2 refines the filtering algorithm to help avoid this problem.
 
 
 
-This chapter is laid out as follows:  First, we review the basic elements of Information Retrieval, the branch of AI dealing with retrieving documents from within a large collection related to an information need.  Next, we explore the open source software, Lucene, an Apache sofware program that provides information retrieval functionality.  This package was used in the implementation of Version 2 of the CFE agent.  Then, we look at the method used to break up the CFE manual into finer-grained sections, leveraging the table of contents and text metadata as means for dividing up the text along reasonable semantic lines into a collection of documents.  And finally, we present the analysis performed of a set of algorithms implemented in Version 2 using these information retrieval tools and this document collection.
+This chapter is laid out as follows:  First, we discuss the method for breaking up the CFE manual into fine grained sections, leveraging the table of contents and text metadata.  Next, we explore Lucene \cite{lucene_misc}, an Apache software component that provides information retrieval functionality, which was used in the development of Version 2.  Next, we briefly describe some support tools there were built to facilitate algorithm analysis and refinement in this iteration.  And finally, we discuss the algorithms of Version 2 and their performance.  
 
-One note before proceeding:  The terms, ``training set" and ``test set" are used throughout this chapter in reference to the battery of questions against which the algorithms discussed below were applied.  Indeed, we talk repeatedly about testing our algorithms against the training set, specifically. It is important to note here that ``training set" is a term of convenience in this chapter, and not one that should be taken to suggest a set for which we've optimized parameters vis \`a vis machine learning.  In fact, the algorithms we discuss in this chapter involve no training, per se, and so, it is perfectly valid to measure or test the performance of each of these algorithms against the ``training set".   (In chapter 5, however, we \emph{do} employ machine learning, and the training set and test set are used according to their conventional definition.)  Lastly, it should be mentioned that at the end of this chapter, we use the performance of each algorithm on the questions of the training set to determine the optimal algorithm to use on each question in the test set in order to measure overall performance of Version 2 of the agent.
+One note before proceeding:  The terms, ``training set" and ``test set" are used throughout this chapter in reference to the battery of questions against which the algorithms discussed below were applied.  Indeed, we talk repeatedly about testing our algorithms against the training set, specifically. It is important to note here that ``training set" is a term of convenience in this chapter, and not one that should be taken to suggest a set for which we've optimized parameters vis \`a vis machine learning.  In fact, the algorithms we discuss in this chapter involve no training, per se, and so, it is perfectly valid to measure or test the performance of each of these algorithms against the ``training set".\footnote{In chapter 5, however, we \emph{do} employ machine learning, and the training set and test set are used according to their conventional definition.}  Lastly, it should be mentioned that at the end of this chapter, we use the performance of each algorithm on the questions of the training set to determine the optimal algorithm to use on each question in the test set in order to measure overall performance of Version 2 of the agent.
 
 Finally, before moving any further, during the development of Version 2, a deeper review of the definition-type questions was in order.  Some questions were re-classified according to finer grained criteria, including the following:  Nine questions were reclassified as ``I, II, III, and IV" type.  Six questions for which ``Any of the Above" was an option were re-classified as ``All of the Above" type.  There were 26 questions whose answers weren't derived from the Fraud Examiners Manual but instead from a different text, The Corporate Fraud Handbook.  Finally, five questions were re-classified as ``NOT" questions.  After reclassifying these questions, we were left with 150 definition questions in our training set upon which to base our algorithm performance analysis, reduced from our original 196 questions used for Version 1.
-
-
-\section{Information Retrieval}
-
-Information Retrieval (IR) is the branch of AI dealing with the creation of software that retrieves documents of an unstructured nature from among a large collection of documents in response to an information need expressed as a natural language query \cite{manning_2008_introduction_ch1}.   A document is a unit of data, typically unstructured or semi-structured, and typically expressed in natural language.  (One of the fundamental questions to consider in IR is how to define a document - a sentence? a paragraph? a chapter?  The answer typically depends on the nature of the problem domain.)  A document collection is simply a collection of such documents, as defined above.  Finally, a vocabulary, $V=\{t_1,t_2,t_3,...,t_n\}$ is the set of all terms over which the contents of the documents are defined.
-
-\subsection{Boolean Retrieval}
-
-Boolean information retrieval is based on the idea of dividing up the document collection into two sets for each query - one set of documents which meets the requirements of the boolean query and the other set whose documents does not.  Boolean queries are structured as conjunctions of disjunctions; that is, of the form of query, $q$, where
-
-%\begin{gather*}
-%q = (W_i \lor W_k \lor ...) \land ... \land (W_j \lor W_s \lor ...) \\
-%\textrm{where}\ W_i = t_i, W_k = t_k, W_j = t_j, W_s = t_s, \\
-%\textrm{or}\ W_i = NON\ t_i, W_k = NON\ t_k, W_j = NON\ t_j, W_s = NON\ t_s \\
-%\text{where $t_i$ means that $t_i$ exists in the document and $NON\ t_i$ means it does not}
-%\end{gather*}
-
-\begin{equation}
-q = (W_i \lor W_k \lor ...) \land ... \land (W_j \lor W_s \lor ...) \\
-\end{equation}
-where $W_i = t_i, W_k = t_k, W_j = t_j, W_s = t_s,$ or $W_i = NON\ t_i, W_k = NON\ t_k, W_j = NON\ t_j, W_s = NON\ t_s$ and where $t_i$ means that $t_i$ exists in the document and $NON\ t_i$ means it does not \cite{wiki:boolean_retrieval}.
-
-%q = (Wi OR Wk OR ...) AND ... AND (Wj OR Ws OR ...)
-%
-%where Wi=ti, Wk=tk, Wj = tj, Ws = ts, or Wi = NON ti, Wk = NON tk, or Wj = NON tj, or Ws = NON ts, 
-%
-%where ti indicates the term ti is present in the doucument and NON ti indicates it is not.
-
-\subsubsection{Term-Document Incidence Matrix}
-
-Boolean retrieval may be  implemented using a data structure called a term-document incidence matrix, $A$, where $A$ is a two-dimensional array in which the $i$th row denotes the $i$th document in the document collection and where $j$th column denotes the $j$th term in the vocabulary, and where $A[i,j] = 1$ if the term, $i$ exists in the document, $j$, and 0 otherwise.  Based on $A$, the processing of a query involves finding those documents for which there is a 1 in each of the rows corresponding to the terms of the query \cite{manning_2008_introduction_ch1}.  
-
-A significant pitfall of this method is that it requires a vast amount of memory.  Consider an example consisting of 1 million documents and a vocabulary of 500,000 words.  Then, the size of the matrix is 50 trillion (1 million x 500,000).  This matrix is also highly sparse since any given document has on average a small number of words relative to the size of the vocabulary.  Suppose, for example, each document has 1,000 words.  Then, for each document, among the 50,000 elements in its corresponding row of the matrix, only 1,000 (2\%) are non-zero \cite{manning_2008_introduction_ch1}.	
-
-\subsubsection{Inverted Index}
-
-An alternative implementation for boolean retrieval utilizes an inverted Index -- a hash table in which the keys are the terms in the vocabulary and the value is a linked list of all of the identifiers for those documents in which that term appears.  This technique exploits the sparsity of the term-document matrix -- requiring memory only for those elements in which $A(i,j) = 1$ \cite{manning_2008_introduction_ch1}.
-
-
-\subsection{Ranked Retrieval}
-
-Boolean retrieval has the unfortunate drawback of returning a set of documents in response to a query as a set of equally ranked units through which the user must sift in order to find the information sought \cite{manning_2008_introduction_ch6}.  Sometimes, this sifting can be sizable task depending on the number of documents returns from the boolean query.  Ranked retrieval, on the other hand, is IR in which documents are ranked according to a score that measure the degree of similarity between the query and the terms of the document and in which documents are returned in decreasing sorted order of this score \cite{manning_2008_introduction_ch6}.  
-
-The Vector Space model (VSM) \cite{manning_2008_introduction_ch6} is one approach to ranked retrieval, and is based on representing the documents in the collection and the query as vectors and where documents are scored according to a measure of similarity between their vector representations and that of the query.  There are a number of measures, or weights, that are typically incorporated into a vector representation as discussed below.
-
-The log of the term frequency, $\textrm{log}_{10}(tf)$ is a measure of the number of occurences of a particular term in the document.  (The log is used as opposed to the term frequency, itself, in order to dampen the effect for each additional occurrence of a term.)  The log-frequency weight of term, $t$ in document, $d$ is given by \cite{manning_2008_introduction_ch6}:
-
-\begin{equation}
-w(t,d) = 1 + \textrm{log}_{10}(tf_d), \textrm{where}\ tf_d > 0, 0\  \textrm{otherwise}
-\end{equation}
-
-Inverse document frequency is a measure of the relative scarcity of a term in a document relative to the other documents in the collection.  A higher weight is assigned to a term that appears in relatively few documents compared with one that appears in many.  The inverse document frequency, $idf(t)$, can be calculated for each term, t, of the query as follows \cite{manning_2008_introduction_ch6}:  
-
-\begin{equation}
-idf(t)  = \textrm{log}_{10}(N/df_t),
-\end{equation}
-
-\noindent
-where $N$ is the number of documents in the collection and $df_t$ is the number of documents containing term, $t$.  Again, as is the case for term frequency, the log is used here to moderate the effect of the measure.
-
-We can combine these two measures such that for each term, $t$, in each document, $d$, we have \cite{manning_2008_introduction_ch6}:
-
-\begin{equation}
-w(t,d) = (1 + \textrm{log}_{10}(tf_d)) \times \textrm{log}_{10}(N/df_t).
-\end{equation}
-
-\noindent
-The vector representation of a document, $d$, is $\vec{d}$, where
-
-\begin{equation}
-\vec{d} =  [w(t_1,d), w(t_2,d), w(t_3,d),...., w(t_n, d)], 
-\end{equation}
-
-\noindent
-where, as defined above our vocabulary, $V=\{t_1,t_2, ..., t_n\}$.  Note, queries can also be vectorized in the same way.  
-
-In order to measure the relative relevance of document, $d$, to the query, $q$, the vector representations of both $d$ and $q$, $\vec{d}$ and $\vec{q}$, are harnessed to compute a quantitative measure of the level of similarity between the two vectors using the concept of cosine similarity.  Informally, the cosine similarity of two n-dimensional vectors is a measure of the cosine of the angle between them in n-dimensional space.  Normalization of the lengths of the vectors is also incorporated into this calculation to assure that longer documents' weights do not outsize the weights of shorter (but perhaps, similar) documents, (such as the query itself, which is commonly much shorter than the document against which it is compared).  
-
-\begin{equation}
-\begin{split}
-\textrm{sim}(q, d) & = \dfrac{\vec{q} \cdot \vec{d}}{|\vec{q}||\vec{d}|} \\
- & = \dfrac{\vec{q}}{|\vec{q}|} \cdot \dfrac{\vec{d}}{|\vec{d}|}
-\end{split}
-%	= q(arrow)/length(q(arrow)) dot d(arrow)/length(d(arrow)) = 
-%	= sum(i to length(V))q(i)d(i)/(sum(i to length(V)q(i)\^2))(sum(i to length(V)d(i)\^2))
-\end{equation}
-
-\noindent
-For a document, $d$ whose length-normalized-vector representation is similar to that of $q$, the angle between its vector and that of $q$ should be small (close to 0), and thus have a cosine near 1.  For those documents not similar to $q$, the cosine measure will tend toward 0, (note that all of the terms in these vector-representation vectors are greater than or equal to 0).  Under the document vectorization approach, the highest $K$ documents are returned in response to a query, $q$, in order of decreasining cosine similarity, where $K$ is an arbitrary figure intended to limit the size of the return set.
-
-
 
 
 \section{Transforming the CFE Manual into a Document Collection}
@@ -114,7 +23,7 @@ The CFE Manual is structured as a text book. As such, it is structured hierarchi
 
 \section{Lucene -- A Tool for Information Retrieval}
 
-Lucene, \url{https://lucene.apache.org/}, is a highly popular Apache software product that implements IR using a combination of Boolean Retrieval and the VSM \cite{McCandless:2010:LAS:1893016_ch1,McCandless:2010:LAS:1893016_ch2,McCandless:2010:LAS:1893016_ch3,McCandless:2010:LAS:1893016_ch4}.  First, it narrows the document set using boolean retrieval, and then it ranks the remaining documents using VSM.  The algorithms described below were implemented using this tool.  
+Lucene \cite{lucene} is a highly popular Apache software product that implements IR using a combination of Boolean Retrieval and the VSM \cite{McCandless:2010:LAS:1893016_ch1,McCandless:2010:LAS:1893016_ch2,McCandless:2010:LAS:1893016_ch3,McCandless:2010:LAS:1893016_ch4}.  First, it narrows the document set using boolean retrieval, and then it ranks the remaining documents using VSM.  The algorithms described below were implemented using this tool.  
 
 \begin{figure}
 \centering

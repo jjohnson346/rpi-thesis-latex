@@ -8,35 +8,96 @@
 %\addcontentsline{toc}{chapter}{APPENDICES}             %toc entry  or:
 \addtocontents{toc}{\parindent0pt\vskip12pt APPENDICES} %toc entry, no page #
 
-\chapter{THIS IS AN APPENDIX}
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
+\chapter{Brief Overview of Information Retrieval}
+\label{app:information_retrieval}
 
-\section{A Section Heading}
+Information Retrieval (IR) \cite{manning_2008_introduction_ch1} is the branch of AI dealing with the creation of software that retrieves documents of an unstructured nature from among a large collection of documents in response to an information need expressed as a natural language query.   A document is a unit of data, typically unstructured or semi-structured, and typically expressed in natural language.  (One of the fundamental questions to consider in IR is how to define a document - a sentence? a paragraph? a chapter?  The answer typically depends on the nature of the problem domain.)  A document collection is simply a collection of such documents, as defined above.  Finally, a vocabulary, $V=\{t_1,t_2,t_3,...,t_n\}$ is the set of all terms over which the contents of the documents are defined.
 
-This is how equations are numbered in an appendix:
+\section{Boolean Retrieval}
+
+Boolean information retrieval is based on the idea of dividing up the document collection into two sets for each query - one set of documents which meets the requirements of the boolean query and the other set whose documents does not.  Boolean queries are structured as conjunctions of disjunctions; that is, of the form of query, $q$, where
+
+%\begin{gather*}
+%q = (W_i \lor W_k \lor ...) \land ... \land (W_j \lor W_s \lor ...) \\
+%\textrm{where}\ W_i = t_i, W_k = t_k, W_j = t_j, W_s = t_s, \\
+%\textrm{or}\ W_i = NON\ t_i, W_k = NON\ t_k, W_j = NON\ t_j, W_s = NON\ t_s \\
+%\text{where $t_i$ means that $t_i$ exists in the document and $NON\ t_i$ means it does not}
+%\end{gather*}
+
 \begin{equation}
-x^2 + y^2 = z^2
-\end{equation} 
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
- 
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text. 
+q = (W_i \lor W_k \lor ...) \land ... \land (W_j \lor W_s \lor ...) \\
+\end{equation}
+where $W_i = t_i, W_k = t_k, W_j = t_j, W_s = t_s,$ or $W_i = NON\ t_i, W_k = NON\ t_k, W_j = NON\ t_j, W_s = NON\ t_s$ and where $t_i$ means that $t_i$ exists in the document and $NON\ t_i$ means it does not \cite{wiki:boolean_retrieval}.
 
-\chapter{THIS IS ANOTHER APPENDIX} 
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
-This is a sentence to take up space and look like text.
- 
+%q = (Wi OR Wk OR ...) AND ... AND (Wj OR Ws OR ...)
+%
+%where Wi=ti, Wk=tk, Wj = tj, Ws = ts, or Wi = NON ti, Wk = NON tk, or Wj = NON tj, or Ws = NON ts, 
+%
+%where ti indicates the term ti is present in the doucument and NON ti indicates it is not.
+
+\subsection{Term-Document Incidence Matrix}
+
+Boolean retrieval may be  implemented using a data structure called a term-document incidence matrix, $A$, where $A$ is a two-dimensional array in which the $i$th row denotes the $i$th document in the document collection and where $j$th column denotes the $j$th term in the vocabulary, and where $A[i,j] = 1$ if the term, $i$ exists in the document, $j$, and 0 otherwise.  Based on $A$, the processing of a query involves finding those documents for which there is a 1 in each of the rows corresponding to the terms of the query \cite{manning_2008_introduction_ch1}.  
+
+A significant pitfall of this method is that it requires a vast amount of memory.  Consider an example consisting of 1 million documents and a vocabulary of 500,000 words.  Then, the size of the matrix is 50 trillion (1 million x 500,000).  This matrix is also highly sparse since any given document has on average a small number of words relative to the size of the vocabulary.  Suppose, for example, each document has 1,000 words.  Then, for each document, among the 50,000 elements in its corresponding row of the matrix, only 1,000 (2\%) are non-zero \cite{manning_2008_introduction_ch1}.	
+
+\subsection{Inverted Index}
+
+An alternative implementation for boolean retrieval utilizes an inverted Index -- a hash table in which the keys are the terms in the vocabulary and the value is a linked list of all of the identifiers for those documents in which that term appears.  This technique exploits the sparsity of the term-document matrix -- requiring memory only for those elements in which $A(i,j) = 1$ \cite{manning_2008_introduction_ch1}.
+
+
+\section{Ranked Retrieval}
+
+Boolean retrieval has the unfortunate drawback of returning a set of documents in response to a query as a set of equally ranked units through which the user must sift in order to find the information sought \cite{manning_2008_introduction_ch6}.  Sometimes, this sifting can be a sizable task depending on the number of documents returns from the boolean query.  Ranked retrieval, on the other hand, is IR in which documents are ranked according to a score that measure the degree of similarity between the query and the terms of the document and in which documents are returned in decreasing sorted order of this score \cite{manning_2008_introduction_ch6}.  
+
+The Vector Space model (VSM) \cite{manning_2008_introduction_ch6} is one approach to ranked retrieval, and is based on representing the documents in the collection and the query as vectors and where documents are scored according to a measure of similarity between their vector representations and that of the query.  There are a number of measures, or weights, that are typically incorporated into a vector representation as discussed below.
+
+The log of the term frequency, $\textrm{log}_{10}(tf)$ is a measure of the number of occurences of a particular term in the document.  (The log is used as opposed to the term frequency, itself, in order to dampen the effect for each additional occurrence of a term.)  The log-frequency weight of term, $t$ in document, $d$ is given by \cite{manning_2008_introduction_ch6}:
+
+\begin{equation}
+w(t,d) = 1 + \textrm{log}_{10}(tf_d), \textrm{where}\ tf_d > 0, 0\  \textrm{otherwise}
+\end{equation}
+
+Inverse document frequency is a measure of the relative scarcity of a term in a document relative to the other documents in the collection.  A higher weight is assigned to a term that appears in relatively few documents compared with one that appears in many.  The inverse document frequency, $idf(t)$, can be calculated for each term, t, of the query as follows \cite{manning_2008_introduction_ch6}:  
+
+\begin{equation}
+idf(t)  = \textrm{log}_{10}(N/df_t),
+\end{equation}
+
+\noindent
+where $N$ is the number of documents in the collection and $df_t$ is the number of documents containing term, $t$.  Again, as is the case for term frequency, the log is used here to moderate the effect of the measure.
+
+We can combine these two measures such that for each term, $t$, in each document, $d$, we have \cite{manning_2008_introduction_ch6}:
+
+\begin{equation}
+w(t,d) = (1 + \textrm{log}_{10}(tf_d)) \times \textrm{log}_{10}(N/df_t).
+\end{equation}
+
+\noindent
+The vector representation of a document, $d$, is $\vec{d}$, where
+
+\begin{equation}
+\vec{d} =  [w(t_1,d), w(t_2,d), w(t_3,d),...., w(t_n, d)], 
+\end{equation}
+
+\noindent
+where, as defined above our vocabulary, $V=\{t_1,t_2, ..., t_n\}$.  Note, queries can also be vectorized in the same way.  
+
+In order to measure the relative relevance of document, $d$, to the query, $q$, the vector representations of both $d$ and $q$, $\vec{d}$ and $\vec{q}$, are harnessed to compute a quantitative measure of the level of similarity between the two vectors using the concept of cosine similarity.  Informally, the cosine similarity of two n-dimensional vectors is a measure of the cosine of the angle between them in n-dimensional space.  Normalization of the lengths of the vectors is also incorporated into this calculation to assure that longer documents' weights do not outsize the weights of shorter (but perhaps, similar) documents, (such as the query itself, which is commonly much shorter than the document against which it is compared).  
+
+\begin{equation}
+\begin{split}
+\textrm{sim}(q, d) & = \dfrac{\vec{q} \cdot \vec{d}}{|\vec{q}||\vec{d}|} \\
+ & = \dfrac{\vec{q}}{|\vec{q}|} \cdot \dfrac{\vec{d}}{|\vec{d}|}
+\end{split}
+%	= q(arrow)/length(q(arrow)) dot d(arrow)/length(d(arrow)) = 
+%	= sum(i to length(V))q(i)d(i)/(sum(i to length(V)q(i)\^2))(sum(i to length(V)d(i)\^2))
+\end{equation}
+
+\noindent
+For a document, $d$ whose length-normalized-vector representation is similar to that of $q$, the angle between its vector and that of $q$ should be small (close to 0), and thus have a cosine near 1.  For those documents not similar to $q$, the cosine measure will tend toward 0, (note that all of the terms in these vector-representation vectors are greater than or equal to 0).  Under the document vectorization approach, the highest $K$ documents are returned in response to a query, $q$, in order of decreasing cosine similarity, where $K$ is an arbitrary figure intended to limit the size of the return set.
+
+
+
+
+

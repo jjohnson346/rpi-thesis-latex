@@ -68,9 +68,22 @@ S.~J. Russell and P.~Norvig, ``Truth maintenance systems,'' in {\em Artificial
   Intelligence: A Modern Approach}, section 12.6, pp.~460--462, Saddle River,
   New Jersey: Prentice Hall, 3~ed., 2010.
 
+\bibitem{acfe}
+{Association of Certified Fraud Examiners, \textit{ACFE}. [Online] Available:
+  http://www.acfe.com/ Accessed on: July 13, 2016}.
+
 \bibitem{markopolos2010}
 H.~Markopolos, ``Introduction,'' in {\em No One Would Listen}, pp.~1--4,
   Hoboken, New Jersey: John Wiley \& Sons, 2010.
+
+\bibitem{java_software}
+{Oracle, \textit{Java}. [Online] Available:
+  http://www.oracle.com/technetwork/java/javase/downloads/index.html Accessed
+  on: July 13, 2016}.
+
+\bibitem{r_software}
+{R. Gentleman and R. Ihaka, \textit{R Project for Statistical Computing}.
+  [Online] Available: https://www.r-project.org/ Accessed on: July 13, 2016}.
 
 \bibitem{clark2015elementary}
 P.~Clark, ``Elementary school science and math tests as a driver for {A}{I}:
@@ -151,8 +164,14 @@ J.~Martin and D.~Jurafsky, ``Question answering and summarization,'' in {\em
   processing, computational linguistics, and speech recognition}, ch.~23,
   pp.~765--810, Saddle River, New Jersey: Prentice Hall, 2~ed., 2000.
 
-\bibitem{wiki:boolean_retrieval}
-Wikipedia, ``Standard boolean model --- wikipedia{,} the free encyclopedia.''
+\bibitem{acfe_study_package_2011}
+{Association of Certified Fraud Examiners, \textit{2011 ACFE Study Package}.
+  [Online] Available: http://www.acfe.com/student-package.aspx Accessed on:
+  November 1, 2011}.
+
+\bibitem{lucene}
+{Apache Software Foundation, \textit{Lucene}. [Online] Available:
+  https://lucene.apache.org/ Accessed on: March 30, 2016}.
 
 \bibitem{McCandless:2010:LAS:1893016_ch1}
 M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Meet {L}ucene,'' in {\em
@@ -204,8 +223,8 @@ S.~Bringsjord, J.~Taylor, A.~Shilliday, M.~Clark, and K.~Arkoudas, ``{S}late:
 
 \bibitem{snarksri}
 M.~E. Stickel, ``{SNARK - SRI's New Automated Reasoning Kit},'' 2008.
-\newblock Retrieved on July 26, 2013.
-  \url{http://www.ai.sri.com/~stickel/snark.html}.
+\newblock [Online] http://www.ai.sri.com/~stickel/snark.html Accessed on: July
+  26, 2013.
 
 \bibitem{kolmogorov1958definition}
 A.~Kolmogorov and V.~Uspenskii, ``{On the Definition of an Algorithm},'' {\em
@@ -217,13 +236,10 @@ S.~Bringsjord and N.~S. Govindarajulu, ``In defense of the unprovability of the
   no.~5, pp.~353--373, 2011.
 
 \bibitem{acfe_manual_2011_doctorshopping}
-A.~of~Certified Fraud~Examiners, ``Doctor/{ER} shopping,'' in {\em 2011 Fraud
-  Examiners Manual}, section~1, p.~1.1227, Austin, Texas: Association of
-  Certified Fraud Examiners, 2011.
-
-\bibitem{acfe_study_package_2011}
-A.~of~Certified Fraud~Examiners, {\em 2011 ACFE Study Package}.
-\newblock Austin, Texas: Association of Certified Fraud Examiners, 2011.
+{Association of Certified Fraud Examiners, ``Doctor/ER Shopping" in
+  \textit{2011 Fraud Examiners Manual}, section 1, p. 1.227, Austin, Texas:
+  Association of Certified Fraud Examiners [Online] Available:
+  http://www.acfe.com/2016USFEM.aspx Accessed on: November 1, 2011}.
 
 \bibitem{blackburn_2005_representation_ch1}
 P.~Blackburn and J.~Bos, ``First-order logic,'' in {\em Representation and
@@ -297,5 +313,20 @@ J.~Martin and D.~Jurafsky, ``Statistical parsing,'' in {\em Speech and Language
   Processing. An introduction to natural language processing, computational
   linguistics, and speech recognition}, ch.~14, pp.~459--488, Saddle River, New
   Jersey: Prentice Hall, 2~ed., 2000.
+
+\bibitem{opennlp}
+{Apache Software Foundation, \textit{OpenNLP}. [Online] Available:
+  https://opennlp.apache.org/ Accessed on: July 13, 2016}.
+
+\bibitem{stanford_parser}
+{Stanford Natural Language Processing Group, \textit{Stanford Parser}. [Online]
+  Available: http://nlp.stanford.edu/software/lex-parser.shtml Accessed on:
+  July 13, 2016}.
+
+\bibitem{wiki:boolean_retrieval}
+{``Standard Boolean model --- Wikipedia, The Free Encyclopedia" in
+  \textit{Wikipedia}, [Online] Available:
+  https://en.wikipedia.org/w/index.php?title=Standard\_Boolean\_model Accessed
+  on: February 1, 2016}.
 
 \end{thebibliography}

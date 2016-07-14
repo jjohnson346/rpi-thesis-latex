@@ -21,7 +21,7 @@ The work we present here seeks to advance the state of the art of QA by explorin
 %In short, then, the goal of this thesis is threefold:  First, introduce the use of psychometric AI \cite{psychoai.ijcai03} for researching methods in QA, where psychometric AI, here, is the development and validation of intelligent systems by applying their algorithms to taking multiple choice tests.  Second, explore techniques by which the agent can answer questions while providing reasoning for its answers, and specifically, using proof-based techniques.  Third, lay a foundation for the rigorous science of fraud detection.  Finally, after having explored the various techniques presented in this thesis, make recommendations about future research in the field of QA.  In particular, we consider ways in which semantic approaches can be utilized in conjunction with the techniques presented here for developing knowledge-bases to advance the art of QA in the semantic direction.
 
 \section{The Intelligent Agent Defined, For This Project}
-In an effort to further detail the goals listed above, the definition of intelligent agent is made more explicit, here, as one capable not only of making intelligent decisions, but also of providing a justification for those decisions.  The ideal for a justification is one that is proof-based as exemplified in \cite{bringsjord2015logicist} and \cite{johnson2014three}.  Approaching this ideal is a different approach that shows the premises for each of its conclusions, as in justification-based truth maintenance systems, (JTMS), as described in \cite{russell_norvig_2010_sect12.6}. Finally, short of these approaches, we'd like some explanation (albeit not rising to the level of a proof) from the agent for the reasoning for its decisions, (as we'll discuss for Versions 2 and 3).  This is to be contrasted with agents of other AI systems where decisions are provided typically without any justifications.  For example, in a facial recognition system, the agent typically matches identities to faces in photographs without explicit explanations for its reasoning.  
+In an effort to further detail the goals listed above, the definition of intelligent agent is made more explicit, here, as one capable not only of making intelligent decisions, but also of providing a justification for those decisions.  The ideal for a justification is one that is proof-based as exemplified in \cite{bringsjord2015logicist} and \cite{johnson2014three}.  Approaching this ideal is a different approach that shows the premises for each of its conclusions, as in justification-based truth maintenance systems, (JTMS), as described in \cite{russell_norvig_2010_sect12.6}. Finally, short of these approaches, we'd like some explanation (albeit not rising to the level of a proof) from the agent for the reasoning for its decisions, (as we'll discuss for Versions 2 and 3).  This is to be contrasted with agents of other AI systems where decisions are provided typically without any justifications.\footnote{For example, in a facial recognition system, the agent typically matches identities to faces in photographs without explicit explanations for its reasoning.} 
 
 %This type of agent, which is the goal for this project, will be termed a ``reasoning agent".  It should also be mentioned the reasoning agent provides justifications in situations where there is uncertainty of outcome (which is typically the case for the domain in this project).
 
@@ -51,7 +51,7 @@ The overarching idea is to develop successively more sophisticated agents -- sta
 
 \subsection{Reasoning with Uncertainty}
 
-In order to cover the nondeterminism inherent when extracting information using NLP techniques, the agent incorporates uncertainty into its decisions.  As we'll see in Version 1 and Version 2, the agent quantifies uncertainty by analysis of its various algorithms on the training set, and then utilizes this information to optimize its accuracy on the test set.  It also quantifies uncertainty in some intermediate steps of its algorithms, such as in paragraph selection in Version 3.
+In order to cover the nondeterminism inherent when extracting information using NLP techniques, the agent incorporates uncertainty into its decisions.  As we'll see in Version 1 and Version 2, the agent quantifies uncertainty by analysis of its various algorithms on the training set, and then utilizes this information to optimize its accuracy on the test set.  It also quantifies uncertainty in some intermediate steps of its algorithms, such as in the paragraph selection algorithm in Version 3.
 
 \subsection{Verification of the Agent via Test-Taking}
 
@@ -60,28 +60,28 @@ The performance of algorithms is assessed by analyzing its  accuracy on multiple
 \subsubsection{The ACFE and the CFE Exam}
 
 
-The ACFE (\url{http://www.acfe.com}) describes itself on its website as ``the world's largest anti-fraud organization and premier provider of anti-fraud training and education.''  Generally speaking, in order to become a readily employable expert in the field of fraud detection, certification by this organization is required.  (Among notable certified members of the ACFE is Harry Markopolos, the American forensic accountant who achieved fame by being the first to have uncovered the ponzi scheme perpetrated by Bernard Madoff and desperately tried to warn government securities officials years before the scam collapsed in the midst of the 2008 financial crisis \cite{markopolos2010}.)  The ACFE has well-defined requirements for becoming certified, based on a point system that considers a combination of professional experience and academic credentials.  However, the CFE exam is the credentialing centerpiece for the ACFE, and the details of this exam are described briefly below.
+The ACFE \cite{acfe} describes itself on its website as ``the world's largest anti-fraud organization and premier provider of anti-fraud training and education'' \cite{acfe}.  Generally speaking, in order to become a readily employable expert in the field of fraud detection, certification by this organization is required.  (Among notable certified members of the ACFE is Harry Markopolos, the American forensic accountant who achieved fame by being the first to have uncovered the ponzi scheme perpetrated by Bernard Madoff and desperately tried to warn government securities officials years before the scam collapsed in the midst of the 2008 financial crisis \cite{markopolos2010}.)  The ACFE has well-defined requirements for becoming certified, based on a point system that considers a combination of professional experience and academic credentials.  However, the CFE exam is the credentialing centerpiece for the ACFE, and the details of this exam are described briefly below.
 
 The CFE Exam is a computer-based exam.  The mechanics for preparing for and taking the exam begins with downloading a software package from the prep course page of the ACFE website.  This package includes the exam software, the Fraud Examiners Manual (on which the test is based), and a self-study application consisting of a battery of sample test questions, a complete practice exam, and tools for monitoring progress.  
 
 The CFE exam consists of 4 sections, listed below:
 
-\begin{itemize}
+\begin{enumerate}
 \item Financial Transactions and Fraud Schemes 
 \item Law 
 \item Investigation
 \item Fraud Prevention and Deterrence.  
-\end{itemize}
+\end{enumerate}
 
 Each section consists of 125 multiple-choice and true-false questions.  The candidate is limited to 75 seconds to complete each question and a maximum total allocated time of 2.6 hours to complete each section.  Each CFE Exam section is taken separately.  The timing for each section is subject to the candidate’s discretion.  However, all four sections of the exam must be completed and submitted to the ACFE for grading within a 30-day period.
 
 \subsubsection{CFE manual}
 
-The Fraud Examiners Manual (known by the CFE Agent as the `CFE Manual') is the text corpus on which all of the questions of the CFE Exam are based.  Each question includes a section heading that loosely maps to an individual section within the manual.  However, these sections are rough-grained, often 20--100 pages.  
+The CFE Manual is the text corpus on which all of the questions of the CFE Exam are based.  Each question includes a section heading that loosely maps to an individual section within the manual.  However, these sections are rough-grained, often 20--100 pages.  
 
 \section{Code Resources}
 
-The code (written in Java and R) for the CFE Agent, supporting software components (many of which are discussed later in this paper), and the text version of the CFE Manual are available at \url{https://github.com/jjohnson346/cfe-exam-agent}.
+The code (written in Java \cite{java_software} and R \cite{r_software}) for the CFE Agent and its supporting software components are available at \url{https://github.com/jjohnson346/cfe-exam-agent}.
 
 
 
