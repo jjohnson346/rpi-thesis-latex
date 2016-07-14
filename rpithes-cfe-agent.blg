@@ -15,15 +15,13 @@ A level-1 auxiliary file: rpibib.aux
 The style file: ieeetr.bst
 A level-1 auxiliary file: rpiapp.aux
 Database file #1: joebib.bib
-Database file #2: main72.bib
-Database file #3: naveen.bib
 Warning--I didn't find a database entry for "lucene_misc"
 Warning--empty journal in clark2014interpreting
 Warning--empty school in Clark:2010:CIL:2019791
 Warning--there's a number but no series in johnson2015cfeagent
 You've used 64 entries,
             1876 wiz_defined-function locations,
-            801 strings with 12836 characters,
+            799 strings with 12810 characters,
 and the built_in function-call counts, 18966 in all, are:
 = -- 1830
 > -- 614
