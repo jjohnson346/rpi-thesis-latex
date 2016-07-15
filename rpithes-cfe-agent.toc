@@ -58,42 +58,42 @@
 \contentsline {chapter}{\numberline {4.}Version 2 -- A More Intelligent Agent}{32}{chapter.4}
 \contentsline {section}{\numberline {4.1}Transforming the CFE Manual into a Document Collection}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Lucene -- A Tool for Information Retrieval}{34}{section.4.2}
-\contentsline {section}{\numberline {4.3}Analysis Tools for Algorithm Development}{36}{section.4.3}
+\contentsline {section}{\numberline {4.3}Analysis Tools for Algorithm Development}{35}{section.4.3}
 \contentsline {section}{\numberline {4.4}Algorithms for Version 2}{38}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Concept Match Version 1}{38}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.1}Concept Match Version 1}{39}{subsection.4.4.1}
 \contentsline {subsubsection}{\numberline {4.4.1.1}Agent Justification for Selected Answer}{41}{subsubsection.4.4.1.1}
 \contentsline {subsubsection}{\numberline {4.4.1.2}Concept Match V1 Performance}{41}{subsubsection.4.4.1.2}
 \contentsline {subsection}{\numberline {4.4.2}Concept Match Version 2}{43}{subsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.2.1}Concept Match V2 Performance}{47}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Concept Match V2 Performance}{49}{subsubsection.4.4.2.1}
 \contentsline {subsection}{\numberline {4.4.3}Concept Match Version 3}{49}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Concept Match V3 Performance}{52}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Concept Match NOT}{53}{subsection.4.4.5}
+\contentsline {subsection}{\numberline {4.4.4}Concept Match V3 Performance}{53}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Concept Match NOT}{54}{subsection.4.4.5}
 \contentsline {subsection}{\numberline {4.4.6}Performance of the Concept Match NOT on the Training Set - Definition/NOT Questions}{55}{subsection.4.4.6}
-\contentsline {subsection}{\numberline {4.4.7}Concept Match NOTA}{55}{subsection.4.4.7}
-\contentsline {subsection}{\numberline {4.4.8}Performance of Concept Match NOTA}{58}{subsection.4.4.8}
+\contentsline {subsection}{\numberline {4.4.7}Concept Match NOTA}{57}{subsection.4.4.7}
+\contentsline {subsection}{\numberline {4.4.8}Performance of Concept Match NOTA}{59}{subsection.4.4.8}
 \contentsline {section}{\numberline {4.5}CFE Agent Version 2 Results}{59}{section.4.5}
-\contentsline {chapter}{\numberline {5.}Version 3 -- A Passage-Discerning Agent}{63}{chapter.5}
-\contentsline {section}{\numberline {5.1}Development of the Training Set}{64}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Targeted Questions}{64}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Passage Training Set}{65}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Development of the Passage Classification Model}{66}{section.5.2}
-\contentsline {section}{\numberline {5.3}Application to the Test Set}{67}{section.5.3}
-\contentsline {section}{\numberline {5.4}Answer Processing Algorithms for Version 3}{68}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}MLPassage1}{69}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}MLPassage1 Performance}{71}{subsubsection.5.4.1.1}
-\contentsline {subsection}{\numberline {5.4.2}MLPassage2}{72}{subsection.5.4.2}
-\contentsline {chapter}{\numberline {6.}Version 4 -- Toward a Formal Model for Fraud Detection}{74}{chapter.6}
-\contentsline {section}{\numberline {6.1}An Example Subdomain - Doctor Shopping}{75}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Doctor Shopping Axioms}{76}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Doctor Shopping - An Example}{77}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Doctor Shopping Proof}{79}{subsection.6.1.3}
-\contentsline {chapter}{\numberline {7.}Conclusion and Future Work}{84}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary of Work}{84}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{85}{section.7.2}
-\contentsline {chapter}{REFERENCES}{88}{section*.64}
+\contentsline {chapter}{\numberline {5.}Version 3 -- A Passage-Discerning Agent}{64}{chapter.5}
+\contentsline {section}{\numberline {5.1}Development of the Training Set}{65}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Targeted Questions}{65}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Passage Training Set}{66}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Development of the Passage Classification Model}{67}{section.5.2}
+\contentsline {section}{\numberline {5.3}Application to the Test Set}{68}{section.5.3}
+\contentsline {section}{\numberline {5.4}Answer Processing Algorithms for Version 3}{69}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}MLPassage1}{70}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}MLPassage1 Performance}{72}{subsubsection.5.4.1.1}
+\contentsline {subsection}{\numberline {5.4.2}MLPassage2}{73}{subsection.5.4.2}
+\contentsline {chapter}{\numberline {6.}Version 4 -- Toward a Formal Model for Fraud Detection}{76}{chapter.6}
+\contentsline {section}{\numberline {6.1}An Example Subdomain - Doctor Shopping}{77}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Doctor Shopping Axioms}{78}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Doctor Shopping - An Example}{79}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Doctor Shopping Proof}{81}{subsection.6.1.3}
+\contentsline {chapter}{\numberline {7.}Conclusion and Future Work}{86}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of Work}{86}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{87}{section.7.2}
+\contentsline {chapter}{REFERENCES}{90}{section*.64}
 \parindent 0pt\vskip 12pt APPENDICES
-\contentsline {chapter}{\numberline {A.}Brief Overview of Information Retrieval}{94}{appendix.A}
-\contentsline {section}{\numberline {A.1}Boolean Retrieval}{94}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Term-Document Incidence Matrix}{94}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Inverted Index}{95}{subsection.A.1.2}
-\contentsline {section}{\numberline {A.2}Ranked Retrieval}{95}{section.A.2}
+\contentsline {chapter}{\numberline {A.}Brief Overview of Information Retrieval}{96}{appendix.A}
+\contentsline {section}{\numberline {A.1}Boolean Retrieval}{96}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Term-Document Incidence Matrix}{96}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Inverted Index}{97}{subsection.A.1.2}
+\contentsline {section}{\numberline {A.2}Ranked Retrieval}{97}{section.A.2}
