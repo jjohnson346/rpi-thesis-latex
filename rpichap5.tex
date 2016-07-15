@@ -8,11 +8,11 @@
 
 In this chapter, we describe Version 3 of the CFE Agent and its development.  In Version 3, the agent attempts to isolate the passage from which each question is drawn at an even finer level of detail than in Version 2.  To review, Version 1 of the agent attempts to answer question using a very course-grained filter in which text is isolated only at the relatively high level of question section within the FEM.  Version 2 attempts to improve on this by decomposing the large sections of the manual into documents according to table-of-contents entries and specific text features, such as, capitalized sub-headings.  In Version 3, the agent breaks up the text even further dividing each document into passages, and attempts to isolate the single passage most relevant to the question.  It should be noted, however, that Version 3 focuses exclusively on definition-type questions, unlike Versions 1 and 2, for which performance was analyzed and discussed on many or all question types in the preceding chapters in detail.  Given the narrow focus on a single passage for each question, it was thought that this approach is most appropriate for definition questions.  However, extending this approach to other question types is an area for further research.
 
-The general approach for Version 3 is the application of supervised machine learning  \cite{alpaydin_2014_introduction_ch1}, in conjunction with information retrieval for selecting the ``most correct" passage for each question.  The machine learning model uses logisitic regression for discriminating a correct passage from an incorrect one, based on a prescribed set of features by assigning a probability of relevance to each passage.  After sorting these passages in descending order of probability, the agent selects a number of passages from the top of this list and uses a separate algorithm that selects an answer from among the four answer options.  By employing machine learning, however, we must concede that justifications for answers are more opaque, as it becomes more difficult to explain the coefficients that the agent uses in the logit regression model.  Doing so would require a low level explanation connecting the questions and their passages in the training set to the learned coefficients of the model, which is not practical.  Thus the justifications for the agent's answers exclude this aspect of the algorithm.
+The general approach for Version 3 is the application of supervised machine learning  \cite{alpaydin_2014_introduction_ch1}, in conjunction with information retrieval for selecting the ``most correct" passage for each question.  The machine learning model uses logisitic regression for discriminating a correct passage from an incorrect one, based on a prescribed set of features by assigning a probability of relevance to each passage.  After sorting these passages in descending order of probability, the agent selects a number of passages from the top of this list and uses a separate algorithm that selects an answer from among the four answer options.  By employing machine learning, however, we must concede that justifications for answers are more opaque, as it becomes more difficult to explain the coefficients that the agent uses in the logistic regression model.  Doing so would require a low level explanation connecting the questions and their passages in the training set to the learned coefficients of the model, which is not practical.  Thus the justifications for the agent's answers exclude this aspect of the algorithm.
 
 %During development of Version 3, a number of considerations needed to be addressed, including the the decision of what should constitute a passage (a paragraph? a sentence? a phrase?), the features for the passage selection model, the selection of questions for the training set and test set, the manual curation of the training set and test set, the development of the model from the training set, and its application to the test set.  These issues are discussed in the sections below.  
 
-This rest of this chapter is laid out as follows:  First, we discuss the preparation of the training and test sets, and in so doing explicitly describe how each of the issues mentioned above were handled, in detail.  Next, we describe the development of the logit regression model for classifying passages as either relevant or irrelevant.  Third, we discuss the application of the model to the test set and discuss its performance.  And finally, we discuss two answer selection algorithms and their performance.
+This rest of this chapter is laid out as follows:  First, we discuss the preparation of the training and test sets, and in so doing explicitly describe how each of the issues mentioned above were handled, in detail.  Next, we describe the development of the logistic regression model for classifying passages as either relevant or irrelevant.  Third, we discuss the application of the model to the test set and discuss its performance.  And finally, we discuss two answer selection algorithms and their performance.
 
 %\section{Machine Learning}
 
@@ -47,7 +47,7 @@ Next, we set about the task of developing the training set of passages upon whic
 
 \item Create the training set of passages.  This was accomplished by extracting each passage for each of the documents from the IR step, and correctly labeling it as relevant/irrelevant.  Note that for each question, the assumption was made that exactly one passage was relevant.  Again, as mentioned above, for all but 8 questions in the training set, there was one passage marked relevant.  All others were marked as irrelevant.  For the 133 definition questions of the training set, we generated 9419 passage records from the related documents.
 
-\item Identify and determine the features for each passage.  There were a number of features used here as inputs to the logit regression model.  Not surprisingly, we used the document search rank.  The higher the rank of the containing document, the more likely it would seem that the passage would be the relevant passage for the question.  Two other features were also used:  the number of distinct words in common between the question stem and the passage, and the length of the longest common sequence of words between the question stem and the passage.
+\item Identify and determine the features for each passage.  There were a number of features used here as inputs to the logistic regression model.  Not surprisingly, we used the document search rank.  The higher the rank of the containing document, the more likely it would seem that the passage would be the relevant passage for the question.  Two other features were also used:  the number of distinct words in common between the question stem and the passage, and the length of the longest common sequence of words between the question stem and the passage.
 \end{enumerate}
 
 Note that the process of identifying the correct passage and of generating the passages was also applied to the test set.  For the 16 questions in the test set, we generated 971 passage records from the related documents.
@@ -55,7 +55,7 @@ Note that the process of identifying the correct passage and of generating the p
 
 \section{Development of the Passage Classification Model}
 
-Fig~\ref{fig:logit_model_summary} shows the output of the program written in R \cite{james_2013_introduction_ch4} for constructing the passage selection classification model.  As mentioned above, this model uses logistic regression to arrive at the constant coefficients shown in the figure.  Some clarification of the names of the input and output variables is needed here:  
+Fig~\ref{fig:logistic_model_summary} shows the output of the program written in R \cite{james_2013_introduction_ch4} for constructing the passage selection classification model.  As mentioned above, this model uses logistic regression to arrive at the constant coefficients shown in the figure.  Some clarification of the names of the input and output variables is needed here:  
 
 \begin{enumerate}
 \item dr -- (short for ``document rank") -- is an input variable containing Lucene's rank of the document containing the given passage using the question stem as the query string.
@@ -71,7 +71,7 @@ As for the coefficients, themselves, the coefficient for the document rank varia
 \vspace{1.0in}
 \includegraphics[width=125mm, height=125mm]{logit_model_summary.png}
 \caption{Passage Classification Model Summary}
-\label{fig:logit_model_summary}
+\label{fig:logistic_model_summary}
 \end{figure}
 
 
@@ -101,7 +101,7 @@ The application of the classification model to the passage test set yields favor
 
 \section{Answer Processing Algorithms for Version 3}
 
-The answer processing algorithms discussed in this section leverage the top seven passages extracted using the passage classification logit regression model.  Both of these algorithms are relatively straight-forward in nature and utilize the refined text body in a significant way.  
+The answer processing algorithms discussed in this section leverage the top seven passages extracted using the passage classification logistic regression model.  Both of these algorithms are relatively straight-forward in nature and utilize the refined text body in a significant way.  
 
 	% \subsection{Application of the Passage Selection Logit Model}
 

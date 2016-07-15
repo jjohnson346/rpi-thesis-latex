@@ -12,52 +12,61 @@ A level-1 auxiliary file: rpichap5.aux
 A level-1 auxiliary file: rpichap6.aux
 A level-1 auxiliary file: rpichap7.aux
 A level-1 auxiliary file: rpibib.aux
-The style file: ieeetr.bst
+The style file: ieeetran.bst
 A level-1 auxiliary file: rpiapp.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: joebib.bib
 Warning--I didn't find a database entry for "lucene_misc"
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in clark2014interpreting
-Warning--empty school in Clark:2010:CIL:2019791
-Warning--there's a number but no series in johnson2015cfeagent
+Warning--missing school in Clark:2010:CIL:2019791
+
+Done.
 You've used 64 entries,
-            1876 wiz_defined-function locations,
-            799 strings with 12810 characters,
-and the built_in function-call counts, 18966 in all, are:
-= -- 1830
-> -- 614
-< -- 2
-+ -- 230
+            4024 wiz_defined-function locations,
+            1127 strings with 16572 characters,
+and the built_in function-call counts, 50535 in all, are:
+= -- 3908
+> -- 1089
+< -- 471
++ -- 584
 - -- 166
-* -- 1397
-:= -- 2424
-add.period$ -- 68
+* -- 2452
+:= -- 7183
+add.period$ -- 159
 call.type$ -- 64
-change.case$ -- 60
-chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 997
-empty$ -- 2074
-format.name$ -- 166
-if$ -- 4749
+change.case$ -- 74
+chr.to.int$ -- 1104
+cite$ -- 66
+duplicate$ -- 3725
+empty$ -- 4494
+format.name$ -- 216
+if$ -- 11785
 int.to.chr$ -- 0
 int.to.str$ -- 64
-missing$ -- 53
-newline$ -- 199
+missing$ -- 615
+newline$ -- 215
 num.names$ -- 59
-pop$ -- 318
+pop$ -- 1599
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 0
-skip$ -- 717
+quote$ -- 2
+skip$ -- 3834
 stack$ -- 0
-substring$ -- 1373
-swap$ -- 394
-text.length$ -- 2
+substring$ -- 2540
+swap$ -- 2942
+text.length$ -- 103
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 3
-while$ -- 207
+top$ -- 5
+type$ -- 64
+warning$ -- 2
+while$ -- 269
 width$ -- 66
-write$ -- 602
-(There were 4 warnings)
+write$ -- 615
+(There were 3 warnings)

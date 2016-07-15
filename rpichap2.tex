@@ -8,10 +8,7 @@
 
 \section{Project Aristo}
 
-Project Aristo is an ongoing, ambitious research project sponsored by the Allen Institute of
-Artificial Intelligence whose aim is to build an agent that can programmatically 
-acquire knowledge from text such that it can apply reasoning and knowledge 
-to pass 4th grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions - namely in the areas of knowledge, modeling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types in that can be described as follows:
+Project Aristo is an ongoing, ambitious research project sponsored by the Allen Institute of Artificial Intelligence whose aim is to build an agent that can programmatically acquire knowledge from text such that it can apply reasoning and knowledge to pass 4th grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions -- namely in the areas of knowledge, modeling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types in that can be described as follows:
 
 
 \subsection{Basic Questions}
@@ -63,10 +60,7 @@ These are question types that are also encountered on the 4th grade science exam
 
 \subsection{Progress on Project Aristo}
 
-Clark and Balasubramanian \cite{clark2014interpreting} discuss some of the 
-issues encountered during this project, and in particular, the tasks of programatic 
-translation of natural language sentences into formal logic and computational 
-reasoning using these programmatically generated assertions.
+Clark and Balasubramanian \cite{clark2014interpreting} discuss some of the issues encountered during this project, and in particular, the tasks of programatic translation of natural language sentences into formal logic and computational reasoning using these programmatically generated assertions.
 
 \subsubsection{Representating the Meaning of Natural Language Sentences}
 
@@ -84,7 +78,7 @@ One problem encountered during this task is the issue of generics, rules that mi
 
 \subsubsection{Reasoning with the Extracted Formalizations}
 
-Making inferences of entailed assertions not explicitly stated in the text is the ultimate goal of formalizing the natural language text.  However, like the first task, this task also comes with complications.  In the case of generics, their representation appears to lead to a downstream problem of having to resolve multiple symbols representing the same object.  In logic programming environments, such as Prolog, \cite{blackburn_2006_prolog_ch1,blackburn_2006_prolog_ch2,blackburn_2006_prolog_ch3,blackburn_2006_prolog_ch4,blackburn_2006_prolog_ch5,blackburn_2006_prolog_ch6} (mentioned by the author as one of the environments adopted for this project), its Unique Names Assumption means that two symbols cannot be assigned as equivalent.  As one approach to this problem, the relation of equality can be developed explicitly, but that means this relation must be worked into every implication, cluttering the knowledge base.  A more workable alternative, as pointed out by the author, is to build into the system the assumption that if an implication rule infers something that appears to repeat another assertion already in the knowledge base, then assume it actually is already in the knowledge base, thereby applying a minimization principle in order to avoid duplication of assertions.
+Making inferences of entailed assertions not explicitly stated in the text is the ultimate goal of formalizing the natural language text.  However, like the first task, this task also comes with complications.  In the case of generics, their representation appears to lead to a downstream problem of having to resolve multiple symbols representing the same object.  In logic programming environments, such as Prolog, \cite{blackburn_2006_prolog_ch1,blackburn_2006_prolog_ch2,blackburn_2006_prolog_ch3,blackburn_2006_prolog_ch4,blackburn_2006_prolog_ch5,blackburn_2006_prolog_ch6} (mentioned by the author as one of the environments adopted for project Aristo), its Unique Names Assumption means that two symbols cannot be assigned as equivalent.  As one approach to this problem, the relation of equality can be developed explicitly, but that means this relation must be worked into every implication, cluttering the knowledge base.  A more workable alternative, as pointed out by the author, is to build into the system the assumption that if an implication rule infers something that appears to repeat another assertion already in the knowledge base, then assume it actually is already in the knowledge base, thereby applying a minimization principle in order to avoid duplication of assertions.
 
 
 \section{Halo Project}
