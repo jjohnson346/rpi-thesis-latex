@@ -20,7 +20,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: joebib.bib
-Warning--I didn't find a database entry for "lucene_misc"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -28,45 +27,45 @@ Warning--empty journal in clark2014interpreting
 Warning--missing school in Clark:2010:CIL:2019791
 
 Done.
-You've used 64 entries,
+You've used 65 entries,
             4024 wiz_defined-function locations,
-            1127 strings with 16572 characters,
-and the built_in function-call counts, 50535 in all, are:
-= -- 3908
-> -- 1089
-< -- 471
-+ -- 584
-- -- 166
-* -- 2452
-:= -- 7183
-add.period$ -- 159
-call.type$ -- 64
+            1125 strings with 16586 characters,
+and the built_in function-call counts, 50762 in all, are:
+= -- 3905
+> -- 1088
+< -- 472
++ -- 583
+- -- 165
+* -- 2453
+:= -- 7195
+add.period$ -- 160
+call.type$ -- 65
 change.case$ -- 74
-chr.to.int$ -- 1104
-cite$ -- 66
-duplicate$ -- 3725
-empty$ -- 4494
-format.name$ -- 216
-if$ -- 11785
+chr.to.int$ -- 1110
+cite$ -- 67
+duplicate$ -- 3755
+empty$ -- 4544
+format.name$ -- 215
+if$ -- 11842
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 615
-newline$ -- 215
+int.to.str$ -- 65
+missing$ -- 621
+newline$ -- 218
 num.names$ -- 59
-pop$ -- 1599
+pop$ -- 1630
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3834
+skip$ -- 3854
 stack$ -- 0
-substring$ -- 2540
-swap$ -- 2942
-text.length$ -- 103
+substring$ -- 2544
+swap$ -- 2946
+text.length$ -- 102
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 64
+type$ -- 65
 warning$ -- 2
-while$ -- 269
-width$ -- 66
-write$ -- 615
-(There were 3 warnings)
+while$ -- 270
+width$ -- 67
+write$ -- 618
+(There were 2 warnings)
