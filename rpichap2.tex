@@ -114,7 +114,7 @@ Lexical answer type (LAT) detection is the determination of words that identify 
 
 \subsection{Relation Detection}
 
-Interestingly, relation detection was found to be of limited help since for the broad domain, it is difficult to determine the most important relations to detect.
+Relation detection is the extraction of semantic relationships from unstructured or semi-structured text.   Once the relations have been detected, they are typically re-expressed in a structured format, such as Resource Description Format (RDF).  This process is related to information extraction (IR), but in IR, there is typically a much narrower focus on a closed set of semantic relationships, whereas in relation detection the idea is to cast a wider net for capturing a wide range of relationships.  Interestingly, in the case of Watson, relation detection was found to be of limited help since for the broad domain, it is difficult to determine the most important relations to detect.
 
 \subsection{Hypothesis Generation}
 
@@ -134,12 +134,12 @@ Scoring is done through intensive computational analysis of the candidate answer
 
 \subsection{Ranking of Hypotheses}
 
-Hypothesis ranking uses machines learning, along with mixture of experts techniques to arrive at a final
+Hypothesis ranking uses machines learning, along with mixture of expert techniques to arrive at a final
 decision on the best answer to the question.
 
 \section{LASSO Question Answer System}
 
-LASSO \cite{moldovan_1999} is the question answer system developed by Moldovan et al. at the Natural Language Processing Lab at Southern Methodist University for the TREC-8 competition in 1999.  This architecture of this system can be decomposed into three principal components, discussec below.  Performance of this system was measured based on accuracy, showing results of accuracy scores were 55.5\% for short answer and 64.5\% for long answer questions
+LASSO \cite{moldovan_1999} is the question answer system developed by Moldovan et al. at the Natural Language Processing Lab at Southern Methodist University for the TREC-8 competition in 1999.  This architecture of this system can be decomposed into three principal components, discussed below.  Performance of this system was measured based on accuracy, showing results of accuracy scores were 55.5\% for short answer and 64.5\% for long answer questions
 
 \subsection{Question Processing Component}
 
@@ -178,7 +178,7 @@ This is the step in which the query formulated during question processing is exe
 
 \subsubsection{Paragraph Indexing}
 
-This is the step in which a score is assigned based on a number of statistics, including a same-word-sequence score, distance-score, missing keywords score.  This is the strategy for filtering the large number of docs returned by the wide net cast by the IR engine component.
+This is the step in which a score is assigned based on a number of statistics, including a same-word-sequence score, distance-score, missing keywords score.  This is the strategy for filtering the large number of documents returned by the wide net cast by the IR engine component.
 
 \subsection{Answer Processing Component}
 
@@ -187,7 +187,7 @@ The answer processing component extracts candidate answers from the highest-scor
 
 \section{Answer Type Classifiers}
 
-One important aspect of open-domain question answer is the task of answer type identification.  As explained in the discussions of Watson and LASSO, answer type determination is of great importance in QA systems since determining the answer type allows for greatly reducing the set of candidate answers to the question – only answers whose features, semantic or syntactic, indicate the same type as that of the question are considered, while other candidates are filtered out.  Assuming the answer type of the question is correct, (not a trivial assumption), the question answer system is in a much better position to narrow down the set toward the final, correct response.
+One important aspect of open-domain question answering is the task of answer type identification.  As explained in the discussions of Watson and LASSO, answer type determination is of great importance in QA systems since determining the answer type allows for greatly reducing the set of candidate answers to the question – only answers whose features, semantic or syntactic, indicate the same type as that of the question are considered, while other candidates are filtered out.  Assuming the answer type of the question is correct, (not a trivial assumption), the question answer system is in a much better position to narrow down the set toward the final, correct response.
 
 Li and Roth \cite{li2002learning} describe a machine-learning-based question classifier which is hierarchical in nature, where at the high level, there are 6 coarse-grained categories (ABBREVIATION, ENTITY, DESCRIPTION, HUMAN, LOCATION, and NUMERIC VALUE), and at the low level, there are up to 50 fine-grained categories.  For example, for the ENTITY type, subtypes include animal, body, color, creative, currency, and so on, while for LOCATION, subtypes include city, country, mountain, state, and other.  Their approach leverages machine learning in which feature types are analyzed, as opposed to specific features, allowing the training to extrapolate to a much larger feature set without having to annotate as large a training set.  Primitive features include words, part-of-speech (POS) tags, chunks (non-overlapping phrases),  named entities, and head chunks (the first noun-chunk in a sentence).   Higher order feature types are derived from these, i.e., classes of features that are automatically extracted for a given answer type category. 
 
