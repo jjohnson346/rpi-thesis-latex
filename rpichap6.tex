@@ -8,7 +8,7 @@
 
 \blfootnote{Portions of this chapter previously appeared as: \bibentry{johnson2014three}} 
 
-In this chapter, we attempt to use questions from the CFE exam as the foundation for creating elements of a formalization of the fraud domain, from which formal proofs can be constructed as justifications for each of the CFE exam questions.  Our ambition in this chapter is not to create a \emph{comprehensive} formal model, but to demonstrate the technique on a particular subdomain of fraud detection - the detection of doctor shopping.  And this process, when applied repeatedly to the various subdomains as described in the CFE Manual, leads to a comprehensive model.
+In this chapter, we attempt to lay the groundwork for the rigorous study of fraud detection.  Our goal is to not to build an agent in the same sense as Versions 1, 2, and 3 of the CFE Agent whose performance is to be evaluated against CFE exam questions in the spirit of psychometric AI, but instead to build one that demonstrates a formalized approach to the domain of fraud detection, whereby through formal reasoning, we can answer questions with logico-deductive proof-based justifications.  Furthermore, our ambition in this chapter is not to create a \emph{comprehensive} formal model, but to demonstrate the technique on an examplar subdomain - the detection of doctor shopping.
 
 %% need to attribute these two paragraphs below - taken from the bounded rationality
 %% paper.
@@ -117,7 +117,7 @@ This first declaration deals with Blue getting a 90-day prescription for Lexapro
 \end{align*}
 \end{footnotesize}
 
-\noindent And finally, we have a declaration that asserts Blue believes that if he does not tell Dr. Black about the prescription from Dr. White.
+\noindent And finally, we have a declaration that asserts Blue believes that if he does not tell Dr. Black about the prescription from Dr. White during his visit with Dr. Black on Friday, then Dr. Black does not know Blue received the prescription from Dr. White the preceding Wednesday.
 %% Declaration4
 %% Blue believes that if he does not tell Dr. Black about the prescription from Dr. White
 %% that Dr.Black does not know about the prescription from Dr. White.
@@ -156,7 +156,7 @@ Wednesday.}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-\noindent Next, the agent uses [$A2$] and [$D2$] to prove Blue also knows he was given a prescription by Dr. Balck on Friday, as shown in Fig.~\ref{fig:proof_of_c2}, which stated formally, is as follows:
+\noindent Next, the agent uses [$A2$] and [$D2$] to prove Blue also knows he was given a prescription by Dr. Black on Friday, as shown in Fig.~\ref{fig:proof_of_c2}, which stated formally, is as follows:
 %% Conclusion2
 %% Blue knows he gets a 90-day prescription for Lexapro from Dr. Black on Friday
 \begin{footnotesize}

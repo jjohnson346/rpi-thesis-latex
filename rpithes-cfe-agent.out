@@ -66,13 +66,13 @@
 \BOOKMARK [2][-]{subsection.4.4.2}{Concept Match Version 2}{section.4.4}% 66
 \BOOKMARK [3][-]{subsubsection.4.4.2.1}{Concept Match V2 Performance}{subsection.4.4.2}% 67
 \BOOKMARK [2][-]{subsection.4.4.3}{Concept Match Version 3}{section.4.4}% 68
-\BOOKMARK [2][-]{subsection.4.4.4}{Concept Match V3 Performance}{section.4.4}% 69
-\BOOKMARK [2][-]{subsection.4.4.5}{Concept Match NOT}{section.4.4}% 70
-\BOOKMARK [2][-]{subsection.4.4.6}{Performance of the Concept Match NOT on the Training Set - Definition/NOT Questions}{section.4.4}% 71
-\BOOKMARK [2][-]{subsection.4.4.7}{Concept Match NOTA}{section.4.4}% 72
-\BOOKMARK [2][-]{subsection.4.4.8}{Performance of Concept Match NOTA}{section.4.4}% 73
+\BOOKMARK [3][-]{subsubsection.4.4.3.1}{Concept Match V3 Performance}{subsection.4.4.3}% 69
+\BOOKMARK [2][-]{subsection.4.4.4}{Concept Match NOT}{section.4.4}% 70
+\BOOKMARK [3][-]{subsubsection.4.4.4.1}{Concept Match NOT Performance}{subsection.4.4.4}% 71
+\BOOKMARK [2][-]{subsection.4.4.5}{Concept Match NOTA}{section.4.4}% 72
+\BOOKMARK [3][-]{subsubsection.4.4.5.1}{Concept Match NOTA Performance}{subsection.4.4.5}% 73
 \BOOKMARK [1][-]{section.4.5}{CFE Agent Version 2 Results}{chapter.4}% 74
-\BOOKMARK [0][-]{chapter.5}{Version 3 \205 A Passage-Discerning Agent}{}% 75
+\BOOKMARK [0][-]{chapter.5}{Version 3 \205 A Learning Agent}{}% 75
 \BOOKMARK [1][-]{section.5.1}{Development of the Training Set}{chapter.5}% 76
 \BOOKMARK [2][-]{subsection.5.1.1}{Targeted Questions}{section.5.1}% 77
 \BOOKMARK [2][-]{subsection.5.1.2}{Passage Training Set}{section.5.1}% 78

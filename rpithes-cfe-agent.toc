@@ -66,13 +66,13 @@
 \contentsline {subsection}{\numberline {4.4.2}Concept Match Version 2}{43}{subsection.4.4.2}
 \contentsline {subsubsection}{\numberline {4.4.2.1}Concept Match V2 Performance}{49}{subsubsection.4.4.2.1}
 \contentsline {subsection}{\numberline {4.4.3}Concept Match Version 3}{49}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Concept Match V3 Performance}{53}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Concept Match NOT}{54}{subsection.4.4.5}
-\contentsline {subsection}{\numberline {4.4.6}Performance of the Concept Match NOT on the Training Set - Definition/NOT Questions}{55}{subsection.4.4.6}
-\contentsline {subsection}{\numberline {4.4.7}Concept Match NOTA}{57}{subsection.4.4.7}
-\contentsline {subsection}{\numberline {4.4.8}Performance of Concept Match NOTA}{59}{subsection.4.4.8}
-\contentsline {section}{\numberline {4.5}CFE Agent Version 2 Results}{59}{section.4.5}
-\contentsline {chapter}{\numberline {5.}Version 3 -- A Passage-Discerning Agent}{64}{chapter.5}
+\contentsline {subsubsection}{\numberline {4.4.3.1}Concept Match V3 Performance}{53}{subsubsection.4.4.3.1}
+\contentsline {subsection}{\numberline {4.4.4}Concept Match NOT}{54}{subsection.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.4.1}Concept Match NOT Performance}{55}{subsubsection.4.4.4.1}
+\contentsline {subsection}{\numberline {4.4.5}Concept Match NOTA}{56}{subsection.4.4.5}
+\contentsline {subsubsection}{\numberline {4.4.5.1}Concept Match NOTA Performance}{59}{subsubsection.4.4.5.1}
+\contentsline {section}{\numberline {4.5}CFE Agent Version 2 Results}{61}{section.4.5}
+\contentsline {chapter}{\numberline {5.}Version 3 -- A Learning Agent}{64}{chapter.5}
 \contentsline {section}{\numberline {5.1}Development of the Training Set}{65}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Targeted Questions}{65}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Passage Training Set}{66}{subsection.5.1.2}
