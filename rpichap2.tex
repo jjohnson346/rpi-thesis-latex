@@ -6,6 +6,8 @@
  
 \chapter{Related Work}
 
+In this chapter, as we discuss related work, we do so in the context of the question we attempt to address in this dissertation - What balance can we strike between accuracy and reasoning justification in QA?  There is likely a general trade-off here - the greater the accuracy, the less provision of reasoning justification, consistent with the no-free-lunch principle.  Thus, there are likely a range of options for that balance.  But as yet we don't know what they are.  We attempt to address that question in this dissertation with our comparative analysis of various algorithms with varying degrees of accuracy and justification.  But we look to the prior work, discussed below, for context.
+
 \section{Project Aristo}
 
 Project Aristo is an ongoing, ambitious research project sponsored by the Allen Institute of Artificial Intelligence whose aim is to build an agent that can programmatically acquire knowledge from text such that it can apply reasoning and knowledge to pass 4th grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions -- namely in the areas of knowledge, modeling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types in that can be described as follows:
@@ -62,7 +64,7 @@ These are question types that are also encountered on the 4th grade science exam
 
 Clark and Balasubramanian \cite{clark2014interpreting} discuss some of the issues encountered during this project, and in particular, the tasks of programatic translation of natural language sentences into formal logic and computational reasoning using these programmatically generated assertions.
 
-\subsubsection{Representating the Meaning of Natural Language Sentences}
+\subsubsection{Representing the Meaning of Natural Language Sentences}
 
 The approach here is to chunk the natural language sentences in a way similar to a parse of the sentence, breaking up the sentence into noun and verb phrases, and so on.  Then, manually apply re-write rules by which the chunks can be rearranged into implications.  These re-write rules encapsulate syntactic manipulation and domain knowledge.
 
@@ -80,6 +82,10 @@ One problem encountered during this task is the issue of generics, rules that mi
 
 Making inferences of entailed assertions not explicitly stated in the text is the ultimate goal of formalizing the natural language text.  However, like the first task, this task also comes with complications.  In the case of generics, their representation appears to lead to a downstream problem of having to resolve multiple symbols representing the same object.  In logic programming environments, such as Prolog, \cite{blackburn_2006_prolog_ch1,blackburn_2006_prolog_ch2,blackburn_2006_prolog_ch3,blackburn_2006_prolog_ch4,blackburn_2006_prolog_ch5,blackburn_2006_prolog_ch6} (mentioned by the author as one of the environments adopted for project Aristo), its Unique Names Assumption means that two symbols cannot be assigned as equivalent.  As one approach to this problem, the relation of equality can be developed explicitly, but that means this relation must be worked into every implication, cluttering the knowledge base.  A more workable alternative, as pointed out by the author, is to build into the system the assumption that if an implication rule infers something that appears to repeat another assertion already in the knowledge base, then assume it actually is already in the knowledge base, thereby applying a minimization principle in order to avoid duplication of assertions.
 
+\subsection{Performance of Project Aristo and Some Perspective}
+
+The approach of Project Aristo is ambitious -- QA using programmatic extraction of knowledge is sparsely charted in AI and attempts by other systems for whom accuracy and speed are the top prioirities have generally avoided it,\footnote{Refer to discussion of Watson below, where we mention the decision to avoid using relation detection.}  This project is still underway, and thus, it remains to be seen what levels of accuracy can be achieved.  Even when it does, however, the reports will be with respect to their chosen approach, and does not offer a measure of performance with shallower approaches.
+
 
 \section{Halo Project}
 %\section{Halo Project (2004)}
@@ -96,12 +102,11 @@ Ontoprise created a system from scratch (no base-level knowledge-base system) ba
 
 Cycorp built a system using an existing platform, based on a logic called Cycl.  This system proved the slowest and least accurate among the three.
 
-\section{Prismatic}
-%\section{Prismatic (2008)}
+\subsection{Halo Project Performance and Perspective}
 
-Prismatic \cite{fan2012automatic} is a lexicalized relation resource that programmatically processes a large corpora (30 GB) in order to identify and store the ways entity and relation information are represented in unstructured text.  The system works by breaking its processing into
-three phases:  corpus processing, frame extraction, and frame cut extraction.  Corpus processing is primarily concerned with parsing the text using IBM's slot grammar parser.  Frame extraction uses the parse information to break up the text into frames, where a frame is a text representation of a group of entities and the relations between them.  Prismatic produced 1 billion frames from the 30 GB text corpus.  Lastly, frame cut extraction is a process in which the system extracts small parse sequences from the frames, (e.g., S-V-O (subject-verb-object), or
-(N-P-O (noun-preposition-object)) in order to analyze recurring patterns of text within them.  The redundancy of terms across these frame cuts allows the system to conclude extensional information (relations between specific instances of entities, such as the relation, located-in(Troy, New York)) and intensional information (e.g., located-in(city, state)).  This sort of information has applications in entity type identification, relation extraction, and question-answer.
+In general, the systems all performed better than expected, averaging around 40\% accuracy, equivalent to a score of about AP 3 out of 5.  Cycorp, however, took a long time to execute and its accuracy wasn't quite as good as the other two systems.  Justifications were considered fairly transparent.  But how might these systems have fared in on this exam had they been designed to use shallow techniques (at the cost of reasoning justifications) instead of knowledge-base techniques?  We don't know.
+
+
 
 \section{Watson}
 %\section{Watson (2010)}
@@ -114,7 +119,7 @@ Lexical answer type (LAT) detection is the determination of words that identify 
 
 \subsection{Relation Detection}
 
-Relation detection is the extraction of semantic relationships from unstructured or semi-structured text.   Once the relations have been detected, they are typically re-expressed in a structured format, such as Resource Description Format (RDF).  This process is related to information extraction (IR), but in IR, there is typically a much narrower focus on a closed set of semantic relationships, whereas in relation detection the idea is to cast a wider net for capturing a wide range of relationships.  Interestingly, in the case of Watson, relation detection was found to be of limited help since for the broad domain, it is difficult to determine the most important relations to detect.
+Relation detection is the extraction of semantic relationships from unstructured or semi-structured text.   Once the relations have been detected, they are typically re-expressed in a structured format, such as Resource Description Format (RDF).  This process is related to information extraction (IR), but in IR, there is typically a much narrower focus on a closed set of semantic relationships, whereas in relation detection the idea is to cast a wider net for capturing a wide range of relationships.  Interestingly, in the case of Watson, although relation detection was used at various points in the QA process, including LAT determination and passage and answer scoring, relation detection was found to be of limited help in the context of direct answer lookups.  Indeed, curated databases, in general, were used as a means for looking up answers in less than 2\% of questions \cite{ferrucci2010building}.
 
 \subsection{Hypothesis Generation}
 
@@ -137,9 +142,13 @@ Scoring is done through intensive computational analysis of the candidate answer
 Hypothesis ranking uses machines learning, along with mixture of expert techniques to arrive at a final
 decision on the best answer to the question.
 
+\subsection{Watson Performance and Perspective}
+
+As of the time \cite{ferrucci2010building} was published, Watson's performance was considered to be roughly at the same level as the best Jeopardy! players, scoring 85\% when answering 75\% of questions posed to the system, and 67\% when answering 100\% of posed questions.  This level of accuracy was truly groundbreaking in the area of QA, and clearly, the Jeopardy! game itself dictated the dual priorities of accuracy and speed as paramount.  However, no mention is made as to the level of justification provided for each of these answers.  We have to assume that unlike accuracy, justification was not a major priority.  What might the accuracy have been had it provided a greater level of justification?  This is the question we attempt to answer in this dissertation.
+
 \section{LASSO Question Answer System}
 
-LASSO \cite{moldovan_1999} is the question answer system developed by Moldovan et al. at the Natural Language Processing Lab at Southern Methodist University for the TREC-8 competition in 1999.  This architecture of this system can be decomposed into three principal components, discussed below.  Performance of this system was measured based on accuracy, showing results of accuracy scores were 55.5\% for short answer and 64.5\% for long answer questions
+LASSO \cite{moldovan_1999} is the question answer system developed by Moldovan et al. at the Natural Language Processing Lab at Southern Methodist University for the TREC-8 competition in 1999.  This architecture of this system can be decomposed into three principal components, discussed below.  
 
 \subsection{Question Processing Component}
 
@@ -174,7 +183,7 @@ In LASSO, the information resources are broken up into paragraph units, which se
 
 \subsubsection{Query execution}
 
-This is the step in which the query formulated during question processing is executed against the inverted index by the infrormation retrieval engine.  The IR engine component is a Boolean retrieval-based engine that retrieves paragraphs from the document collection based on the query created in the query processing component.  Boolean retrieval is used instead of vectorization where cosine similarity is used because boolean retrieval allows for greater recall at the expense of lower precision.  The paragraph indexing process serves as the finer-grained filter that prunes the results to a manageable number of paragraphs.
+This is the step in which the query formulated during question processing is executed against the inverted index by the information retrieval engine.  The IR engine component is a Boolean retrieval-based engine that retrieves paragraphs from the document collection based on the query created in the query processing component.  Boolean retrieval is used instead of vectorization where cosine similarity is used because boolean retrieval allows for greater recall at the expense of lower precision.  The paragraph indexing process serves as the finer-grained filter that prunes the results to a manageable number of paragraphs.
 
 \subsubsection{Paragraph Indexing}
 
@@ -191,6 +200,22 @@ One important aspect of open-domain question answering is the task of answer typ
 
 Li and Roth \cite{li2002learning} describe a machine-learning-based question classifier which is hierarchical in nature, where at the high level, there are 6 coarse-grained categories (ABBREVIATION, ENTITY, DESCRIPTION, HUMAN, LOCATION, and NUMERIC VALUE), and at the low level, there are up to 50 fine-grained categories.  For example, for the ENTITY type, subtypes include animal, body, color, creative, currency, and so on, while for LOCATION, subtypes include city, country, mountain, state, and other.  Their approach leverages machine learning in which feature types are analyzed, as opposed to specific features, allowing the training to extrapolate to a much larger feature set without having to annotate as large a training set.  Primitive features include words, part-of-speech (POS) tags, chunks (non-overlapping phrases),  named entities, and head chunks (the first noun-chunk in a sentence).   Higher order feature types are derived from these, i.e., classes of features that are automatically extracted for a given answer type category. 
 
+\subsection{LASSO Performance and Perspective}
+
+Performance of this system was measured based on accuracy, showing results of accuracy scores were 55.5\% for short answer and 64.5\% for long answer questions.  Again, we are left asking ourselves the question, had the engineers used different techniques which would have yielded more transparent justifications, how much would performance have suffered?  Would have suffered at all? 
+
+\section{Prismatic}
+%\section{Prismatic (2008)}
+
+Prismatic \cite{fan2012automatic} is a lexicalized relation resource that programmatically processes a large corpora (30 GB) in order to identify and store the ways entity and relation information are represented in unstructured text.  The system works by breaking its processing into
+three phases:  corpus processing, frame extraction, and frame cut extraction.  Corpus processing is primarily concerned with parsing the text using IBM's slot grammar parser.  Frame extraction uses the parse information to break up the text into frames, where a frame is a text representation of a group of entities and the relations between them.  Prismatic produced 1 billion frames from the 30 GB text corpus.  Lastly, frame cut extraction is a process in which the system extracts small parse sequences from the frames, (e.g., S-V-O (subject-verb-object), or
+(N-P-O (noun-preposition-object)) in order to analyze recurring patterns of text within them.  The redundancy of terms across these frame cuts allows the system to conclude extensional information (relations between specific instances of entities, such as the relation, located-in(Troy, New York)) and intensional information (e.g., located-in(city, state)).  This sort of information has applications in entity type identification, relation extraction, and question-answer.
+
+\subsection{Perspective on Prismatic}
+
+This system was not a QA system.  It was an entity detection system that was used in Watson at various points in the QA process, as mentioned above.  It is relevant to the work here as it helps us appreciate the extensive  engineering that went into the development of shallow relation detection.  But even with that investment, relations in curated databases were used seldomly for directly answering questions in a lookup fashion.
+
+
 \section{Semantic Approaches in the Fraud Domain}
 
 This section highlights work using a formal semantic approach to activities related to fraud/fraud detection.  The work summarized below inspired Version 4 of the CFE Agent, covered in Chapter 6.
@@ -199,10 +224,17 @@ This section highlights work using a formal semantic approach to activities rela
 
 Clark's doctoral dissertation \cite{Clark:2010:CIL:2019791} discussses the foundations and development of a prototype lying machine, a system which leverages a theory of mind in order to identify and exploit cognitive frailties in human reasoning based on mental heuristics and biases in order to assert plausible falsehoods that deceive its human audience.  This work lays the psychological and logico-computational groundwork for machine-generated mendacity.
 
+We mention this work even though it is not directly involved in QA in the same sense that the systems discussed above are because it involves deception (inherent in fraud) treated in a logico-computational framework.  
+
 \subsection{Formal Definition of Fraud}
 
-Firozabadi \cite{firozabadi1998formal} discusses a formal definition of fraud for the purposes of verifying electronic trade procedures, such as those inherent in business-to-business electonic commerce.  This work breaks down trade activities into two subgroups -- primary actions and control actions where control actions are designed to prevent deception in the execution of primary actions -- and expresses these activities using formal logic, using modal operators for action, belief (doxastic logic component), and obligation (deontic logic component).
+Firozabadi \cite{firozabadi1998formal} discusses a formal definition of fraud for the purposes of verifying electronic trade procedures, such as those inherent in business-to-business electonic commerce.  This work breaks down trade activities into two subgroups -- primary actions and control actions where control actions are designed to prevent deception in the execution of primary actions -- and expresses these activities using formal logic, using modal operators for action, belief (doxastic logic component), and obligation (deontic logic component).  We also mention this work for the same reason we mention \cite{Clark:2010:CIL:2019791}.  
 
+\subsection{Perspective on Related Work}
+
+In this chapter, as we discuss related work, we do so in the context of the question we attempt to address in this dissertation - What balance can we strike between accuracy and reasoning justification in QA?  There is likely a general trade-off here - the greater the accuracy, the less provision of reasoning justification, consistent with the no-free-lunch principle.  Thus, there are likely a range of options for that balance.  But as yet we don't know what they are.  We attempt to address that question in this dissertation with our comparative analysis of various algorithms with varying degrees of accuracy and justification.  But we look to the prior work, discussed below, for context.
+
+The systems above are all tremendous contributions to the field of QA and to AI, in general.  But the question that remains is: ``How might these systems fared in either of their respective problem domains had they been designed with different priorities in mind?"  How much would accuracy would have been sacrificed had the Watson provided its user with reasoning justifications for its answers?  Would the Project Halo systems performed significantly better had a knowledge-base approach \emph{not} been used?  What are the costs of sacrificing accuracy in favor of justifications, and vice versa?  This is the question we hope to shed some light on as we look at the various versions of the CFE Agent, where we implement algorithms with different mixes of priorities, and then apply them to the \emph{same problem domain}.  By comparing their scores on a battery of CFE Exam questions and characterizing their levels of justification, we can gain a sense of the landscape of possibilities in terms of accuracy and reasoning justification in the field of QA.
 
 
 
