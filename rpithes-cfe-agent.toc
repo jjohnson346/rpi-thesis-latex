@@ -10,96 +10,96 @@
 \contentsline {subsection}{\numberline {1.4.2}Verification of the Agent via Test-Taking}{3}{subsection.1.4.2}
 \contentsline {subsubsection}{\numberline {1.4.2.1}The ACFE and the CFE Exam}{3}{subsubsection.1.4.2.1}
 \contentsline {subsubsection}{\numberline {1.4.2.2}CFE manual}{4}{subsubsection.1.4.2.2}
-\contentsline {section}{\numberline {1.5}Code Resources}{4}{section.1.5}
-\contentsline {chapter}{\numberline {2.}Related Work}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Project Aristo}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Basic Questions}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Simple Inference Questions}{6}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}More Complex World Knowledge}{6}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Diagrams and Mathematics and Geometry}{7}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Progress on Project Aristo}{7}{subsection.2.1.5}
-\contentsline {subsubsection}{\numberline {2.1.5.1}Representing the Meaning of Natural Language Sentences}{7}{subsubsection.2.1.5.1}
-\contentsline {subsubsection}{\numberline {2.1.5.2}Reasoning with the Extracted Formalizations}{8}{subsubsection.2.1.5.2}
-\contentsline {subsection}{\numberline {2.1.6}Performance of Project Aristo and Some Perspective}{8}{subsection.2.1.6}
-\contentsline {section}{\numberline {2.2}Halo Project}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Halo Project Performance and Perspective}{9}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Watson}{9}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Focus and LAT Detection}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Relation Detection}{10}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Hypothesis Generation}{10}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Soft Filtering}{11}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Evidence Retrieval}{11}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Evidence Scoring}{11}{subsection.2.3.6}
-\contentsline {subsection}{\numberline {2.3.7}Ranking of Hypotheses}{11}{subsection.2.3.7}
-\contentsline {subsection}{\numberline {2.3.8}Watson Performance and Perspective}{11}{subsection.2.3.8}
-\contentsline {section}{\numberline {2.4}LASSO Question Answer System}{12}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Question Processing Component}{12}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Question type determination}{12}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Question focus determination}{12}{subsubsection.2.4.1.2}
-\contentsline {subsubsection}{\numberline {2.4.1.3}Question keywords selection}{13}{subsubsection.2.4.1.3}
-\contentsline {subsection}{\numberline {2.4.2}Paragraph Indexing Component}{13}{subsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.2.1}Query execution}{13}{subsubsection.2.4.2.1}
-\contentsline {subsubsection}{\numberline {2.4.2.2}Paragraph Indexing}{14}{subsubsection.2.4.2.2}
-\contentsline {subsection}{\numberline {2.4.3}Answer Processing Component}{14}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Answer Type Classifiers}{14}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}LASSO Performance and Perspective}{15}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Prismatic}{15}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Perspective on Prismatic}{16}{subsection.2.6.1}
-\contentsline {section}{\numberline {2.7}Semantic Approaches in the Fraud Domain}{16}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}The Lying Machine}{16}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Formal Definition of Fraud}{17}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}Perspective on Related Work}{17}{subsection.2.7.3}
-\contentsline {chapter}{\numberline {3.}Version 1 -- A Shallow Agent}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Resource Procurement and Customization}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}CFE Agent Design}{22}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Question Profile}{22}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Algorithm Set}{23}{subsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Max Joint Probability Algorithm}{23}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Max Frequency Algorithm}{23}{subsubsection.3.2.2.2}
-\contentsline {subsubsection}{\numberline {3.2.2.3}False Select}{24}{subsubsection.3.2.2.3}
-\contentsline {subsection}{\numberline {3.2.3}Algorithm Profile Data}{24}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}The Selection Algorithm}{24}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}CFE Agent Demo}{24}{section.3.3}
-\contentsline {section}{\numberline {3.4}CFE Agent Results - A Good Start}{30}{section.3.4}
-\contentsline {chapter}{\numberline {4.}Version 2 -- A More Intelligent Agent}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Transforming the CFE Manual into a Document Collection}{36}{section.4.1}
-\contentsline {section}{\numberline {4.2}Lucene -- A Tool for Information Retrieval}{37}{section.4.2}
-\contentsline {section}{\numberline {4.3}Analysis Tools for Algorithm Development}{38}{section.4.3}
-\contentsline {section}{\numberline {4.4}Algorithms for Version 2}{41}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Concept Match Version 1}{41}{subsection.4.4.1}
-\contentsline {subsubsection}{\numberline {4.4.1.1}Agent Justification for Selected Answer}{44}{subsubsection.4.4.1.1}
-\contentsline {subsubsection}{\numberline {4.4.1.2}Concept Match V1 Performance}{44}{subsubsection.4.4.1.2}
-\contentsline {subsection}{\numberline {4.4.2}Concept Match Version 2}{46}{subsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.2.1}Concept Match V2 Performance}{52}{subsubsection.4.4.2.1}
-\contentsline {subsection}{\numberline {4.4.3}Concept Match Version 3}{52}{subsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.3.1}Concept Match V3 Performance}{56}{subsubsection.4.4.3.1}
-\contentsline {subsection}{\numberline {4.4.4}Concept Match NOT}{57}{subsection.4.4.4}
-\contentsline {subsubsection}{\numberline {4.4.4.1}Concept Match NOT Performance}{58}{subsubsection.4.4.4.1}
-\contentsline {subsection}{\numberline {4.4.5}Concept Match NOTA}{59}{subsection.4.4.5}
-\contentsline {subsubsection}{\numberline {4.4.5.1}Concept Match NOTA Performance}{62}{subsubsection.4.4.5.1}
-\contentsline {section}{\numberline {4.5}CFE Agent Version 2 Results}{64}{section.4.5}
-\contentsline {chapter}{\numberline {5.}Version 3 -- A Learning Agent}{67}{chapter.5}
-\contentsline {section}{\numberline {5.1}Development of the Training Set}{68}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Targeted Questions}{68}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Passage Training Set}{69}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Development of the Passage Classification Model}{70}{section.5.2}
-\contentsline {section}{\numberline {5.3}Application to the Test Set}{71}{section.5.3}
-\contentsline {section}{\numberline {5.4}Answer Processing Algorithms for Version 3}{72}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}MLPassage1}{73}{subsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.1.1}MLPassage1 Performance}{75}{subsubsection.5.4.1.1}
-\contentsline {subsection}{\numberline {5.4.2}MLPassage2}{76}{subsection.5.4.2}
-\contentsline {chapter}{\numberline {6.}Version 4 -- Toward a Formal Model for Fraud Detection}{79}{chapter.6}
-\contentsline {section}{\numberline {6.1}An Example Subdomain - Doctor Shopping}{80}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Doctor Shopping Axioms}{81}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Doctor Shopping - An Example}{82}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Doctor Shopping Proof}{84}{subsection.6.1.3}
-\contentsline {chapter}{\numberline {7.}Conclusion and Future Work}{89}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary of Work}{89}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{90}{section.7.2}
-\contentsline {chapter}{REFERENCES}{93}{section*.64}
+\contentsline {section}{\numberline {1.5}Code Resources}{5}{section.1.5}
+\contentsline {chapter}{\numberline {2.}Related Work}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Project Aristo}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Basic Questions}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Simple Inference Questions}{7}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}More Complex World Knowledge}{7}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Diagrams and Mathematics and Geometry}{8}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Progress on Project Aristo}{8}{subsection.2.1.5}
+\contentsline {subsubsection}{\numberline {2.1.5.1}Representing the Meaning of Natural Language Sentences}{8}{subsubsection.2.1.5.1}
+\contentsline {subsubsection}{\numberline {2.1.5.2}Reasoning with the Extracted Formalizations}{9}{subsubsection.2.1.5.2}
+\contentsline {subsection}{\numberline {2.1.6}Performance of Project Aristo and Some Perspective}{9}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}Halo Project}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Halo Project Performance and Perspective}{10}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Watson}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Focus and LAT Detection}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Relation Detection}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Hypothesis Generation}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Soft Filtering}{12}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Evidence Retrieval}{12}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Evidence Scoring}{12}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Ranking of Hypotheses}{12}{subsection.2.3.7}
+\contentsline {subsection}{\numberline {2.3.8}Watson Performance and Perspective}{12}{subsection.2.3.8}
+\contentsline {section}{\numberline {2.4}LASSO Question Answer System}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Question Processing Component}{13}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Question type determination}{13}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Question focus determination}{13}{subsubsection.2.4.1.2}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Question keywords selection}{14}{subsubsection.2.4.1.3}
+\contentsline {subsection}{\numberline {2.4.2}Paragraph Indexing Component}{14}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Query execution}{14}{subsubsection.2.4.2.1}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Paragraph Indexing}{15}{subsubsection.2.4.2.2}
+\contentsline {subsection}{\numberline {2.4.3}Answer Processing Component}{15}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Answer Type Classifiers}{15}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}LASSO Performance and Perspective}{16}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Prismatic}{16}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Perspective on Prismatic}{17}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.7}Semantic Approaches in the Fraud Domain}{17}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}The Lying Machine}{17}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Formal Definition of Fraud}{18}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Perspective on Related Work}{18}{subsection.2.7.3}
+\contentsline {chapter}{\numberline {3.}Version 1 -- A Shallow Agent}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Resource Procurement and Customization}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}CFE Agent Design}{23}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Question Profile}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Algorithm Set}{24}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Max Joint Probability Algorithm}{24}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Max Frequency Algorithm}{24}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}False Select}{25}{subsubsection.3.2.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Algorithm Profile Data}{25}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}The Selection Algorithm}{25}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}CFE Agent Demo}{25}{section.3.3}
+\contentsline {section}{\numberline {3.4}CFE Agent Results - A Good Start}{31}{section.3.4}
+\contentsline {chapter}{\numberline {4.}Version 2 -- A More Intelligent Agent}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Transforming the CFE Manual into a Document Collection}{38}{section.4.1}
+\contentsline {section}{\numberline {4.2}Lucene -- A Tool for Information Retrieval}{39}{section.4.2}
+\contentsline {section}{\numberline {4.3}Analysis Tools for Algorithm Development}{40}{section.4.3}
+\contentsline {section}{\numberline {4.4}Algorithms for Version 2}{43}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Concept Match Version 1}{43}{subsection.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.1.1}Agent Justification for Selected Answer}{46}{subsubsection.4.4.1.1}
+\contentsline {subsubsection}{\numberline {4.4.1.2}Concept Match V1 Performance}{46}{subsubsection.4.4.1.2}
+\contentsline {subsection}{\numberline {4.4.2}Concept Match Version 2}{48}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}Concept Match V2 Performance}{54}{subsubsection.4.4.2.1}
+\contentsline {subsection}{\numberline {4.4.3}Concept Match Version 3}{54}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}Concept Match V3 Performance}{58}{subsubsection.4.4.3.1}
+\contentsline {subsection}{\numberline {4.4.4}Concept Match NOT}{59}{subsection.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.4.1}Concept Match NOT Performance}{60}{subsubsection.4.4.4.1}
+\contentsline {subsection}{\numberline {4.4.5}Concept Match NOTA}{61}{subsection.4.4.5}
+\contentsline {subsubsection}{\numberline {4.4.5.1}Concept Match NOTA Performance}{64}{subsubsection.4.4.5.1}
+\contentsline {section}{\numberline {4.5}CFE Agent Version 2 Results}{66}{section.4.5}
+\contentsline {chapter}{\numberline {5.}Version 3 -- A Learning Agent}{69}{chapter.5}
+\contentsline {section}{\numberline {5.1}Development of the Training Set}{70}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Targeted Questions}{70}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Passage Training Set}{71}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Development of the Passage Classification Model}{72}{section.5.2}
+\contentsline {section}{\numberline {5.3}Application to the Test Set}{73}{section.5.3}
+\contentsline {section}{\numberline {5.4}Answer Processing Algorithms for Version 3}{74}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}MLPassage1}{75}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}MLPassage1 Performance}{77}{subsubsection.5.4.1.1}
+\contentsline {subsection}{\numberline {5.4.2}MLPassage2}{78}{subsection.5.4.2}
+\contentsline {chapter}{\numberline {6.}Version 4 -- Toward a Formal Model for Fraud Detection}{81}{chapter.6}
+\contentsline {section}{\numberline {6.1}An Example Subdomain - Doctor Shopping}{82}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Doctor Shopping Axioms}{83}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Doctor Shopping - An Example}{84}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Doctor Shopping Proof}{86}{subsection.6.1.3}
+\contentsline {chapter}{\numberline {7.}Conclusion and Future Work}{91}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of Work}{91}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{92}{section.7.2}
+\contentsline {chapter}{REFERENCES}{95}{section*.64}
 \parindent 0pt\vskip 12pt APPENDICES
-\contentsline {chapter}{\numberline {A.}Brief Overview of Information Retrieval}{99}{appendix.A}
-\contentsline {section}{\numberline {A.1}Boolean Retrieval}{99}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Term-Document Incidence Matrix}{99}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Inverted Index}{100}{subsection.A.1.2}
-\contentsline {section}{\numberline {A.2}Ranked Retrieval}{100}{section.A.2}
+\contentsline {chapter}{\numberline {A.}Brief Overview of Information Retrieval}{101}{appendix.A}
+\contentsline {section}{\numberline {A.1}Boolean Retrieval}{101}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Term-Document Incidence Matrix}{101}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Inverted Index}{102}{subsection.A.1.2}
+\contentsline {section}{\numberline {A.2}Ranked Retrieval}{102}{section.A.2}
