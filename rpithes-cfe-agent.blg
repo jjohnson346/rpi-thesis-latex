@@ -27,45 +27,45 @@ Warning--empty journal in clark2014interpreting
 Warning--missing school in Clark:2010:CIL:2019791
 
 Done.
-You've used 65 entries,
+You've used 68 entries,
             4024 wiz_defined-function locations,
-            1125 strings with 16586 characters,
-and the built_in function-call counts, 50762 in all, are:
-= -- 3905
-> -- 1088
-< -- 472
-+ -- 583
-- -- 165
-* -- 2453
-:= -- 7195
-add.period$ -- 160
-call.type$ -- 65
-change.case$ -- 74
-chr.to.int$ -- 1110
-cite$ -- 67
-duplicate$ -- 3755
-empty$ -- 4544
-format.name$ -- 215
-if$ -- 11842
+            1145 strings with 17024 characters,
+and the built_in function-call counts, 53281 in all, are:
+= -- 4112
+> -- 1131
+< -- 499
++ -- 609
+- -- 170
+* -- 2568
+:= -- 7560
+add.period$ -- 168
+call.type$ -- 68
+change.case$ -- 77
+chr.to.int$ -- 1176
+cite$ -- 70
+duplicate$ -- 3931
+empty$ -- 4761
+format.name$ -- 221
+if$ -- 12436
 int.to.chr$ -- 0
-int.to.str$ -- 65
-missing$ -- 621
-newline$ -- 218
-num.names$ -- 59
-pop$ -- 1630
+int.to.str$ -- 68
+missing$ -- 647
+newline$ -- 227
+num.names$ -- 62
+pop$ -- 1686
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3854
+skip$ -- 4052
 stack$ -- 0
-substring$ -- 2544
-swap$ -- 2946
-text.length$ -- 102
+substring$ -- 2701
+swap$ -- 3094
+text.length$ -- 107
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 65
+type$ -- 68
 warning$ -- 2
-while$ -- 270
-width$ -- 67
-write$ -- 618
+while$ -- 285
+width$ -- 70
+write$ -- 647
 (There were 2 warnings)

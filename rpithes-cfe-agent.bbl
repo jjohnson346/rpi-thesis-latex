@@ -21,19 +21,19 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{radev2000ranking}
-D.~R. Radev, J.~Prager, and V.~Samn, ``Ranking suspected answers to natural
-  language questions using predictive annotation,'' in \emph{Proc. 6$^{th}$
-  {C}onf. {A}pplied {N}atural {L}anguage {P}rocessing}.\hskip 1em plus 0.5em
-  minus 0.4em\relax Association for Computational Linguistics, April 2000, pp.
-  150--157.
-
 \bibitem{martin_2000_speech_ch23}
 J.~Martin and D.~Jurafsky, ``Question answering and summarization,'' in
   \emph{Speech and Language Processing. An introduction to natural language
   processing, computational linguistics, and speech recognition}, 2nd~ed.\hskip
   1em plus 0.5em minus 0.4em\relax Saddle River, NJ, USA: Prentice Hall, 2000,
   ch.~23, pp. 765--810.
+
+\bibitem{radev2000ranking}
+D.~R. Radev, J.~Prager, and V.~Samn, ``Ranking suspected answers to natural
+  language questions using predictive annotation,'' in \emph{Proc. 6$^{th}$
+  {C}onf. {A}pplied {N}atural {L}anguage {P}rocessing}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Association for Computational Linguistics, April 2000, pp.
+  150--157.
 
 \bibitem{russell_norvig_2010_ch1}
 S.~J. Russell and P.~Norvig, ``Introduction,'' in \emph{Artificial
@@ -167,11 +167,6 @@ N.~S. Friedland, P.~G. Allen, G.~Matthews, M.~Witbrock, D.~Baxter, J.~Curtis,
   Towards a digital {A}ristotle,'' \emph{AI magazine}, vol.~25, no.~4, pp.
   29--48, Winter 2004.
 
-\bibitem{fan2012automatic}
-J.~Fan, A.~Kalyanpur, D.~Gondek, and D.~A. Ferrucci, ``Automatic knowledge
-  extraction from documents,'' \emph{IBM Journal of Research and Development},
-  vol.~56, no. 3.4, pp. 5:1--5:10, May-June 2012.
-
 \bibitem{moldovan_1999}
 D.~I. Moldovan, S.~M. Harabagiu, M.~Pa{\c{s}}ca, R.~Mihalcea, R.~A. Goodrum,
   and C.~R. G{\^\i}rju, ``L{ASSO}: A tool for surfing the {A}nswer {N}et,'' in
@@ -181,6 +176,11 @@ D.~I. Moldovan, S.~M. Harabagiu, M.~Pa{\c{s}}ca, R.~Mihalcea, R.~A. Goodrum,
 X.~Li and D.~Roth, ``Learning question classifiers,'' in \emph{Proc. 19$^{th}$
   Int. Conf. Computational Linguistics-Volume 1}.\hskip 1em plus 0.5em minus
   0.4em\relax Association for Computational Linguistics, 2002, pp. 1--7.
+
+\bibitem{fan2012automatic}
+J.~Fan, A.~Kalyanpur, D.~Gondek, and D.~A. Ferrucci, ``Automatic knowledge
+  extraction from documents,'' \emph{IBM Journal of Research and Development},
+  vol.~56, no. 3.4, pp. 5:1--5:10, May-June 2012.
 
 \bibitem{Clark:2010:CIL:2019791}
 M.~H. Clark, ``Cognitive illusions and the lying machine: A blueprint for
@@ -285,6 +285,15 @@ S.~Bringsjord and N.~S. Govindarajulu, ``In defense of the unprovability of the
   Association of Certified Fraud Examiners [Online] Available:
   http://www.acfe.com/2016USFEM.aspx Accessed on: November 1, 2011}.
 
+\bibitem{nute2001defeasible}
+D.~Nute, ``Defeasible logic,'' in \emph{Int. Conf. Applications of
+  Prolog}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2001, pp. 151--169.
+
+\bibitem{dimopoulos2002computational}
+Y.~Dimopoulos, B.~Nebel, and F.~Toni, ``On the computational complexity of
+  assumption-based argumentation for default reasoning,'' \emph{Artificial
+  Intelligence}, vol. 141, no.~1, pp. 57--78, 2002.
+
 \bibitem{blackburn_2005_representation_ch1}
 P.~Blackburn and J.~Bos, ``First-order logic,'' in \emph{Representation and
   Inference for Natural Language: A First Course in Computational Semantics
@@ -373,6 +382,11 @@ J.~Martin and D.~Jurafsky, ``Statistical parsing,'' in \emph{Speech and
 {Stanford Natural Language Processing Group, \textit{Stanford Parser}. [Online]
   Available: http://nlp.stanford.edu/software/lex-parser.shtml Accessed on:
   August 14, 2015}.
+
+\bibitem{cook1971complexity}
+S.~A. Cook, ``The complexity of theorem-proving procedures,'' in \emph{Proc.
+  3rd Annual ACM Symp. Theory Computing}.\hskip 1em plus 0.5em minus
+  0.4em\relax ACM, 1971, pp. 151--158.
 
 \bibitem{wiki:boolean_retrieval}
 {``Standard Boolean model --- Wikipedia, The Free Encyclopedia" in
