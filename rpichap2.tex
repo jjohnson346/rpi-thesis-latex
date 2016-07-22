@@ -6,19 +6,19 @@
  
 \chapter{Related Work}
 
-In this chapter, as we discuss related work, we do so in the context of the question we attempt to address in this dissertation - What balance can we strike between algorithm accuracy, complexity, and reasoning justification in QA?  There is likely a general trade-off here - the greater the accuracy, the less provision of reasoning justification, consistent with the no-free-lunch principle.  Thus, there are likely a range of options for that balance.  But as yet we don't know what they are.  We attempt to address that question in this dissertation with our comparative analysis of various algorithms with varying degrees of accuracy, complexity, and justification.  But we look to the prior work, discussed below, for context.
+In this chapter, as we discuss related work, we do so in the context of the question we attempt to address in this dissertation -- What balance can we strike between algorithm accuracy, complexity, and reasoning justification in QA?  There is likely a trade-off among these competing prioirities.  For example, as the accuracy of a system increases, its capability of providing reasoning for its justification likely decreases, in accordance with the no-free-lunch principle.  And its complexity likely increases, as well.  There are likely a range of possibilities along these competing dimensions, but as of yet, we don't know what they are.  We attempt to address that question in this dissertation with our comparative analysis of various algorithms with varying degrees of accuracy, complexity, and justification.  We look to the prior work, discussed below, for context.
 
 \section{Project Aristo}
 
-Project Aristo is an ongoing, ambitious research project sponsored by the Allen Institute of Artificial Intelligence whose aim is to build an agent that can programmatically acquire knowledge from text such that it can apply reasoning and knowledge to pass 4th grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions -- namely in the areas of knowledge, modeling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types in that can be described as follows:
+Project Aristo, sponsored by the Allen Institute of Artificial Intelligence, is an ongoing, ambitious research project  whose aim is to build an agent that can programmatically acquire knowledge from text such that it can apply reasoning and knowledge to pass 4\textsuperscript{th}-grade science exams \cite{clark2015elementary}.  This challenge is designed to push the limits of AI in particular directions -- namely in the areas of knowledge, modeling, reasoning, and language.  Although shallow information-retrieval-based techniques can be used to successfully answer some questions on the test, others will require incremental advances in these dimensions of AI research \cite{clark2015elementary}.  Clark \cite{clark2015elementary} offers a simple ontology of question types that can be described as follows:
 
 
 \subsection{Basic Questions}
 
-These are questions that require taxonomic knowledge (is-a relationships) or terminological (definitional) knowledge.  AI systems can commonly answer these successfully using information-retrieval techniques, or using lookup tables.  
+These are questions that require taxonomic knowledge (\textit{is-a} relationships) or terminological (definitional) knowledge.  AI systems can commonly answer these successfully using information-retrieval techniques, or using lookup tables.  
 
 
-Example: The movement of soil by wind and water is called \cite{clark2015elementary}
+Example, as given in \cite{clark2015elementary}: The movement of soil by wind and water is called 
 
 \begin{enumerate}[label=\Alph*.]
 \item Condensation
@@ -30,7 +30,7 @@ Example: The movement of soil by wind and water is called \cite{clark2015element
 \subsection{Simple Inference Questions}
 These are questions for which the answer is not explicitly expressed in the text corpus but which must be inferred from a number of pieces of information that are.
 
-Example: Which example describes an organism taking in nutrients? \cite{clark2015elementary}
+Example, as given in \cite{clark2015elementary}: Which example describes an organism taking in nutrients? 
 
 \begin{enumerate}[label=\Alph*.]
 \item Dog burying a bone
@@ -39,13 +39,13 @@ Example: Which example describes an organism taking in nutrients? \cite{clark201
 \item A boy planting tomatoes in a garden
 \end{enumerate}
 
-This example requires knowledge that eating is a process by which an organism takes in nutrients and that an apple contains nutrients.
+\noindent{This example requires knowledge that eating is a process by which an organism takes in nutrients and that an apple contains nutrients.}
 
 \subsection{More Complex World Knowledge}
 
 These are questions that require a rich understanding of the world and a linguistic knowledge that can be applied to them to answer the questions.
 
-Example: \cite{clark2015elementary}  Fourth graders are planning a roller-skate race.  Which surface would be the best for this race?  
+Example, as given in \cite{clark2015elementary}:  Fourth graders are planning a roller-skate race.  Which surface would be the best for this race?  
 
 \begin{enumerate}[label=\Alph*.]
 \item Gravel
@@ -54,11 +54,11 @@ Example: \cite{clark2015elementary}  Fourth graders are planning a roller-skate 
 \item Grass
 \end{enumerate}
 
-This question requires knowledge that roller-skating occurs on a surface, that skating is fastest on a smooth surface, that skating faster is best for a race, and that blacktop is smooth, (and that the other surfaces are not smooth) \cite{clark2015elementary}.
+This question draws on a number of pieces of knowledge: roller-skating occurs on a surface, skating is fastest on a smooth surface, skating faster is best for a race, and  blacktop is smooth, (and other surfaces are \emph{not} smooth) \cite{clark2015elementary}.
 
 \subsection{Diagrams and Mathematics and Geometry}
 
-These are question types that are also encountered on the 4th grade science exams, but their nature will not be encountered on the CFE exam.  So, these types will not be discussed here.
+These are question types that are also encountered on the 4\textsuperscript{th} grade science exams, but their nature will not be encountered on the CFE exam\footnote{After a comprehensive review of the questions in the study package for the CFE exam, it was concluded that no questions required knowledge of mathematics or geometry}.  So, these types will not be discussed here.
 
 \subsection{Progress on Project Aristo}
 
@@ -66,9 +66,9 @@ Clark and Balasubramanian \cite{clark2014interpreting} discuss some of the issue
 
 \subsubsection{Representing the Meaning of Natural Language Sentences}
 
-The approach here is to chunk the natural language sentences in a way similar to a parse of the sentence, breaking up the sentence into noun and verb phrases, and so on.  Then, manually apply re-write rules by which the chunks can be rearranged into implications.  These re-write rules encapsulate syntactic manipulation and domain knowledge.
+The approach here is to chunk the natural language sentences in a way similar to a parse of the sentence, breaking up the sentence into noun and verb phrases, and so on.  Then, one would manually apply re-write rules by which the chunks can be rearranged into implications.  These re-write rules encapsulate syntactic manipulation and domain knowledge.
 
-One problem encountered during this task is the issue of generics, rules that might appear, according to a literal interpretation, to all objects of a particular type in a domain, but from a practical perspective, do not, such as ``Dogs chase cats”.  It is fair to say that it is not actually the case that at all points in time if there’s a dog it must necessarily be chasing a cat.  However, taken literally, this sentence would appear to indicate just that.  Therefore, instead of translating this literally into formal logic, first there are probabilities applied to all of the implications that might arise from this single sentence, where probabilities are assigned based on linguistic rules.
+One problem encountered during this task is the issue of generics, rules that might appear, according to a literal interpretation, to all objects of a particular type in a domain, but from a practical perspective, do not, such as ``Dogs chase cats", as explained in \cite{clark2014interpreting}.  It is fair to say that it is not actually the case that at all points in time if there's a dog it must necessarily be chasing a cat.  However, taken literally, this sentence would appear to indicate just that.  Therefore, instead of translating this literally into formal logic, first there are probabilities applied to all of the implications that might arise from this single sentence, where probabilities are assigned based on linguistic rules, as explained in \cite{clark2014interpreting}.
 
 \begin{itemize}
 \item Dog $\Rightarrow$ dog chases cat 0.01
@@ -80,17 +80,17 @@ One problem encountered during this task is the issue of generics, rules that mi
 
 \subsubsection{Reasoning with the Extracted Formalizations}
 
-Making inferences of entailed assertions not explicitly stated in the text is the ultimate goal of formalizing the natural language text.  However, like the first task, this task also comes with complications.  In the case of generics, their representation appears to lead to a downstream problem of having to resolve multiple symbols representing the same object.  In logic programming environments, such as Prolog, \cite{blackburn_2006_prolog_ch1,blackburn_2006_prolog_ch2,blackburn_2006_prolog_ch3,blackburn_2006_prolog_ch4,blackburn_2006_prolog_ch5,blackburn_2006_prolog_ch6} (mentioned by the author as one of the environments adopted for project Aristo), its Unique Names Assumption means that two symbols cannot be assigned as equivalent.  As one approach to this problem, the relation of equality can be developed explicitly, but that means this relation must be worked into every implication, cluttering the knowledge base.  A more workable alternative, as pointed out by the author, is to build into the system the assumption that if an implication rule infers something that appears to repeat another assertion already in the knowledge base, then assume it actually is already in the knowledge base, thereby applying a minimization principle in order to avoid duplication of assertions.
+Making inferences of entailed assertions not explicitly stated in the text is the ultimate goal of formalizing the natural language text.  However, like the first task, this task also comes with complications.  In the case of generics, their representation appears to lead to a downstream problem of having to resolve multiple symbols representing the same object, as explained in \cite{clark2014interpreting}.  In logic-programming environments, such as Prolog, \cite{blackburn_2006_prolog_ch1,blackburn_2006_prolog_ch2,blackburn_2006_prolog_ch3,blackburn_2006_prolog_ch4,blackburn_2006_prolog_ch5,blackburn_2006_prolog_ch6} (mentioned by the author as one of the environments adopted for project Aristo), its Unique Names Assumption means that two symbols cannot be assigned as equivalent.  As one approach to this problem, the relation of equality can be developed explicitly, but that means this relation must be worked into every implication, cluttering the knowledge-base.  A more workable alternative, as pointed out by the author, is to build into the system the assumption that if an implication rule implies something that appears to repeat another assertion already in the knowledge-base, then assume it actually is already in the knowledge-base, thereby applying a minimization principle in order to avoid duplication of assertions \cite{clark2014interpreting}.
 
-\subsection{Performance of Project Aristo and Some Perspective}
+\subsection{Perspective on Performance of Project Aristo}
 
-The approach of Project Aristo is ambitious -- QA using programmatic extraction of knowledge is sparsely charted in AI and attempts by other systems for whom accuracy and speed are the top prioirities have generally avoided it,\footnote{Refer to discussion of Watson below, where we mention the decision to avoid using relation detection.}  This project is still underway, and thus, it remains to be seen what levels of accuracy can be achieved.  Even when it does, however, the reports will be with respect to their chosen approach, and does not offer a measure of performance with shallower approaches.
+The approach of Project Aristo is ambitious -- QA using programmatic extraction of knowledge is sparsely charted in AI and attempts by other systems for whom accuracy and speed are the top prioirities have generally avoided it,\footnote{Refer to discussion of Watson below, where we mention the tendency to \emph{not} use relation detection for looking up answers to \textit{Jeopardy!} questions.}  This project is still underway, and thus, it remains to be seen what levels of accuracy can be achieved.  Even when it does, however, the reports will be with respect to their chosen approach, and does not offer a measure of performance with shallower approaches.
 
 
 \section{Halo Project}
 %\section{Halo Project (2004)}
 
-The Halo Project \cite{friedland2004project} was a contest sponsored by Vulcan Inc. (founded by Paul Allen) conducted in 2004 in which 3 teams from SRI, Ontoprise, and Cycorp, set out to create knowledge representation and reasoning systems that could answer test questions similar to those for a chemistry AP exam based on a text corpus of 50 pages of text and on a sample of 50 multiple choice questions.  This test required not only correctness of answers, but also answer justifications that demonstrates the deep reasoning required by the subject matter (of chemistry).  So, the systems in this competition needed to address three principal concerns:  knowledge representation, QA, and answer justification. 
+The Halo Project \cite{friedland2004project} was a contest sponsored by Vulcan Inc. (founded by Paul Allen), conducted in 2004, in which three teams, SRI, Ontoprise, and Cycorp, set out to create knowledge representation and reasoning systems that could answer test questions similar to those for the Chemistry AP exam based on a text corpus of 50 pages of text and on a sample of 50 multiple choice questions.  This test required not only correctness of answers, but also answer justifications that demonstrates the deep reasoning required by the subject matter (of chemistry).  So, the systems in this competition needed to address three principal concerns:  knowledge representation, QA, and answer justification. 
 
 SRI employed an approach that included knowledge engineers and 
 professional chemists (the only team to include such domain experts).
@@ -102,20 +102,22 @@ Ontoprise created a system from scratch (no base-level knowledge-base system) ba
 
 Cycorp built a system using an existing platform, based on a logic called Cycl.  This system proved the slowest and least accurate among the three.
 
-\subsection{Halo Project Performance and Perspective}
+\subsection{Perspective on Halo Project Performance}
 
-In general, the systems all performed better than expected, averaging around 40\% accuracy, equivalent to a score of about AP 3 out of 5.  Cycorp, however, took a long time to execute and its accuracy wasn't quite as good as the other two systems.  Justifications were considered fairly transparent.  But how might these systems have fared in on this exam had they been designed to use shallow techniques (at the cost of reasoning justifications) instead of knowledge-base techniques?  We don't know.
+In general, the systems all performed better than expected, averaging around 40\% accuracy, equivalent to a score of about AP 3 out of 5 \cite{friedland2004project}.  Cycorp, however, took a long time to execute and its accuracy wasn't quite as good as the other two systems.  Justifications were transparent -- a natural consequence of the based on knowledge representation and reasoning.  
+
+One question for which we don't have an answer is how these systems might have fared on this exam had they been designed to use shallow techniques instead of knowledge-base techniques, where in such a case, reasoning justifications would likely not have been as complete, but accuracy may have been higher.  Furthermore, what would have been the implication for relative complexity under a shollow approach?
 
 
 
 \section{Watson}
 %\section{Watson (2010)}
 
-Watson \cite{ferrucci2010building} is the famed question answer system that beat Jeopardy! champions in a matchup in 2010.  Watson is built with a pipelined architecture consisting of a number of components, listed briefly below, along with massive parallelization allowing simultaneous computation of multiple algorithms and subsequent selection of the one whose confidence is highest within three seconds.  It consists of the following components:
+Watson \cite{ferrucci2010building} is the famed QA system that beat \textit{Jeopardy!} champions in a matchup in 2010.  Watson is built with a pipelined architecture consisting of a number of components, listed briefly below, along with massive parallelization allowing simultaneous computation of multiple algorithms and subsequent selection of the one whose confidence is highest within three seconds.  It consists of the following components, as explained in \cite{ferrucci2010building}:
 
 \subsection{Focus and LAT Detection}
 
-Lexical answer type (LAT) detection is the determination of words that identify the entity type of the answer, typically from among the words provided in the clue.  Focus is the sequence of words in the clue which when replaced by the answer form a valid statement.
+Lexical answer type (LAT) detection is the determination of words that identify the entity type of the answer, typically from among the words provided in the clue.  The focus is the sequence of words in the clue which when replaced by the answer form a valid statement.
 
 \subsection{Relation Detection}
 
@@ -123,15 +125,15 @@ Relation detection is the extraction of semantic relationships from unstructured
 
 \subsection{Hypothesis Generation}
 
-Hypothesis generation involves generating candidate answers by searching through the system’s sources, extracting answer-sized snippets from the search results, and plugging those snippets back into the question, thereby forming a hypothesis.  During development, the performance goal for this stage in the pipeline was that the correct answer must be present (binary recall) in the top 250 candidates at least 85\% of the time.  Hundreds of answer candidates are generated by this step.
+Hypothesis generation involves generating candidate answers by searching through the system's sources, extracting answer-sized snippets from the search results, and plugging those snippets back into the question, thereby forming a hypothesis.  During development, the performance goal for this stage in the pipeline was that the correct answer must be present (binary recall) in the top 250 candidates at least 85\% of the time.  Hundreds of answer candidates are generated by this step.
 
 \subsection{Soft Filtering}
 
-Soft filtering is the lightweight filtering of answer candidates.  Lightweight means that this filtering is not computationally intensive, and that more computationally intense forms of filtering will be performed downstream after the answer candidate set has already been whittled down as much as possible.  An example of soft filtering is the calculation of the likelihood that an answer candidate has the correct LAT.  Filtering thresholds are determined by machine learning.
+Soft filtering is the lightweight filtering of answer candidates.  `Lightweight' means that this filtering is not computationally intensive, and that more computationally intense forms of filtering will be performed downstream after the answer candidate set has already been whittled down as much as possible.  An example of soft filtering is the calculation of the likelihood that an answer candidate has the correct LAT.  Filtering thresholds are determined by machine learning.
 
 \subsection{Evidence Retrieval}
 
-Evidence Retrieval is the gathering of evidence for a candidate answer that passes the soft filtering step, including re-initiating a query against the corpus and against the knowledge base, but with the candidate answer included in the query.  This step looks for other passages that include the candidate answer in the context of the original query.
+Evidence Retrieval is the gathering of evidence for a candidate answer that passes the soft filtering step, including re-initiating a query against the corpus and against the knowledge-base, but with the candidate answer included in the query.  This step looks for other passages that include the candidate answer in the context of the original query.
 
 \subsection{Evidence Scoring}
 
@@ -142,29 +144,29 @@ Scoring is done through intensive computational analysis of the candidate answer
 Hypothesis ranking uses machines learning, along with mixture of expert techniques to arrive at a final
 decision on the best answer to the question.
 
-\subsection{Watson Performance and Perspective}
+\subsection{Perspective on Watson Performance}
 
-As of the time \cite{ferrucci2010building} was published, Watson's performance was considered to be roughly at the same level as the best Jeopardy! players, scoring 85\% when answering 75\% of questions posed to the system, and 67\% when answering 100\% of posed questions.  This level of accuracy was truly groundbreaking in the area of QA, and clearly, the Jeopardy! game itself dictated the dual priorities of accuracy and speed as paramount.  However, no mention is made as to the level of justification provided for each of these answers.  We have to assume that unlike accuracy, justification was not a major priority.  What might the accuracy have been had it provided a greater level of justification?  This is the question we attempt to answer in this dissertation.
+As of the time \cite{ferrucci2010building} was published, Watson's performance was considered to be roughly at the same level as the best \textit{Jeopardy!} players, scoring 85\% when answering 75\% of questions posed to the system, and 67\% when answering 100\% of posed questions.  This level of accuracy was truly groundbreaking in the area of QA, and clearly, the \textit{Jeopardy!} game itself dictated the dual priorities of accuracy and speed as paramount.  However, no mention is made as to the level of justification provided for each of these answers.  We have to assume that unlike accuracy, justification was not a major priority.  What might the accuracy have been had it provided a greater level of justification?  This is the question we attempt to answer in this dissertation.
 
-\section{LASSO Question Answer System}
+\section{LASSO QA System}
 
-LASSO \cite{moldovan_1999} is the question answer system developed by Moldovan et al. at the Natural Language Processing Lab at Southern Methodist University for the TREC-8 competition in 1999.  This architecture of this system can be decomposed into three principal components, discussed below.  
+LASSO \cite{moldovan_1999} is the QA system developed by Moldovan et al. at the Natural Language Processing Lab at Southern Methodist University for the TREC-8 competition in 1999.  The architecture of this system can be decomposed into three principal components, discussed below, as explained in \cite{moldovan_1999}:  
 
 \subsection{Question Processing Component}
 
 The question processing component processes the question posed in natural language, determining the expected answer type, and ultimately, formulating a query to be submitted to the Information-Retrieval engine in the Paragraph Indexing Component (discussed below).  The task of question processing breaks down into the following sub-tasks:
 
-\subsubsection{Question type determination}
+\subsubsection{Question Type determination}
 
 Question type determination is based on a coarse-grained taxonomy of question types, including who, what, where, why, and how, and then by a more fine-grained taxonomy of subtypes.  This subcategorization serves as the expected answer type, to be used later during the answer extraction step.
 
-\subsubsection{Question focus determination}
+\subsubsection{Question Focus Determination}
 
-Question focus determination is the selection of a sequence of words such that the answer could replace them in the question.  For example, the question, ``What is the largest city in Germany?" is a question where the question focus is ``largest city".  Interestingly, it is not always the case that question focus could serve as the sequence of words to use in the query for the IR engine.   Consider the question: ``In 1990, what day of the week did Christmas fall on?”  Here, day of the week is the question focus, but does not serve as an effective query for retrieving the docs to answer this question.  
+Question focus determination is the selection of a sequence of words such that the answer could replace them in the question.  For example, as explained in \cite{moldovan_1999}, the question, `What is the largest city in Germany?' is a question where the question focus is, ``largest city."  Interestingly, it is not always the case that question focus could serve as the sequence of words to use in the query for the IR engine.   Consider the question \cite{moldovan_1999}: ``In 1990, what day of the week did Christmas fall on?”  Here, day of the week is the question focus, but does not serve as an effective query for retrieving the docs to answer this question.  
 
-\subsubsection{Question keywords selection}
+\subsubsection{Question Keywords Selection}
 
-This is the process by which the query terms are determined, which is based on a number of heuristics, iteratively applied in order to ultimately develop a query that retrieves promising paragraphs from the document collection likely to contain the answer to the question.  These heuristics include the following:
+This is the process by which the query terms are determined, which is based on a number of heuristics, iteratively applied in order to ultimately develop a query that retrieves promising paragraphs from the document collection likely to contain the answer to the question.  These heuristics include the following, as listed in \cite{moldovan_1999}:
 
 \begin{itemize}
 \item Keyword Heuristic – 1: include non-stop words enclosed in quotations 
@@ -181,7 +183,7 @@ This is the process by which the query terms are determined, which is based on a
 
 In LASSO, the information resources are broken up into paragraph units, which serve as the document unit for indexing in the information-retrieval engine.  Paragraph indexing is the technique used in the LASSO system by which the paragraphs are scored to indicate their relative likelihood of containing the correct answer to the question.  The paragraph indexing component performs the following two subtasks:
 
-\subsubsection{Query execution}
+\subsubsection{Query Execution}
 
 This is the step in which the query formulated during question processing is executed against the inverted index by the information retrieval engine.  The IR engine component is a Boolean retrieval-based engine that retrieves paragraphs from the document collection based on the query created in the query processing component.  Boolean retrieval is used instead of vectorization where cosine similarity is used because boolean retrieval allows for greater recall at the expense of lower precision.  The paragraph indexing process serves as the finer-grained filter that prunes the results to a manageable number of paragraphs.
 
@@ -196,20 +198,20 @@ The answer processing component extracts candidate answers from the highest-scor
 
 \section{Answer Type Classifiers}
 
-One important aspect of open-domain question answering is the task of answer type identification.  As explained in the discussions of Watson and LASSO, answer type determination is of great importance in QA systems since determining the answer type allows for greatly reducing the set of candidate answers to the question – only answers whose features, semantic or syntactic, indicate the same type as that of the question are considered, while other candidates are filtered out.  Assuming the answer type of the question is correct, (not a trivial assumption), the question answer system is in a much better position to narrow down the set toward the final, correct response.
+One important aspect of open-domain QA is the task of answer type identification.  As explained in the discussions of Watson and LASSO, answer type determination is of great importance in QA systems since proper determination of the answer type allows for greatly reducing the set of candidate answers to the question.  Only answers whose features (semantic or syntactic) indicate the same type as that of the question are considered, while other candidates are filtered out.  Assuming the answer type of the question is correct, (not a trivial assumption), the QA system is in a much better position to narrow down the set toward the final, correct response.
 
-Li and Roth \cite{li2002learning} describe a machine-learning-based question classifier which is hierarchical in nature, where at the high level, there are 6 coarse-grained categories (ABBREVIATION, ENTITY, DESCRIPTION, HUMAN, LOCATION, and NUMERIC VALUE), and at the low level, there are up to 50 fine-grained categories.  For example, for the ENTITY type, subtypes include animal, body, color, creative, currency, and so on, while for LOCATION, subtypes include city, country, mountain, state, and other.  Their approach leverages machine learning in which feature types are analyzed, as opposed to specific features, allowing the training to extrapolate to a much larger feature set without having to annotate as large a training set.  Primitive features include words, part-of-speech (POS) tags, chunks (non-overlapping phrases),  named entities, and head chunks (the first noun-chunk in a sentence).   Higher order feature types are derived from these, i.e., classes of features that are automatically extracted for a given answer type category. 
+Li and Roth \cite{li2002learning} describe a machine-learning-based question classifier which is hierarchical in nature, where at the high level, there are 6 coarse-grained categories (abbreviation, entity, description, human, location, and numeric value), and at the low level, there are up to 50 fine-grained categories.  For example, for the entity type, subtypes include animal, body, color, creative, currency, and so on, while for location, subtypes include city, country, mountain, state, and other.  Their approach leverages machine learning in which feature types are analyzed, as opposed to specific features, allowing the training to extrapolate to a much larger feature set without having to annotate as large a training set.  Primitive features include words, part-of-speech (POS) tags, chunks (non-overlapping phrases), named entities, and head chunks (the first noun-chunk in a sentence).   Higher order feature types are derived from these, i.e., classes of features that are automatically extracted for a given answer type category. 
 
-\subsection{LASSO Performance and Perspective}
+\subsection{Perspective on LASSO Performance}
 
-Performance of this system was measured based on accuracy, showing results of accuracy scores were 55.5\% for short answer and 64.5\% for long answer questions.  Again, we are left asking ourselves the question, had the engineers used different techniques which would have yielded more transparent justifications, how much would performance have suffered?  Would have suffered at all? 
+Performance of this system was measured based on accuracy, showing results of accuracy scores were 55.5\% for short answer and 64.5\% for long answer questions \cite{moldovan_1999}.  Again, we are left asking ourselves the question, had the engineers used different techniques which would have yielded more transparent justifications, how much would cost would be imposted in terms of accuracy? 
 
 \section{Prismatic}
 %\section{Prismatic (2008)}
 
 Prismatic \cite{fan2012automatic} is a lexicalized relation resource that programmatically processes a large corpora (30 GB) in order to identify and store the ways entity and relation information are represented in unstructured text.  The system works by breaking its processing into
-three phases:  corpus processing, frame extraction, and frame cut extraction.  Corpus processing is primarily concerned with parsing the text using IBM's slot grammar parser.  Frame extraction uses the parse information to break up the text into frames, where a frame is a text representation of a group of entities and the relations between them.  Prismatic produced 1 billion frames from the 30 GB text corpus.  Lastly, frame cut extraction is a process in which the system extracts small parse sequences from the frames, (e.g., S-V-O (subject-verb-object), or
-(N-P-O (noun-preposition-object)) in order to analyze recurring patterns of text within them.  The redundancy of terms across these frame cuts allows the system to conclude extensional information (relations between specific instances of entities, such as the relation, located-in(Troy, New York)) and intensional information (e.g., located-in(city, state)).  This sort of information has applications in entity type identification, relation extraction, and question-answer.
+three phases:  corpus processing, frame extraction, and frame cut extraction.  Corpus processing is primarily concerned with parsing the text using IBM's slot-grammar parser.  Frame extraction uses the parse information to break up the text into frames, where a frame is a text representation of a group of entities and the relations between them.  Prismatic produced 1 billion frames from the 30 GB text corpus.  Lastly, frame cut extraction is a process in which the system extracts small parse sequences from the frames (e.g., S-V-O (subject-verb-object), or
+(N-P-O (noun-preposition-object)) in order to analyze recurring patterns of text within them.  The redundancy of terms across these frame cuts allows the system to conclude extensional information (relations between specific instances of entities, such as the relation, located-in(Troy, New York)) and intensional information (e.g., \textit{located-in(city, state)}).  This sort of information has applications in entity type identification, relation extraction, and question-answer.
 
 \subsection{Perspective on Prismatic}
 
@@ -232,9 +234,7 @@ Firozabadi \cite{firozabadi1998formal} discusses a formal definition of fraud fo
 
 \subsection{Perspective on Related Work}
 
-In this chapter, as we discuss related work, we do so in the context of the question we attempt to address in this dissertation - What balance can we strike between accuracy and reasoning justification in QA?  There is likely a general trade-off here - the greater the accuracy, the less provision of reasoning justification, consistent with the no-free-lunch principle.  Thus, there are likely a range of options for that balance.  But as yet we don't know what they are.  We attempt to address that question in this dissertation with our comparative analysis of various algorithms with varying degrees of accuracy and justification.  But we look to the prior work, discussed below, for context.
-
-The systems above are all tremendous contributions to the field of QA and to AI, in general.  But the question that remains is: ``How might these systems fared in either of their respective problem domains had they been designed with different priorities in mind?"  How much would accuracy would have been sacrificed had the Watson provided its user with reasoning justifications for its answers?  Would the Project Halo systems performed significantly better had a knowledge-base approach \emph{not} been used?  Could similar scores have been earned using less complex algorithms?  What are the costs of sacrificing accuracy in favor of justifications, and vice versa?  This is the question we hope to shed some light on as we look at the various versions of the CFE Agent, where we implement algorithms with different mixes of priorities, and then apply them to the \emph{same problem domain}.  By comparing their scores on a battery of CFE Exam questions, assessing their complexity,  and characterizing their levels of justification, we can gain a sense of the landscape of possibilities in terms of accuracy and reasoning justification in the field of QA.
+The systems above are all tremendous contributions to the field of QA and to AI, in general.  But the question that remains is: ``How might these systems have fared in either of their respective problem domains had they been designed with different priorities in mind?"  How much would accuracy would have been sacrificed had the Watson provided its user with reasoning justifications for its answers?  Would the Project Halo systems performed significantly better had a knowledge-base approach \emph{not} been used?  Could similar scores have been earned using less complex algorithms?  What are the costs of sacrificing accuracy in favor of justifications, and vice versa?  This is the question on which we hope to shed some light as we look at the various versions of the CFE Agent, where we implement algorithms with different mixes of priorities, and then apply them to the \emph{same problem domain}.  By comparing their scores on a battery of CFE Exam questions, assessing their complexity,  and characterizing their levels of justification, we can obtain a sense of the options on the landscape of possibilities for balancing the competing priorities of accuracy, complexity, and reasoning justification.
 
 
 

@@ -20,9 +20,9 @@
 \BOOKMARK [2][-]{subsection.2.1.5}{Progress on Project Aristo}{section.2.1}% 20
 \BOOKMARK [3][-]{subsubsection.2.1.5.1}{Representing the Meaning of Natural Language Sentences}{subsection.2.1.5}% 21
 \BOOKMARK [3][-]{subsubsection.2.1.5.2}{Reasoning with the Extracted Formalizations}{subsection.2.1.5}% 22
-\BOOKMARK [2][-]{subsection.2.1.6}{Performance of Project Aristo and Some Perspective}{section.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.1.6}{Perspective on Performance of Project Aristo}{section.2.1}% 23
 \BOOKMARK [1][-]{section.2.2}{Halo Project}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.1}{Halo Project Performance and Perspective}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.1}{Perspective on Halo Project Performance}{section.2.2}% 25
 \BOOKMARK [1][-]{section.2.3}{Watson}{chapter.2}% 26
 \BOOKMARK [2][-]{subsection.2.3.1}{Focus and LAT Detection}{section.2.3}% 27
 \BOOKMARK [2][-]{subsection.2.3.2}{Relation Detection}{section.2.3}% 28
@@ -31,18 +31,18 @@
 \BOOKMARK [2][-]{subsection.2.3.5}{Evidence Retrieval}{section.2.3}% 31
 \BOOKMARK [2][-]{subsection.2.3.6}{Evidence Scoring}{section.2.3}% 32
 \BOOKMARK [2][-]{subsection.2.3.7}{Ranking of Hypotheses}{section.2.3}% 33
-\BOOKMARK [2][-]{subsection.2.3.8}{Watson Performance and Perspective}{section.2.3}% 34
-\BOOKMARK [1][-]{section.2.4}{LASSO Question Answer System}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.3.8}{Perspective on Watson Performance}{section.2.3}% 34
+\BOOKMARK [1][-]{section.2.4}{LASSO QA System}{chapter.2}% 35
 \BOOKMARK [2][-]{subsection.2.4.1}{Question Processing Component}{section.2.4}% 36
-\BOOKMARK [3][-]{subsubsection.2.4.1.1}{Question type determination}{subsection.2.4.1}% 37
-\BOOKMARK [3][-]{subsubsection.2.4.1.2}{Question focus determination}{subsection.2.4.1}% 38
-\BOOKMARK [3][-]{subsubsection.2.4.1.3}{Question keywords selection}{subsection.2.4.1}% 39
+\BOOKMARK [3][-]{subsubsection.2.4.1.1}{Question Type determination}{subsection.2.4.1}% 37
+\BOOKMARK [3][-]{subsubsection.2.4.1.2}{Question Focus Determination}{subsection.2.4.1}% 38
+\BOOKMARK [3][-]{subsubsection.2.4.1.3}{Question Keywords Selection}{subsection.2.4.1}% 39
 \BOOKMARK [2][-]{subsection.2.4.2}{Paragraph Indexing Component}{section.2.4}% 40
-\BOOKMARK [3][-]{subsubsection.2.4.2.1}{Query execution}{subsection.2.4.2}% 41
+\BOOKMARK [3][-]{subsubsection.2.4.2.1}{Query Execution}{subsection.2.4.2}% 41
 \BOOKMARK [3][-]{subsubsection.2.4.2.2}{Paragraph Indexing}{subsection.2.4.2}% 42
 \BOOKMARK [2][-]{subsection.2.4.3}{Answer Processing Component}{section.2.4}% 43
 \BOOKMARK [1][-]{section.2.5}{Answer Type Classifiers}{chapter.2}% 44
-\BOOKMARK [2][-]{subsection.2.5.1}{LASSO Performance and Perspective}{section.2.5}% 45
+\BOOKMARK [2][-]{subsection.2.5.1}{Perspective on LASSO Performance}{section.2.5}% 45
 \BOOKMARK [1][-]{section.2.6}{Prismatic}{chapter.2}% 46
 \BOOKMARK [2][-]{subsection.2.6.1}{Perspective on Prismatic}{section.2.6}% 47
 \BOOKMARK [1][-]{section.2.7}{Semantic Approaches in the Fraud Domain}{chapter.2}% 48
