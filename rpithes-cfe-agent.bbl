@@ -23,44 +23,44 @@
 
 \bibitem{martin_2000_speech_ch23}
 J.~Martin and D.~Jurafsky, ``Question answering and summarization,'' in
-  \emph{Speech and Language Processing. An introduction to natural language
-  processing, computational linguistics, and speech recognition}, 2nd~ed.\hskip
+  \emph{{Speech and Language Process. An Introduction to Natural Language
+  Process., Computational Linguistics, and Speech Recognition}}, 2nd~ed.\hskip
   1em plus 0.5em minus 0.4em\relax Saddle River, NJ, USA: Prentice Hall, 2000,
   ch.~23, pp. 765--810.
 
 \bibitem{radev2000ranking}
 D.~R. Radev, J.~Prager, and V.~Samn, ``Ranking suspected answers to natural
   language questions using predictive annotation,'' in \emph{Proc. 6$^{th}$
-  {C}onf. {A}pplied {N}atural {L}anguage {P}rocessing}.\hskip 1em plus 0.5em
-  minus 0.4em\relax Association for Computational Linguistics, April 2000, pp.
-  150--157.
+  {C}onf. {A}pplied {N}atural {L}anguage {P}rocess.}\hskip 1em plus 0.5em minus
+  0.4em\relax {Seattle, WA, USA}: Association for Computational Linguistics,
+  29~Apr.--4~May 2000, pp. 150--157.
 
 \bibitem{russell_norvig_2010_ch1}
-S.~J. Russell and P.~Norvig, ``Introduction,'' in \emph{Artificial
-  Intelligence: A Modern Approach}, 3rd~ed.\hskip 1em plus 0.5em minus
-  0.4em\relax Saddle River, NJ, USA: Prentice Hall, 2010, ch.~1, pp. 1--33.
+S.~J. Russell and P.~Norvig, ``Introduction,'' in \emph{Artificial Intell.: A
+  Modern Approach}, 3rd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Saddle
+  River, NJ, USA: Prentice Hall, 2010, ch.~1, pp. 1--33.
 
 \bibitem{manning_2008_introduction_ch1}
 C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, ``Boolean retrieval,'' in
-  \emph{Introduction to Information Retrieval}, 1st~ed.\hskip 1em plus 0.5em
-  minus 0.4em\relax Cambridge, MA, USA: Cambridge Univ. Press, 2008, ch.~1, pp.
+  \emph{Introduction to Inform. Retrieval}, 1st~ed.\hskip 1em plus 0.5em minus
+  0.4em\relax Cambridge, MA, USA: Cambridge Univ. Press, 2008, ch.~1, pp.
   1--17.
 
 \bibitem{manning_2008_introduction_ch2}
 C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, ``The term vocabulary and
-  postings list,'' in \emph{Introduction to Information Retrieval},
-  1st~ed.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge, MA, USA: Cambridge
-  Univ. Press, 2008, ch.~2, pp. 18--44.
+  postings list,'' in \emph{Introduction to Inform. Retrieval}, 1st~ed.\hskip
+  1em plus 0.5em minus 0.4em\relax Cambridge, MA, USA: Cambridge Univ. Press,
+  2008, ch.~2, pp. 18--44.
 
 \bibitem{manning_2008_introduction_ch4}
 C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, ``Index construction,'' in
-  \emph{Introduction to Information Retrieval}, 1st~ed.\hskip 1em plus 0.5em
-  minus 0.4em\relax Cambridge, MA, USA: Cambridge Univ. Press, 2008, ch.~4, pp.
+  \emph{Introduction to Inform. Retrieval}, 1st~ed.\hskip 1em plus 0.5em minus
+  0.4em\relax Cambridge, MA, USA: Cambridge Univ. Press, 2008, ch.~4, pp.
   61--77.
 
 \bibitem{manning_2008_introduction_ch6}
 C.~D. Manning, P.~Raghavan, and H.~Sch{\"u}tze, ``Scoring, term weighting, and
-  the vector space model,'' in \emph{Introduction to Information Retrieval},
+  the vector space model,'' in \emph{Introduction to Inform. Retrieval},
   1st~ed.\hskip 1em plus 0.5em minus 0.4em\relax Cambridge, MA, USA: Cambridge
   Univ. Press, 2008, ch.~6, pp. 100--123.
 
@@ -83,25 +83,24 @@ R.~Brachman and H.~Levesque, ``Reasoning with horn clauses,'' in
 \bibitem{ferrucci2010building}
 D.~Ferrucci, E.~Brown, J.~Chu-Carroll, J.~Fan, D.~Gondek, A.~A. Kalyanpur,
   A.~Lally, J.~W. Murdock, E.~Nyberg, J.~Prager \emph{et~al.}, ``Building
-  {W}atson: An overview of the {D}eep{Q}{A} project,'' \emph{AI magazine},
+  {W}atson: An overview of the {D}eep{Q}{A} project,'' \emph{{AI Mag.}},
   vol.~31, no.~3, pp. 59--79, Fall 2010.
 
 \bibitem{bringsjord2015logicist}
 S.~Bringsjord, N.~Govindarajulu, J.~Licato, A.~Sen, J.~Johnson, A.~Bringsjord,
-  and J.~Taylor, ``On logicist agent-based economics,'' in \emph{Proc.
-  Artificial Economics}, 2015.
+  and J.~Taylor, ``{On Logicist Agent-Based Econ.}'' in \emph{Proc. Artificial
+  Econ.}, Porto, Portugal, 3--4~Sep. 2015.
 
 \bibitem{johnson2014three}
 J.~Johnson, N.~S. Govindarajulu, and S.~Bringsjord, ``A three-pronged
   {S}imonesque approach to modeling and simulation in deviant “bi-pay”
-  auctions, and beyond,'' \emph{Mind \& Society}, vol.~13, no.~1, pp. 59--82,
+  auctions, and beyond,'' \emph{{Mind \& Soc.}}, vol.~13, no.~1, pp. 59--82,
   June 2014.
 
 \bibitem{russell_norvig_2010_sect12.6}
 S.~J. Russell and P.~Norvig, ``Truth maintenance systems,'' in \emph{Artificial
-  Intelligence: A Modern Approach}, 3rd~ed.\hskip 1em plus 0.5em minus
-  0.4em\relax Saddle River, NJ, USA: Prentice Hall, 2010, section 12.6, pp.
-  460--462.
+  Intell.: A Modern Approach}, 3rd~ed.\hskip 1em plus 0.5em minus 0.4em\relax
+  Saddle River, NJ, USA: Prentice Hall, 2010, section 12.6, pp. 460--462.
 
 \bibitem{acfe}
 {Association of Certified Fraud Examiners, \textit{ACFE}. [Online] Available:
@@ -164,39 +163,40 @@ P.~Blackburn, J.~Bos, and K.~Striegnitz, ``More lists,'' in \emph{Learn Prolog
 \bibitem{friedland2004project}
 N.~S. Friedland, P.~G. Allen, G.~Matthews, M.~Witbrock, D.~Baxter, J.~Curtis,
   B.~Shepard, P.~Miraglia, J.~Angele, S.~Staab \emph{et~al.}, ``Project {H}alo:
-  Towards a digital {A}ristotle,'' \emph{AI magazine}, vol.~25, no.~4, pp.
+  Towards a digital {A}ristotle,'' \emph{{AI Mag.}}, vol.~25, no.~4, pp.
   29--48, Winter 2004.
 
 \bibitem{moldovan_1999}
 D.~I. Moldovan, S.~M. Harabagiu, M.~Pa{\c{s}}ca, R.~Mihalcea, R.~A. Goodrum,
   and C.~R. G{\^\i}rju, ``L{ASSO}: A tool for surfing the {A}nswer {N}et,'' in
-  \emph{Proc. TREC-8}, 1999, pp. 175--184.
+  \emph{Proc. TREC-8}, Gaithersburg, MD, USA, 17--19~Nov. 1999, pp. 175--184.
 
 \bibitem{li2002learning}
 X.~Li and D.~Roth, ``Learning question classifiers,'' in \emph{Proc. 19$^{th}$
   Int. Conf. Computational Linguistics-Volume 1}.\hskip 1em plus 0.5em minus
-  0.4em\relax Association for Computational Linguistics, 2002, pp. 1--7.
+  0.4em\relax Taipei, Taiwan: Association for Computational Linguistics,
+  24~Aug.--01~Sep. 2002, pp. 1--7.
 
 \bibitem{fan2012automatic}
 J.~Fan, A.~Kalyanpur, D.~Gondek, and D.~A. Ferrucci, ``Automatic knowledge
-  extraction from documents,'' \emph{IBM Journal of Research and Development},
-  vol.~56, no. 3.4, pp. 5:1--5:10, May-June 2012.
+  extraction from documents,'' \emph{IBM J. Res. Develop.}, vol.~56, no. 3.4,
+  pp. 5:1--5:10, May-June 2012.
 
 \bibitem{Clark:2010:CIL:2019791}
 M.~H. Clark, ``Cognitive illusions and the lying machine: A blueprint for
   sophistic mendacity,'' Ph.D. dissertation, {Dept. Cog. Sci., Rensselaer
-  Polytechnic Inst., Troy, NY}, 2010.
+  Polytech. Inst., Troy, NY}, 2010.
 
 \bibitem{firozabadi1998formal}
 B.~S. Firozabadi and Y.-H. Tan, ``Formal models of fraud,'' in \emph{Proc.
-  4$^{th}$ Int. Workshop Deontic Logic Computer Science {(EON'98)}}, 1998, pp.
-  371--385.
+  4$^{th}$ Int. Workshop Deontic Logic Comput. Sci. {(EON'98)}}, Bologna,
+  Italy, 8--10~Jan. 1998, pp. 371--385.
 
 \bibitem{johnson2015cfeagent}
 J.~Johnson, ``Toward an intelligent agent for fraud detection -- the {CFE}
-  {A}gent,'' in \emph{Deceptive and Counter-Deceptive Machines: Papers from the
-  AAAI Fall Symposium}, no. FS-15-03.\hskip 1em plus 0.5em minus 0.4em\relax
-  AAAI Press, 2015, pp. 21--26.
+  {A}gent,'' in \emph{Deceptive and Counter-Deceptive Machines: Papers AAAI
+  Fall Symp.}, no. FS-15-03.\hskip 1em plus 0.5em minus 0.4em\relax Arlington,
+  VA, USA: AAAI Press, 12-14~Nov. 2015, pp. 21--26.
 
 \bibitem{acfe_study_package_2011}
 {Association of Certified Fraud Examiners, \textit{2011 ACFE Study Package}.
@@ -213,27 +213,27 @@ J.~Johnson, ``Toward an intelligent agent for fraud detection -- the {CFE}
 
 \bibitem{McCandless:2010:LAS:1893016_ch1}
 M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Meet {L}ucene,'' in
-  \emph{Lucene in Action, Second Edition: Covers Apache Lucene 3.0}.\hskip 1em
+  \emph{Lucene in Action, 2nd Edition: Covers Apache Lucene 3.0}.\hskip 1em
   plus 0.5em minus 0.4em\relax Greenwich, CT, USA: Manning Publications, 2010,
   ch.~1, pp. 3--30.
 
 \bibitem{McCandless:2010:LAS:1893016_ch2}
 M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Building a search index,'' in
-  \emph{Lucene in Action, Second Edition: Covers Apache Lucene 3.0}.\hskip 1em
+  \emph{Lucene in Action, 2nd Edition: Covers Apache Lucene 3.0}.\hskip 1em
   plus 0.5em minus 0.4em\relax Greenwich, CT, USA: Manning Publications, 2010,
   ch.~2, pp. 31--73.
 
 \bibitem{McCandless:2010:LAS:1893016_ch3}
 M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Adding search to your
-  application,'' in \emph{Lucene in Action, Second Edition: Covers Apache
-  Lucene 3.0}.\hskip 1em plus 0.5em minus 0.4em\relax Greenwich, CT, USA:
-  Manning Publications, 2010, ch.~3, pp. 74--109.
+  application,'' in \emph{Lucene in Action, 2nd Edition: Covers Apache Lucene
+  3.0}.\hskip 1em plus 0.5em minus 0.4em\relax Greenwich, CT, USA: Manning
+  Publications, 2010, ch.~3, pp. 74--109.
 
 \bibitem{McCandless:2010:LAS:1893016_ch4}
 M.~McCandless, E.~Hatcher, and O.~Gospodnetic, ``Lucene's analysis process,''
-  in \emph{Lucene in Action, Second Edition: Covers Apache Lucene 3.0}.\hskip
-  1em plus 0.5em minus 0.4em\relax Greenwich, CT, USA: Manning Publications,
-  2010, ch.~4, pp. 110--151.
+  in \emph{Lucene in Action, 2nd Edition: Covers Apache Lucene 3.0}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Greenwich, CT, USA: Manning Publications, 2010,
+  ch.~4, pp. 110--151.
 
 \bibitem{alpaydin_2014_introduction_ch1}
 E.~Alpaydin, ``Supervised learning,'' in \emph{Introduction to Machine
@@ -248,22 +248,21 @@ G.~James, D.~Witten, T.~Hastie, and R.~Tibshirani, ``Lab: Logistic regression,
 
 \bibitem{mgmmm_ptai_sb}
 S.~Bringsjord and N.~S. Govindarajulu, ``{Toward a Modern Geography of Minds,
-  Machines, and Math},'' in \emph{Philosophy and Theory of Artificial
-  Intelligence}, ser. Studies in Applied Philosophy, Epistemology and Rational
-  Ethics, V.~C. M{\"{u}}ller, Ed.\hskip 1em plus 0.5em minus 0.4em\relax New
-  York, NY: Springer, 2013, vol.~5, pp. 151--165.
+  Machines, and Math},'' in \emph{Philosophy and Theory of Artificial Intell.},
+  ser. Studies in Applied Philosophy, Epistemology and Rational Ethics, V.~C.
+  M{\"{u}}ller, Ed.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY:
+  Springer, 2013, vol.~5, pp. 151--165.
 
 \bibitem{ka_sb_scc_seqcalc}
 K.~Arkoudas and S.~Bringsjord, ``{Propositional Attitudes and Causation},''
-  \emph{International Journal of Software and Informatics}, vol.~3, no.~1, pp.
-  47--65, 2009.
+  \emph{Int. J. Software Informatics}, vol.~3, no.~1, pp. 47--65, 2009.
 
 \bibitem{Slate_at_CMNA08}
 S.~Bringsjord, J.~Taylor, A.~Shilliday, M.~Clark, and K.~Arkoudas, ``{S}late:
   An argument-centered intelligent assistant to human reasoners,'' in
-  \emph{Proc. 8$^{th}$ Int. Workshop on Computational Models of Natural
-  Argument ({CMNA} 8)}, F.~Grasso, N.~Green, R.~Kibble, and C.~Reed, Eds.,
-  Patras, Greece, July 2008, pp. 1--10.
+  \emph{Proc. 8$^{th}$ Int. Workshop Computational Models Natural Argument
+  ({CMNA} 8)}, F.~Grasso, N.~Green, R.~Kibble, and C.~Reed, Eds., Patras,
+  Greece, 21~Jul. 2008, pp. 1--10.
 
 \bibitem{snarksri}
 M.~E. Stickel, ``{SNARK - SRI's New Automated Reasoning Kit},'' 2008, {[Online]
@@ -276,8 +275,8 @@ A.~Kolmogorov and V.~Uspenskii, ``{On the Definition of an Algorithm},''
 
 \bibitem{bringsjord_sundar_g_unprov_ct}
 S.~Bringsjord and N.~S. Govindarajulu, ``In defense of the unprovability of the
-  church-turing thesis,'' \emph{Journal of Unconventional Computing}, vol.~6,
-  no.~5, pp. 353--373, 2011.
+  church-turing thesis,'' \emph{J. Unconventional Computing}, vol.~6, no.~5,
+  pp. 353--373, 2011.
 
 \bibitem{acfe_manual_2011_doctorshopping}
 {Association of Certified Fraud Examiners, ``Doctor/ER Shopping" in
@@ -292,46 +291,46 @@ D.~Nute, ``Defeasible logic,'' in \emph{Int. Conf. Applications of
 \bibitem{dimopoulos2002computational}
 Y.~Dimopoulos, B.~Nebel, and F.~Toni, ``On the computational complexity of
   assumption-based argumentation for default reasoning,'' \emph{Artificial
-  Intelligence}, vol. 141, no.~1, pp. 57--78, 2002.
+  Intell.}, vol. 141, no.~1, pp. 57--78, 2002.
 
 \bibitem{blackburn_2005_representation_ch1}
 P.~Blackburn and J.~Bos, ``First-order logic,'' in \emph{Representation and
-  Inference for Natural Language: A First Course in Computational Semantics
+  Inference for Natural Language: A 1st Course in Computational Semantics
   (Studies in Computational Linguistics)}.\hskip 1em plus 0.5em minus
   0.4em\relax Stanford, CA, USA: Center for the Study of Language and
   Information, 2005, ch.~1, pp. 1--54.
 
 \bibitem{blackburn_2005_representation_ch2}
 P.~Blackburn and J.~Bos, ``Lambda calculus,'' in \emph{Representation and
-  Inference for Natural Language: A First Course in Computational Semantics
+  Inference for Natural Language: A 1st Course in Computational Semantics
   (Studies in Computational Linguistics)}.\hskip 1em plus 0.5em minus
   0.4em\relax Stanford, CA, USA: Center for the Study of Language and
   Information, 2005, ch.~2, pp. 55--104.
 
 \bibitem{blackburn_2005_representation_ch3}
 P.~Blackburn and J.~Bos, ``Underspecified representations,'' in
-  \emph{Representation and Inference for Natural Language: A First Course in
+  \emph{Representation and Inference for Natural Language: A 1st Course in
   Computational Semantics (Studies in Computational Linguistics)}.\hskip 1em
   plus 0.5em minus 0.4em\relax Stanford, CA, USA: Center for the Study of
   Language and Information, 2005, ch.~3, pp. 105--154.
 
 \bibitem{blackburn_2005_representation_ch4}
 P.~Blackburn and J.~Bos, ``Propositional inference,'' in \emph{Representation
-  and Inference for Natural Language: A First Course in Computational Semantics
+  and Inference for Natural Language: A 1st Course in Computational Semantics
   (Studies in Computational Linguistics)}.\hskip 1em plus 0.5em minus
   0.4em\relax Stanford, CA, USA: Center for the Study of Language and
   Information, 2005, ch.~4, pp. 155--202.
 
 \bibitem{blackburn_2005_representation_ch5}
 P.~Blackburn and J.~Bos, ``First-order inference,'' in \emph{Representation and
-  Inference for Natural Language: A First Course in Computational Semantics
+  Inference for Natural Language: A 1st Course in Computational Semantics
   (Studies in Computational Linguistics)}.\hskip 1em plus 0.5em minus
   0.4em\relax Stanford, CA, USA: Center for the Study of Language and
   Information, 2005, ch.~5, pp. 203--258.
 
 \bibitem{blackburn_2005_representation_ch6}
 P.~Blackburn and J.~Bos, ``Putting it all together,'' in \emph{Representation
-  and Inference for Natural Language: A First Course in Computational Semantics
+  and Inference for Natural Language: A 1st Course in Computational Semantics
   (Studies in Computational Linguistics)}.\hskip 1em plus 0.5em minus
   0.4em\relax Stanford, CA, USA: Center for the Study of Language and
   Information, 2005, ch.~6, pp. 259--308.
@@ -368,11 +367,10 @@ P.~Blackburn, J.~Bos, and K.~Striegnitz, ``Working with files,'' in \emph{Learn
   Publications, 2006, ch.~12, pp. 217--230.
 
 \bibitem{martin_2000_speech_ch14}
-J.~Martin and D.~Jurafsky, ``Statistical parsing,'' in \emph{Speech and
-  Language Processing. An introduction to natural language processing,
-  computational linguistics, and speech recognition}, 2nd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Saddle River, NJ, USA: Prentice Hall, 2000, ch.~14,
-  pp. 459--488.
+J.~Martin and D.~Jurafsky, ``Statistical parsing,'' in \emph{{Speech and
+  Language Process. An Introduction to Natural Language Process., Computational
+  Linguistics, and Speech Recognition}}, 2nd~ed.\hskip 1em plus 0.5em minus
+  0.4em\relax Saddle River, NJ, USA: Prentice Hall, 2000, ch.~14, pp. 459--488.
 
 \bibitem{opennlp}
 {Apache Software Foundation, \textit{OpenNLP}. [Online] Available:

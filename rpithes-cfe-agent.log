@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 JUL 2016 20:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 JUL 2016 18:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,7 +634,7 @@ File: true_false_hypothesis_test_1500.png Graphic file (type png)
 <use true_false_hypothesis_test_1500.png>
 Package pdftex.def Info: true_false_hypothesis_test_1500.png used on input line
  184.
-(pdftex.def)             Requested size: 278.53993pt x 226.596pt.
+(pdftex.def)             Requested size: 213.3988pt x 170.71689pt.
 
 <multiple_choice_results_1500.png, id=995, 1004.75375pt x 296.10625pt>
 File: multiple_choice_results_1500.png Graphic file (type png)
@@ -650,26 +650,28 @@ File: multiple_choice_hypothesis_test_1500.png Graphic file (type png)
 <use multiple_choice_hypothesis_test_1500.png>
 Package pdftex.def Info: multiple_choice_hypothesis_test_1500.png used on input
  line 198.
-(pdftex.def)             Requested size: 277.78711pt x 230.36005pt.
+(pdftex.def)             Requested size: 213.39851pt x 170.71727pt.
  [32 <./screen_shot_6.jpg>]
-<version_1_training_set_results.png, id=1003, 1258.7025pt x 523.9575pt>
+[33 <./screen_shot_7.jpg> <./true_false_results_1500.png>] [34 <./true_false_hy
+pothesis_test_1500.png> <./multiple_choice_results_1500.png> <./multiple_choice
+_hypothesis_test_1500.png>]
+<version_1_training_set_results.png, id=1016, 1258.7025pt x 523.9575pt>
 File: version_1_training_set_results.png Graphic file (type png)
 
 <use version_1_training_set_results.png>
 Package pdftex.def Info: version_1_training_set_results.png used on input line 
 208.
 (pdftex.def)             Requested size: 369.88582pt x 153.96649pt.
- [33 <./screen_shot_7.jpg> <./true_false_results_1500.png>]
-<version_1_training_set_results_not.png, id=1010, 1609.01125pt x 510.90875pt>
+
+<version_1_training_set_results_not.png, id=1018, 1609.01125pt x 510.90875pt>
 File: version_1_training_set_results_not.png Graphic file (type png)
 
 <use version_1_training_set_results_not.png>
 Package pdftex.def Info: version_1_training_set_results_not.png used on input l
 ine 217.
 (pdftex.def)             Requested size: 369.88582pt x 117.44417pt.
- [34 <./true_false_hypothesis_test_1500.png> <./multiple_choice_results_1500.pn
-g>] [35 <./multiple_choice_hypothesis_test_1500.png> <./version_1_training_set_
-results.png> <./version_1_training_set_results_not.png>]) [36]
+) [35 <./version_1_training_set_results.png>] [36 <./version_1_training_set_res
+ults_not.png>]
 \openout2 = `rpichap4.aux'.
 
  (./rpichap4.tex
@@ -683,11 +685,7 @@ File: cfe_manual_toc.png Graphic file (type png)
 
 <use cfe_manual_toc.png>
 Package pdftex.def Info: cfe_manual_toc.png used on input line 31.
-(pdftex.def)             Requested size: 426.79134pt x 120.44218pt.
-
-Overfull \hbox (7.19878pt too wide) in paragraph at lines 31--32
- [][] 
- []
+(pdftex.def)             Requested size: 398.33858pt x 112.41025pt.
 
 <document_collection.png, id=1055, 1195.46625pt x 869.2475pt>
 File: document_collection.png Graphic file (type png)
@@ -921,12 +919,7 @@ File: version_2_training_set_performance.png Graphic file (type png)
 <use version_2_training_set_performance.png>
 Package pdftex.def Info: version_2_training_set_performance.png used on input l
 ine 374.
-(pdftex.def)             Requested size: 635.97621pt x 213.32121pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 374--375
- [][] 
- []
-
+(pdftex.def)             Requested size: 569.06944pt x 227.62076pt.
 
 <version_2_multiple_choice_hypothesis_test.png, id=1267, 359.3425pt x 307.1475p
 t>
@@ -1162,7 +1155,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
 Here is how much of TeX's memory you used:
  9168 strings out of 493089
  145439 string characters out of 6134842
- 255265 words of memory out of 5000000
+ 255296 words of memory out of 5000000
  12028 multiletter control sequences out of 15000+600000
  12408 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1181,7 +1174,7 @@ live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on rpithes-cfe-agent.pdf (117 pages, 3817065 bytes).
+Output written on rpithes-cfe-agent.pdf (117 pages, 3785158 bytes).
 PDF statistics:
  1724 PDF objects out of 1728 (max. 8388607)
  1474 compressed objects within 15 object streams
