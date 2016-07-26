@@ -9,7 +9,7 @@
 \contentsline {subsection}{\numberline {1.4.1}Reasoning with Uncertainty}{3}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Verification of the Agent via Test-Taking}{3}{subsection.1.4.2}
 \contentsline {subsubsection}{\numberline {1.4.2.1}The ACFE and the CFE Exam}{3}{subsubsection.1.4.2.1}
-\contentsline {subsubsection}{\numberline {1.4.2.2}CFE manual}{4}{subsubsection.1.4.2.2}
+\contentsline {subsubsection}{\numberline {1.4.2.2}CFE Manual}{4}{subsubsection.1.4.2.2}
 \contentsline {section}{\numberline {1.5}Code Resources}{5}{section.1.5}
 \contentsline {chapter}{\numberline {2.}Related Work}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Project Aristo}{6}{section.2.1}
@@ -34,7 +34,7 @@
 \contentsline {subsection}{\numberline {2.3.8}Perspective on Watson Performance}{13}{subsection.2.3.8}
 \contentsline {section}{\numberline {2.4}LASSO QA System}{13}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Question Processing Component}{13}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Question Type determination}{14}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Question Type Determination}{14}{subsubsection.2.4.1.1}
 \contentsline {subsubsection}{\numberline {2.4.1.2}Question Focus Determination}{14}{subsubsection.2.4.1.2}
 \contentsline {subsubsection}{\numberline {2.4.1.3}Question Keywords Selection}{14}{subsubsection.2.4.1.3}
 \contentsline {subsection}{\numberline {2.4.2}Paragraph Indexing Component}{15}{subsection.2.4.2}
@@ -88,6 +88,7 @@
 \contentsline {subsection}{\numberline {5.4.1}MLPassage1}{75}{subsection.5.4.1}
 \contentsline {subsubsection}{\numberline {5.4.1.1}MLPassage1 Performance}{77}{subsubsection.5.4.1.1}
 \contentsline {subsection}{\numberline {5.4.2}MLPassage2}{78}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}MLPassage2 Performance}{78}{subsubsection.5.4.2.1}
 \contentsline {chapter}{\numberline {6.}Version 4 -- Toward a Formal Model for Fraud Detection}{81}{chapter.6}
 \contentsline {section}{\numberline {6.1}An Example Subdomain - Doctor Shopping}{82}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Doctor Shopping Axioms}{83}{subsection.6.1.1}

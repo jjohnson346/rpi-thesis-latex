@@ -15,7 +15,7 @@
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Hypothesis Test for Multiple-Choice Questions\relax }}{35}{figure.caption.22}
 \contentsline {figure}{\numberline {3.16}{\ignorespaces Results for Multiple-Choice and True-False Questions on 1300-Question Training Set\relax }}{35}{figure.caption.23}
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Training Set Results with NOT Feature Breakout\relax }}{35}{figure.caption.24}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces A section of the table of contents from the CFE Manual\relax }}{40}{figure.caption.25}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A Section of the Table of Contents from the CFE Manual\relax }}{40}{figure.caption.25}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces The CFE Manual as a Document Collection\relax }}{41}{figure.caption.26}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Lucene Indexes for a Portion of the Question Sections\relax }}{42}{figure.caption.27}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Question Server Component Targeting Definition/NOT Questions\relax }}{44}{figure.caption.28}
@@ -49,8 +49,8 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces MLPassage1 Algorithm - Test Case 1\relax }}{77}{figure.caption.56}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces MLPassage1 Algorithm - Test Case 2\relax }}{79}{figure.caption.57}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces MLPassage2 Algorithm Performance\relax }}{80}{figure.caption.58}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Proof of $C1$ -- Blue knows he was given a prescription by Dr. White on Wednesday.\relax }}{88}{figure.caption.59}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Proof of $C2$ -- Blue knows he was given a prescription by Dr. Black on Friday.\relax }}{89}{figure.caption.60}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Proof of $C3$ -- If Blue does not tell Dr. Black about the prescription he received from Dr. White then Blue knows he does not tell him.\relax }}{90}{figure.caption.61}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Proof of $C4$ -- Blue believes that Dr. Black does not know he received a prescription from Dr. White on Wednesday.\relax }}{91}{figure.caption.62}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Proof of $C5$ -- Blue is guilty of doctor shopping.\relax }}{91}{figure.caption.63}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Proof of $C1$\relax }}{88}{figure.caption.59}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Proof of $C2$\relax }}{89}{figure.caption.60}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Proof of $C3$\relax }}{90}{figure.caption.61}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Proof of $C4$\relax }}{90}{figure.caption.62}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Proof of $C5$\relax }}{91}{figure.caption.63}

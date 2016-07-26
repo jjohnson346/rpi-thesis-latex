@@ -6,7 +6,7 @@
  
 \chapter{Version 4 -- Toward a Formal Model for Fraud Detection}
 
-\blfootnote{Portions of this chapter previously appeared as: \bibentry{johnson2014three}} 
+\blfootnote{Portions of this chapter previously appeared as: \bibentry{johnson2014three}.} 
 
 In this chapter, we attempt to lay the groundwork for the rigorous study of fraud detection.  Our goal is to not to build an agent in the same sense as Versions 1, 2, and 3 of the CFE Agent whose performance is to be evaluated against CFE exam questions in the spirit of psychometric AI, but instead to build a \emph{demonstration} of a formalized approach to the domain of fraud detection, whereby through formal reasoning, we can answer questions with logico-deductive proof-based justifications.  Furthermore, our ambition in this chapter is not to create a \emph{comprehensive} formal model, but to demonstrate the technique on an examplar subdomain - the detection of doctor shopping.  Our ultimate aim is to show the behavior of an automated agent if it were built under this approach.  By doing so, we give an idea of the costs levied in terms of complexity\footnote{Lacking an agent whose performance can be evaluated on exam questions, we cannot measure the cost in terms of accuracy.} in order to achieve proof-based justifications.  
 
@@ -54,7 +54,7 @@ The first axiom poses a definition of doctor shopping as follows:  Any person, $
 \end{align*}
 \end{footnotesize}
 
-Before continuing to the next axiom, we note here that the $\mathcal{DCEC}^\ast$ is sufficiently expressive to support more nuanced definitions of doctor shopping\footnote{We concede that the one we present here, as given by $[A1]$, is deliberately quite restrictive for the purpose of discussion.}.  For example, we might use a threshold of three redundant prescriptions in short succession, instead of two.  Or, we might want to allow redundant prescriptions of different duration ordered in short succession. (The current definition requires the two prescriptions to be of the same duration.)  Or perhaps, we wish to incorporate intent into the axioms.  In the $\mathcal{DCEC}^\ast$, we can express all of these types of situations, and we supply as an example, a formula, $[A1']$, for the definition of doctor shopping in terms of three prescriptions, below:
+Before continuing to the next axiom, we note here that the $\mathcal{DCEC}^\ast$ is sufficiently expressive to support more nuanced definitions of doctor shopping\footnote{We concede that the definition we present here, as given by $[A1]$, is deliberately quite restrictive for the purpose of discussion.}.  For example, we might use a threshold of three redundant prescriptions in short succession, instead of two.  Or, we might want to allow redundant prescriptions of different duration ordered in short succession. (The current definition requires the two prescriptions to be of the same duration.)  Or perhaps, we wish to incorporate intent into the axioms.  In the $\mathcal{DCEC}^\ast$, we can express all of these types of situations, and we supply as an example, a formula, $[A1']$, for the definition of doctor shopping in terms of three prescriptions, below:
 
 \begin{footnotesize}
 \begin{align*}
@@ -172,8 +172,7 @@ First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a 
 \vspace{6pt}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c1_proof.png}}
-\caption{Proof of $C1$ -- Blue knows he was given a prescription by Dr. White on 
-Wednesday.}
+\caption{Proof of $C1$}
 \label{fig:proof_of_c1}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -192,8 +191,7 @@ Wednesday.}
 \vspace{6pt}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c2_proof.png}}
-\caption{Proof of $C2$ -- Blue knows he was given a prescription by Dr. Black on 
-Friday.}
+\caption{Proof of $C2$}
 \label{fig:proof_of_c2}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -218,7 +216,7 @@ Friday.}
 \vspace{6pt}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c3_proof.png}}
-\caption{Proof of $C3$ -- If Blue does not tell Dr. Black about the prescription he received from Dr. White then Blue knows he does not tell him.}
+\caption{Proof of $C3$}
 \label{fig:proof_of_c3}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -241,7 +239,7 @@ Friday.}
 \vspace{6pt}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c4_proof.png}}
-\caption{Proof of $C4$ -- Blue believes that Dr. Black does not know he received a prescription from Dr. White on Wednesday.}
+\caption{Proof of $C4$}
 \label{fig:proof_of_c4}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -262,7 +260,7 @@ Friday.}
 \vspace{6pt}
 \centering
 \framebox{\includegraphics[width=1.0\textwidth]{c5_proof.png}}
-\caption{Proof of $C5$ -- Blue is guilty of doctor shopping.}
+\caption{Proof of $C5$}
 \label{fig:proof_of_c5}
 \end{figure}
 %%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

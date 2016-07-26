@@ -154,6 +154,8 @@ Finally, we must remember that only one of the passages is actually considered t
 
 MLPassage2 addresses two of the problems cited with MLPassage1, namely the stemming problem and the passage selection problem.  An implementation of the Porter Stemmer algorithm was incorporated into this algorithm to address the first issue.  As for the second, this algorithm includes only the first text passage out of the seven.  As noted above, the passage classification algorithm has good precision.  So, reducing the text body to only the first passage would appear to be a prudent decision.  The results bear this out -- With these modifications, the MLPassage2 algorithm shows improved performance of 11 of 16 correct (68.75\%), as shown in Fig.~\ref{fig:mlpassage2_performance}.  
 
+\subsubsection{MLPassage2 Performance}
+
 The performance of MLPassage2 is comparable to that seen in Version 2 of the agent on definition questions.  In other words, we see, here, that more complexity doesn't necessarily translate to better accuracy.   After all, we've incorporated another step, using machine learning, which performs its function quite well.  Yet, that alone is not enough to translate to a better score on the exam questions.  There is more room for enhancements and modifications to MLPassage2, however, which should result in better performance with further research.  
 
 \begin{figure}
