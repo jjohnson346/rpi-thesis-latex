@@ -50,7 +50,7 @@ Next, we set about the task of developing the training set of passages upon whic
 \item Identify and determine the features for each passage.  There were a number of features used here as inputs to the logistic regression model.  Not surprisingly, we used the document search rank.  The higher the rank of the containing document, the more likely it would seem that the passage would be the relevant passage for the question.  Two other features were also used:  the number of distinct words in common between the question stem and the passage, and the length of the longest common sequence of words between the question stem and the passage.
 \end{enumerate}
 
-Note that the process of identifying the correct passage and of generating the passages was also applied to the test set.  For the 16 questions in the test set, we generated 971 passage records from the related documents.
+\noindent{Note that the process of identifying the correct passage and of generating the passages was also applied to the test set.  For the 16 questions in the test set, we generated 971 passage records from the related documents.}
 
 
 \section{Development of the Passage Classification Model}
@@ -127,7 +127,7 @@ MLPassage1 essentially uses the same Max Joint Probability algorithm used in Ver
 \begin{figure}
 \centering
 \vspace{1.0in}
-\framebox{\includegraphics[width=125mm, height=125mm]{mlpassage1_test_case_correct.png}}
+\framebox{\includegraphics[width=0.9\textwidth, height=125mm]{mlpassage1_test_case_correct.png}}
 \caption{MLPassage1 Algorithm - Test Case 1}
 \label{fig:mlpassage1_test_case_correct}
 \end{figure}
@@ -144,7 +144,7 @@ Finally, we must remember that only one of the passages is actually considered t
 \begin{figure}
 \centering
 \vspace{1.0in}
-\framebox{\includegraphics[width=160mm, height=170mm]{mlpassage1_test_case_incorrect.png}}
+\framebox{\includegraphics[width=0.9\textwidth, height=170mm]{mlpassage1_test_case_incorrect.png}}
 \caption{MLPassage1 Algorithm - Test Case 2}
 \label{fig:mlpassage1_test_case_incorrect}
 \end{figure}

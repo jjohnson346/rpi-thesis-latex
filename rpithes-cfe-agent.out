@@ -1,105 +1,106 @@
-\BOOKMARK [0][-]{chapter*.3}{LIST OF FIGURES}{}% 1
-\BOOKMARK [0][-]{section*.4}{ACKNOWLEDGMENT}{}% 2
-\BOOKMARK [0][-]{section*.6}{ABSTRACT}{}% 3
-\BOOKMARK [0][-]{chapter.1}{Introduction and Overview}{}% 4
-\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.2}{Goals}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.3}{The Intelligent Agent Defined, For This Project}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.4}{An Overview of the Approach}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.4.1}{Reasoning with Uncertainty}{section.1.4}% 9
-\BOOKMARK [2][-]{subsection.1.4.2}{Verification of the Agent via Test-Taking}{section.1.4}% 10
-\BOOKMARK [3][-]{subsubsection.1.4.2.1}{The ACFE and the CFE Exam}{subsection.1.4.2}% 11
-\BOOKMARK [3][-]{subsubsection.1.4.2.2}{CFE Manual}{subsection.1.4.2}% 12
-\BOOKMARK [1][-]{section.1.5}{Code Resources}{chapter.1}% 13
-\BOOKMARK [0][-]{chapter.2}{Related Work}{}% 14
-\BOOKMARK [1][-]{section.2.1}{Project Aristo}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.1.1}{Basic Questions}{section.2.1}% 16
-\BOOKMARK [2][-]{subsection.2.1.2}{Simple Inference Questions}{section.2.1}% 17
-\BOOKMARK [2][-]{subsection.2.1.3}{More Complex World Knowledge}{section.2.1}% 18
-\BOOKMARK [2][-]{subsection.2.1.4}{Diagrams and Mathematics and Geometry}{section.2.1}% 19
-\BOOKMARK [2][-]{subsection.2.1.5}{Progress on Project Aristo}{section.2.1}% 20
-\BOOKMARK [3][-]{subsubsection.2.1.5.1}{Representing the Meaning of Natural Language Sentences}{subsection.2.1.5}% 21
-\BOOKMARK [3][-]{subsubsection.2.1.5.2}{Reasoning with the Extracted Formalizations}{subsection.2.1.5}% 22
-\BOOKMARK [2][-]{subsection.2.1.6}{Perspective on Performance of Project Aristo}{section.2.1}% 23
-\BOOKMARK [1][-]{section.2.2}{Halo Project}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.1}{Perspective on Halo Project Performance}{section.2.2}% 25
-\BOOKMARK [1][-]{section.2.3}{Watson}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.3.1}{Focus and LAT Detection}{section.2.3}% 27
-\BOOKMARK [2][-]{subsection.2.3.2}{Relation Detection}{section.2.3}% 28
-\BOOKMARK [2][-]{subsection.2.3.3}{Hypothesis Generation}{section.2.3}% 29
-\BOOKMARK [2][-]{subsection.2.3.4}{Soft Filtering}{section.2.3}% 30
-\BOOKMARK [2][-]{subsection.2.3.5}{Evidence Retrieval}{section.2.3}% 31
-\BOOKMARK [2][-]{subsection.2.3.6}{Evidence Scoring}{section.2.3}% 32
-\BOOKMARK [2][-]{subsection.2.3.7}{Ranking of Hypotheses}{section.2.3}% 33
-\BOOKMARK [2][-]{subsection.2.3.8}{Perspective on Watson Performance}{section.2.3}% 34
-\BOOKMARK [1][-]{section.2.4}{LASSO QA System}{chapter.2}% 35
-\BOOKMARK [2][-]{subsection.2.4.1}{Question Processing Component}{section.2.4}% 36
-\BOOKMARK [3][-]{subsubsection.2.4.1.1}{Question Type Determination}{subsection.2.4.1}% 37
-\BOOKMARK [3][-]{subsubsection.2.4.1.2}{Question Focus Determination}{subsection.2.4.1}% 38
-\BOOKMARK [3][-]{subsubsection.2.4.1.3}{Question Keywords Selection}{subsection.2.4.1}% 39
-\BOOKMARK [2][-]{subsection.2.4.2}{Paragraph Indexing Component}{section.2.4}% 40
-\BOOKMARK [3][-]{subsubsection.2.4.2.1}{Query Execution}{subsection.2.4.2}% 41
-\BOOKMARK [3][-]{subsubsection.2.4.2.2}{Paragraph Indexing}{subsection.2.4.2}% 42
-\BOOKMARK [2][-]{subsection.2.4.3}{Answer Processing Component}{section.2.4}% 43
-\BOOKMARK [1][-]{section.2.5}{Answer Type Classifiers}{chapter.2}% 44
-\BOOKMARK [2][-]{subsection.2.5.1}{Perspective on LASSO Performance}{section.2.5}% 45
-\BOOKMARK [1][-]{section.2.6}{Prismatic}{chapter.2}% 46
-\BOOKMARK [2][-]{subsection.2.6.1}{Perspective on Prismatic}{section.2.6}% 47
-\BOOKMARK [1][-]{section.2.7}{Semantic Approaches in the Fraud Domain}{chapter.2}% 48
-\BOOKMARK [2][-]{subsection.2.7.1}{The Lying Machine}{section.2.7}% 49
-\BOOKMARK [2][-]{subsection.2.7.2}{Formal Definition of Fraud}{section.2.7}% 50
-\BOOKMARK [2][-]{subsection.2.7.3}{Perspective on Related Work}{section.2.7}% 51
-\BOOKMARK [0][-]{chapter.3}{Version 1 \205 A Shallow Agent}{}% 52
-\BOOKMARK [1][-]{section.3.1}{Resource Procurement and Customization}{chapter.3}% 53
-\BOOKMARK [1][-]{section.3.2}{CFE Agent Design}{chapter.3}% 54
-\BOOKMARK [2][-]{subsection.3.2.1}{Question Profile}{section.3.2}% 55
-\BOOKMARK [2][-]{subsection.3.2.2}{Algorithm Set}{section.3.2}% 56
-\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Max Joint Probability Algorithm}{subsection.3.2.2}% 57
-\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Max Frequency Algorithm}{subsection.3.2.2}% 58
-\BOOKMARK [3][-]{subsubsection.3.2.2.3}{False Select}{subsection.3.2.2}% 59
-\BOOKMARK [2][-]{subsection.3.2.3}{Algorithm Profile Data}{section.3.2}% 60
-\BOOKMARK [2][-]{subsection.3.2.4}{The Selection Algorithm}{section.3.2}% 61
-\BOOKMARK [1][-]{section.3.3}{CFE Agent Demo}{chapter.3}% 62
-\BOOKMARK [1][-]{section.3.4}{CFE Agent Results - A Good Start}{chapter.3}% 63
-\BOOKMARK [0][-]{chapter.4}{Version 2 \205 A More Intelligent Agent}{}% 64
-\BOOKMARK [1][-]{section.4.1}{Transforming the CFE Manual into a Document Collection}{chapter.4}% 65
-\BOOKMARK [1][-]{section.4.2}{Lucene \205 A Tool for Information Retrieval}{chapter.4}% 66
-\BOOKMARK [1][-]{section.4.3}{Analysis Tools for Algorithm Development}{chapter.4}% 67
-\BOOKMARK [1][-]{section.4.4}{Algorithms for Version 2}{chapter.4}% 68
-\BOOKMARK [2][-]{subsection.4.4.1}{Concept Match Version 1}{section.4.4}% 69
-\BOOKMARK [3][-]{subsubsection.4.4.1.1}{Agent Justification for Selected Answer}{subsection.4.4.1}% 70
-\BOOKMARK [3][-]{subsubsection.4.4.1.2}{Concept Match V1 Performance}{subsection.4.4.1}% 71
-\BOOKMARK [2][-]{subsection.4.4.2}{Concept Match Version 2}{section.4.4}% 72
-\BOOKMARK [3][-]{subsubsection.4.4.2.1}{Concept Match V2 Performance}{subsection.4.4.2}% 73
-\BOOKMARK [2][-]{subsection.4.4.3}{Concept Match Version 3}{section.4.4}% 74
-\BOOKMARK [3][-]{subsubsection.4.4.3.1}{Concept Match V3 Performance}{subsection.4.4.3}% 75
-\BOOKMARK [2][-]{subsection.4.4.4}{Concept Match NOT}{section.4.4}% 76
-\BOOKMARK [3][-]{subsubsection.4.4.4.1}{Concept Match NOT Performance}{subsection.4.4.4}% 77
-\BOOKMARK [2][-]{subsection.4.4.5}{Concept Match NOTA}{section.4.4}% 78
-\BOOKMARK [3][-]{subsubsection.4.4.5.1}{Concept Match NOTA Performance}{subsection.4.4.5}% 79
-\BOOKMARK [1][-]{section.4.5}{CFE Agent Version 2 Results}{chapter.4}% 80
-\BOOKMARK [0][-]{chapter.5}{Version 3 \205 A Learning Agent}{}% 81
-\BOOKMARK [1][-]{section.5.1}{Development of the Training Set}{chapter.5}% 82
-\BOOKMARK [2][-]{subsection.5.1.1}{Targeted Questions}{section.5.1}% 83
-\BOOKMARK [2][-]{subsection.5.1.2}{Passage Training Set}{section.5.1}% 84
-\BOOKMARK [1][-]{section.5.2}{Development of the Passage Classification Model}{chapter.5}% 85
-\BOOKMARK [1][-]{section.5.3}{Application to the Test Set}{chapter.5}% 86
-\BOOKMARK [1][-]{section.5.4}{Answer Processing Algorithms for Version 3}{chapter.5}% 87
-\BOOKMARK [2][-]{subsection.5.4.1}{MLPassage1}{section.5.4}% 88
-\BOOKMARK [3][-]{subsubsection.5.4.1.1}{MLPassage1 Performance}{subsection.5.4.1}% 89
-\BOOKMARK [2][-]{subsection.5.4.2}{MLPassage2}{section.5.4}% 90
-\BOOKMARK [3][-]{subsubsection.5.4.2.1}{MLPassage2 Performance}{subsection.5.4.2}% 91
-\BOOKMARK [0][-]{chapter.6}{Version 4 \205 Toward a Formal Model for Fraud Detection}{}% 92
-\BOOKMARK [1][-]{section.6.1}{An Example Subdomain - Doctor Shopping}{chapter.6}% 93
-\BOOKMARK [2][-]{subsection.6.1.1}{Doctor Shopping Axioms}{section.6.1}% 94
-\BOOKMARK [2][-]{subsection.6.1.2}{Doctor Shopping - An Example}{section.6.1}% 95
-\BOOKMARK [2][-]{subsection.6.1.3}{Doctor Shopping Proof}{section.6.1}% 96
-\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 97
-\BOOKMARK [1][-]{section.7.1}{Summary of Work}{chapter.7}% 98
-\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 99
-\BOOKMARK [0][-]{section*.64}{REFERENCES}{}% 100
-\BOOKMARK [0][-]{appendix.A}{Brief Overview of Information Retrieval}{}% 101
-\BOOKMARK [1][-]{section.A.1}{Boolean Retrieval}{appendix.A}% 102
-\BOOKMARK [2][-]{subsection.A.1.1}{Term-Document Incidence Matrix}{section.A.1}% 103
-\BOOKMARK [2][-]{subsection.A.1.2}{Inverted Index}{section.A.1}% 104
-\BOOKMARK [1][-]{section.A.2}{Ranked Retrieval}{appendix.A}% 105
+\BOOKMARK [0][-]{chapter*.3}{LIST OF TABLES}{}% 1
+\BOOKMARK [0][-]{chapter*.5}{LIST OF FIGURES}{}% 2
+\BOOKMARK [0][-]{section*.6}{ACKNOWLEDGMENT}{}% 3
+\BOOKMARK [0][-]{section*.8}{ABSTRACT}{}% 4
+\BOOKMARK [0][-]{chapter.1}{Introduction and Overview}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Goals}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{The Intelligent Agent Defined, For This Project}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{An Overview of the Approach}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.4.1}{Reasoning with Uncertainty}{section.1.4}% 10
+\BOOKMARK [2][-]{subsection.1.4.2}{Verification of the Agent via Test-Taking}{section.1.4}% 11
+\BOOKMARK [3][-]{subsubsection.1.4.2.1}{The ACFE and the CFE Exam}{subsection.1.4.2}% 12
+\BOOKMARK [3][-]{subsubsection.1.4.2.2}{CFE Manual}{subsection.1.4.2}% 13
+\BOOKMARK [1][-]{section.1.5}{Code Resources}{chapter.1}% 14
+\BOOKMARK [0][-]{chapter.2}{Related Work}{}% 15
+\BOOKMARK [1][-]{section.2.1}{Project Aristo}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.1.1}{Basic Questions}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.2}{Simple Inference Questions}{section.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.1.3}{More Complex World Knowledge}{section.2.1}% 19
+\BOOKMARK [2][-]{subsection.2.1.4}{Diagrams and Mathematics and Geometry}{section.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.1.5}{Progress on Project Aristo}{section.2.1}% 21
+\BOOKMARK [3][-]{subsubsection.2.1.5.1}{Representing the Meaning of Natural Language Sentences}{subsection.2.1.5}% 22
+\BOOKMARK [3][-]{subsubsection.2.1.5.2}{Reasoning with the Extracted Formalizations}{subsection.2.1.5}% 23
+\BOOKMARK [2][-]{subsection.2.1.6}{Perspective on Performance of Project Aristo}{section.2.1}% 24
+\BOOKMARK [1][-]{section.2.2}{Halo Project}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.1}{Perspective on Halo Project Performance}{section.2.2}% 26
+\BOOKMARK [1][-]{section.2.3}{Watson}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.3.1}{Focus and LAT Detection}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.2}{Relation Detection}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.3.3}{Hypothesis Generation}{section.2.3}% 30
+\BOOKMARK [2][-]{subsection.2.3.4}{Soft Filtering}{section.2.3}% 31
+\BOOKMARK [2][-]{subsection.2.3.5}{Evidence Retrieval}{section.2.3}% 32
+\BOOKMARK [2][-]{subsection.2.3.6}{Evidence Scoring}{section.2.3}% 33
+\BOOKMARK [2][-]{subsection.2.3.7}{Ranking of Hypotheses}{section.2.3}% 34
+\BOOKMARK [2][-]{subsection.2.3.8}{Perspective on Watson Performance}{section.2.3}% 35
+\BOOKMARK [1][-]{section.2.4}{LASSO QA System}{chapter.2}% 36
+\BOOKMARK [2][-]{subsection.2.4.1}{Question Processing Component}{section.2.4}% 37
+\BOOKMARK [3][-]{subsubsection.2.4.1.1}{Question Type Determination}{subsection.2.4.1}% 38
+\BOOKMARK [3][-]{subsubsection.2.4.1.2}{Question Focus Determination}{subsection.2.4.1}% 39
+\BOOKMARK [3][-]{subsubsection.2.4.1.3}{Question Keywords Selection}{subsection.2.4.1}% 40
+\BOOKMARK [2][-]{subsection.2.4.2}{Paragraph Indexing Component}{section.2.4}% 41
+\BOOKMARK [3][-]{subsubsection.2.4.2.1}{Query Execution}{subsection.2.4.2}% 42
+\BOOKMARK [3][-]{subsubsection.2.4.2.2}{Paragraph Indexing}{subsection.2.4.2}% 43
+\BOOKMARK [2][-]{subsection.2.4.3}{Answer Processing Component}{section.2.4}% 44
+\BOOKMARK [1][-]{section.2.5}{Answer Type Classifiers}{chapter.2}% 45
+\BOOKMARK [2][-]{subsection.2.5.1}{Perspective on LASSO Performance}{section.2.5}% 46
+\BOOKMARK [1][-]{section.2.6}{Prismatic}{chapter.2}% 47
+\BOOKMARK [2][-]{subsection.2.6.1}{Perspective on Prismatic}{section.2.6}% 48
+\BOOKMARK [1][-]{section.2.7}{Semantic Approaches in the Fraud Domain}{chapter.2}% 49
+\BOOKMARK [2][-]{subsection.2.7.1}{The Lying Machine}{section.2.7}% 50
+\BOOKMARK [2][-]{subsection.2.7.2}{Formal Definition of Fraud}{section.2.7}% 51
+\BOOKMARK [2][-]{subsection.2.7.3}{Perspective on Related Work}{section.2.7}% 52
+\BOOKMARK [0][-]{chapter.3}{Version 1 \205 A Shallow Agent}{}% 53
+\BOOKMARK [1][-]{section.3.1}{Resource Procurement and Customization}{chapter.3}% 54
+\BOOKMARK [1][-]{section.3.2}{CFE Agent Design}{chapter.3}% 55
+\BOOKMARK [2][-]{subsection.3.2.1}{Question Profile}{section.3.2}% 56
+\BOOKMARK [2][-]{subsection.3.2.2}{Algorithm Set}{section.3.2}% 57
+\BOOKMARK [3][-]{subsubsection.3.2.2.1}{Max Joint Probability Algorithm}{subsection.3.2.2}% 58
+\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Max Frequency Algorithm}{subsection.3.2.2}% 59
+\BOOKMARK [3][-]{subsubsection.3.2.2.3}{False Select}{subsection.3.2.2}% 60
+\BOOKMARK [2][-]{subsection.3.2.3}{Algorithm Profile Data}{section.3.2}% 61
+\BOOKMARK [2][-]{subsection.3.2.4}{The Selection Algorithm}{section.3.2}% 62
+\BOOKMARK [1][-]{section.3.3}{CFE Agent Demo}{chapter.3}% 63
+\BOOKMARK [1][-]{section.3.4}{CFE Agent Results - A Good Start}{chapter.3}% 64
+\BOOKMARK [0][-]{chapter.4}{Version 2 \205 A More Intelligent Agent}{}% 65
+\BOOKMARK [1][-]{section.4.1}{Transforming the CFE Manual into a Document Collection}{chapter.4}% 66
+\BOOKMARK [1][-]{section.4.2}{Lucene \205 A Tool for Information Retrieval}{chapter.4}% 67
+\BOOKMARK [1][-]{section.4.3}{Analysis Tools for Algorithm Development}{chapter.4}% 68
+\BOOKMARK [1][-]{section.4.4}{Algorithms for Version 2}{chapter.4}% 69
+\BOOKMARK [2][-]{subsection.4.4.1}{Concept Match Version 1}{section.4.4}% 70
+\BOOKMARK [3][-]{subsubsection.4.4.1.1}{Agent Justification for Selected Answer}{subsection.4.4.1}% 71
+\BOOKMARK [3][-]{subsubsection.4.4.1.2}{Concept Match V1 Performance}{subsection.4.4.1}% 72
+\BOOKMARK [2][-]{subsection.4.4.2}{Concept Match Version 2}{section.4.4}% 73
+\BOOKMARK [3][-]{subsubsection.4.4.2.1}{Concept Match V2 Performance}{subsection.4.4.2}% 74
+\BOOKMARK [2][-]{subsection.4.4.3}{Concept Match Version 3}{section.4.4}% 75
+\BOOKMARK [3][-]{subsubsection.4.4.3.1}{Concept Match V3 Performance}{subsection.4.4.3}% 76
+\BOOKMARK [2][-]{subsection.4.4.4}{Concept Match NOT}{section.4.4}% 77
+\BOOKMARK [3][-]{subsubsection.4.4.4.1}{Concept Match NOT Performance}{subsection.4.4.4}% 78
+\BOOKMARK [2][-]{subsection.4.4.5}{Concept Match NOTA}{section.4.4}% 79
+\BOOKMARK [3][-]{subsubsection.4.4.5.1}{Concept Match NOTA Performance}{subsection.4.4.5}% 80
+\BOOKMARK [1][-]{section.4.5}{CFE Agent Version 2 Results}{chapter.4}% 81
+\BOOKMARK [0][-]{chapter.5}{Version 3 \205 A Learning Agent}{}% 82
+\BOOKMARK [1][-]{section.5.1}{Development of the Training Set}{chapter.5}% 83
+\BOOKMARK [2][-]{subsection.5.1.1}{Targeted Questions}{section.5.1}% 84
+\BOOKMARK [2][-]{subsection.5.1.2}{Passage Training Set}{section.5.1}% 85
+\BOOKMARK [1][-]{section.5.2}{Development of the Passage Classification Model}{chapter.5}% 86
+\BOOKMARK [1][-]{section.5.3}{Application to the Test Set}{chapter.5}% 87
+\BOOKMARK [1][-]{section.5.4}{Answer Processing Algorithms for Version 3}{chapter.5}% 88
+\BOOKMARK [2][-]{subsection.5.4.1}{MLPassage1}{section.5.4}% 89
+\BOOKMARK [3][-]{subsubsection.5.4.1.1}{MLPassage1 Performance}{subsection.5.4.1}% 90
+\BOOKMARK [2][-]{subsection.5.4.2}{MLPassage2}{section.5.4}% 91
+\BOOKMARK [3][-]{subsubsection.5.4.2.1}{MLPassage2 Performance}{subsection.5.4.2}% 92
+\BOOKMARK [0][-]{chapter.6}{Version 4 \205 Toward a Formal Model for Fraud Detection}{}% 93
+\BOOKMARK [1][-]{section.6.1}{An Example Subdomain - Doctor Shopping}{chapter.6}% 94
+\BOOKMARK [2][-]{subsection.6.1.1}{Doctor Shopping Axioms}{section.6.1}% 95
+\BOOKMARK [2][-]{subsection.6.1.2}{Doctor Shopping - An Example}{section.6.1}% 96
+\BOOKMARK [2][-]{subsection.6.1.3}{Doctor Shopping Proof}{section.6.1}% 97
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Future Work}{}% 98
+\BOOKMARK [1][-]{section.7.1}{Summary of Work}{chapter.7}% 99
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 100
+\BOOKMARK [0][-]{section*.66}{REFERENCES}{}% 101
+\BOOKMARK [0][-]{appendix.A}{Brief Overview of Information Retrieval}{}% 102
+\BOOKMARK [1][-]{section.A.1}{Boolean Retrieval}{appendix.A}% 103
+\BOOKMARK [2][-]{subsection.A.1.1}{Term-Document Incidence Matrix}{section.A.1}% 104
+\BOOKMARK [2][-]{subsection.A.1.2}{Inverted Index}{section.A.1}% 105
+\BOOKMARK [1][-]{section.A.2}{Ranked Retrieval}{appendix.A}% 106

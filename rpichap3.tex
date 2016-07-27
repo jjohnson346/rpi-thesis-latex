@@ -169,13 +169,13 @@ Fig.~\ref{fig:final_question_and_termination} shows the final question, which is
 %\subsection{CFE Agent Results - A Good Start}
 \section{CFE Agent Results - A Good Start}
 
-A detailed look at the performance of the agent on the entire battery of 1,500 questions, assuming the agent employs the most accurate algorithm for each question, given its profile, shows the agent demonstrates promising, statistically significant performance.  Consider the question of whether the agent actually performed any better than random guessing.  For true-false questions, random guessing would be expected to yield an accuracy rate on the of approximately 50\%.  (Given there are a relatively large number of true-false questions (506), it is reasonable to assume the experimental accuracy rate should be very close to this theoretical value.)  Likewise, for multiple-choice questions with four options, random guessing should yield an accuracy rate of approximately 25\%.  (Again, for the same reason as for true-false questions, the experimental accuracy should be close to the theoretical expected value.)  However, the empirical data shown in Fig.~\ref{fig:results_for_true_false_questions} and Fig.~\ref{fig:results_for_multiple_choice_questions} indicates that for true-false questions, the observed accuracy rate is over 58\% on this training set, giving a z-score of over 3.729, as shown in Table~\ref{table:hypothesis_test_for_true_false_questions}, and that for multiple-choice questions, the accuracy rate is just over 47.8\%, giving a z-score of 16.67, as shown in Table~\ref{table:hypothesis_test_for_multiple_choice_questions}.  For both classes of questions, then, the null hypothesis of performance consistent with random guessing is rejected by a large margin at the 99\% significance level.  
+A detailed look at the performance of the agent on the entire battery of 1,500 questions, assuming the agent employs the most accurate algorithm for each question, given its profile, shows the agent demonstrates promising, statistically significant performance.  Consider the question of whether the agent actually performed any better than random guessing.  For true-false questions, random guessing would be expected to yield an accuracy rate on the of approximately 50\%.  (Given there are a relatively large number of true-false questions (506), it is reasonable to assume the experimental accuracy rate should be very close to this theoretical value.)  Likewise, for multiple-choice questions with four options, random guessing should yield an accuracy rate of approximately 25\%.  (Again, for the same reason as for true-false questions, the experimental accuracy should be close to the theoretical expected value.)  However, the empirical data produced in the performance reports by the CFE Agent shown in Fig.~\ref{fig:results_for_true_false_questions} and Fig.~\ref{fig:results_for_multiple_choice_questions} indicates that for true-false questions, the observed accuracy rate is over 58\% on this training set and for multiple-choice questions, just over 47.8\%.  For both classes of questions, then, the null hypothesis of performance consistent with random guessing is rejected by a large margin at the 99\% significance level.  (Refer to  Table~\ref{table:hypothesis_test_for_true_false_questions} and Table~\ref{table:hypothesis_test_for_multiple_choice_questions}).
 
 
 \begin{figure}
 \centering
 \framebox{\includegraphics[width=130mm]{true_false_results_1500.png}}
-\caption{Results for True-False Questions}
+\caption{CFE Agent Report -- Results for True-False Questions}
 \label{fig:results_for_true_false_questions}
 \end{figure}
 
@@ -189,6 +189,7 @@ A detailed look at the performance of the agent on the entire battery of 1,500 q
 
 \begin{table}[h!]
 \centering
+\caption{Hypothesis Test for True/False Questions}
 \small
 \resizebox{0.6\textwidth}{!}{
 \begin{tabular}{| l r |}
@@ -206,20 +207,19 @@ A detailed look at the performance of the agent on the entire battery of 1,500 q
 		Std(Exam Score) & 0.02222771 \\
 		Observed Exam Score & 0.58289921 \\
 		z-score for Observed Exam Score & 3.72954321 \\
-		z-score for p-value of 1\% & 2.575 \\
+		z-score for p-value of 1\% & 2.325 \\
 		 & \\
 		Conclusion: & Reject H\textsubscript{0} in favor of H\textsubscript{1}. \\
 		\hline
 \end{tabular}
 }
-\caption{Hypothesis Test for True/False Questions}
 \label{table:hypothesis_test_for_true_false_questions}
 \end{table}
 
 \begin{figure}
 \centering
 \framebox{\includegraphics[width=130mm]{multiple_choice_results_1500.png}}
-\caption{Results for Multiple-Choice Questions}
+\caption{CFE Agent Report -- Results for Multiple-Choice Questions}
 \label{fig:results_for_multiple_choice_questions}
 \end{figure}
 
@@ -232,6 +232,7 @@ A detailed look at the performance of the agent on the entire battery of 1,500 q
  
 \begin{table}[h!]
 \centering
+\caption{Hypothesis Test for Multiple-Choice Questions}
 \small
 \resizebox{0.6\textwidth}{!}{
 \begin{tabular}{| l r |}
@@ -249,18 +250,17 @@ A detailed look at the performance of the agent on the entire battery of 1,500 q
 		Std(Exam Score) & 0.01373433 \\
 		Observed Exam Score & 0.47897686 \\
 		z-score for Observed Exam Score & 16.6718638 \\
-		z-score for p-value of 1\% & 2.575 \\
+		z-score for p-value of 1\% & 2.325 \\
 		 & \\
 		Conclusion: & Reject H\textsubscript{0} in favor of H\textsubscript{1}. \\
 		\hline
 \end{tabular}
 }
-\caption{Hypothesis Test for Multiple-Choice Questions}
 \label{table:hypothesis_test_for_multiple_choice_questions}
 \end{table}
 
 
-The above analysis covers the entire battery of 1,500 questions.  However, in developing our agent, this battery was broken into two subsets:  a training set consisting of 1,300 questions and a test set consisting of 200 questions.  The idea here is to utilize the training set to determine the optimum algorithm for each profile (that is, the one whose accuracy is highest), and then to apply that knowledge on the test set by applying the best algorithm for each question, based on its profile.  The process of breaking the collection of questions up into a training set and test set was done via a programmatic procedure that selected a random, proportionate selection of questions for each CFE-exam subtopic.  Fig.~\ref{fig:version_1_training_set_results} shows that the results for the training set are comparable to those for the 1,500-question battery, as should be expected.  Using this data, the CFE Agent was executed on the 200-question test set, where it answered 98 correct, or 49\%.  Although this is short of passing, it's an encouraging start, and provides a good baseline for subsequent versions of the agent.
+The above analysis covers the entire battery of 1,500 questions.  However, in developing our agent, this battery was broken into two subsets:  a training set consisting of 1,300 questions and a test set consisting of 200 questions.  The idea here is to utilize the training set to determine the optimum algorithm for each profile (that is, the one whose accuracy is highest), and then to apply that knowledge on the test set by applying the best algorithm for each question, based on its profile.  The process of breaking the collection of questions up into a training set and test set was done via a programmatic procedure that selected a random, proportionate selection of questions for each CFE-exam subtopic.  Fig.~\ref{fig:version_1_training_set_results} shows that the results in a report produced by the CFE Agent for the training set are comparable to those for the 1,500-question battery, as should be expected.  Using this data, the CFE Agent was executed on the 200-question test set, where it answered 98 correct, or 49\%.  Although this is short of passing, it's an encouraging start, and provides a good baseline for subsequent versions of the agent.
 
 \begin{figure}
 \centering
@@ -269,7 +269,7 @@ The above analysis covers the entire battery of 1,500 questions.  However, in de
 \label{fig:version_1_training_set_results}
 \end{figure}
 
-Finally, it should also be pointed out that during development of later versions of the agent, it was noticed that an important question feature had been overlooked in the original analysis:  the notion of a ``not'' question.  An example of a not question is:  ``Which of the following is NOT one of the major standards of generally accepted accounting principles?''.  It was found to be necessary to break out questions of this variety from other questions that were otherwise of the same type, but did not include the `NOT' term.  Thus, the analysis was completed once more on the training set, showing the following results in Fig.~\ref{fig:version_1_training_set_results_not}.  It should be noted from this table, for example, that among the 223 questions formerly  categorized as ``definition'' questions, 40 are now categorized as ``definition/not'' questions.  The same phenomenon occurs for other categories, as well.  
+Finally, it should also be pointed out that during development of later versions of the agent, it was noticed that an important question feature had been overlooked in the original analysis:  the notion of a ``not'' question.  An example of a not question is:  ``Which of the following is NOT one of the major standards of generally accepted accounting principles?''.  It was found to be necessary to break out questions of this variety from other questions that were otherwise of the same type, but did not include the `NOT' term.  Thus, the analysis was completed once more on the training set, and the performance report by the CFE Agent,  is shown in Fig.~\ref{fig:version_1_training_set_results_not}.  It should be noted from this table, for example, that among the 223 questions formerly  categorized as ``definition'' questions, 40 are now categorized as ``definition/not'' questions.  The same phenomenon occurs for other categories, as well.  
 
 \begin{figure}
 \centering

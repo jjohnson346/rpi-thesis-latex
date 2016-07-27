@@ -29,7 +29,7 @@ substance drugs. One physician does not know that the other has prescribed the d
 addition, the patient may shop for drugs in emergency rooms complaining of soft tissue 
 injuries, sprains, and strains.\cite{acfe_manual_2011_doctorshopping}}
 
-In the development of our formal model for this subdomain, our perspective is that of a fraud examiner; that is, an agent whose purpose is to detect doctor shopping, and to provide justification for its reasoning.  Formal reasoning models provide transparent justifications in the form of applications of inference rules from axioms and declarations pertaining to the problem domain.  We present axioms for the doctor shopping subdomain, and follow them with declarations for a particular example related to this subdomain, below.
+\noindent{In the development of our formal model for this subdomain, our perspective is that of a fraud examiner; that is, an agent whose purpose is to detect doctor shopping, and to provide justification for its reasoning.  Formal reasoning models provide transparent justifications in the form of applications of inference rules from axioms and declarations pertaining to the problem domain.  We present axioms for the doctor shopping subdomain, and follow them with declarations for a particular example related to this subdomain, below.}
 
 Before presenting the formal axioms, though, we need to make note that any formal definition of fraud must include the notion of intent.  It is not sufficient to define fraud in terms of a sequence of actions or events.  For example, it's possible that an patient innocently seeks a prescription from a second doctor simply because he decided he did not like the first doctor he saw for a particular ailment and also, lost the script the first doctor gave him, (pretending for the moment, we're in the pre-modern age of say, 10 years ago when electronic communication of prescriptions was not ubiquitous).  Fraud inherently involves the intent of one party to deceive another for the purpose of personal gain.  And intent implies knowledge.  Thus, the definition of any fraud must inherently involve assertions about cognitive states concerning knowledge and belief on the part of the actors involved.  This is where the use of the $\mathcal{DCEC}^\ast$ comes in handy, as we'll see in the following axioms.
 
@@ -95,7 +95,8 @@ In keeping with the general assumption of sound mind, we pose the third axiom, w
 
 \begin{footnotesize}
 \begin{align*}
-[A3] \ \forall x, r, &\done, \dtwo, dur, \tone, \ttwo . \ \neg \happens(\action(x,\tells(\dtwo,\happens(\action(x,\getrx(r,\done,dur)),\tone))),\ttwo) \\
+[A3] \ \forall x, r, &\done, \dtwo, dur, \tone, \ttwo . \ \neg \happens(\action(x,\tells(\dtwo,\happens( \\
+& \action(x,\getrx(r,\done,dur)),\tone))),\ttwo) \\
 & \wedge \prior(\tone,\ttwo) \wedge \done \neq \dtwo \Rightarrow \\
 & \knows(x, \neg \happens(\action(x,\tells(\dtwo,\happens(\action(x,\getrx(r,\done,dur)),\tone))),\ttwo))
 \end{align*}
@@ -107,7 +108,7 @@ In keeping with the general assumption of sound mind, we pose the third axiom, w
 Suppose we have the following scenario:
 \blockquote{Blue gets a prescription from Dr. White on Wednesday for 90 day supply of escitalopram (lexapro) 10mg.  Blue gets a second prescription from Dr. Black on Friday of the same week for the same medication.  Blue does not tell Dr. Black he received the prescription from Dr. White.  Blue believes that if he does not tell Dr. Black about the prescription from Dr. White, then Dr. Black does not know about the prescription from Dr. White.  Is Blue guilty of doctor shopping?}
 
-We'd like the agent to utilize its formal model for doctor shopping to determine the answer to this question.  It should be noted, however, that this kind of question is one that Versions 1, 2, and 3 of the CFE Agent are not designed to handle particularly well since the stem of the question cannot be traced back to a yes or no answer to this question (with any meaningful justification) by referring to the CFE manual.  A formal representation of this problem, in conjunction with the axioms for doctor shopping allow our agent to reason on a semantic level not provided for in our prior versions of the agent, however.  Of course, getting from a natural language representation of the problem domain to a formal representation continues to be an outstanding problem for research, as will be discussed in Chapter 7.  For now, however, we simply move forward with assuming this bridge has been crossed, by simply asserting the formal declarations that represent the semantics of the problem using the $\mathcal{DCEC}^\ast$.
+\noindent{We'd like the agent to utilize its formal model for doctor shopping to determine the answer to this question.  It should be noted, however, that this kind of question is one that Versions 1, 2, and 3 of the CFE Agent are not designed to handle particularly well since the stem of the question cannot be traced back to a yes or no answer to this question (with any meaningful justification) by referring to the CFE manual.  A formal representation of this problem, in conjunction with the axioms for doctor shopping allow our agent to reason on a semantic level not provided for in our prior versions of the agent, however.  Of course, getting from a natural language representation of the problem domain to a formal representation continues to be an outstanding problem for research, as will be discussed in Chapter 7.  For now, however, we simply move forward with assuming this bridge has been crossed, by simply asserting the formal declarations that represent the semantics of the problem using the $\mathcal{DCEC}^\ast$.}
 
 This first declaration deals with Blue getting a 90-day prescription for Lexapro from Dr. White on Wednesday: 
 
@@ -171,7 +172,7 @@ First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a 
 \begin{figure}[h!] 
 \vspace{6pt}
 \centering
-\framebox{\includegraphics[width=1.0\textwidth]{c1_proof.png}}
+\framebox{\includegraphics[width=0.9\textwidth]{c1_proof.png}}
 \caption{Proof of $C1$}
 \label{fig:proof_of_c1}
 \end{figure}
@@ -190,7 +191,7 @@ First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a 
 \begin{figure}[h!] 
 \vspace{6pt}
 \centering
-\framebox{\includegraphics[width=1.0\textwidth]{c2_proof.png}}
+\framebox{\includegraphics[width=0.9\textwidth]{c2_proof.png}}
 \caption{Proof of $C2$}
 \label{fig:proof_of_c2}
 \end{figure}
@@ -215,7 +216,7 @@ First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a 
 \begin{figure}[h!] 
 \vspace{6pt}
 \centering
-\framebox{\includegraphics[width=1.0\textwidth]{c3_proof.png}}
+\framebox{\includegraphics[width=0.9\textwidth]{c3_proof.png}}
 \caption{Proof of $C3$}
 \label{fig:proof_of_c3}
 \end{figure}
@@ -238,7 +239,7 @@ First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a 
 \begin{figure}[h!] 
 \vspace{6pt}
 \centering
-\framebox{\includegraphics[width=1.0\textwidth]{c4_proof.png}}
+\framebox{\includegraphics[width=0.9\textwidth]{c4_proof.png}}
 \caption{Proof of $C4$}
 \label{fig:proof_of_c4}
 \end{figure}
@@ -259,7 +260,7 @@ First, the agent uses [$A2$] and [$D1$] to prove that Blue knows he was given a 
 \begin{figure}[h!] 
 \vspace{6pt}
 \centering
-\framebox{\includegraphics[width=1.0\textwidth]{c5_proof.png}}
+\framebox{\includegraphics[width=0.9\textwidth]{c5_proof.png}}
 \caption{Proof of $C5$}
 \label{fig:proof_of_c5}
 \end{figure}

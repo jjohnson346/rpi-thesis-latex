@@ -36,7 +36,7 @@ Lucene \cite{lucene} is a highly popular Apache software product that implements
 \begin{figure}
 \centering
 \vspace{1.0in}
-\framebox{\includegraphics[width=150mm]{document_collection.png}}
+\framebox{\includegraphics[width=0.9\textwidth]{document_collection.png}}
 \caption{The CFE Manual as a Document Collection}
 \label{fig:document_collection}
 \end{figure}
@@ -92,7 +92,7 @@ As for the queries based on each of the question options, they are executed agai
 \begin{figure}
 \centering
 \vspace{1.0in}
-\framebox{\includegraphics[width=160mm, height=150mm]{concept_match_v1_example.png}}
+\framebox{\includegraphics[width=0.9\textwidth, height=125mm]{concept_match_v1_example.png}}
 \caption{Concept Match V1 Example}
 \label{fig:concept_match_v1_example}
 \end{figure}
@@ -104,14 +104,14 @@ Notice, in the above example, that the agent shows its reasoning for its argumen
 
 \subsubsection{Concept Match V1 Performance}
 
-Finally, we look at the performance of the Concept Match Version 1 algorithm.  Fig.~\ref{fig:concept_match_v1_training_set_results_def} shows output from the algorithm tester tool described above, showing that among the 150 questions in the training set that were classified as strictly definition questions,\footnote{There were other questions that met the criterion for the definition question type, but were classified in different but related categories, such as the definition/not category, or definition/except category.} this algorithm correctly answered 56 questions, or 37.3\% -- not an outstanding rate.  In fact it is lower than the rate of the Version 1's Max Frequency algorithm\footnote{See  Fig.~\ref{fig:version_2_training_set_performance}, row for profile, 4.} on the same questions. However, these results also show that for 46 questions this algorithm produced no answer at all.  This was because the laser-focused question option queries against the title field of the documents in some cases returned 0 documents for \emph{all} options, thereby causing the algorithm to fail.  Fig.~\ref{fig:concept_match_v1_financial_statement_fraud_9} shows an example of this scenario.  With no documents in the set of return sets for the option queries, the algorithm has no other choice than to return -1, (for no option selected).  In the next algorithm, Concept Match V2, however, this issue is addressed.
+Finally, we look at the performance of the Concept Match Version 1 algorithm.  Fig.~\ref{fig:concept_match_v1_training_set_results_def} shows output from the Algorithm Tester, showing that among the 150 questions in the training set that were classified as strictly definition questions,\footnote{There were other questions that met the criterion for the definition question type, but were classified in different but related categories, such as the definition/not category, or definition/except category.} this algorithm correctly answered 56 questions, or 37.3\% -- not an outstanding rate.  In fact it is lower than the rate of the Version 1's Max Frequency algorithm\footnote{See  Fig.~\ref{fig:version_2_training_set_performance}, row for profile, 4.} on the same questions. However, these results also show that for 46 questions this algorithm produced no answer at all.  This was because the laser-focused question option queries against the title field of the documents in some cases returned 0 documents for \emph{all} options, thereby causing the algorithm to fail.  Fig.~\ref{fig:concept_match_v1_financial_statement_fraud_9} shows an example of this scenario.  With no documents in the set of return sets for the option queries, the algorithm has no other choice than to return -1, (for no option selected).  In the next algorithm, Concept Match V2, however, this issue is addressed.
 
 
 \begin{figure}
 \centering
 \vspace{1.0in}
 \framebox{\includegraphics[width=110mm, height=16mm]{concept_match_v1_training_set_results_def.png}}
-\caption{Performance of Concept Match V1 on Definition Questions}
+\caption{Algorithm Tester Report -- Performance of Concept Match V1 on Definition Questions}
 \label{fig:concept_match_v1_training_set_results_def}
 \end{figure}
 
@@ -172,7 +172,7 @@ For the ``Bribery and Corruption" example discussed below, we see in Fig.~\ref{f
 
 \subsubsection{Concept Match V2 Performance}
 
-Next, we look at the performance of the Concept Match Version 2 algorithm on the same definition questions that were used to test Concept Match V1.  Fig.~\ref{fig:concept_match_v2_training_set_results_def} displays output from the algorithm tester showing Concept Match V2 correctly answers 101 questions of the of the 150 definition questions, resulting in a score of 67.3\% -- a dramatic improvement over Concept Match V1.  We also see that this algorithm has a much lower population of unanswered questions, (3 instead of 46), as a result of the fallback query measure incorporated into V2.
+Next, we look at the performance of the Concept Match Version 2 algorithm on the same definition questions that were used to test Concept Match V1.  Fig.~\ref{fig:concept_match_v2_training_set_results_def} displays output from the Algorithm Tester showing Concept Match V2 correctly answers 101 questions of the of the 150 definition questions, resulting in a score of 67.3\% -- a dramatic improvement over Concept Match V1.  We also see that this algorithm has a much lower population of unanswered questions, (3 instead of 46), as a result of the fallback query measure incorporated into V2.
 
 
 
@@ -180,19 +180,48 @@ Next, we look at the performance of the Concept Match Version 2 algorithm on the
 \centering
 \vspace{1.0in}
 \framebox{\includegraphics[width=110mm, height=16mm]{concept_match_v2_training_set_results_def.png}}
-\caption{Performance of Concept Match V2 on Definition Questions}
+\caption{Algorithm Tester Report -- Performance of Concept Match V2 on Definition Questions}
 \label{fig:concept_match_v2_training_set_results_def}
 \end{figure}
 
-Fig.~\ref{fig:concept_match_v2_hypothesis_test} shows we can reject the null hypothesis, H0, in favor of the alternative Hypothesis, Ha, that Concept Match V2 offers improved performance over Version 1's Max Frequency algorithm, whose accuracy is 48\%\footnote{See Fig.~\ref{fig:version_2_training_set_performance} to view the accuracy of Max Frequency on the reclassified training set of 150 definition questions.} on the same 150 questions, at the 99\% significance level.
+Table~\ref{table:concept_match_v2_hypothesis_test} shows we can reject the null hypothesis, H\textsubscript{0}, in favor of the alternative hypothesis, H\textsubscript{1}, that Concept Match V2 offers improved performance over Version 1's Max Frequency algorithm, whose accuracy is 48\%\footnote{See Fig.~\ref{fig:version_2_training_set_performance} to view the accuracy of Max Frequency on the reclassified training set of 150 definition questions.} on the same 150 questions, at the 99\% significance level.
 
-\begin{figure}
+%\begin{figure}
+%\centering
+%\vspace{1.0in}
+%\framebox{\includegraphics[width=75mm, height=60mm]{concept_match_v2_hypothesis_test.png}}
+%\caption{Concept Match V2 vs. Max Frequency Hypothesis Test on Definition Questions}
+%\label{fig:concept_match_v2_hypothesis_test}
+%\end{figure}
+
+\begin{table}[h!]
 \centering
-\vspace{1.0in}
-\framebox{\includegraphics[width=75mm, height=60mm]{concept_match_v2_hypothesis_test.png}}
 \caption{Concept Match V2 vs. Max Frequency Hypothesis Test on Definition Questions}
-\label{fig:concept_match_v2_hypothesis_test}
-\end{figure}
+\small
+\resizebox{0.6\textwidth}{!}{
+\begin{tabular}{| l r |}
+		\hline
+		\textbf{Concept Match V2 vs. Max Frequency}  & \\
+		 & \\
+		H\textsubscript{0}:  Agent answer rate = 0.48 & \\
+		H\textsubscript{1}:  Agent answer rate $>$ 0.48 & \\
+		 &  \\
+		Question Count & 150 \\
+		E(Question Score) & 0.48 \\
+		Var(Question Score) & 0.2496 \\
+		E(Exam Score) & 72 \\
+		Var(Exam Score) & 37.44 \\
+		Std(Exam Score) & 6.11882342 \\
+		Observed Exam Score & 101 \\
+		z-score for Observed Exam Score & 4.73947327 \\
+		z-score for p-value of 1\% & 2.325 \\
+		 & \\
+		Conclusion: & Reject H\textsubscript{0} in favor of H\textsubscript{1}. \\
+		\hline
+\end{tabular}
+}
+\label{table:concept_match_v2_hypothesis_test}
+\end{table}
 
 
 \subsection{Concept Match Version 3}
@@ -231,26 +260,54 @@ Fig.~\ref{fig:concept_match_v3_example_document} shows the ``Arraignment" docume
 
 \subsubsection{Concept Match V3 Performance}
 
-Fig.~\ref{fig:concept_match_v3_training_set_performance} shows the performance of the Concept Match V3 algorithm on the 150 definition-type questions of the training set.  It shows that V3 improves on V2 slightly, getting 105 question correct compared with V2's 101.  However, this improvement is not significant enough to be statistically significant at the 99\% level, as the figure~\ref{fig:concept_match_v3_hypothesis_test} shows.  Nonetheless, the fact that V3 outpaces V2 means that the CFE agent will use V3 over V2 when confronted with a definition-type question, (and, as we'll see later, the agent will use this algorithm on other types of questions as well).  And finally, lest we forget, compared with Version 1 of the agent, this algorithm extends the gains we achieved with Concept Match V2 that were, themselves, found to be statistically significant relative to Version 1 of the CFE agent.
+Fig.~\ref{fig:concept_match_v3_training_set_performance} shows the output from the Algorithm Tester giving the performance of the Concept Match V3 algorithm on the 150 definition-type questions of the training set.  It shows that V3 improves on V2 slightly, getting 105 question correct compared with V2's 101.  However, this improvement is not significant enough to be statistically significant at the 99\% level, as Table~\ref{table:concept_match_v3_hypothesis_test} shows.  Nonetheless, the fact that V3 outpaces V2 means that the CFE agent will use V3 over V2 when confronted with a definition-type question, (and, as we'll see later, the agent will use this algorithm on other types of questions as well).  And finally, lest we forget, compared with Version 1 of the agent, this algorithm extends the gains we achieved with Concept Match V2 that were, themselves, found to be statistically significant relative to Version 1 of the CFE agent.
 
 \begin{figure}
 \centering
 \vspace{0.75in}
 \framebox{\includegraphics[width=110mm, height=16mm]{concept_match_v3_training_set_performance.png}}
-\caption{Performance of Concept Match V3 on Training Set}
+\caption{Algorithm Tester Report -- Performance of Concept Match V3 on Training Set}
 \label{fig:concept_match_v3_training_set_performance}
 \end{figure}
 
 
 
-\begin{figure}
-\centering
-\vspace{0.75in}
-\framebox{\includegraphics[width=75mm, height=60mm]{concept_match_v3_hypothesis_test.png}}
-\caption{Concept Match V3 vs. V2 Hypothesis Test on Definition Questions}
-\label{fig:concept_match_v3_hypothesis_test}
-\end{figure}
+%\begin{figure}
+%\centering
+%\vspace{0.75in}
+%\framebox{\includegraphics[width=75mm, height=60mm]{concept_match_v3_hypothesis_test.png}}
+%\caption{Concept Match V3 vs. V2 Hypothesis Test on Definition Questions}
+%\label{fig:concept_match_v3_hypothesis_test}
+%\end{figure}
 
+\begin{table}[h!]
+\centering
+\caption{Concept Match V3 vs. V2 Hypothesis Test on Definition Questions}
+\small
+\resizebox{0.6\textwidth}{!}{
+\begin{tabular}{| l r |}
+		\hline
+		\textbf{Concept Match V3 vs. Concept Match V2}  & \\
+		 & \\
+		H\textsubscript{0}:  Agent answer rate = 0.673 & \\
+		H\textsubscript{1}:  Agent answer rate $>$ 0.673 & \\
+		 &  \\
+		Question Count & 150 \\
+		E(Question Score) & 0.673 \\
+		Var(Question Score) & 0.220071 \\
+		E(Exam Score) & 100.95 \\
+		Var(Exam Score) & 33.01065 \\
+		Std(Exam Score) & 5.74548954 \\
+		Observed Exam Score & 105 \\
+		z-score for Observed Exam Score & 0.70490077 \\
+		z-score for p-value of 1\% & 2.325 \\
+		 & \\
+		Conclusion: & Accept H\textsubscript{0}. \\
+		\hline
+\end{tabular}
+}
+\label{table:concept_match_v3_hypothesis_test}
+\end{table}
 
 
 \subsection{Concept Match NOT}
@@ -265,7 +322,7 @@ Fig.~\ref{fig:concept_match_not_example_part_1} and Fig.~\ref{fig:concept_match_
 \begin{figure}
 \centering
 \vspace{0.75in}
-\framebox{\includegraphics[width=125mm, height=125mm]{concept_match_not_example_part_1.png}}
+\framebox{\includegraphics[width=90mm, height=125mm]{concept_match_not_example_part_1.png}}
 \caption{Concept Match Not Example - Part 1}
 \label{fig:concept_match_not_example_part_1}
 \end{figure}
@@ -280,7 +337,7 @@ Fig.~\ref{fig:concept_match_not_example_part_1} and Fig.~\ref{fig:concept_match_
 
 \subsubsection{Concept Match NOT Performance}
 
-Fig.~\ref{fig:concept_match_not_training_set_performance} shows the performance of the Concept Match NOT algorithm on Definition/NOT questions in the training set - 8 out of 27 correct, or 29.6\%.  It is not unreasonable to expect that this algorithm would show weaker performance than its inverted cousin, Concept Match V3, as discovering the negative, as we are attempting to do in the case for this question type, is difficult to do.  In fact, we cannot reject the null hypothesis that this algorithm performs any better on Definition/NOT questions than random guessing, as shown in Fig.~\ref{fig:concept_match_not_hypothesis_test}.  Further investigation is required to refine this algorithm or to take a different approach with these types of questions altogether.
+Fig.~\ref{fig:concept_match_not_training_set_performance} shows the performance of the Concept Match NOT algorithm on Definition/NOT questions in the training set - 8 out of 27 correct, or 29.6\%.  It is not unreasonable to expect that this algorithm would show weaker performance than its inverted cousin, Concept Match V3, as discovering the negative, as we are attempting to do in the case for this question type, is difficult to do.  In fact, we cannot reject the null hypothesis that this algorithm performs any better on Definition/NOT questions than random guessing, as shown in Table~\ref{table:concept_match_not_hypothesis_test}.  Further investigation is required to refine this algorithm or to take a different approach with these types of questions altogether.
 
 
 %However, even with that disadvantage, the Concept Match Not algorithm shows statistically significant improvement over random approach at the 99\% confidence level.  Note, we compare this algorithm to random selection because in Version 1 of the CFE Agent we observe that no algorithm actually did any better than random selection for this type of question, refer to Fig.~\ref{fig:version_1_training_set_results_not}.
@@ -293,14 +350,42 @@ Fig.~\ref{fig:concept_match_not_training_set_performance} shows the performance 
 \label{fig:concept_match_not_training_set_performance}
 \end{figure}
 
-\begin{figure}
-\centering
-\vspace{0.75in}
-\framebox{\includegraphics[width=75mm, height=60mm]{concept_match_not_hypothesis_test.png}}
-\caption{Concept Match Not vs. Random Hypothesis Test on Definition/Not Questions}
-\label{fig:concept_match_not_hypothesis_test}
-\end{figure}
+%\begin{figure}
+%\centering
+%\vspace{0.75in}
+%\framebox{\includegraphics[width=75mm, height=60mm]{concept_match_not_hypothesis_test.png}}
+%\caption{Concept Match Not vs. Random Hypothesis Test on Definition/Not Questions}
+%\label{fig:concept_match_not_hypothesis_test}
+%\end{figure}
 
+\begin{table}[h!]
+\centering
+\caption{Concept Match Not vs. Random Guessing Hypothesis Test on Definition/Not Questions}
+\small
+\resizebox{0.6\textwidth}{!}{
+\begin{tabular}{| l r |}
+		\hline
+		\textbf{Concept Match Not vs. Random Guessing}  & \\
+		 & \\
+		H\textsubscript{0}:  Agent answer rate = 0.25 & \\
+		H\textsubscript{1}:  Agent answer rate $>$ 0.25 & \\
+		 &  \\
+		Question Count & 27 \\
+		E(Question Score) & 0.25 \\
+		Var(Question Score) & 0.1875 \\
+		E(Exam Score) & 6.75 \\
+		Var(Exam Score) & 5.0625 \\
+		Std(Exam Score) & 2.25 \\
+		Observed Exam Score & 8 \\
+		z-score for Observed Exam Score & 0.5555556 \\
+		z-score for p-value of 1\% & 2.325 \\
+		 & \\
+		Conclusion: & Accept H\textsubscript{0}. \\
+		\hline
+\end{tabular}
+}
+\label{table:concept_match_not_hypothesis_test}
+\end{table}
 
 
 
@@ -332,7 +417,7 @@ Fig.~\ref{fig:concept_match_nota_example} shows an example of the execution of t
 
 \subsubsection{Concept Match NOTA Performance}
 
-Fig.~\ref{fig:concept_match_nota_training_set_performance} shows the performance of this algorithm on the Definition/NOTA questions at 65.8\% accuracy.  Fig.~\ref{fig:concept_match_nota_hypothesis_test} shows a hypothesis test of this algorithm against the Max Frequency algorithm which had the best results in the CFE Agent Version 1.  Since Max Frequency showed results of 56.5\% on 161 questions, the results of Concept Match NOTA were statistically significant at the 99\% confidence level.  Given this, we incorporate this algorithm into the agent as part of its enhanced suite of tools of Version 2.
+Fig.~\ref{fig:concept_match_nota_training_set_performance} shows the performance of this algorithm on the Definition/NOTA questions at 65.8\% accuracy.  Table~\ref{table:concept_match_nota_hypothesis_test} shows a hypothesis test of this algorithm against the Max Frequency algorithm which had the best results in the CFE Agent Version 1.  Since Max Frequency showed results of 56.5\% on 161 questions, the results of Concept Match NOTA were statistically significant at the 99\% confidence level.  Given this, we incorporate this algorithm into the agent as part of its enhanced suite of tools of Version 2.
 
 \begin{figure}
 \centering
@@ -344,14 +429,42 @@ Fig.~\ref{fig:concept_match_nota_training_set_performance} shows the performance
 
 
 
-\begin{figure}
-\centering
-\vspace{0.75in}
-\framebox{\includegraphics[width=100mm, height=75mm]{concept_match_nota_hypothesis_test.png}}
-\caption{Concept Match NOTA vs. Max Frequency Hypothesis Test on Definition/NOTA  Questions}
-\label{fig:concept_match_nota_hypothesis_test}
-\end{figure}
+%\begin{figure}
+%\centering
+%\vspace{0.75in}
+%\framebox{\includegraphics[width=100mm, height=75mm]{concept_match_nota_hypothesis_test.png}}
+%\caption{Concept Match NOTA vs. Max Frequency Hypothesis Test on Definition/NOTA  Questions}
+%\label{fig:concept_match_nota_hypothesis_test}
+%\end{figure}
 
+\begin{table}[h!]
+\centering
+\caption{Concept Match NOTA vs. Max Frequency Hypothesis Test on Definition/NOTA  Questions}
+\small
+\resizebox{0.6\textwidth}{!}{
+\begin{tabular}{| l r |}
+		\hline
+		\textbf{Concept Match NOTA vs. Max Frequency}  & \\
+		 & \\
+		H\textsubscript{0}:  Agent answer rate = 0.565 & \\
+		H\textsubscript{1}:  Agent answer rate $>$ 0.565 & \\
+		 &  \\
+		Question Count & 161 \\
+		E(Question Score) & 0.565 \\
+		Var(Question Score) & 0.245775 \\
+		E(Exam Score) & 90.965 \\
+		Var(Exam Score) & 39.569775 \\
+		Std(Exam Score) & 6.2904511 \\
+		Observed Exam Score & 106 \\
+		z-score for Observed Exam Score & 2.39013065 \\
+		z-score for p-value of 1\% & 2.325 \\
+		 & \\
+		Conclusion: & Reject H\textsubscript{0} in favor of H\textsubscript{1}. \\
+		\hline
+\end{tabular}
+}
+\label{table:concept_match_nota_hypothesis_test}
+\end{table}
 
 
 
@@ -372,21 +485,51 @@ Fig.~\ref{fig:version_2_training_set_performance} summarizes the performance of 
 \centering
 \vspace{0.25in}
 \framebox{\includegraphics[width=200mm, height=80mm]{version_2_training_set_performance.png}}
-\caption{Performance of CFE Agent Version 2 on Training Set}
+\caption{CFE Agent Report -- Performance of CFE Agent Version 2 on Training Set}
 \label{fig:version_2_training_set_performance}
 \end{sidewaysfigure}
 
-Fig.~\ref{fig:version_2_multiple_choice_hypothesis_test} shows the results of a hypothesis test of the performance of the CFE Agent Version 2 on the entire battery of training set questions relative to that of Version 1.  The analysis shows the improvement for Version 2 over Version 1 to be statistically significant at the 99\% level.  This should not be surprising since the question types for which we've targeted our new algorithms, namely Definition, Definition/NOT, and Definition/NOTA , constitute a large portion of the question battery (338 of the 867 questions), as indicated by the Trials column of the table in Fig.~\ref{fig:version_2_training_set_performance}.
+Table~\ref{table:version_2_multiple_choice_hypothesis_test} shows the results of a hypothesis test of the performance of the CFE Agent Version 2 on the entire battery of multiple-choice questions in the training set compared with Version 1.  The analysis shows the improvement for Version 2 over Version 1 to be statistically significant at the 99\% level.  This should not be surprising since the question types for which we've targeted our new algorithms, namely Definition, Definition/NOT, and Definition/NOTA , constitute a large portion of the question battery (338 of the 867 questions), as indicated by the Trials column of the table in Fig.~\ref{fig:version_2_training_set_performance}.
 
-\begin{figure}
+%\begin{figure}
+%\centering
+%\vspace{0.75in}
+%\framebox{\includegraphics[width=75mm, height=60mm]{version_2_multiple_choice_hypothesis_test.png}}
+%\caption{CFE Agent Version 2 vs. CFE Agent Version 1 Hypothesis Test on Multiple Choice Questions}
+%\label{fig:version_2_multiple_choice_hypothesis_test}
+%\end{figure}
+
+\begin{table}[h!]
 \centering
-\vspace{0.75in}
-\framebox{\includegraphics[width=75mm, height=60mm]{version_2_multiple_choice_hypothesis_test.png}}
 \caption{CFE Agent Version 2 vs. CFE Agent Version 1 Hypothesis Test on Multiple Choice Questions}
-\label{fig:version_2_multiple_choice_hypothesis_test}
-\end{figure}
+\small
+\resizebox{0.6\textwidth}{!}{
+\begin{tabular}{| l r |}
+		\hline
+		\textbf{CFE Agent Version 2 vs. CFE Agent Version 1}  & \\
+		\textbf{Multiple Choice Questions} & \\
+		 & \\
+		H\textsubscript{0}:  Agent answer rate = 0.497 & \\
+		H\textsubscript{1}:  Agent answer rate $>$ 0.497 & \\
+		 &  \\
+		Question Count & 867 \\
+		E(Question Score) & 0.497 \\
+		Var(Question Score) & 0.249991 \\
+		E(Exam Score) &  430.899\\
+		Var(Exam Score) & 216.742197 \\
+		Std(Exam Score) & 14.7221669 \\
+		Observed Exam Score & 502 \\
+		z-score for Observed Exam Score & 4.82952005 \\
+		z-score for p-value of 1\% & 2.325 \\
+		 & \\
+		Conclusion: & Reject H\textsubscript{0} in favor of H\textsubscript{1}. \\
+		\hline
+\end{tabular}
+}
+\label{table:version_2_multiple_choice_hypothesis_test}
+\end{table}
 
-Running the CFE Agent on the test set of 200 questions yields a score of 119 out of 200, or 59.5\%, a dramatic improvement over the 49\% of Version 1.  This shows that the more sophisticated algorithms in Version 2 offer significantly better performance, on the order of 10\% marginal benefit in terms of accuracy, and offer some degree of argument-based justification, though not proof-based.  
+Running the CFE Agent on the test set of 200 questions yields a score of 119 out of 200, or 59.5\%, a dramatic improvement over the 49.7\% of Version 1.  This shows that the more sophisticated algorithms in Version 2 offer significantly better performance, on the order of 10\% marginal benefit in terms of accuracy, and offer some degree of argument-based justification.
 
 
 
