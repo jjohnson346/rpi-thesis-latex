@@ -29,37 +29,37 @@ Warning--missing school in Clark:2010:CIL:2019791
 Done.
 You've used 68 entries,
             4024 wiz_defined-function locations,
-            1156 strings with 17081 characters,
-and the built_in function-call counts, 53354 in all, are:
+            1158 strings with 17114 characters,
+and the built_in function-call counts, 53368 in all, are:
 = -- 4112
 > -- 1131
 < -- 499
 + -- 609
 - -- 170
-* -- 2583
+* -- 2586
 := -- 7560
 add.period$ -- 168
 call.type$ -- 68
 change.case$ -- 77
 chr.to.int$ -- 1176
 cite$ -- 70
-duplicate$ -- 3947
-empty$ -- 4772
+duplicate$ -- 3950
+empty$ -- 4774
 format.name$ -- 221
-if$ -- 12452
+if$ -- 12455
 int.to.chr$ -- 0
 int.to.str$ -- 68
-missing$ -- 652
+missing$ -- 653
 newline$ -- 227
 num.names$ -- 62
-pop$ -- 1701
+pop$ -- 1704
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 4031
+skip$ -- 4027
 stack$ -- 0
 substring$ -- 2701
-swap$ -- 3110
+swap$ -- 3113
 text.length$ -- 107
 text.prefix$ -- 0
 top$ -- 5
